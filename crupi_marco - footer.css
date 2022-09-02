@@ -253,6 +253,12 @@ svg.footer__location__svg {
   text-decoration: none;
 }
 
+.footer__terms a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+
 .footer__copyright p {
   font-size: 0.75rem;
 }
