@@ -12,6 +12,10 @@
   display: none;
 }
 
+.footer__loghi__clone {
+  display: none;
+}
+
 .footer-col ul {
   padding-left: 0;
 }
@@ -426,9 +430,16 @@ label div:first-child {
   }
 
   .footer__social__links__container {
-  display: flex;
-  margin-left: 0;
-  flex-basis: 21.875rem;
-  justify-content: flex-start;
-}
+    display: flex;
+    margin-left: 0;
+    flex-basis: 21.875rem;
+    justify-content: flex-start;
+  }
+
+  .footer__loghi__clone {
+    width: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.25rem;
+  }
 }
