@@ -4,6 +4,10 @@
   --gradient: linear-gradient(45deg, var(--firstColor), var(--secondColor));
 }
 
+.footer__accordion {
+  display: none;
+}
+
 .footer-col ul {
   padding-left: 0;
 }
@@ -29,9 +33,9 @@
 }
 
 .footer__container_margin {
-max-width: 82.5rem;
-    background-color: rgb(32, 29, 72);
-    margin: 0px auto;
+  max-width: 82.5rem;
+  background-color: rgb(32, 29, 72);
+  margin: 0px auto;
 }
 
 .footer-col {
@@ -250,5 +254,140 @@ svg.footer__location__svg {
 }
 
 .footer__copyright p {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
+}
+
+/* ACCORDION */
+
+.footer__wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobileLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  border-top: 1px solid rgb(218, 218, 218);
+  border-bottom: 1px solid rgb(218, 218, 218);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: -1px;
+  padding-right: 1.5rem;
+}
+
+.content .mobileLink {
+  font-size: 0.875rem;
+  display: block;
+  padding: 0.9375rem 1.25rem;
+  color: rgb(255, 255, 255);
+}
+
+.content .mobileLink a {
+  font-weight: normal;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.accordionInput {
+  display: none;
+}
+
+label {
+  display: flex;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  /* border: 3px solid #3E474F; */
+  user-select: none;
+}
+
+label div:first-child {
+  width: 100%;
+  line-height: 45px;
+  font-size: 1.2em;
+}
+
+.pseudoLink {
+  font-size: 1rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  padding: 0.9375rem 1.25rem;
+}
+
+.footer__wrap .content {
+  width: 100%;
+}
+
+.cross {
+  margin-right: 15px;
+  /* margin-top: 3px; */
+}
+
+.cross:after {
+  content: "";
+  border-top: 2px solid #f6f6f6;
+  width: 15px;
+  display: block;
+  /* margin-top: 18px; */
+  transition: 0.3s;
+}
+
+.cross:after {
+  position: relative;
+  top: -5px;
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-right: 0.1em solid rgb(255, 255, 255);
+  border-top: 0.1em solid rgb(255, 255, 255);
+  transform: rotate(135deg);
+  margin-right: 0.5em;
+  margin-left: 1em;
+}
+
+.content {
+  box-sizing: border-box;
+  font-size: 0.9em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height, 0.5s;
+}
+
+.accordionInput:checked ~ .content {
+  max-height: 400px;
+  transition: max-height, 1s;
+}
+
+.accordionInput:checked ~ label .cross:after {
+  position: relative;
+   top: 5px;
+   content: "";
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   border-right: 0.1em solid rgb(255, 255, 255);
+   border-top: 0.1em solid rgb(255, 255, 255);
+   transform: rotate(-45deg);
+   margin-right: 0.5em;
+   margin-left: 1.0em;
+}
+
+@media screen and (max-width: 900px) {
+  .footer__containerOne {
+    display: none;
+  }
+
+  .footer {
+    padding: 0px;
+  }
+
+  .footer__accordion {
+  display: block;
+}
 }
