@@ -8,12 +8,16 @@
   display: none;
 }
 
+.footer__input__marketing__clone {
+  display: none;
+}
+
 .footer-col ul {
   padding-left: 0;
 }
 
 .footer .footer__containerOne {
-  max-width: 90%;
+  width: 100%;
   margin: auto;
 }
 
@@ -236,14 +240,15 @@ svg.footer__location__svg {
 }
 
 .footer__terms_container {
-  padding: 2.5rem 1.25rem 1.25rem;
+  padding: 0.5rem 1.25rem 1.25rem;
 }
 
 .footer__terms {
   display: flex;
   justify-content: flex-start;
-  gap: 3rem;
-  margin-bottom: 1rem;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 .footer__terms a {
@@ -270,12 +275,11 @@ svg.footer__location__svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
-  border-top: 1px solid rgb(218, 218, 218);
+
   border-bottom: 1px solid rgb(218, 218, 218);
   font-size: 1.2rem;
   font-weight: bold;
-  margin-top: -1px;
+  /* margin-top: -1px; */
   padding-right: 1.5rem;
 }
 
@@ -323,11 +327,6 @@ label div:first-child {
   width: 100%;
 }
 
-.cross {
-  margin-right: 15px;
-  /* margin-top: 3px; */
-}
-
 .cross:after {
   content: "";
   border-top: 2px solid #f6f6f6;
@@ -347,8 +346,6 @@ label div:first-child {
   border-right: 0.1em solid rgb(255, 255, 255);
   border-top: 0.1em solid rgb(255, 255, 255);
   transform: rotate(135deg);
-  margin-right: 0.5em;
-  margin-left: 1em;
 }
 
 .content {
@@ -366,16 +363,16 @@ label div:first-child {
 
 .accordionInput:checked ~ label .cross:after {
   position: relative;
-   top: 5px;
-   content: "";
-   display: inline-block;
-   width: 15px;
-   height: 15px;
-   border-right: 0.1em solid rgb(255, 255, 255);
-   border-top: 0.1em solid rgb(255, 255, 255);
-   transform: rotate(-45deg);
-   margin-right: 0.5em;
-   margin-left: 1.0em;
+  top: 5px;
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-right: 0.1em solid rgb(255, 255, 255);
+  border-top: 0.1em solid rgb(255, 255, 255);
+  transform: rotate(-45deg);
+  margin-right: 0.5em;
+  margin-left: 1em;
 }
 
 @media screen and (max-width: 900px) {
@@ -388,6 +385,50 @@ label div:first-child {
   }
 
   .footer__accordion {
-  display: block;
+    display: block;
+  }
+
+  .footer__input__marketing__clone {
+    display: block;
+    padding: 0.9375rem 1.25rem;
+  }
+
+  .footer__input__marketing {
+    display: none;
+  }
+
+  .footer__input__marketing__clone h4 {
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .footer__input_container__clone {
+    width: 100%;
+  }
+
+  .footer__input__clone {
+    font-size: 0.875rem;
+    padding: 1rem;
+    height: 3.45rem;
+    color: black;
+    width: 85%;
+  }
+
+  .borderUp {
+    border-top: 1px solid rgb(218, 218, 218);
+  }
+
+  .footer__containerTwo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .footer__social__links__container {
+  display: flex;
+  margin-left: 0;
+  flex-basis: 21.875rem;
+  justify-content: flex-start;
 }
 }
