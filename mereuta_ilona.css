@@ -185,3 +185,58 @@
 .nav__shop-icon p {
     font-size: 12px;
 }
+
+
+/* nav main area container */
+.nav__main-area-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav main area video */
+
+.nav__main-area-video .nav__animation{
+    width: 100%;
+   
+}
+
+/* */
+
+.nav__main-area-text{
+    z-index: -1;
+}
+
+h1{
+
+    color: blue;
+}
+
+
+/* nav quick links */
+/* .nav__quick-links{
+    
+} */
+
+.nav__quick-links-icons{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+    
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav__quick-links-icons a{
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 400;
+
+}
+
+.nav__quick-links-icons a:hover {
+    text-decoration: underline;
+    color: #006db7;
+}
