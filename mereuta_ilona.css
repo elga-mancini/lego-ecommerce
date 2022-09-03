@@ -1,33 +1,116 @@
 
-
-.nav__utility-bar {
+/* First flex-container for the white area above the navbar */
+.nav__utility-bar-container {
     display: flex;
     justify-content: space-between;
     background-color: white;
     padding: 15px;
-    
+    height: 60px; 
+    /* border: 2px solid pink; */
 }
 
-.nav__play-button {
+/* play button container */
+.nav__play-button-container {
+    /* border: 2px solid blanchedalmond; */
+    position: relative;
+}
+
+/* the arrow inside the play button */ 
+.nav__arrow-play-button{
+    z-index: 0;
+    width: 20px;
+    rotate: 180deg;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    padding: 2px;
+}
+
+
+/* the play button */
+.nav__play-button  {
     text-transform: uppercase;
     font-size: 0.75rem;
     color: black;
     background-color: rgb(171, 217, 255);
-    width: 130px;
-    height: 26px;
     /* padding: 5px 20px 5px 20px; */
-    padding-top: 0px;
-    padding-right: 0.625rem;
+    padding-top: 5px;
+    padding-right: 0.925rem;
+    padding-left: 2rem;
+    
+    padding-bottom: 5px;
     line-height:1.5625rem;
     text-align: end;
     border-radius: 5px;
     box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
-    
-
-
 }
 
 
+/* banner with text in te center above the navbar */
+.nav__banner-above-nav{
+    font-size: 0.75rem;
+    color: black;
+    line-height: 1.1875rem;
+    font-weight: 400;
+}
+
+.nav__space-between-text {
+   padding-left: 8px;
+   cursor: pointer;
+   color: #006db7;
+}
+
+.nav__space-between-text:hover {
+    text-decoration: underline;
+}
+
+/* icons above the navbar, on the right side */
+.nav__icons-container {
+    display: flex;
+    gap: 20px;
+    margin-left: 5px;
+    /* border: 2px solid greenyellow; */
+}
+
+/* account icon */
+.nav__account-icon{
+    display: flex;
+    gap: 10px;
+}
+
+.nav__account-icon span {
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+/* separator between icons */
+/* .nav__separator {
+
+} */
+
+.nav__vip-icon{
+    display: flex;
+    
+
+}
+/* Vip icon */
+.nav__image {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    padding: 0px;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+.nav__vip-icon span {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+
+
+/* navbar container*/
 .nav__navbar-container {
     display: flex;
     gap: 60px;
@@ -36,13 +119,18 @@
     background-color: rgb(255, 207, 0);
 
 }
-
+/* navbar logo image */
+.nav__navbar-container img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 4.5%;
+    margin-left: 30px;
+}
+/* navbar links */
 .nav__li {
     display: flex;
     gap: 50px;
-    list-style: none;
-    
-    
+    list-style: none; 
 }
 
 .nav__link {
@@ -54,9 +142,3 @@
 
 
 
-img {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 6%;
-    margin-left: 30px;
-}
