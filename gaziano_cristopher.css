@@ -91,6 +91,8 @@
 
 .section3__containerContent {
     max-width: 1320px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .section3__bannerSaldi {
@@ -103,7 +105,7 @@
     display: block;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
-    margin: 0px 0px 0.75rem 0;
+    margin: 0px 0px 20px 0;
     font-weight: 400;
     font-size: 2rem;
     line-height: 2.3125rem;
@@ -192,8 +194,6 @@
 } */
 
 
-
-
 .section3__media-group {
     display: flex;
 }
@@ -206,9 +206,8 @@
     align-items: stretch;
     position: relative;
     width: 25%;
-    padding-right: 1.2rem;
+    margin-right: 2.5rem;
     padding-top: 0;
-    margin-right: -0.9rem;
     padding-bottom: 20px;
 }
 
@@ -609,9 +608,27 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    max-width: 1320px;
-    margin-left: 140px;
-    margin-right: 140px;
+    max-width: 98rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.section3__bannerTendenza {
+    padding-top: 80px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.section3__titleBannerTendenza {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin: 0px 0px 20px 0;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.3125rem;
 }
 
 .section3__cardTendenza {
@@ -625,6 +642,7 @@
     width: 25%;
     padding: 1.25rem;
     padding-top: 0;
+    left: 21px;
 }
 
 .section3__imageTendenza {
@@ -634,8 +652,8 @@
     display: flex;
     align-items: stretch;
     justify-content: center;
-    width: 292.2px;
-    height: 202.461px;
+    width: 92%;
+    height: 40%;
     
 }
 
@@ -652,6 +670,7 @@
     flex: 1 1 0%;
     -webkit-box-align: center;
     align-items: center;
+    width: 92%;
 }
 
 .section3__titleTendenza {
@@ -800,4 +819,120 @@
     line-height: 0;
     height: 16px;
     width: 16px;
+}
+
+/* Media query */
+
+@media only screen and (min-width: 901px) {
+
+    .section3__containerContent {
+        padding: 1.875rem 3.75rem 3.75rem;
+        max-width: 100rem;
+        margin: auto;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .section3__bannerSaldi {
+        flex-basis: 90%;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+    }
+
+    .section3__containerTendenza {
+        padding: 2.5rem 1.25rem;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .section3__bannerTendenza {
+        margin-bottom: 1.25rem;
+        font-size: 2rem;
+        line-height: 2.6875rem;
+    }
+
+    .section3__cardTendenza {
+        margin-right: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+
+    .section3__containerContent {
+        padding-top: 1.875rem;
+        padding-bottom: 1.875rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .section3__cardSaldi {
+        margin-left: 0px;
+        width: 40%;
+        margin-left: 0.3125rem;
+    }
+
+    .section3__imageProductSaldi picture {
+        transform: scale(0.900901) translateZ(0px);
+        transition: transform 600ms cubic-bezier(0, 0, 0.2, 1) 0s;
+    }
+
+    .section3__ATCButtonText {
+        font-size: 1rem;
+        line-height: 1.5625rem;
+    }
+
+    .section3__containerTendenza {
+        padding: 1.875rem 1.25rem;
+        padding-top: 0;
+        margin-top: 0;
+        max-width: 98rem;
+    }
+
+    .section3__bannerTendenza {
+        font-size: 1.5rem;
+        line-height: 2.3125rem;
+    }
+
+    .section3__cardTendenza {
+        flex-direction: row;
+    }
+
+    .section3__cardTendenza {
+        width: 33.3333%;
+        margin-right: 0.9375rem;
+        margin-bottom: 0px;
+    }
+
+    .section3__titleTendenza{
+        font-size: 1.25rem;
+        line-height: 1.9375rem;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+
+    .section3__titleSaldi {
+        font-size: 2rem;
+        line-height: 2.6875rem;
+    }
+
+    .section3__carouselScrollArea {
+        width: 100%;
+        transform: translateZ(0px);
+    }
+
+    .section3__cardSaldi {
+        box-sizing: border-box;
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-right: 2.5rem;
+        width: calc(25% + 0.546875rem);
+    }
+    
+    .section3__containerTendenza {
+        max-width: 98rem;
+        margin: 0px auto;
+        padding-top: 0;
+        margin-top: 0;
+    }
 }
