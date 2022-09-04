@@ -3,10 +3,12 @@
 .nav__utility-bar-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: white;
     padding: 15px;
     height: 60px; 
-    /* border: 2px solid pink; */
+    padding-left: 30px;
+    border: 2px solid pink;
 }
 
 /* play button container */
@@ -31,6 +33,7 @@
 .nav__play-button  {
     text-transform: uppercase;
     font-size: 0.75rem;
+    font-weight: 500;
     color: black;
     background-color: rgb(171, 217, 255);
     /* padding: 5px 20px 5px 20px; */
@@ -45,14 +48,26 @@
     box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
 }
 
+a.nav__play-button  {
+   text-decoration: none;
+   
+
+}
 
 /* banner with text in te center above the navbar */
-.nav__banner-above-nav{
+.nav__banner-above-nav {
+    display: flex;
+    gap: 4px;
     font-size: 0.75rem;
     color: black;
     line-height: 1.1875rem;
     font-weight: 400;
+    padding-top: 10px;
+    /* background-color: palegreen; */
+
 }
+
+
 
 .nav__space-between-text {
    padding-left: 8px;
@@ -136,11 +151,16 @@
     gap: 50px;
     list-style: none; 
 }
+.nav__li a{
+    text-decoration: none;
+}
 
 .nav__link {
     font-size: 1rem;
     text-transform: uppercase;
-    color: black;    
+    color: black; 
+    font-weight: 600;
+
 }
 
 /* icons of navbar */
@@ -240,3 +260,74 @@ li {
     text-decoration: underline;
     color: #006db7;
 }
+
+
+/* media query */
+
+/* da 0 a 419 to do */
+
+
+/* da 0 a 900 */
+
+@media screen and (max-width: 900px) {
+   p {
+    color: palevioletred;
+   }
+
+   .nav__icons-container{
+    visibility: hidden;
+}
+
+.nav__play-button-container{
+    visibility: hidden;
+}
+
+}
+
+
+
+
+/* da 0 a 1112 */
+
+@media screen and (max-width: 1111px){
+    .nav__banner-above-nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    .nav__banner-above-nav p{
+        margin-bottom: 0px;
+
+    }
+    
+}
+ /* da 0 a 889 */
+@media screen and (max-width: 889px) {
+    .nav__icons-container{
+        visibility: hidden;
+    }
+
+    .nav__play-button-container{
+        visibility: hidden;
+    }
+
+    .nav__banner-above-nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+}
+
+
+/* da 0 a 1164 */
+@media screen and (max-width: 1164px) {
+    .nav__display-none {
+     display: none;
+    }
+ 
+ }
+
