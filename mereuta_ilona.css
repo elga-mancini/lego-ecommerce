@@ -142,12 +142,13 @@ a.nav__play-button  {
 .nav__navbar-container img {
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 4.5%;
+    width: 5.3%;
     margin-left: 30px;
 }
 /* navbar links */
 .nav__li {
     display: flex;
+    padding-top: 10px;
     gap: 50px;
     list-style: none; 
 }
@@ -174,6 +175,7 @@ a.nav__play-button  {
 /* search button */
 .nav__search-icon{
     display: flex;
+    align-items: center;
     cursor: pointer;
     text-align: center;
     width: 2.5rem;
@@ -194,15 +196,19 @@ a.nav__play-button  {
 /* heart icon */
 .nav__heart-icon{
     display: flex;
+    align-items: center;
     padding-left: 10px;
 }
 /* shop icon */
 .nav__shop-icon {
     display: flex;
+    align-items: center;
     gap: 2px;
 }
 
 .nav__shop-icon p {
+    display: flex;
+    align-items: center;
     font-size: 12px;
 }
 
