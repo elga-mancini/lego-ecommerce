@@ -2,13 +2,19 @@
     box-sizing: inherit;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     font-family: Cera-Pro, sans-serif;
     line-height: 1.5;
     color: #2c2c2c;
     background-color: rgb(255, 255, 255);
     margin: 0px auto;
     width: 100%;
-    max-width: 100rem;
+}
+
+.section3__containerContent {
+    max-width: 1320px;
+    margin-left: 140px;
+    margin-right: 140px;
 }
 
 .section3__bannerSaldi {
@@ -21,7 +27,7 @@
     display: block;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
-    margin: 0px 0px 0.75rem;
+    margin: 0px 0px 0.75rem 0;
     font-weight: 400;
     font-size: 2rem;
     line-height: 2.3125rem;
@@ -38,14 +44,7 @@
 .section3__carouselButtonLeft {
     background-color: transparent;
     width: auto;
-    border-radius: 4px;
-    border-collapse: collapse;
-    text-align: center;
-    font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 1.1875rem;
-    color: rgb(0, 0, 0);
-    -webkit-box-align: center;
+    border-collapse: none;
     padding: 0px 1.25rem;
     border: none;
     position: absolute;
@@ -53,15 +52,42 @@
     height: 100%;
     transform: translateZ(0px);
     transition: opacity 250ms ease 0s;
-    background-color: transparent;
-    opacity: 0;
+    opacity: 100;
     cursor: default;
     pointer-events: none;
-    left: -1.25rem;
+    left: 1.25rem;
     display: flex;
     z-index: 1;
     align-items: flex-start;
-    padding-top: calc(0rem + 20% + -0.46875rem);
+    padding-top: 20%;
+}
+
+.section3__carouselButtonRight {
+    background-color: transparent;
+    width: auto;
+    border-collapse: none;
+    padding: 0px 1.25rem;
+    border: none;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    transform: translateZ(0px);
+    transition: opacity 250ms ease 0s;
+    opacity: 100;
+    cursor: default;
+    pointer-events: none;
+    right: 1.25rem;
+    display: flex;
+    z-index: 1;
+    align-items: flex-start;
+    padding-top: 20%;
+}
+
+.section3__carouselButtonRight .section3__ChevrounRoundSVG {
+    transform: rotate(-0deg);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
 }
 
 .section3__ChevrounRoundSVG {
@@ -106,9 +132,9 @@
     flex: 1 1 auto;
     align-items: stretch;
     position: relative;
-    width: 100%;
-    height: 100%;
-    padding-left: 1.25rem;
+    width: calc(25% + 0.546875rem);
+    padding: 1.25rem;
+    padding-top: 0;
 }
 
 .section3__productImageSaldiComplete {
@@ -119,8 +145,6 @@
     display: flex;
     align-items: stretch;
     justify-content: center;
-    height: 50vh;
-    width: 50vh;
 }
 
 .section3__productImageSaldiComplete a {
@@ -238,7 +262,6 @@
 .section3__productDetails a h3 {
     display: block;
     margin-block-start: 1em;
-    margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     color: rgb(0, 0, 0);
@@ -256,6 +279,7 @@
     justify-content: flex-start;
     -webkit-box-align: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .section3__labelRatingContainer {
@@ -312,18 +336,43 @@
     display: flex;
     -webkit-box-align: baseline;
     align-items: baseline;
+    width: 100%;
 }
 
 .section3__textProductPrice {
+    display: flex;
+    color: inherit;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    text-transform: inherit;
+    text-decoration: line-through;
+}
+
+.section3__notVisibleTextProductPrice {
+    border: 0px;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.section3__textNewPrice {
     display: flex;
     color: inherit;
     font-size: 1.125rem;
     line-height: 1.75rem;
     font-weight: 700;
     text-transform: inherit;
+    margin: 5px;
+    color: rgb(219, 15, 4);
 }
 
-.section3__notVisibleTextProductPrice {
+.section3__notVisibleTextNewPrice {
     border: 0px;
     clip: rect(0px, 0px, 0px, 0px);
     height: 1px;
@@ -341,9 +390,10 @@
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
-    padding-top: 0px;
-    padding-left: 0.75rem;
+    padding-top: 10px;
+    padding-left: 0;
     align-self: flex-end;
+    width: 100%;
 }
 
 .section3__ATCButton {
@@ -468,3 +518,52 @@
     background-color: rgba(0, 0, 0, 0.55);
     top: 1.5625rem;
 }
+
+
+
+.section3__containerTendenza {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 910px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.section3__cardTendenza {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+    align-items: stretch;
+    position: relative;
+    width: calc(25% + 0.546875rem);
+    padding: 1.25rem;
+    padding-top: 0;
+}
+
+.section3__imageTendenza {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(224, 224, 224);
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 1210px) {
+    .container {
+        max-width: 82.5rem;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (min-width: 910px) {
+    .container {
+        padding: 2.5rem 1.25rem;
+    }
+}
+
+@media screen and (min-width: 610px) {}
