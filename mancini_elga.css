@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box; }
 
-.section2__box {
+.section2__box,
+.section2__box_clone {
     display: flex;
     flex-direction: column;
     justify-content: center;
