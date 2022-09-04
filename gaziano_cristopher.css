@@ -121,7 +121,6 @@
 
 .section3__carouselScrollArea {
     width: 100%;
-    overflow: hidden;
     position: relative;
     flex: 1 1 0%;
     display: flex;
@@ -131,6 +130,69 @@
     margin-left: 0px;
     margin-right: 40px;
 }
+
+.section3__carouselScrollArea::-webkit-scrollbar {
+    height: 0.3125rem;
+    margin: 1.5625rem 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    max-width: 56.25rem;
+    padding: 1.25rem;
+  }
+   
+.section3__carouselScrollArea::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+  }
+   
+.section3__carouselScrollArea::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.55);
+    height: 0.3125rem;
+    max-width: 48px;
+  }
+
+  /* <div class="section3__carouselScrollBarTrack">
+          <div class="section3__carouselScrollBarThumb" style="width: 48px"></div>
+        </div> */
+
+
+  /* .section3__carouselScrollAreaButton {
+    -webkit-box-align: center;
+    padding: 0px 1.25rem;
+    border: none;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    transform: translateZ(0px);
+    transition: opacity 250ms ease 0s;
+    background-color: transparent;
+    right: -1.25rem;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+}
+
+.section3__carouselScrollAreaButton svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.section3__carouselScrollAreaButton svg rect {
+    transition: fill 250ms ease 0s, opacity 250ms ease 0s;
+    fill: rgb(255, 255, 255);
+    stroke-width: 1px;
+    stroke: rgb(224, 224, 224);
+    x: 1;
+    y: 1;
+}
+
+.section3__carouselScrollAreaButton svg path {
+    transition: fill 250ms ease 0s, opacity 250ms ease 0s;
+    fill: rgb(44, 44, 44);
+} */
+
+
+
 
 .section3__media-group {
     display: flex;
@@ -144,15 +206,16 @@
     align-items: stretch;
     position: relative;
     width: 25%;
-    padding: 0.50rem;
+    padding-right: 1.2rem;
     padding-top: 0;
     margin-right: -0.9rem;
+    padding-bottom: 20px;
 }
 
 .section3__productImageSaldiComplete {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(224, 224, 224);
-    width: 90%;
+    width: 92%;
     height: auto;
     position: relative;
     display: flex;
@@ -412,7 +475,7 @@
     padding-top: 10px;
     padding-left: 0;
     align-self: flex-end;
-    width: 90%;
+    width: 92%;
 }
 
 .section3__ATCButton {
