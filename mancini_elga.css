@@ -1,3 +1,12 @@
+.section2__box a,
+.section2__box_clone a {
+    text-decoration: none;
+}
+.section2__box a:hover,
+.section2__box_clone a:hover {
+    color: black;
+}
+
 .section2__box,
 .section2__box_clone {
     display: flex;
@@ -30,7 +39,6 @@
 .section2__thirdimg,
 .section2__fourimg {
     width: 300px;
-    
     display: flex;
     justify-content: space-between;
 }
@@ -127,7 +135,6 @@
 
 .section2__email {
     margin-top: 10px;
-    display: flex;
     gap: 3px;
 }
 .section2__email-box {
@@ -143,6 +150,8 @@
     cursor: pointer;
     
 }
+
+
 
 @media screen and (max-width: 1000px) { 
     .section2__scroll,
