@@ -40,18 +40,31 @@
     display: flex;
     margin-top: 150px;
     margin-left: 200px;
-    width: 40px;
     height: 40px;
-    
 }
 
 .section2__over-img-2 {
     position: absolute;
     display: flex;
-    width: 30px;
     height: 25px;
     margin-left: 105px;
     margin-top: 160px;
+}
+
+.section2__over-img-3 {
+    position: absolute;
+    display: flex;
+    height: 40px;
+    margin-left: 115px;
+    margin-top: 155px;
+}
+
+.section2__over-img-4 {
+    position: absolute;
+    display: flex;
+    height: 30px;
+    margin-left: 125px;
+    margin-top: 155px;
 }
 
 .section2__text1,
