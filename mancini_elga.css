@@ -1,0 +1,203 @@
+.section2__box,
+.section2__box_clone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1280px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.section2__costruction {
+    font-size: 2rem;
+    width: 100%;  
+}
+.section2__firstbox {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.section2__images,
+.section2__images_clone {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+}
+ 
+
+.section2__firstimg,
+.section2__secondimg,
+.section2__thirdimg,
+.section2__fourimg {
+    width: 300px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2__text1,
+.section2__text1_clone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section2__text,
+.section2__text_clone {
+    font-weight: bold;
+}
+
+.section2__text-link,
+.section2__text-link_clone {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section2__link-one,
+.section2__link-one_clone{
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+}
+
+.section2__link-one:hover,
+.section2__link-one_clone:hover {
+    text-decoration: underline;
+}
+
+.img-text-link {
+    color: black;
+}
+
+.section2__first,
+.section2__second,
+.section2__third,
+.section2__first_clone,
+.section2__second_clone,
+.section2__third_clone
+ {
+    margin-right: 20px;
+}
+
+.section2__second-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1100px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.section2__box_clone {
+    margin-bottom: 20px;
+}
+
+.section2__img-in-call {
+    cursor: pointer;
+}
+
+.section2__text-over-img {
+    position: absolute;
+    margin: 0 80px;
+    margin-bottom: 15px;
+}
+
+.section2__article-over-img {
+    margin-top: 15px;
+}
+
+.section2__button-reg {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    display: none;
+}
+
+.section2__button-reg:hover {
+    background-color: white;
+    color: black;
+}
+
+.section2__email {
+    margin-top: 10px;
+    display: flex;
+    gap: 3px;
+}
+.section2__email-box {
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.section2__submit {
+    height: 30px;
+    width: 50px;
+    background: rgb(249, 176, 41);
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 1000px) { 
+    .section2__scroll,
+    .section2__scroll_clone {
+        width: 1000px;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .section2__scroll::-webkit-scrollbar,
+    .section2__scroll_clone::-webkit-scrollbar {
+        width: 0;
+        height: 5px;
+        background: rgb(255, 255, 255);
+    }
+
+    .section2__scroll::-webkit-scrollbar-thumb,
+    .section2__scroll::-webkit-scrollbar-thumb {
+        background: #888;
+   
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .section2__second-box {
+        width: 650px;
+    }
+    .section2__text-over-img {
+        font-size: 0.80rem;
+    }
+
+    .section2__button-reg {
+    width: 100px;
+    height: 30px;
+    font-size: 0.7rem;
+    display: block;
+    }
+
+    .section2__email {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section2__second-box {
+        display: none;
+    }
+    .section2__scroll,
+    .section2__scroll_clone {
+        width: 390px;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+}
