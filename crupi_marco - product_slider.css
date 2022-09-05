@@ -23,11 +23,10 @@
 }
 .image-content {
   display: flex;
-  justify-content:center ;
+  justify-content: center;
   align-items: center;
   height: 289.77px;
   position: relative;
-  background-color: rgb(255, 255, 255);
   border: 1px solid rgb(224, 224, 224);
 }
 
@@ -39,6 +38,9 @@
   width: auto;
   height: auto;
   overflow: hidden;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 1rem;
 }
 
 .slider__image:hover {
@@ -49,21 +51,37 @@
 .slider__desire__List {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: relative;
   width: 100%;
+  z-index: 1000;
+}
+
+.slider__heart {
+  background-color: #f3f3f3;
+    padding: 4px;
+    color: #1745c2;
+    border-radius: 50px;
+
+ 
+}
+
+.slider__desire_text {
+  font-size: 0.75rem;
+  margin-left: 10px;
+  font-weight: 700;
 }
 
 .slider__button__image {
   position: absolute;
-    bottom: 0px;
-    left: 0px;
-    margin-left: 0.625rem;
-    margin-bottom: 0.625rem;
-    background-color: #f4cb11;
-    font-size: 0.7rem;
-    padding: 0.3rem 0.5rem;
-  }
+  bottom: 0px;
+  left: 0px;
+  margin-left: 0.625rem;
+  margin-bottom: 0.625rem;
+  background-color: #f4cb11;
+  font-size: 0.7rem;
+  padding: 0.3rem 0.5rem;
+}
 
 .slider__name {
   font-size: 1rem;
