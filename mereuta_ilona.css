@@ -8,7 +8,7 @@
     padding: 15px;
     height: 60px; 
     padding-left: 30px;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
 }
 
 /* play button container */
@@ -216,49 +216,115 @@ a.nav__play-button  {
 /* nav main area container */
 .nav__main-area-container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /* nav main area video */
-
-.nav__main-area-video .nav__animation{
+.nav__main-area-video video {
     width: 100%;
+    overflow: hidden;
    
 }
 
-/* */
 
-.nav__main-area-text{
-    z-index: -1;
+
+/* move the text over the video */
+
+.nav__main-area-text-overlay{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 2px;
+    /* background-color: rgb(209, 150, 73); */
+    position: relative;
+    left: -6.7rem;
+    bottom: 18rem;
+    overflow: hidden;
+  
 }
 
-h1{
+/* .nav__break-line{
 
-    color: blue;
+} */
+
+.nav__main-area-text-overlay{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* text overlay video*/
+.nav__text-overlay-video{
+    color: white;
+    font-size: 1.8rem;
+    text-align: end;
+   
+    
 }
 
+.nav__text-overlay-video-h4{
+    color: white;
+    font-size: 1rem;
+    text-align: end;
+  
+}
+
+/* buttons - call to action */
+
+.nav__call-to-action a {
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+
+}
+
+.nav__call-to-action {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    left: 46.5rem;
+    bottom: 0rem;
+    overflow: hidden;
+    margin-top: 10px;
+}
 
 /* nav quick links */
-/* .nav__quick-links{
+.nav__quick-links{
+    margin-top: -2rem;
+    margin-bottom: 10rem;
     
-} */
+}
 
 .nav__quick-links-icons{
     display: flex;
     justify-content: center;
-    gap: 60px;
-
+    gap: 30px;
     
 }
+
+
+/* images under the video */
+.nav__icons img{
+    width: 90%;
+   
+
+}
+
 
 li {
     list-style-type: none;
 }
 
 .nav__quick-links-icons a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     color: black;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 400;
+    text-decoration: none;
 
 }
 
@@ -268,16 +334,22 @@ li {
 }
 
 
+
+
+
+
+
+
 /* media query */
 
-/* da 0 a 419 to do */
+
 
 
 /* da 0 a 900 */
 
 @media screen and (max-width: 900px) {
    p {
-    color: palevioletred;
+    color: rgb(84, 208, 35);
    }
 
    .nav__icons-container{
@@ -288,8 +360,62 @@ li {
     visibility: hidden;
 }
 
+.nav__text-overlay-video{
+    font-size: 1.2rem; 
 }
 
+.nav__text-overlay-video-h4{
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  
+}
+
+.nav__main-area-text-overlay{
+    gap: 5px;
+    left: -3.7rem;
+    bottom: 13rem;
+}
+
+.nav__break-line{
+   display: block;
+}
+
+
+
+}
+
+
+/* da 0 a 602 to do */
+
+@media screen and (max-width: 602px){
+    p {
+        color: red;
+    }
+
+    .nav__utility-bar-container {
+        background-color: rgb(252, 248, 243);
+
+    }
+
+    .nav__icons-container{
+       display: none;
+    }
+    
+    .nav__play-button-container{
+       display: none;
+    }
+
+    .nav__banner-above-nav{
+        display: flex;
+        gap: 2px;
+        align-content: center;
+        justify-content: center;
+    }
+   
+    
+    
+}
 
 
 
@@ -307,7 +433,39 @@ li {
         margin-bottom: 0px;
 
     }
+
+
+.nav__text-overlay-video{
+    font-size: 2.2rem; 
+}
+
+.nav__text-overlay-video-h4{
+    color: white;
+    font-size: 1.2rem;
+    text-align: end;
+    line-height: 1.4;
+  
+}
+
+.nav__main-area-text-overlay{
+    gap: 10px;
+    left: -3.7rem;
+    bottom: 19rem;
+}
+
+.nav__break-line-2{
+   display: block;
+}
+
+.nav__line-break{
+    display: block;
+}
     
+
+
+
+
+
 }
  /* da 0 a 889 */
 @media screen and (max-width: 889px) {
