@@ -7,8 +7,9 @@
     line-height: 1.5;
     color: #2c2c2c;
     background-color: rgb(255, 255, 255);
-    margin: 0px auto;
+    margin: auto;
     width: 100%;
+    max-width: 80rem;
 }
 
 /* Bottoni */
@@ -90,35 +91,45 @@
 /* Sezione Saldi */
 
 .section3__containerContent {
-    max-width: 1320px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    margin-top: 0;
+
+    /* max-width: 1320px;
     padding-bottom: 0;
-    margin-bottom: 0;
+    margin-bottom: 0; */
 }
 
 .section3__bannerSaldi {
     padding-top: 20px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     width: 100%;
 }
 
 .section3__titleSaldi {
     display: block;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin: 0px 0px 20px 0;
+    /* margin-block-start: 0.83em;
+    margin-block-end: 0.83em;*/
+    margin: 0px 0px 20px 0px;
     font-weight: 400;
     font-size: 2rem;
     line-height: 2.3125rem;
 }
 
 .section3__carouselContainer {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     display: flex;
     flex-wrap: nowrap;
     position: relative;
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
 }
 
 .section3__carouselScrollArea {
@@ -609,15 +620,15 @@
     flex-wrap: nowrap;
     justify-content: center;
     max-width: 98rem;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     padding-top: 0;
     margin-top: 0;
 }
 
 .section3__bannerTendenza {
     padding-top: 80px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     width: 100%;
 }
 
@@ -640,9 +651,9 @@
     align-items: stretch;
     position: relative;
     width: 25%;
-    padding: 1.25rem;
+    /* padding: 1.25rem; */
     padding-top: 0;
-    left: 21px;
+    /* left: 21px; */
 }
 
 .section3__imageTendenza {
@@ -724,7 +735,7 @@
     align-items: center;
     font-family: Cera-Pro, sans-serif;
     margin: 0px auto;
-    margin-top: 30px;
+    margin-top: -80px;
 }
 .section3__bannerLink {
     cursor: pointer;
@@ -823,7 +834,7 @@
 
 /* Media query */
 
-@media only screen and (min-width: 901px) {
+/* @media only screen and (min-width: 901px) {
 
     .section3__containerContent {
         padding: 1.875rem 3.75rem 3.75rem;
@@ -935,4 +946,4 @@
         padding-top: 0;
         margin-top: 0;
     }
-}
+} */
