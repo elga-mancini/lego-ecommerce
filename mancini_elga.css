@@ -118,6 +118,7 @@
     width: 120px;
     height: 40px;
     border-radius: 5px;
+    display: none;
 }
 
 .section2__button-reg:hover {
@@ -125,6 +126,24 @@
     color: black;
 }
 
+.section2__email {
+    margin-top: 10px;
+    display: flex;
+    gap: 3px;
+}
+.section2__email-box {
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.section2__submit {
+    height: 30px;
+    width: 50px;
+    background: rgb(249, 176, 41);
+    cursor: pointer;
+    
+}
 
 @media screen and (max-width: 1000px) { 
     .section2__scroll,
@@ -160,6 +179,11 @@
     width: 100px;
     height: 30px;
     font-size: 0.7rem;
+    display: block;
+    }
+
+    .section2__email {
+        display: none;
     }
 }
 
