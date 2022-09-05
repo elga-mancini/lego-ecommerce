@@ -148,7 +148,7 @@
 @media screen and (max-width: 1000px) { 
     .section2__scroll,
     .section2__scroll_clone {
-        width: 1000px;
+        width: 750px;
         overflow: auto;
         white-space: nowrap;
     }
