@@ -191,4 +191,9 @@
   .swiper-navBtn {
     display: none;
   }
+  .slider__title {
+  
+  left: 10px;
+  
+}
 }
