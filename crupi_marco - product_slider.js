@@ -1,7 +1,7 @@
 var x = window.matchMedia("(max-width: 700px)");
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 4,
-  spaceBetween: x.matches ? 150 : 55,
+  spaceBetween: 55,
   loop: false,
   centerSlide: "true",
   fade: "true",
@@ -19,14 +19,17 @@ var swiper = new Swiper(".slide-content", {
     0: {
       slidesPerView: 1,
     },
-    520: {
+    580: {
       slidesPerView: 2,
+      spaceBetween: 80,
     },
-    950: {
+    960: {
       slidesPerView: 3,
+      spaceBetween: 80,
     },
-    1200: {
+    1280: {
       slidesPerView: 4,
+      spaceBetween: 90,
     },
   },
 });
