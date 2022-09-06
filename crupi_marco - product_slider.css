@@ -1,7 +1,7 @@
 .slide-container {
-  max-width: 1280px;
+  max-width: 1380px;
   width: 100%;
-  padding: 40px 0;
+  padding: 40px 20px;
   margin-bottom: 4rem;
 }
 .slide-content {
@@ -19,13 +19,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 14px;
+  /* padding: 10px 14px; */
 }
+
+.image-content {
+   padding: 10px 14px;
+}
+
+.card-content {
+  width: 289.75px;
+  padding: 10px 0px;
+}
+
 .image-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 289.77px;
+  width: 289.75px;
+  height: 289.75px;
   position: relative;
   border: 1px solid rgb(224, 224, 224);
 }
@@ -44,7 +55,7 @@
 }
 
 .slider__image:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
   transition: 0.8s;
 }
 
@@ -52,18 +63,18 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  position: relative;
+  position: absolute;
+  top: 10px;
+  left: 15px;
   width: 100%;
   z-index: 1000;
 }
 
 .slider__heart {
   background-color: #f3f3f3;
-    padding: 4px;
-    color: #1745c2;
-    border-radius: 50px;
-
- 
+  padding: 4px;
+  color: #1745c2;
+  border-radius: 50px;
 }
 
 .slider__desire_text {
@@ -133,15 +144,19 @@
 }
 
 .swiper-navBtn {
-  color: #6e93f7;
+  color: #000000;
+  padding: 20px;
+  border: 2px solid rgb(204, 204, 204);
+  border-radius: 150px;
   transition: color 0.3s ease;
 }
 .swiper-navBtn:hover {
-  color: #4070f4;
+  border-radius: 30px;
+  background-color: rgb(234, 234, 234);
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after {
-  font-size: 35px;
+  font-size: 25px;
 }
 .swiper-button-next {
   right: 0;
