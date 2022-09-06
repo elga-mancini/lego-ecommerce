@@ -1,4 +1,3 @@
-var x = window.matchMedia("(max-width: 700px)");
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 4,
   spaceBetween: 55,
