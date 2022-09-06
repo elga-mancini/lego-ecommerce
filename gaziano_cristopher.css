@@ -624,7 +624,6 @@
     margin-right: auto; */
     padding-top: 0;
     margin-top: 0;
-    height: 350px;
 }
 
 .section3__bannerTendenza {
@@ -736,7 +735,7 @@
     align-items: center;
     font-family: Cera-Pro, sans-serif;
     margin: 0px auto;
-    margin-bottom: 240px;
+    margin-top: -80px;
 }
 .section3__bannerLink {
     cursor: pointer;
