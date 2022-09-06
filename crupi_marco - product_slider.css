@@ -146,8 +146,8 @@
 .swiper-navBtn {
   color: #000000;
   padding: 20px;
-  border: 2px solid rgb(204, 204, 204);
-  border-radius: 150px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 170px;
   transition: color 0.3s ease;
 }
 .swiper-navBtn:hover {
