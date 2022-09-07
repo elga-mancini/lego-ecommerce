@@ -1,13 +1,14 @@
-section{
+.consigliati-per-te{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     
 
 }
 h3{
     margin: 30px;
 }
-article{
+.alessio_dellaira-article{
     display: flex;
     flex-direction: column;
     align-items: left  ;
@@ -22,13 +23,13 @@ article{
     
     
 }
-.image{
+.alessio_dellaira-image{
     display: flex;
     flex-direction: row;
     justify-content: center;
     
 }
-a{
+.alessio_dellaira-a{
     text-decoration: none;
     text-align: left;
     color: black;
@@ -36,7 +37,7 @@ a{
     justify-content: left;
     margin-left: 20px;
 }
-a:hover{
+.alessio_dellaira-a:hover{
     color: black;
     text-decoration: underline;
 }
@@ -48,7 +49,7 @@ a:hover{
     
 
 }
-.price{
+.alessio_dellaira-price{
     font-size: large;
     font-weight: bold;
     margin-left: 20px;
@@ -57,7 +58,8 @@ a:hover{
 .novità{
     background-color: rgb(255, 230, 9);
     color: black;
-    margin-top: 250px;
+    margin-top: 20px;
+    margin-right: 10px;
     padding: 5px;
     width: 65px;
     height: 30px;
@@ -75,13 +77,23 @@ a:hover{
     width: 15px;
     
 }
-figure>p{
-    margin: 25px;
+.alessio_dellaira-figure{
+    margin: 30px;
+
+
+}
+
+.alessio_dellaira-figure>p{
+    
     text-align: center;
     
 }
-
-.card{
+.card-section-title{
+    display: block;
+    margin-right: 10px;
+    
+}
+.alessio_dellaira-card{
     border: solid 0.5px lightgray;
     
     margin: 10px;
@@ -93,29 +105,37 @@ figure>p{
 
 
 
-.image>img:hover{
+.alessio_dellaira-image>img:hover{
     cursor:pointer;
     transition: transform 600ms cubic-bezier(0, 0, 0.2, 1) 0s;
         transform:scale(1.20); translateZ:(0px);
         overflow: visible;
 }
-.card:hover{
+.alessio_dellaira-card:hover{
     cursor: pointer;
 }
-.home-decor{
-    margin: 50px;
+.home-decor-flex{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    margin: 50px;
+    justify-content:center;
+    align-items: center;
+    
+    margin-left: 40px;
+    
+    
+   
 }
-.home-decor>figure{
-    padding: 10px;
+.home-decor{
+    display: block;
+    justify-content: center;
+    margin-left: 50px;
+    
 }
 
 
-figcaption{
+
+
+.alessio_dellaira-figcaption{
     margin-top: 20px;
     font-weight: lighter;
     color: black;
@@ -143,7 +163,7 @@ figcaption{
     text-align: center;
     color: gray;
  }
- .decor-title{
-   padding-right: 40px;
-
+ .card-section-title{
+    margin-left:70px;
  }
+    
