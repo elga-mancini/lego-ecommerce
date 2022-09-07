@@ -7,6 +7,9 @@
     margin-bottom: 20px;
 }
 
+.section2__costruction-text {
+    margin-bottom: 15px;
+}
 .section2__box-images {
     display: flex;
     justify-content: space-between;
@@ -103,7 +106,7 @@
 }
 
 .section2__submit {
-    height: 45px;
+    height: 40px;
     width: 55px;
     background: rgb(253, 128, 36);
     cursor: pointer;
