@@ -1,5 +1,4 @@
-.section2__box,
-.section2__box_clone {
+.section2__first-selection {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,88 +7,47 @@
     margin-bottom: 20px;
 }
 
-.section2__costruction {
-    font-size: 2rem;
-    width: 100%;  
-}
-.section2__firstbox {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.section2__images,
-.section2__images_clone {
-    display: flex;
-    margin-top: 20px;
-    width: 100%;
-}
- 
-
-.section2__firstimg,
-.section2__secondimg,
-.section2__thirdimg,
-.section2__fourimg {
-    width: 300px;
-    
+.section2__box-images {
     display: flex;
     justify-content: space-between;
 }
 
-.section2__text1,
-.section2__text1_clone {
+.section2__box-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.section2__text,
-.section2__text_clone {
-    font-weight: bold;
-}
-
-.section2__text-link,
-.section2__text-link_clone {
     font-size: 12px;
-    margin-top: 10px;
+}
+.section2__text {
+    font-weight: bold;
+    font-size: 12px;
     margin-bottom: 10px;
 }
 
-.section2__link-one,
-.section2__link-one_clone{
-    font-weight: bold;
+.section2__img-text-link {
+    text-decoration: none;
     color: black;
-    font-size: 14px;
 }
-
-.section2__link-one:hover,
-.section2__link-one_clone:hover {
+.section2__img-text-link:hover {
+    color: black;
+}
+.section2__link-one:hover {
     text-decoration: underline;
 }
 
-.img-text-link {
-    color: black;
-    text-decoration: none;
+.section2__firstimg {
+    height: 200px;
+    cursor: pointer;
 }
 
-.img-text-link:hover {
-    color: black;
-}
-
-.section2__label-form {
-    width: 0;
-}
-
-.section2__first,
-.section2__second,
-.section2__third,
-.section2__first_clone,
-.section2__second_clone,
-.section2__third_clone
- {
-    margin-right: 20px;
+.section2__first-img,
+.section2__second-img,
+.section2__third-img,
+.section2__four-img {
+    margin-bottom: 15px;
 }
 
 .section2__second-box {
@@ -100,9 +58,8 @@
     margin: auto;
     margin-bottom: 30px;
 }
-
-.section2__box_clone {
-    margin-bottom: 20px;
+.section2__label-form {
+    width: 0;
 }
 
 .section2__img-in-call {
@@ -137,7 +94,7 @@
 .section2__email {
     margin-top: 10px;
     display: flex;
-    gap: 3px;
+    align-items: center;
 }
 .section2__email-box {
     width: 300px;
@@ -146,11 +103,15 @@
 }
 
 .section2__submit {
-    height: 40px;
+    height: 45px;
     width: 55px;
     background: rgb(253, 128, 36);
     cursor: pointer;
-    
+    border: 1px solid black;
+}
+
+.section2__arrow-for-button {
+    height: 30px;
 }
 
 
@@ -171,6 +132,11 @@
 
     .section2__email {
         display: none;
+    }
+
+    .section2__images {
+        overflow-x: auto;
+        
     }
 }
 
