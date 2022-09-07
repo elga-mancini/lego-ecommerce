@@ -144,27 +144,6 @@
     
 }
 
-@media screen and (max-width: 1000px) { 
-    .section2__scroll,
-    .section2__scroll_clone {
-        width: 1000px;
-        overflow: auto;
-        white-space: nowrap;
-    }
-
-    .section2__scroll::-webkit-scrollbar,
-    .section2__scroll_clone::-webkit-scrollbar {
-        width: 0;
-        height: 5px;
-        background: rgb(255, 255, 255);
-    }
-
-    .section2__scroll::-webkit-scrollbar-thumb,
-    .section2__scroll::-webkit-scrollbar-thumb {
-        background: #888;
-   
-    }
-}
 
 @media screen and (max-width: 800px) {
     .section2__second-box {
@@ -190,14 +169,8 @@
     .section2__second-box {
         display: none;
     }
-    .section2__scroll,
-    .section2__scroll_clone {
-        width: 390px;
-        overflow: auto;
-        white-space: nowrap;
-    }
 
-    h5 {
+    .section2__read-all {
         font-size: 1.5rem;
     }
 }
