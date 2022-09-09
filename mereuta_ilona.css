@@ -162,6 +162,9 @@ a.nav__play-button  {
 }
 
 /* navbar logo image */
+.nav__hamburger-menu{
+    display: none;
+}
 
 
 .nav__img-logo{
@@ -465,7 +468,7 @@ li {
     }
 
     .nav__box-text{
-        border: 2px solid green;
+        border: 2px solid rgb(135, 63, 230);
         padding: 40px;
         display: flex;
         flex-direction: column;
