@@ -1,0 +1,1 @@
+Molecules are combinations of atoms bonded together. For example, if you have Text and Input atoms, you can combine them into a InputField (or whatever name you want) molecule.
