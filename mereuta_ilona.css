@@ -116,6 +116,12 @@ a.nav__play-button  {
 
 } */
 
+.nav__separator{
+    width: 0.7px;
+    height: 23px;
+    background-color: black;
+}
+
 .nav__vip-icon{
     display: flex;
     
@@ -130,6 +136,10 @@ a.nav__play-button  {
     margin-top: 2px;
     margin-right: 10px;
 }
+
+
+     
+
 
 .nav__vip-icon span {
     text-transform: uppercase;
@@ -152,11 +162,10 @@ a.nav__play-button  {
 }
 
 /* navbar logo image */
-.nav__navbar-container img {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 5.3%;
-    margin-left: 30px;
+
+
+.nav__img-logo{
+    width: 12.3%;
 }
 /* navbar links */
 .nav__li {
@@ -495,13 +504,15 @@ li {
     /* navbar */
     .nav__navbar-container{
         display: flex;
-        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        /* justify-content: center; */
         
         height: 50px;
         background-color: rgb(245, 186, 206);
     }
     
-    .nav__link{
+    .nav__li{
        display: none;
     }
 
@@ -510,6 +521,7 @@ li {
         flex-direction: column;
         gap: 2px;
         margin-left: 20px;
+        margin-right: 2px;
     }
     .nav__hamburger-line{
         width: 22px;
@@ -524,6 +536,18 @@ li {
         margin-top: 5px;
     }
 
+    .nav__img-logo{
+        margin-left: 2px;
+        
+    }
+
+    .nav__logo-links{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border: 2px solid green;
+    }
+
 
 
 
@@ -531,9 +555,9 @@ li {
 
 
 
-/* da 0 a 1112 */
+/* da 0 a 902px */
 
-@media screen and (max-width: 1111px){
+@media screen and (max-width: 902px){
     .nav__banner-above-nav {
         flex-direction: column;
         align-items: center;
@@ -572,13 +596,22 @@ li {
 .nav__line-break{
     display: block;
 }
-    
 
-
-
-
+.nav__close-menu-icon {
+    display: none;
 
 }
+.nav__separator{
+    width: 0.7px;
+    height: 23px;
+    background-color: black;
+}
+    
+
+}
+
+
+
  /* da 0 a 889 */
 @media screen and (max-width: 889px) {
     .nav__icons-container{
@@ -595,6 +628,12 @@ li {
         justify-content: center;
        
     }
+
+    .nav__separator{
+        width: 0.7px;
+        height: 23px;
+        background-color: black;
+    }
     
 }
 
@@ -603,6 +642,12 @@ li {
 @media screen and (max-width: 1164px) {
     .nav__display-none {
      display: none;
+    }
+
+    .nav__separator{
+        width: 0.7px;
+        height: 23px;
+        background-color: black;
     }
  
  }
