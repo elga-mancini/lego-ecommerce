@@ -1,0 +1,64 @@
+.typography__body {
+  background-color: rgb(195, 195, 195);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px;
+  padding-left: 100px;
+}
+
+.typography__title {
+    font-size: 5rem;
+}
+
+.typography__section__title {
+    margin-top: 3rem;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+}
+
+// VARIABLES - START
+
+$text-transform: uppercase;
+$color: black;
+$font-weight: 100;
+$font-size: 1rem;
+$line-height: 0rem;
+
+// HOVER
+$text-transform-hover: uppercase;
+$color-hover: black;
+$font-weight-hover: 100;
+$font-size-hover: 1rem;
+$line-height-hover: 0rem;
+$text-decoration-line-hover: underline;
+$text-decoration-thickness-hover: 5px;
+$text-underline-offset-hover: 5px;
+
+// VARIABLES - END
+
+@mixin font-custom(
+  $text-transform: uppercase,
+  $color: black,
+  $font-weight: 100,
+  $font-size: 1rem,
+  $line-height: 0rem,
+  $text-transform-hover: uppercase,
+  $color-hover: black,
+  $font-weight-hover: 100,
+  $font-size-hover: 1rem,
+  $line-height-hover: 0rem,
+  $text-decoration-line-hover: underline,
+  $text-decoration-thickness-hover: 5px,
+  $text-underline-offset-hover: 5px
+) {
+  text-transform: $text-transform;
+  color: $color;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  &:hover {
+    color: $color-hover;
+    text-decoration-line: $text-decoration-line-hover;
+    text-decoration-thickness: $text-decoration-thickness-hover;
+    text-underline-offset: $text-underline-offset-hover;
+  }
+}
