@@ -174,9 +174,11 @@ a.nav__play-button  {
 
 
 .nav__img-logo{
-    width: 6%;
+    width: 5.6%;
     margin-left: 30px;
 }
+
+
 /* navbar links */
 .nav__li {
     display: flex;
@@ -278,10 +280,67 @@ a.nav__play-button  {
    }
 
 
+   
+   
+
+   .nav__main-area-text-overlay{
+    /* width: 400px; */
+    /* height: 200px; */
+    overflow-wrap: break-word;
+    display: flex;
+    text-align: end;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 3;
+    top: 10rem;
+    left: 30rem;
+    right: 6rem;
+   
+   
+   }
+
+  .nav__box-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    gap: 16px;
+
+  }
+
+  .nav__text-overlay-video-h2 {
+   
+    font-size: 1.7rem;
+
+  }
+
+  .nav__text-overlay-video-h3{
+    font-size: 1rem;
+
+  }
+
+  .nav__call-to-action a {
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    padding: 17px 10px;
+    margin: 5px;
+
+  }
+
+  .nav__icon-call-to-action{
+    height: 16px;
+    margin-left: 5px;
+  }
+
+
+
 
 /* nav quick links */
 .nav__quick-links{
-    margin-top: -2rem;
+    margin-top: 2rem;
     margin-bottom: 10rem;
     
 }
@@ -483,9 +542,61 @@ li {
         display: none;
     }
     
+
+    /* main area text */
+   .nav__main-area-text-overlay{
+    top: 10rem;
+    left: 20rem;
+    right: 3rem;
+   
+   
+   }
+
+  .nav__box-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    gap: 16px;
+
+  }
+
+  .nav__text-overlay-video-h2 {
+    font-size: 1rem;
+
+  }
+
+  .nav__text-overlay-video-h3{
+    font-size: 0.8rem;
+
+  }
+
+  .nav__call-to-action a {
+    border-radius: 5px;
+    font-size: 0.6rem;
+    color: black;
+    background-color: white;
+    padding: 12px 10px;
+    margin: 3px;
+
+  }
+
+  .nav__icon-call-to-action{
+    height: 16px;
+    margin-left: 5px;
+  }
+
+  .nav__quick-links{
+    display: flex;
+    padding-top: 50px;
+  }
+
+    
     
 
 }
+
+
 
 
 /* Media query */
@@ -510,48 +621,7 @@ li {
 
 
 
-       /* text area */
-    .nav__main-area-text-overlay{
-        display: flex;
-        align-self: flex-end;
-        background-color: rgb(246, 188, 112);
-    }
-
-    .nav__box-text{
-        border: 2px solid rgb(135, 63, 230);
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .nav__text-overlay-video-h2{
-        font-size: 1rem;
-    }
-
-    .nav__text-overlay-video-h3{
-        font-size: 0.8rem;
-    }
-
-    .nav__call-to-action {
-       display: flex;
-       gap: 20px;
-
-    }
-
-    .nav__call-to-action a {
-        color: black;
-        text-decoration: none;
-        padding: 10px 20px;
-        background-color: white;
-        font-size: 0.9rem;
-        border-radius: 5px;
-    }
-
-    .nav__icon-call-to-action{
-        height: 16px;
-    }
+     
    
     
 
@@ -600,9 +670,98 @@ li {
         
     }
 
+    .nav__img-mobile-only{
+      width: 100%;
+      background-color: black;
+      padding-bottom: 5rem;
+    }
+
+
     .nav__logo-links{
         display: flex;
         align-items: center;
     }
+
+
+   
+    /* main area text */
+
     
+   .nav__main-area-text-overlay{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow-wrap: break-word;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 3;
+    bottom: 4rem;
+    top: 38rem;
+    left: 0rem;
+   
+   
+   }
+
+  .nav__box-text{
+    display: flex;
+    flex-wrap: wrap;
+    color:white;
+    /* gap: 16px; */
+    
+    
+   
+
+   
+   
+
+  }
+
+  .nav__text-overlay-video-h2 {
+    font-size: 1rem;
+
+  }
+
+  .nav__text-overlay-video-h3{
+    font-size: 0.8rem;
+
+  }
+
+  .nav__call-to-action a {
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    color: black;
+    background-color: white;
+    padding: 12px 10px;
+    margin: 2px;
+
+  }
+
+  .nav__icon-call-to-action{
+    height: 12px;
+    margin-left: 2px;
+  }
+
+
+  .nav__quick-links{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+  }
+
+  .nav__quick-links-icons{
+    flex-wrap: wrap;
+    
+  }
+
+  .nav__icons img {
+    width: 50px;
+  }
+    
+
 }
+
+    
+
