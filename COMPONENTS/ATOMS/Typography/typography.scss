@@ -24,18 +24,22 @@ html:not([lang="ko"]):not([lang="zh"]):not([lang="ja"]) > body {
   font-size: 3rem;
 }
 
+.typography__section__suTitle {
+  margin: 2rem 0;
+}
+
 .typography__class {
   font-size: 1rem;
   margin: 2rem 0;
 }
 
 .typography__className {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .typography__example {
-    margin: 1rem 0;
-    padding-bottom: 1rem;
+  margin: 1rem 0;
+  padding-bottom: 1rem;
 }
 
 // VARIABLES - START
@@ -62,6 +66,20 @@ $text-underline-offset-hover: 5px;
 // MIXIN - START
 
 @mixin font-custom(
+  $text-transform,
+  $color,
+  $font-weight,
+  $font-size,
+  $line-height
+) {
+  text-transform: $text-transform;
+  color: $color;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin font-custom-link(
   $text-transform,
   $color,
   $font-weight,
@@ -100,16 +118,16 @@ $text-underline-offset-hover: 5px;
 // NAVBAR TYPOGRAPHY - START
 
 .a-navbar__button__link {
-  @include font-custom(
+  @include font-custom-link(
     $text-transform,
     $color,
-    500,
+    bold,
     $font-size,
     1.1875rem,
     $cursor-pointer,
     $text-transform-hover,
     $color-hover,
-    $font-weight-hover,
+    bold,
     $font-size-hover,
     1.1875rem,
     $text-decoration-line-hover,
@@ -123,7 +141,7 @@ $text-underline-offset-hover: 5px;
 // LayoutSectionstyles__Layout - START
 
 .a-LayoutSectionstyles__link {
-    @include font-custom(
+  @include font-custom-link(
     unset,
     $color,
     400,
@@ -142,3 +160,30 @@ $text-underline-offset-hover: 5px;
 }
 
 // LayoutSectionstyles__Layout - END
+
+// PRODUCT SLIDER - START
+
+.a-productSlider__title {
+  @include font-custom(unset, $color, 400, 1.5rem, 2.3125rem);
+}
+
+.a-productSlider__titleProduct {
+  @include font-custom-link(
+    unset,
+    $color,
+    bold,
+    1rem,
+    1.5625rem,
+    $cursor-pointer,
+    unset,
+    $color,
+    bold,
+    1rem,
+    1.5625rem,
+    $text-decoration-line-hover,
+    none,
+    none
+  );
+}
+
+// PRODUCT SLIDER - END

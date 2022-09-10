@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./typography.css" />
     <link rel="stylesheet" href="../../../index.css" />
     <title>Typography</title>
-</head>
+  </head>
 
-<body class="typography__body">
+  <body class="typography__body">
     <h1 class="typography__title">TYPOGRAPHY</h1>
+
+    <!-- NAVBAR SECTION - START -->
 
     <h2 class="typography__section__title">NAVBAR</h2>
 
-    <div>
-        <pre class="typography__class">
+    <pre class="typography__class">
 <span class="typography__className">.a-navbar__button__link</span> {
   text-transform: uppercase;
   color: black;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1rem;
   line-height: 1.1875rem;
+  cursor: pointer;
 }</pre>
 
-        <pre class="typography__class">
+    <pre class="typography__class">
 <span class="typography__className">.a-navbar__button__link:hover</span> {
   text-transform: uppercase;
   color: black;
-  font-weight: 100;
+  font-weight: bold;
   font-size: 1rem;
   line-height: 1.1875rem;
   text-decoration-line: underline;
@@ -37,20 +38,25 @@
   text-underline-offset: 5px;
 }</pre>
 
-        <p class="a-navbar__button__link typography__example">navbar_link</p>
+    <p class="a-navbar__button__link typography__example">navbar_link</p>
 
-        <h2 class="typography__section__title">LayoutSectionstyles__Layout</h2>
+    <!-- NAVBAR SECTION - END -->
 
-        <pre class="typography__class">
+    <!-- LAYOUT SECTION - START -->
+
+    <h2 class="typography__section__title">LayoutSectionstyles__Layout</h2>
+
+    <pre class="typography__class">
 <span class="typography__className">.a-LayoutSectionstyles__link</span> {
   text-transform: unset;
   color: black;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 0.9375rem;
+  cursor: pointer;
 }</pre>
 
-        <pre class="typography__class">
+    <pre class="typography__class">
 <span class="typography__className">.a-LayoutSectionstyles__link:hover</span> {
   text-transform: unset;
   color: #006db7;
@@ -62,10 +68,61 @@
   text-underline-offset: none;
 }</pre>
 
-        <p class="a-LayoutSectionstyles__link typography__example">
-            Layout_section_link
-        </p>
-    </div>
-</body>
+    <p class="a-LayoutSectionstyles__link typography__example">
+      Layout_section_link
+    </p>
 
+    <!-- LAYOUT SECTION - END -->
+
+    <h2 class="typography__section__title">PRODUCTS SLIDER</h2>
+
+    <h3 class="typography__section__suTitle">PRODUCTS SLIDER TITLE</h3>
+
+    <pre class="typography__class">
+<span class="typography__className">.a-productSlider__title</span> {
+  text-transform: unset;
+  color: black;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.3125rem;  
+}</pre>
+
+    <p class="a-productSlider__title typography__example">
+      Product_slider_title
+    </p>
+
+    <!-- PRODUCT SLIDER - START -->
+
+    <h3 class="typography__section__suTitle">
+      PRODUCTS SLIDER - PRODUCT TITLE
+    </h3>
+
+    <pre class="typography__class">
+<span class="typography__className">.a-productSlider__titleProduct</span> {
+  text-transform: unset;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  cursor: pointer;  
+}</pre>
+
+    <pre class="typography__class">
+<span class="typography__className">.a-productSlider__titleProduct:hover</span> {
+  text-transform: unset;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  text-decoration-line: underline;
+  text-decoration-thickness: none;
+  text-underline-offset: none;  
+}</pre>
+
+    <p class="a-productSlider__titleProduct typography__example">
+      Product_slider_titleProduct
+    </p>
+
+    <!-- PRODUCT SLIDER - END -->
+  </body>
 </html>

@@ -23,6 +23,10 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
   font-size: 3rem;
 }
 
+.typography__section__suTitle {
+  margin: 2rem 0;
+}
+
 .typography__class {
   font-size: 1rem;
   margin: 2rem 0;
@@ -40,7 +44,7 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
 .a-navbar__button__link {
   text-transform: uppercase;
   color: black;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1rem;
   line-height: 1.1875rem;
   cursor: pointer;
@@ -48,7 +52,7 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
 .a-navbar__button__link:hover {
   text-transform: uppercase;
   color: black;
-  font-weight: 100;
+  font-weight: bold;
   font-size: 1rem;
   line-height: 1.1875rem;
   text-decoration-line: underline;
@@ -70,6 +74,33 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 0.9375rem;
+  text-decoration-line: underline;
+  text-decoration-thickness: none;
+  text-underline-offset: none;
+}
+
+.a-productSlider__title {
+  text-transform: unset;
+  color: black;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.3125rem;
+}
+
+.a-productSlider__titleProduct {
+  text-transform: unset;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  cursor: pointer;
+}
+.a-productSlider__titleProduct:hover {
+  text-transform: unset;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5625rem;
   text-decoration-line: underline;
   text-decoration-thickness: none;
   text-underline-offset: none;
