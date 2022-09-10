@@ -45,6 +45,7 @@ $color: black;
 $font-weight: 100;
 $font-size: 1rem;
 $line-height: 0rem;
+$cursor-pointer: pointer;
 
 // HOVER
 $text-transform-hover: uppercase;
@@ -66,6 +67,7 @@ $text-underline-offset-hover: 5px;
   $font-weight,
   $font-size,
   $line-height,
+  $cursor-pointer,
   $text-transform-hover,
   $color-hover,
   $font-weight-hover,
@@ -80,6 +82,7 @@ $text-underline-offset-hover: 5px;
   font-weight: $font-weight;
   font-size: $font-size;
   line-height: $line-height;
+  cursor: $cursor-pointer;
   &:hover {
     text-transform: $text-transform-hover;
     color: $color-hover;
@@ -103,6 +106,7 @@ $text-underline-offset-hover: 5px;
     500,
     $font-size,
     1.1875rem,
+    $cursor-pointer,
     $text-transform-hover,
     $color-hover,
     $font-weight-hover,
@@ -125,6 +129,7 @@ $text-underline-offset-hover: 5px;
     400,
     0.75rem,
     0.9375rem,
+    $cursor-pointer,
     unset,
     #006db7,
     400,
