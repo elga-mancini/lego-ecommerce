@@ -1,18 +1,41 @@
+@font-face {
+  font-family: Cera Pro;
+  src: url(https://assets.lego.com/fonts/v3/cera-pro/CeraPro-Regular.woff2);
+}
+
+html:not([lang="ko"]):not([lang="zh"]):not([lang="ja"]) > body {
+  font-family: Cera Pro, sans-serif;
+}
+
 .typography__body {
-  background-color: rgb(195, 195, 195);
+  background-color: rgb(231, 231, 231);
   font-family: Arial, Helvetica, sans-serif;
   padding: 40px;
   padding-left: 100px;
 }
 
 .typography__title {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 .typography__section__title {
-    margin-top: 3rem;
-    color: rgb(0, 0, 0);
-    font-size: 3rem;
+  margin-top: 3rem;
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+}
+
+.typography__class {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+.typography__className {
+    font-weight: bold;
+}
+
+.typography__example {
+    margin: 1rem 0;
+    padding-bottom: 1rem;
 }
 
 // VARIABLES - START
@@ -28,27 +51,29 @@ $text-transform-hover: uppercase;
 $color-hover: black;
 $font-weight-hover: 100;
 $font-size-hover: 1rem;
-$line-height-hover: 0rem;
+$line-height-hover: 1rem;
 $text-decoration-line-hover: underline;
-$text-decoration-thickness-hover: 5px;
+$text-decoration-thickness-hover: 3px;
 $text-underline-offset-hover: 5px;
 
 // VARIABLES - END
 
+// MIXIN - START
+
 @mixin font-custom(
-  $text-transform: uppercase,
-  $color: black,
-  $font-weight: 100,
-  $font-size: 1rem,
-  $line-height: 0rem,
-  $text-transform-hover: uppercase,
-  $color-hover: black,
-  $font-weight-hover: 100,
-  $font-size-hover: 1rem,
-  $line-height-hover: 0rem,
-  $text-decoration-line-hover: underline,
-  $text-decoration-thickness-hover: 5px,
-  $text-underline-offset-hover: 5px
+  $text-transform,
+  $color,
+  $font-weight,
+  $font-size,
+  $line-height,
+  $text-transform-hover,
+  $color-hover,
+  $font-weight-hover,
+  $font-size-hover,
+  $line-height-hover,
+  $text-decoration-line-hover,
+  $text-decoration-thickness-hover,
+  $text-underline-offset-hover
 ) {
   text-transform: $text-transform;
   color: $color;
@@ -56,9 +81,59 @@ $text-underline-offset-hover: 5px;
   font-size: $font-size;
   line-height: $line-height;
   &:hover {
+    text-transform: $text-transform-hover;
     color: $color-hover;
+    font-weight: $font-weight-hover;
+    font-size: $font-size-hover;
+    line-height: $line-height-hover;
     text-decoration-line: $text-decoration-line-hover;
     text-decoration-thickness: $text-decoration-thickness-hover;
     text-underline-offset: $text-underline-offset-hover;
   }
 }
+
+// MIXIN - END
+
+// NAVBAR TYPOGRAPHY - START
+
+.a-navbar__button__link {
+  @include font-custom(
+    $text-transform,
+    $color,
+    500,
+    $font-size,
+    1.1875rem,
+    $text-transform-hover,
+    $color-hover,
+    $font-weight-hover,
+    $font-size-hover,
+    1.1875rem,
+    $text-decoration-line-hover,
+    $text-decoration-thickness-hover,
+    $text-underline-offset-hover
+  );
+}
+
+// NAVBAR TYPOGRAPHY - END
+
+// LayoutSectionstyles__Layout - START
+
+.a-LayoutSectionstyles__link {
+    @include font-custom(
+    unset,
+    $color,
+    400,
+    0.75rem,
+    0.9375rem,
+    unset,
+    #006db7,
+    400,
+    0.75rem,
+    0.9375rem,
+    $text-decoration-line-hover,
+    none,
+    none
+  );
+}
+
+// LayoutSectionstyles__Layout - END
