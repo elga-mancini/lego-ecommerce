@@ -706,11 +706,7 @@
 }
 
 .section3__buyNow {
-    font-size: 1rem;
-    line-height: 1.5625rem;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-weight: 600;
+    
 }
 
 .section3__buyNow > a {
