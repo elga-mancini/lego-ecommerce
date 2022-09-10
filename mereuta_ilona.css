@@ -50,8 +50,6 @@
 
 a.nav__play-button  {
    text-decoration: none;
-   
-
 }
 
 /* banner with text in te center above the navbar */
@@ -112,21 +110,19 @@ a.nav__play-button  {
 }
 
 /* separator between icons */
-/* .nav__separator {
-
-} */
-
 .nav__separator{
     width: 0.7px;
     height: 23px;
     background-color: black;
 }
 
+
+/* vip icon */
 .nav__vip-icon{
     display: flex;
-    
 
 }
+
 /* Vip icon */
 .nav__image {
     width: 20px;
@@ -166,6 +162,10 @@ a.nav__play-button  {
     display: none;
 }
 
+.nav__close-menu-icon{
+    display: none;
+   
+}
 
 .nav__img-logo{
     width: 12.3%;
@@ -252,7 +252,14 @@ a.nav__play-button  {
    
 }
 
+.nav__img-mobile-only{
+    display: none;
 
+}
+
+.nav__img-tablet-only{
+    display: none;
+   }
 
 /* move the text over the video */
 
@@ -440,7 +447,7 @@ li {
         color: red;
     }
 
-    .nav__utility-bar-container {
+    /* .nav__utility-bar-container {
         background-color: rgb(248, 245, 245);
         height: 40px;
     }
@@ -459,7 +466,7 @@ li {
         align-content: center;
         justify-content: center;
         font-size: 0.7rem;
-    }
+    } */
 
     .nav__main-area-text-overlay{
         display: flex;
@@ -561,11 +568,42 @@ li {
 /* da 0 a 902px */
 
 @media screen and (max-width: 902px){
+
+
+    .nav__utility-bar-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(248, 245, 245);
+        height: 60px;
+    }
+
+    .nav__icons-container{
+       display: none;
+    }
+    
+    .nav__play-button-container{
+       display: none;
+    }
+
+    .nav__banner-above-nav{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+        align-content: center;
+        justify-content: center;
+        font-size: 0.7rem;
+    }
+
+    .nav__span-text{
+        font-size: 0.7rem;
+        padding-left: 4px;
+    }
+
+
     .nav__banner-above-nav {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-       
     }
 
     .nav__banner-above-nav p{
@@ -574,84 +612,76 @@ li {
     }
 
 
-.nav__text-overlay-video{
-    font-size: 2.2rem; 
-}
+    .nav__text-overlay-video{
+        font-size: 2.2rem;  
 
-.nav__text-overlay-video-h4{
-    color: white;
-    font-size: 1.2rem;
-    text-align: end;
-    line-height: 1.4;
+    }
+
+    .nav__text-overlay-video-h4{
+          color: white;
+         font-size: 1.2rem;
+        text-align: end;
+        line-height: 1.4;
   
-}
+    }
 
-.nav__main-area-text-overlay{
-    gap: 10px;
-    /* left: -3.7rem;
-    bottom: 19rem; */
-}
+    .nav__main-area-text-overlay{
+         gap: 10px;
+            /* left: -3.7rem;
+            bottom: 19rem; */
+    }
 
-.nav__break-line-2{
-   display: block;
-}
+    .nav__break-line-2{
+      display: block;
+    }
 
-.nav__line-break{
+    .nav__line-break{
+        display: block;
+    }
+
+    .nav__close-menu-icon {
+        display: none;
+
+    }
+    .nav__separator{
+        width: 0.7px;
+        height: 23px;
+        background-color: black;
+    }
+
+    /* show the image instead of the video*/
+   .nav__img-tablet-only{
     display: block;
-}
+   }
 
-.nav__close-menu-icon {
-    display: none;
-
-}
-.nav__separator{
-    width: 0.7px;
-    height: 23px;
-    background-color: black;
-}
-    
-
-}
-
-
-
- /* da 0 a 889 */
-@media screen and (max-width: 889px) {
-    .nav__icons-container{
-        visibility: hidden;
-    }
-
-    .nav__play-button-container{
-        visibility: hidden;
-    }
-
-    .nav__banner-above-nav {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-       
-    }
-
-    .nav__separator{
-        width: 0.7px;
-        height: 23px;
-        background-color: black;
+    /* hide the video */
+    .nav__animation{
+        display: none;
     }
     
+
 }
 
 
-/* da 0 a 1164 */
-@media screen and (max-width: 1164px) {
-    .nav__display-none {
-     display: none;
+/* Media query */
+
+
+
+/* from 0 to 602px */
+@media screen and (max-width: 602px){
+
+    /* show the image instead of the video*/
+    .nav__img-mobile-only{
+        display: inline-block;
     }
 
-    .nav__separator{
-        width: 0.7px;
-        height: 23px;
-        background-color: black;
+    /* hide the video */
+    .nav__animation{
+        display: none;
     }
- 
- }
 
+    .nav__img-tablet-only{
+        display: none;
+       }
+    
+}
