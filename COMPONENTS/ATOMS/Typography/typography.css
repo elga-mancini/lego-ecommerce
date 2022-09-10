@@ -9,8 +9,19 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
 .typography__body {
   background-color: rgb(231, 231, 231);
   font-family: Arial, Helvetica, sans-serif;
-  padding: 40px;
-  padding-left: 100px;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.typography__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.typography__section {
+  margin: 1rem;
+  padding: 2rem;
+  border: 1px solid black;
 }
 
 .typography__title {
@@ -19,12 +30,18 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
 
 .typography__section__title {
   margin-top: 3rem;
-  color: rgb(0, 0, 0);
+  color: rgb(106, 0, 220);
   font-size: 3rem;
+}
+
+.typography__img {
+  margin-top: 1rem;
+  width: 600px;
 }
 
 .typography__section__suTitle {
   margin: 2rem 0;
+  color: rgb(123, 41, 194);
 }
 
 .typography__class {
@@ -33,6 +50,11 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
 }
 
 .typography__className {
+  font-weight: bold;
+}
+
+.typography__output {
+  color: rgb(46, 0, 86);
   font-weight: bold;
 }
 
@@ -104,6 +126,14 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
   text-decoration-line: underline;
   text-decoration-thickness: none;
   text-underline-offset: none;
+}
+
+.a-HeroBannerstyles-text {
+  text-transform: unset;
+  color: black;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 /*# sourceMappingURL=typography.css.map */
