@@ -8,7 +8,7 @@ html:not([lang="ko"]):not([lang="zh"]):not([lang="ja"]) > body {
 }
 
 .typography__body {
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(210, 210, 210);
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
   padding-left: 50px;
@@ -33,6 +33,7 @@ html:not([lang="ko"]):not([lang="zh"]):not([lang="ja"]) > body {
   margin-top: 3rem;
   color: rgb(106, 0, 220);
   font-size: 3rem;
+  word-wrap: break-word;
 }
 
 .typography__img {
@@ -40,7 +41,7 @@ html:not([lang="ko"]):not([lang="zh"]):not([lang="ja"]) > body {
   width: 600px;
 }
 
-.typography__section__suTitle {
+.typography__section__subTitle {
   margin: 2rem 0;
   color: rgb(123, 41, 194);
 }
@@ -160,9 +161,9 @@ $text-underline-offset-hover: 5px;
 
 // NAVBAR TYPOGRAPHY - END
 
-// LayoutSectionstyles__Layout - START
+// QUICK LINKS - START
 
-.a-LayoutSectionstyles__link {
+.a-quickLinks__styles__link {
   @include font-custom-link(
     unset,
     $color,
@@ -181,13 +182,17 @@ $text-underline-offset-hover: 5px;
   );
 }
 
-// LayoutSectionstyles__Layout - END
+// QUICK LINKS - END
 
-// PRODUCT SLIDER - START
+// TITLE SECTION - START
 
-.a-productSlider__title {
+.a-titleSection-text {
   @include font-custom(unset, $color, 400, 1.5rem, 2.3125rem);
 }
+
+// TITLE SECTION - END
+
+// PRODUCT SLIDER - START
 
 .a-productSlider__titleProduct {
   @include font-custom-link(
@@ -210,12 +215,46 @@ $text-underline-offset-hover: 5px;
 
 // PRODUCT SLIDER - END
 
+// HERO BANNER - START
 
-
-// LAYOUT SECTION 2 - START
-
-.a-HeroBannerstyles-text {
+.a-HeroBannerstyles-text-black {
   @include font-custom(unset, $color, 400, 1.125rem, 1.75rem);
 }
 
-// LAYOUT SECTION 2 - END
+.a-HeroBannerstyles-text-white {
+  @include font-custom(unset, white, 400, 1.125rem, 1.75rem);
+}
+
+// HERO BANNER - END
+
+// MIXED STYLES - START
+
+.a-mixedStyles__title-text {
+  @include font-custom(unset, white, bold, 1.5rem, 2.3125rem);
+}
+
+.a-mixedStyles__description-text {
+  @include font-custom(unset, white, 100, 0.875rem, 1.1875rem);
+}
+
+.a-mixedStyles__link {
+  @include font-custom-link(
+    unset,
+    white,
+    600,
+    1rem,
+    1.75rem,
+    $cursor-pointer,
+    unset,
+    white,
+    600,
+    1rem,
+    1.75rem,
+    $text-decoration-line-hover,
+    none,
+    none
+  );
+  white-space: nowrap;
+}
+
+// MIXED STYLES - END
