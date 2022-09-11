@@ -246,6 +246,10 @@ a.nav__play-button  {
     font-size: 12px;
 }
 
+/* icons navbar only for mobile view */
+.nav__icons-inside-navbar{
+    display: none;
+}
 
 /* nav main area container */
 .nav__main-area-container{
@@ -445,6 +449,8 @@ li {
          display: none;
      }
 
+     
+
 
     .nav__text-overlay-video{
         font-size: 2.2rem;  
@@ -591,7 +597,30 @@ li {
     padding-top: 50px;
   }
 
-    
+    /*navbar icons */
+    .nav__navbar-container{
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+     }
+
+     .nav__icons-inside-navbar{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-right: 20px;
+     }
+
+     .nav__shop-icon{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+     }
+
+     .nav__shop-icon-svg{
+      margin-top: 30px;
+     }
+
     
 
 }
@@ -709,12 +738,6 @@ li {
     flex-wrap: wrap;
     color:white;
     /* gap: 16px; */
-    
-    
-   
-
-   
-   
 
   }
 
@@ -763,5 +786,95 @@ li {
 
 }
 
+
+
+@media screen and (max-width: 601px) {
+   
+    .nav__main-area-text-overlay{
+        display: flex;
+        flex-wrap: wrap;
+        top: 39rem;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: center;
+       
+    }
+
+    .nav__text-overlay-video-h2 {
+        font-size: 1.3rem;
     
+      }
+    
+      .nav__text-overlay-video-h3{
+        font-size: 1rem;
+    
+      }
+
+}
+
+@media screen and (max-width: 553px) {
+    
+
+
+    .nav__main-area-text-overlay{
+        top: 29rem;
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 420px) {
+
+    
+
+    .nav__main-area-text-overlay{
+        display: flex;
+        position: absolute;
+        overflow-wrap: break-word;
+        flex-wrap: wrap;
+        text-align: center;
+        background-color: rgba(16, 17, 16, 0.5);
+        z-index: 2;
+        top: 22rem;
+       
+       }
+
+
+  .nav__text-overlay-video-h2 {
+    font-size: 1rem;
+
+  }
+
+  .nav__text-overlay-video-h3{
+    font-size: 0.9rem;
+
+  }
+
+  .nav__call-to-action a {
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    color: black;
+    background-color: white;
+    padding: 10px 8px;
+    margin: 2px;
+
+  }
+
+ 
+
+    
+      
+    
+      
+}
+
+
+
 
