@@ -76,6 +76,28 @@
   text-underline-offset: none;
 }</pre>
 
+        <pre class="typography__class">
+<span class="typography__className">@media screen and (max-width: 600px)</span> {
+  .a-quickLinks__styles__link {
+    text-transform: unset;
+    color: black;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    cursor: pointer;
+  }
+  .a-quickLinks__styles__link:hover {
+    text-transform: unset;
+    color: #006db7;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: none;
+    text-underline-offset: none;
+  }
+}</pre>
+
         <p class="typography__output">OUTPUT:</p>
         <p class="a-quickLinks__styles__link typography__example">
           QuickLinks_styles_link
@@ -93,8 +115,30 @@
   text-transform: unset;
   color: black;
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2.3125rem;  
+  font-size: 2rem;
+  line-height: 2.6875rem; 
+}</pre>
+
+<pre class="typography__class">
+<span class="typography__className">@media screen and (max-width: 1201px)</span> {
+  .a-titleSection-text {
+    text-transform: unset;
+    color: black;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.3125rem;
+  }
+}</pre>
+
+        <pre class="typography__class">
+<span class="typography__className">@media screen and (max-width: 600px)</span> {
+  .a-titleSection-text {
+    text-transform: unset;
+    color: black;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }</pre>
 
         <p class="typography__output">OUTPUT:</p>
@@ -182,6 +226,26 @@
         <p class="a-HeroBannerstyles-text-white typography__example">
           HeroBannerstyles_text_style
         </p>
+
+        <h3 class="typography__section__subTitle">MEDIA QUERIES</h3>
+
+        <pre class="typography__class">
+<span class="typography__className">@media screen and (max-width: 900px)</span> {
+  .a-HeroBannerstyles-text-black {
+    text-transform: unset;
+    color: black;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+  }
+  .a-HeroBannerstyles-text-white {
+    text-transform: unset;
+    color: white;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+  }
+}</pre>
       </div>
 
       <!-- HERO BANNER - END -->
@@ -256,6 +320,77 @@
         <p class="a-mixedStyles__link-white typography__example">
           Link_MixedStyles
         </p>
+
+        <h3 class="typography__section__subTitle">MEDIA QUERIES</h3>
+
+        <pre class="typography__class">
+<span class="typography__className">@media screen and (max-width: 1201px)</span> {
+  .a-mixedStyles__title-text {
+    text-transform: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}</pre>
+
+        <pre class="typography__class">
+<span class="typography__className">@media screen and (max-width: 900px)</span> {
+  .a-mixedStyles__title-text {
+    text-transform: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+  }
+  .a-mixedStyles__link-white {
+    text-transform: unset;
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    cursor: pointer;
+  }
+  .a-mixedStyles__link-white:hover {
+    text-transform: unset;
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: none;
+    text-underline-offset: none;
+  }
+}</pre>
+
+        <pre class="typography__class">
+<span class="typography__className">@media screen and (max-width: 600px)</span> {
+  .a-mixedStyles__title-text {
+    text-transform: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .a-mixedStyles__link-white {
+    text-transform: unset;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    cursor: pointer;
+  }
+  .a-mixedStyles__link-white:hover {
+    text-transform: unset;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: none;
+    text-underline-offset: none;
+  }
+}</pre>
       </div>
 
       <!-- MIXED STYLES - END -->
@@ -279,6 +414,17 @@
   font-size: 1.25rem;
   line-height: 1.9375rem;
   text-align: center;
+}</pre>
+
+        <pre class="typography__class">
+<span class="typography__className">@media screen and (max-width: 600px)</span> {
+  .a-cardStyles__title-text {
+    text-transform: unset;
+    color: black;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }</pre>
 
         <p class="typography__output">OUTPUT:</p>
@@ -338,7 +484,7 @@
 
       <!-- BIG CARD CONTENT STYLES - START -->
       <div class="typography__section">
-        <h2 class="typography__section__title">CardContentStyles</h2>
+        <h2 class="typography__section__title">Big CardContentStyles</h2>
         <img
           src="./img/typography_section6.PNG"
           class="typography__img"
@@ -408,6 +554,20 @@
         <p class="a-big__cardStyles__link-black typography__example">
           Link_big_cardStyles
         </p>
+
+        <h3 class="typography__section__subTitle">MEDIA QUERIES</h3>
+
+        <pre class="typography__class">
+<span class="typography__className">@media screen and (max-width: 600px)</span> {
+  .a-big__cardStyles__title-text {
+    text-transform: unset;
+    color: black;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: center;
+  }
+}</pre>
       </div>
 
       <!-- BIG CARD CONTENT STYLES - END -->
@@ -415,6 +575,25 @@
       <!-- FOOTER SECTION - START -->
       <div class="typography__section">
         <h2 class="typography__section__title">FOOTER</h2>
+
+        <h3 class="typography__section__subTitle">TITLE SECTION</h3>
+
+        <pre class="typography__class">
+<span class="typography__className">.a-footer__title__section__text</span> {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: unset;
+  margin-bottom: 35px;
+  position: relative;
+}</pre>
+
+        <p class="typography__output">OUTPUT:</p>
+
+        <p class="a-footer__title__section__text typography__example">
+          Footer_title_section
+        </p>
 
         <h3 class="typography__section__subTitle">SECTION LINK</h3>
 
@@ -451,7 +630,7 @@
         <pre class="typography__class">
 <span class="typography__className">.a-footer__mail__social__text</span> {
   text-transform: uppercase;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 100;
   font-size: 1rem;
   line-height: unset;
@@ -494,12 +673,12 @@
           Footer_legal_link
         </p>
 
-         <h3 class="typography__section__subTitle">COPYRIGHT</h3>
+        <h3 class="typography__section__subTitle">COPYRIGHT</h3>
 
         <pre class="typography__class">
 <span class="typography__className">.a-footer__copyright__text</span> {
   text-transform: unset;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 100;
   font-size: 0.75rem;
   line-height: unset;
@@ -511,8 +690,187 @@
         <p class="a-footer__copyright__text typography__example">
           Footer_copyright_text
         </p>
+
+        <h3 class="typography__section__subTitle">ACCORDION</h3>
+
+        <pre class="typography__class">
+<span class="typography__className">.a-footer__accordion__title__text</span> {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: unset;
+  padding: 0.9375rem 1.25rem;
+  cursor: pointer;
+}</pre>
+
+        <p class="typography__output">OUTPUT:</p>
+
+        <p class="a-footer__accordion__title__text typography__example">
+          Footer_accordion_title_text
+        </p>
+
+        <pre class="typography__class">
+<span class="typography__className">.a-footer__accordion__linkWithoutHover</span> {
+  text-transform: unset;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-size: 0.875rem;
+  line-height: unset;
+  cursor: pointer;
+}</pre>
+
+        <p class="typography__output">OUTPUT:</p>
+
+        <p class="a-footer__accordion__linkWithoutHover typography__example">
+          Footer_accordion_linkWithoutHover
+        </p>
       </div>
       <!-- FOOTER SECTION - END -->
+
+      <!-- MEDIA QUERIES - START -->
+      <div class="typography__section">
+        <h2 class="typography__section__title">ALL MEDIA QUERIES</h2>
+
+        <pre class="typography__class">
+<span class="typography__className">@media screen and (max-width: 1201px)</span> {
+  .a-titleSection-text {
+    text-transform: unset;
+    color: black;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.3125rem;
+  }
+  .a-mixedStyles__title-text {
+    text-transform: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}</pre>
+
+        <pre class="typography__class">
+<span class="typography__className">@media screen and (max-width: 900px)</span> {
+  .a-HeroBannerstyles-text-black {
+    text-transform: unset;
+    color: black;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+  }
+  .a-HeroBannerstyles-text-white {
+    text-transform: unset;
+    color: white;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+  }
+  .a-mixedStyles__title-text {
+    text-transform: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+  }
+  .a-mixedStyles__link-white {
+    text-transform: unset;
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    cursor: pointer;
+  }
+  .a-mixedStyles__link-white:hover {
+    text-transform: unset;
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: none;
+    text-underline-offset: none;
+  }
+  .a-big__cardStyles__title-text {
+    text-transform: unset;
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.9375rem;
+    text-align: center;
+  }
+}</pre>
+
+        <pre class="typography__class">
+<span class="typography__className">@media screen and (max-width: 600px)</span> {
+  .a-quickLinks__styles__link {
+    text-transform: unset;
+    color: black;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    cursor: pointer;
+  }
+  .a-quickLinks__styles__link:hover {
+    text-transform: unset;
+    color: #006db7;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: none;
+    text-underline-offset: none;
+  }
+  .a-titleSection-text {
+    text-transform: unset;
+    color: black;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .a-mixedStyles__title-text {
+    text-transform: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .a-mixedStyles__link-white {
+    text-transform: unset;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    cursor: pointer;
+  }
+  .a-mixedStyles__link-white:hover {
+    text-transform: unset;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: none;
+    text-underline-offset: none;
+  }
+  .a-cardStyles__title-text {
+    text-transform: unset;
+    color: black;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .a-big__cardStyles__title-text {
+    text-transform: unset;
+    color: black;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: center;
+  }
+}</pre>
+      </div>
+      <!-- MEDIA QUERIES - END -->
     </div>
   </body>
 </html>

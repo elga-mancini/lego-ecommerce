@@ -2,7 +2,7 @@
   font-family: Cera Pro;
   src: url(https://assets.lego.com/fonts/v3/cera-pro/CeraPro-Regular.woff2);
 }
-html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
+html:not([lang="ko"]):not([lang="zh"]):not([lang="ja"]) > body {
   font-family: Cera Pro, sans-serif;
 }
 
@@ -105,8 +105,8 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
   text-transform: unset;
   color: black;
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2.3125rem;
+  font-size: 2rem;
+  line-height: 2.6875rem;
 }
 
 .a-productSlider__titleProduct {
@@ -256,6 +256,16 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
   text-underline-offset: none;
 }
 
+.a-footer__title__section__text {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: unset;
+  margin-bottom: 35px;
+  position: relative;
+}
+
 .a-footer__section__link {
   text-transform: unset;
   color: rgb(255, 255, 255);
@@ -277,7 +287,7 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
 
 .a-footer__mail__social__text {
   text-transform: uppercase;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 100;
   font-size: 1rem;
   line-height: unset;
@@ -305,11 +315,163 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
 
 .a-footer__copyright__text {
   text-transform: unset;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 100;
   font-size: 0.75rem;
   line-height: unset;
   margin-bottom: 1rem;
+}
+
+.a-footer__accordion__title__text {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: unset;
+  padding: 0.9375rem 1.25rem;
+  cursor: pointer;
+}
+
+.a-footer__accordion__linkWithoutHover {
+  text-transform: unset;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-size: 0.875rem;
+  line-height: unset;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1201px) {
+  .a-titleSection-text {
+    text-transform: unset;
+    color: black;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.3125rem;
+  }
+  .a-mixedStyles__title-text {
+    text-transform: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .a-HeroBannerstyles-text-black {
+    text-transform: unset;
+    color: black;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+  }
+  .a-HeroBannerstyles-text-white {
+    text-transform: unset;
+    color: white;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+  }
+  .a-mixedStyles__title-text {
+    text-transform: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+  }
+  .a-mixedStyles__link-white {
+    text-transform: unset;
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    cursor: pointer;
+  }
+  .a-mixedStyles__link-white:hover {
+    text-transform: unset;
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: none;
+    text-underline-offset: none;
+  }
+  .a-big__cardStyles__title-text {
+    text-transform: unset;
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.9375rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .a-quickLinks__styles__link {
+    text-transform: unset;
+    color: black;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    cursor: pointer;
+  }
+  .a-quickLinks__styles__link:hover {
+    text-transform: unset;
+    color: #006db7;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: none;
+    text-underline-offset: none;
+  }
+  .a-titleSection-text {
+    text-transform: unset;
+    color: black;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .a-mixedStyles__title-text {
+    text-transform: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .a-mixedStyles__link-white {
+    text-transform: unset;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    cursor: pointer;
+  }
+  .a-mixedStyles__link-white:hover {
+    text-transform: unset;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: none;
+    text-underline-offset: none;
+  }
+  .a-cardStyles__title-text {
+    text-transform: unset;
+    color: black;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .a-big__cardStyles__title-text {
+    text-transform: unset;
+    color: black;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=typography.css.map */

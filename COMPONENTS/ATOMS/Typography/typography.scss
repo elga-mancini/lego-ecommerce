@@ -186,7 +186,7 @@ $text-underline-offset-hover: 5px;
 // TITLE SECTION - START
 
 .a-titleSection-text {
-  @include font-custom(unset, $color, 400, 1.5rem, 2.3125rem);
+  @include font-custom(unset, $color, 400, 2rem, 2.6875rem);
 }
 
 // TITLE SECTION - END
@@ -328,6 +328,12 @@ $text-underline-offset-hover: 5px;
 
 // FOOTER - START
 
+.a-footer__title__section__text {
+  @include font-custom(uppercase, rgb(255, 255, 255), 700, 1rem, unset);
+  margin-bottom: 35px;
+  position: relative;
+}
+
 .a-footer__section__link {
   @include font-custom-link(
     unset,
@@ -348,7 +354,7 @@ $text-underline-offset-hover: 5px;
 }
 
 .a-footer__mail__social__text {
-  @include font-custom(uppercase, black, 100, 1rem, unset);
+  @include font-custom(uppercase, rgb(255, 255, 255), 100, 1rem, unset);
   margin-bottom: 1.25rem;
 }
 
@@ -372,8 +378,126 @@ $text-underline-offset-hover: 5px;
 }
 
 .a-footer__copyright__text {
-  @include font-custom(unset, black, 100, 0.75rem, unset);
-  margin-bottom: 1rem;  
+  @include font-custom(unset, rgb(255, 255, 255), 100, 0.75rem, unset);
+  margin-bottom: 1rem;
+}
+
+.a-footer__accordion__title__text {
+  @include font-custom(uppercase, rgb(255, 255, 255), 700, 1rem, unset);
+  padding: 0.9375rem 1.25rem;
+  cursor: pointer;
+}
+
+.a-footer__accordion__linkWithoutHover {
+  @include font-custom(unset, rgb(255, 255, 255), 100, 0.875rem, unset);
+  cursor: pointer;
 }
 
 // FOOTER - END
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 1201px) {
+  .a-titleSection-text {
+    @include font-custom(unset, $color, 400, 1.5rem, 2.3125rem);
+  }
+
+  .a-mixedStyles__title-text {
+    @include font-custom(unset, white, bold, 1.125rem, 1.75rem);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .a-HeroBannerstyles-text-black {
+    @include font-custom(unset, $color, 400, 0.875rem, 1.1875rem);
+  }
+
+  .a-HeroBannerstyles-text-white {
+    @include font-custom(unset, white, 400, 0.875rem, 1.1875rem);
+  }
+
+  .a-mixedStyles__title-text {
+    @include font-custom(unset, white, bold, 1rem, 1.5625rem);
+  }
+
+  .a-mixedStyles__link-white {
+    @include font-custom-link(
+      unset,
+      white,
+      600,
+      0.875rem,
+      1.1875rem,
+      $cursor-pointer,
+      unset,
+      white,
+      600,
+      0.875rem,
+      1.1875rem,
+      $text-decoration-line-hover,
+      none,
+      none
+    );
+  }
+
+  .a-big__cardStyles__title-text {
+    @include font-custom(unset, black, bold, 1.25rem, 1.9375rem);
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .a-quickLinks__styles__link {
+    @include font-custom-link(
+      unset,
+      $color,
+      400,
+      0.75rem,
+      0.75rem,
+      $cursor-pointer,
+      unset,
+      #006db7,
+      400,
+      0.75rem,
+      0.75rem,
+      $text-decoration-line-hover,
+      none,
+      none
+    );
+  }
+
+  .a-titleSection-text {
+    @include font-custom(unset, $color, 400, 1.125rem, 1.75rem);
+  }
+
+  .a-mixedStyles__title-text {
+    @include font-custom(unset, white, bold, 1.125rem, 1.75rem);
+  }
+
+  .a-mixedStyles__link-white {
+    @include font-custom-link(
+      unset,
+      white,
+      600,
+      1rem,
+      1.75rem,
+      $cursor-pointer,
+      unset,
+      white,
+      600,
+      1rem,
+      1.75rem,
+      $text-decoration-line-hover,
+      none,
+      none
+    );
+  }
+
+  .a-cardStyles__title-text {
+    @include font-custom(unset, black, bold, 1.125rem, 1.75rem);
+  }
+
+  .a-big__cardStyles__title-text {
+    @include font-custom(unset, black, bold, 1.125rem, 1.75rem);
+    text-align: center;
+  }
+}
