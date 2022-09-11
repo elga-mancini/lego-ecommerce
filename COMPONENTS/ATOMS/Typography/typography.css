@@ -29,7 +29,6 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
 }
 
 .typography__section__title {
-  margin-top: 3rem;
   color: rgb(106, 0, 220);
   font-size: 3rem;
   word-wrap: break-word;
@@ -255,6 +254,62 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
   text-decoration-line: underline;
   text-decoration-thickness: none;
   text-underline-offset: none;
+}
+
+.a-footer__section__link {
+  text-transform: unset;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  cursor: pointer;
+}
+.a-footer__section__link:hover {
+  text-transform: unset;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  text-decoration-line: underline;
+  text-decoration-thickness: none;
+  text-underline-offset: none;
+}
+
+.a-footer__mail__social__text {
+  text-transform: uppercase;
+  color: black;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: unset;
+  margin-bottom: 1.25rem;
+}
+
+.a-footer__legal__link {
+  text-transform: unset;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-size: 0.75rem;
+  line-height: unset;
+  cursor: pointer;
+}
+.a-footer__legal__link:hover {
+  text-transform: unset;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-size: 0.75rem;
+  line-height: unset;
+  text-decoration-line: underline;
+  text-decoration-thickness: none;
+  text-underline-offset: none;
+}
+
+.a-footer__copyright__text {
+  text-transform: unset;
+  color: black;
+  font-weight: 100;
+  font-size: 0.75rem;
+  line-height: unset;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=typography.css.map */

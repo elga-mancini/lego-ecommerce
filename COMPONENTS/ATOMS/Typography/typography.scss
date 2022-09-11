@@ -30,7 +30,6 @@ html:not([lang="ko"]):not([lang="zh"]):not([lang="ja"]) > body {
 }
 
 .typography__section__title {
-  margin-top: 3rem;
   color: rgb(106, 0, 220);
   font-size: 3rem;
   word-wrap: break-word;
@@ -293,7 +292,6 @@ $text-underline-offset-hover: 5px;
 
 // CARD CONTENT STYLES - END
 
-
 // BIG CARD CONTENT STYLES - START
 
 .a-big__cardStyles__title-text {
@@ -327,3 +325,55 @@ $text-underline-offset-hover: 5px;
 }
 
 // BIG CARD CONTENT STYLES - END
+
+// FOOTER - START
+
+.a-footer__section__link {
+  @include font-custom-link(
+    unset,
+    rgb(255, 255, 255),
+    100,
+    1rem,
+    1.5625rem,
+    $cursor-pointer,
+    unset,
+    rgb(255, 255, 255),
+    100,
+    1rem,
+    1.5625rem,
+    $text-decoration-line-hover,
+    none,
+    none
+  );
+}
+
+.a-footer__mail__social__text {
+  @include font-custom(uppercase, black, 100, 1rem, unset);
+  margin-bottom: 1.25rem;
+}
+
+.a-footer__legal__link {
+  @include font-custom-link(
+    unset,
+    rgb(255, 255, 255),
+    100,
+    0.75rem,
+    unset,
+    $cursor-pointer,
+    unset,
+    rgb(255, 255, 255),
+    100,
+    0.75rem,
+    unset,
+    $text-decoration-line-hover,
+    none,
+    none
+  );
+}
+
+.a-footer__copyright__text {
+  @include font-custom(unset, black, 100, 0.75rem, unset);
+  margin-bottom: 1rem;  
+}
+
+// FOOTER - END
