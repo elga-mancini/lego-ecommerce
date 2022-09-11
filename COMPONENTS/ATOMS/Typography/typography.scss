@@ -1,0 +1,498 @@
+@font-face {
+  font-family: Cera Pro;
+  src: url(https://assets.lego.com/fonts/v3/cera-pro/CeraPro-Regular.woff2);
+}
+
+html:not([lang="ko"]):not([lang="zh"]):not([lang="ja"]) > body {
+  font-family: Cera Pro, sans-serif;
+}
+
+.typography__body {
+  background-color: rgb(210, 210, 210);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.typography__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.typography__section {
+  margin: 1rem;
+  padding: 2rem;
+  border: 1px solid black;
+}
+
+.typography__title {
+  font-size: 5rem;
+}
+
+.typography__section__title {
+  color: rgb(106, 0, 220);
+  font-size: 3rem;
+  word-wrap: break-word;
+}
+
+.typography__img {
+  margin-top: 1rem;
+  width: 600px;
+}
+
+.typography__section__subTitle {
+  margin: 2rem 0;
+  color: rgb(123, 41, 194);
+}
+
+.typography__class {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+.typography__className {
+  font-weight: bold;
+}
+
+.typography__output {
+  color: rgb(46, 0, 86);
+  font-weight: bold;
+}
+
+.typography__example {
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+}
+
+// VARIABLES - START
+
+$text-transform: uppercase;
+$color: black;
+$font-weight: 100;
+$font-size: 1rem;
+$line-height: 0rem;
+$cursor-pointer: pointer;
+
+// HOVER
+$text-transform-hover: uppercase;
+$color-hover: black;
+$font-weight-hover: 100;
+$font-size-hover: 1rem;
+$line-height-hover: 1rem;
+$text-decoration-line-hover: underline;
+$text-decoration-thickness-hover: 3px;
+$text-underline-offset-hover: 5px;
+
+// VARIABLES - END
+
+// MIXIN - START
+
+@mixin font-custom(
+  $text-transform,
+  $color,
+  $font-weight,
+  $font-size,
+  $line-height
+) {
+  text-transform: $text-transform;
+  color: $color;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin font-custom-link(
+  $text-transform,
+  $color,
+  $font-weight,
+  $font-size,
+  $line-height,
+  $cursor-pointer,
+  $text-transform-hover,
+  $color-hover,
+  $font-weight-hover,
+  $font-size-hover,
+  $line-height-hover,
+  $text-decoration-line-hover,
+  $text-decoration-thickness-hover,
+  $text-underline-offset-hover
+) {
+  text-transform: $text-transform;
+  color: $color;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  cursor: $cursor-pointer;
+  &:hover {
+    text-transform: $text-transform-hover;
+    color: $color-hover;
+    font-weight: $font-weight-hover;
+    font-size: $font-size-hover;
+    line-height: $line-height-hover;
+    text-decoration-line: $text-decoration-line-hover;
+    text-decoration-thickness: $text-decoration-thickness-hover;
+    text-underline-offset: $text-underline-offset-hover;
+  }
+}
+
+// MIXIN - END
+
+// NAVBAR TYPOGRAPHY - START
+
+.a-navbar__button__link {
+  @include font-custom-link(
+    $text-transform,
+    $color,
+    bold,
+    $font-size,
+    1.1875rem,
+    $cursor-pointer,
+    $text-transform-hover,
+    $color-hover,
+    bold,
+    $font-size-hover,
+    1.1875rem,
+    $text-decoration-line-hover,
+    $text-decoration-thickness-hover,
+    $text-underline-offset-hover
+  );
+}
+
+// NAVBAR TYPOGRAPHY - END
+
+// QUICK LINKS - START
+
+.a-quickLinks__styles__link {
+  @include font-custom-link(
+    unset,
+    $color,
+    400,
+    0.75rem,
+    0.9375rem,
+    $cursor-pointer,
+    unset,
+    #006db7,
+    400,
+    0.75rem,
+    0.9375rem,
+    $text-decoration-line-hover,
+    none,
+    none
+  );
+}
+
+// QUICK LINKS - END
+
+// TITLE SECTION - START
+
+.a-titleSection-text {
+  @include font-custom(unset, $color, 400, 2rem, 2.6875rem);
+}
+
+// TITLE SECTION - END
+
+// PRODUCT SLIDER - START
+
+.a-productSlider__titleProduct {
+  @include font-custom-link(
+    unset,
+    $color,
+    bold,
+    1rem,
+    1.5625rem,
+    $cursor-pointer,
+    unset,
+    $color,
+    bold,
+    1rem,
+    1.5625rem,
+    $text-decoration-line-hover,
+    none,
+    none
+  );
+}
+
+// PRODUCT SLIDER - END
+
+// HERO BANNER - START
+
+.a-HeroBannerstyles-text-black {
+  @include font-custom(unset, $color, 400, 1.125rem, 1.75rem);
+}
+
+.a-HeroBannerstyles-text-white {
+  @include font-custom(unset, white, 400, 1.125rem, 1.75rem);
+}
+
+// HERO BANNER - END
+
+// MIXED STYLES - START
+
+.a-mixedStyles__title-text {
+  @include font-custom(unset, white, bold, 1.5rem, 2.3125rem);
+}
+
+.a-mixedStyles__description-text {
+  @include font-custom(unset, white, 100, 0.875rem, 1.1875rem);
+}
+
+.a-mixedStyles__link-white {
+  @include font-custom-link(
+    unset,
+    white,
+    600,
+    1rem,
+    1.75rem,
+    $cursor-pointer,
+    unset,
+    white,
+    600,
+    1rem,
+    1.75rem,
+    $text-decoration-line-hover,
+    none,
+    none
+  );
+  white-space: nowrap;
+}
+
+// MIXED STYLES - END
+
+// CARD CONTENT STYLES - START
+
+.a-cardStyles__title-text {
+  @include font-custom(unset, black, bold, 1.25rem, 1.9375rem);
+  text-align: center;
+}
+
+.a-cardStyles__description-text {
+  @include font-custom(unset, black, 100, 0.875rem, 1.1875rem);
+  text-align: center;
+}
+
+.a-cardStyles__link-black {
+  @include font-custom-link(
+    unset,
+    black,
+    600,
+    1rem,
+    1.5625rem,
+    $cursor-pointer,
+    unset,
+    black,
+    600,
+    1rem,
+    1.5625rem,
+    $text-decoration-line-hover,
+    none,
+    none
+  );
+  text-align: center;
+}
+
+// CARD CONTENT STYLES - END
+
+// BIG CARD CONTENT STYLES - START
+
+.a-big__cardStyles__title-text {
+  @include font-custom(unset, black, bold, 1.5rem, 2.3125rem);
+  text-align: center;
+}
+
+.a-big__cardStyles__description-text {
+  @include font-custom(unset, black, 100, 0.875rem, 1.1875rem);
+  text-align: center;
+}
+
+.a-big__cardStyles__link-black {
+  @include font-custom-link(
+    unset,
+    black,
+    600,
+    1rem,
+    1.5625rem,
+    $cursor-pointer,
+    unset,
+    black,
+    600,
+    1rem,
+    1.5625rem,
+    $text-decoration-line-hover,
+    none,
+    none
+  );
+  text-align: center;
+}
+
+// BIG CARD CONTENT STYLES - END
+
+// FOOTER - START
+
+.a-footer__title__section__text {
+  @include font-custom(uppercase, rgb(255, 255, 255), 700, 1rem, unset);
+}
+
+.a-footer__section__link {
+  @include font-custom-link(
+    unset,
+    rgb(255, 255, 255),
+    100,
+    1rem,
+    1.5625rem,
+    $cursor-pointer,
+    unset,
+    rgb(255, 255, 255),
+    100,
+    1rem,
+    1.5625rem,
+    $text-decoration-line-hover,
+    none,
+    none
+  );
+}
+
+.a-footer__mail__social__text {
+  @include font-custom(uppercase, rgb(255, 255, 255), 100, 1rem, unset);
+}
+
+.a-footer__legal__link {
+  @include font-custom-link(
+    unset,
+    rgb(255, 255, 255),
+    100,
+    0.75rem,
+    unset,
+    $cursor-pointer,
+    unset,
+    rgb(255, 255, 255),
+    100,
+    0.75rem,
+    unset,
+    $text-decoration-line-hover,
+    none,
+    none
+  );
+}
+
+.a-footer__copyright__text {
+  @include font-custom(unset, rgb(255, 255, 255), 100, 0.75rem, unset);
+}
+
+.a-footer__accordion__title__text {
+  @include font-custom(uppercase, rgb(255, 255, 255), 700, 1rem, unset);
+  cursor: pointer;
+}
+
+.a-footer__accordion__linkWithoutHover {
+  @include font-custom(unset, rgb(255, 255, 255), 100, 0.875rem, unset);
+  cursor: pointer;
+}
+
+// FOOTER - END
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 1201px) {
+  .a-titleSection-text {
+    @include font-custom(unset, $color, 400, 1.5rem, 2.3125rem);
+  }
+
+  .a-mixedStyles__title-text {
+    @include font-custom(unset, white, bold, 1.125rem, 1.75rem);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .a-HeroBannerstyles-text-black {
+    @include font-custom(unset, $color, 400, 0.875rem, 1.1875rem);
+  }
+
+  .a-HeroBannerstyles-text-white {
+    @include font-custom(unset, white, 400, 0.875rem, 1.1875rem);
+  }
+
+  .a-mixedStyles__title-text {
+    @include font-custom(unset, white, bold, 1rem, 1.5625rem);
+  }
+
+  .a-mixedStyles__link-white {
+    @include font-custom-link(
+      unset,
+      white,
+      600,
+      0.875rem,
+      1.1875rem,
+      $cursor-pointer,
+      unset,
+      white,
+      600,
+      0.875rem,
+      1.1875rem,
+      $text-decoration-line-hover,
+      none,
+      none
+    );
+  }
+
+  .a-big__cardStyles__title-text {
+    @include font-custom(unset, black, bold, 1.25rem, 1.9375rem);
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .a-quickLinks__styles__link {
+    @include font-custom-link(
+      unset,
+      $color,
+      400,
+      0.75rem,
+      0.75rem,
+      $cursor-pointer,
+      unset,
+      #006db7,
+      400,
+      0.75rem,
+      0.75rem,
+      $text-decoration-line-hover,
+      none,
+      none
+    );
+  }
+
+  .a-titleSection-text {
+    @include font-custom(unset, $color, 400, 1.125rem, 1.75rem);
+  }
+
+  .a-mixedStyles__title-text {
+    @include font-custom(unset, white, bold, 1.125rem, 1.75rem);
+  }
+
+  .a-mixedStyles__link-white {
+    @include font-custom-link(
+      unset,
+      white,
+      600,
+      1rem,
+      1.75rem,
+      $cursor-pointer,
+      unset,
+      white,
+      600,
+      1rem,
+      1.75rem,
+      $text-decoration-line-hover,
+      none,
+      none
+    );
+  }
+
+  .a-cardStyles__title-text {
+    @include font-custom(unset, black, bold, 1.125rem, 1.75rem);
+  }
+
+  .a-big__cardStyles__title-text {
+    @include font-custom(unset, black, bold, 1.125rem, 1.75rem);
+    text-align: center;
+  }
+}
