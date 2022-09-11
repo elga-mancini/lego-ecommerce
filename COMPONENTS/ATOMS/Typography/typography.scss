@@ -237,7 +237,7 @@ $text-underline-offset-hover: 5px;
   @include font-custom(unset, white, 100, 0.875rem, 1.1875rem);
 }
 
-.a-mixedStyles__link {
+.a-mixedStyles__link-white {
   @include font-custom-link(
     unset,
     white,
@@ -258,3 +258,72 @@ $text-underline-offset-hover: 5px;
 }
 
 // MIXED STYLES - END
+
+// CARD CONTENT STYLES - START
+
+.a-cardStyles__title-text {
+  @include font-custom(unset, black, bold, 1.25rem, 1.9375rem);
+  text-align: center;
+}
+
+.a-cardStyles__description-text {
+  @include font-custom(unset, black, 100, 0.875rem, 1.1875rem);
+  text-align: center;
+}
+
+.a-cardStyles__link-black {
+  @include font-custom-link(
+    unset,
+    black,
+    600,
+    1rem,
+    1.5625rem,
+    $cursor-pointer,
+    unset,
+    black,
+    600,
+    1rem,
+    1.5625rem,
+    $text-decoration-line-hover,
+    none,
+    none
+  );
+  text-align: center;
+}
+
+// CARD CONTENT STYLES - END
+
+
+// BIG CARD CONTENT STYLES - START
+
+.a-big__cardStyles__title-text {
+  @include font-custom(unset, black, bold, 1.5rem, 2.3125rem);
+  text-align: center;
+}
+
+.a-big__cardStyles__description-text {
+  @include font-custom(unset, black, 100, 0.875rem, 1.1875rem);
+  text-align: center;
+}
+
+.a-big__cardStyles__link-black {
+  @include font-custom-link(
+    unset,
+    black,
+    600,
+    1rem,
+    1.5625rem,
+    $cursor-pointer,
+    unset,
+    black,
+    600,
+    1rem,
+    1.5625rem,
+    $text-decoration-line-hover,
+    none,
+    none
+  );
+  text-align: center;
+}
+
+// BIG CARD CONTENT STYLES - END

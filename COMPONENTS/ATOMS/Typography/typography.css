@@ -161,7 +161,7 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
   line-height: 1.1875rem;
 }
 
-.a-mixedStyles__link {
+.a-mixedStyles__link-white {
   text-transform: unset;
   color: white;
   font-weight: 600;
@@ -170,12 +170,88 @@ html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
   cursor: pointer;
   white-space: nowrap;
 }
-.a-mixedStyles__link:hover {
+.a-mixedStyles__link-white:hover {
   text-transform: unset;
   color: white;
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.75rem;
+  text-decoration-line: underline;
+  text-decoration-thickness: none;
+  text-underline-offset: none;
+}
+
+.a-cardStyles__title-text {
+  text-transform: unset;
+  color: black;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.9375rem;
+  text-align: center;
+}
+
+.a-cardStyles__description-text {
+  text-transform: unset;
+  color: black;
+  font-weight: 100;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  text-align: center;
+}
+
+.a-cardStyles__link-black {
+  text-transform: unset;
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  cursor: pointer;
+  text-align: center;
+}
+.a-cardStyles__link-black:hover {
+  text-transform: unset;
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  text-decoration-line: underline;
+  text-decoration-thickness: none;
+  text-underline-offset: none;
+}
+
+.a-big__cardStyles__title-text {
+  text-transform: unset;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.3125rem;
+  text-align: center;
+}
+
+.a-big__cardStyles__description-text {
+  text-transform: unset;
+  color: black;
+  font-weight: 100;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  text-align: center;
+}
+
+.a-big__cardStyles__link-black {
+  text-transform: unset;
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  cursor: pointer;
+  text-align: center;
+}
+.a-big__cardStyles__link-black:hover {
+  text-transform: unset;
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5625rem;
   text-decoration-line: underline;
   text-decoration-thickness: none;
   text-underline-offset: none;
