@@ -2,7 +2,7 @@
   font-family: Cera Pro;
   src: url(https://assets.lego.com/fonts/v3/cera-pro/CeraPro-Regular.woff2);
 }
-html:not([lang="ko"]):not([lang="zh"]):not([lang="ja"]) > body {
+html:not([lang=ko]):not([lang=zh]):not([lang=ja]) > body {
   font-family: Cera Pro, sans-serif;
 }
 
@@ -262,8 +262,6 @@ html:not([lang="ko"]):not([lang="zh"]):not([lang="ja"]) > body {
   font-weight: 700;
   font-size: 1rem;
   line-height: unset;
-  margin-bottom: 35px;
-  position: relative;
 }
 
 .a-footer__section__link {
@@ -291,7 +289,6 @@ html:not([lang="ko"]):not([lang="zh"]):not([lang="ja"]) > body {
   font-weight: 100;
   font-size: 1rem;
   line-height: unset;
-  margin-bottom: 1.25rem;
 }
 
 .a-footer__legal__link {
@@ -319,7 +316,6 @@ html:not([lang="ko"]):not([lang="zh"]):not([lang="ja"]) > body {
   font-weight: 100;
   font-size: 0.75rem;
   line-height: unset;
-  margin-bottom: 1rem;
 }
 
 .a-footer__accordion__title__text {
@@ -328,7 +324,6 @@ html:not([lang="ko"]):not([lang="zh"]):not([lang="ja"]) > body {
   font-weight: 700;
   font-size: 1rem;
   line-height: unset;
-  padding: 0.9375rem 1.25rem;
   cursor: pointer;
 }
 

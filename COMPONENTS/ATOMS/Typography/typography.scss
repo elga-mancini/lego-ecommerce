@@ -330,8 +330,6 @@ $text-underline-offset-hover: 5px;
 
 .a-footer__title__section__text {
   @include font-custom(uppercase, rgb(255, 255, 255), 700, 1rem, unset);
-  margin-bottom: 35px;
-  position: relative;
 }
 
 .a-footer__section__link {
@@ -355,7 +353,6 @@ $text-underline-offset-hover: 5px;
 
 .a-footer__mail__social__text {
   @include font-custom(uppercase, rgb(255, 255, 255), 100, 1rem, unset);
-  margin-bottom: 1.25rem;
 }
 
 .a-footer__legal__link {
@@ -379,12 +376,10 @@ $text-underline-offset-hover: 5px;
 
 .a-footer__copyright__text {
   @include font-custom(unset, rgb(255, 255, 255), 100, 0.75rem, unset);
-  margin-bottom: 1rem;
 }
 
 .a-footer__accordion__title__text {
   @include font-custom(uppercase, rgb(255, 255, 255), 700, 1rem, unset);
-  padding: 0.9375rem 1.25rem;
   cursor: pointer;
 }
 
