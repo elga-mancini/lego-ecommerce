@@ -358,19 +358,26 @@ a.nav__play-button  {
 }
 
 .nav__quick-links-icons{
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 30px;
+   
 }
+
+.nav__quick-links-icons a{
+    text-decoration: none;
+}
+
 
 
 /* images under the video */
 .nav__icons img{
     width: 90%;
-   
-
 }
+
 
 .nav__quick-links-icons li {
     list-style-type: none;
