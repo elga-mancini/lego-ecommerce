@@ -1,10 +1,30 @@
 .o-carusel__container-carusel {
     display: flex;
+    overflow-x: scroll;
 }
+
+.o-carusel__container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.o-carusel__container-carusel::-webkit-scrollbar {
+        background: rgb(204, 201, 201);
+        height: 10px;
+    }
+    .o-carusel__container-carusel::-webkit-scrollbar-thumb {
+        background: rgb(156, 154, 154);
+        border-radius: 100vh;
+    }
+    .o-carusel__container-carusel::-webkit-scrollbar-thumb:hover {
+        background: grey;
+    }
 
 .m-card__container-cards {
     width: 320px;
     margin-right: 30px;
+    margin-bottom: 20px;
 }
 
 .m-card__just-img-with-news {
