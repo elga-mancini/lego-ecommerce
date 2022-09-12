@@ -125,6 +125,16 @@
     padding-top: 0.31rem;
 }
 
+.m-card__stars {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.m-card__star {
+    width: 15px;
+    cursor: pointer;
+}
+
 .m-card__title-text:hover {
     cursor: pointer;
     text-decoration: underline;
