@@ -190,20 +190,6 @@ a.nav__play-button  {
     text-decoration: none;
 }
 
-.nav__link {
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: black; 
-    font-weight: 600;
-}
-
-.nav__link:hover{
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-
-    color: black; 
-}
-
 
 .nav__link-button{
     font-size: 1rem;
