@@ -15,7 +15,6 @@
     }
     .o-carusel__container-carusel::-webkit-scrollbar-thumb {
         background: rgb(156, 154, 154);
-        border-radius: 100vh;
     }
     .o-carusel__container-carusel::-webkit-scrollbar-thumb:hover {
         background: grey;
