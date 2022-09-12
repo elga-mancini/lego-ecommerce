@@ -1,0 +1,47 @@
+.m-mini-card__box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.m-mini-card__box-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.m-mini-card__text {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.m-mini-card__img-text-link {
+    text-decoration: none;
+}
+
+.m-mini-card__text-link {
+    text-decoration: none;
+    color: black;
+}
+.m-mini-card__text-link:hover {
+    color: black;
+}
+.m-mini-card__text-link:hover {
+    text-decoration: none;
+}
+
+.m-mini-card__link-one {
+    color: black;
+}
+.m-mini-card__link-one:hover {
+    text-decoration: underline;
+}
+
+.section2__firstimg {
+    height: 200px;
+    cursor: pointer;
+}
