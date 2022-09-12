@@ -190,7 +190,6 @@ a.nav__play-button  {
     text-decoration: none;
 }
 
-
 .nav__link-button{
     font-size: 1rem;
     text-transform: uppercase;
@@ -350,16 +349,19 @@ a.nav__play-button  {
 
 /* nav quick links */
 .nav__quick-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
     
 }
 
 .nav__quick-links-icons{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
-    
 }
 
 
@@ -370,26 +372,10 @@ a.nav__play-button  {
 
 }
 
-
-li {
+.nav__quick-links-icons li {
     list-style-type: none;
 }
 
-.nav__quick-links-icons a{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: black;
-    font-size: 0.8rem;
-    font-weight: 400;
-    text-decoration: none;
-
-}
-
-.nav__quick-links-icons a:hover {
-    text-decoration: underline;
-    color: #006db7;
-}
 
 
 
@@ -857,7 +843,7 @@ li {
 
 }
 
-@media screen and (max-width: 553px) {
+@media screen and (max-width: 563px) {
     
 
 
@@ -911,13 +897,7 @@ li {
     margin: 2px;
 
   }
-
- 
-
     
-      
-    
-      
 }
 
 
