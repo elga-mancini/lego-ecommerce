@@ -1,0 +1,40 @@
+/* Ilona navbar */
+
+.nav__nav-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+/* elga section */
+
+.section2__images
+.section2__images_clone{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+}
+.section2__firstimg
+.section2__secondimg
+.section2__thirdimg
+.section2__fourimg {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+/* marco section*/
+
+.slider__image {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }

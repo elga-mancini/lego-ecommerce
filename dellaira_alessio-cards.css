@@ -108,7 +108,8 @@
 .alessio_dellaira-image>img:hover{
     cursor:pointer;
     transition: transform 600ms cubic-bezier(0, 0, 0.2, 1) 0s;
-        transform:scale(1.20); translateZ:(0px);
+        transform:scale(1.20);
+        translateZ:(0px);
         overflow: visible;
 }
 .alessio_dellaira-card:hover{
