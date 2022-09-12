@@ -105,6 +105,16 @@
     text-decoration: underline;
 }
 
+.m-card__stars {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.m-card__star {
+    width: 15px;
+    cursor: pointer;
+}
+
 .m-card__price-object {
     margin-top: 1rem;
 }
