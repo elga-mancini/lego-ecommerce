@@ -1,0 +1,154 @@
+.m-card__container-cards {
+    width: 320px;
+}
+
+.m-card__just-img-with-news {
+    position: relative;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.for-all-img-cards {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.m-card__only-img {
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+
+.m-card__only-img:hover {
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+.m-card__first-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.for-all-img-cards img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.njHilk {
+    position: absolute;
+    margin-left: 0.625rem;
+    margin-bottom: 0.625rem;
+    bottom: 0px;
+    left: 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.m-card__container-news {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 1.875rem;
+}
+
+.m-card__just-news {
+    margin-right: 0.625rem;
+    margin-top: 0.625rem;
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 207, 0);
+    width: 60px;
+}
+
+.m-card__just-news-text {
+    font-size: 0.9rem;
+}
+
+.m-card__add-to-wish-list {
+    position: absolute;
+    cursor: pointer;
+}
+
+.m-card__container-wish-list {
+    display: flex;
+    align-items: center;
+    font-size: .75rem;
+    padding-top: 0;
+    padding-right: .31rem;
+}
+
+.m-card__heart-wish-list {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.m-card__heart {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.m-card__description-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 0.31rem;
+}
+
+.m-card__title-text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.m-card__stars {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.m-card__star {
+    width: 15px;
+    cursor: pointer;
+}
+
+.m-card__price-object {
+    margin-top: 1rem;
+}
+
+.m-card__full-price {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.m-card__button-add-to-cart {
+    padding-top: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.m-card__button-orange {
+    background: rgb(253, 128, 36);
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1rem;
+    display: block;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.m-card__button-orange:hover {
+    background: white;
+    border: 2px solid rgb(253, 128, 36);
+}
