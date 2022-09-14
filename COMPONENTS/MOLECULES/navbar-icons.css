@@ -1,6 +1,5 @@
 /* molecole container */
 .m-navbar-icons{
-    border: 2px solid red;
     background-color: rgb(255, 207, 0);
     gap: 40px;
     width: 100%;
@@ -25,6 +24,9 @@
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     position: relative;
+
+    /* optional*/
+    margin-left: 5px;
 
 }
 
