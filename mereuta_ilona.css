@@ -36,11 +36,9 @@
     font-weight: 500;
     color: black;
     background-color: rgb(171, 217, 255);
-    /* padding: 5px 20px 5px 20px; */
     padding-top: 5px;
     padding-right: 0.925rem;
     padding-left: 2rem;
-    
     padding-bottom: 5px;
     line-height:1.5625rem;
     text-align: end;
@@ -52,6 +50,11 @@ a.nav__play-button  {
    text-decoration: none;
 }
 
+.nav__play-button:hover{
+    color: black;
+    background-color: white;
+
+}
 /* banner with text in te center above the navbar */
 .nav__banner-above-nav {
     display: flex;
@@ -79,10 +82,12 @@ a.nav__play-button  {
 .nav__left-arrow{
     rotate: 180deg;
      height: 18px;
+     cursor: pointer;
 }
 
 .nav__right-arrow {
     height: 18px;
+    cursor: pointer;
 }
 
 .nav__manu-icon-x{
@@ -105,6 +110,7 @@ a.nav__play-button  {
 .nav__account-icon span {
     font-weight: 500;
     font-size: 0.85rem;
+    cursor: pointer;
 }
 
 /* separator between icons */
@@ -118,6 +124,7 @@ a.nav__play-button  {
 /* vip icon */
 .nav__vip-icon{
     display: flex;
+    cursor: pointer;
 
 }
 
@@ -176,6 +183,7 @@ a.nav__play-button  {
 .nav__img-logo{
     width: 5.6%;
     margin-left: 30px;
+    cursor: pointer;
 }
 
 
@@ -229,6 +237,7 @@ a.nav__play-button  {
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     position: relative;
+    cursor: pointer;
 }
 
 .nav__search {
@@ -241,24 +250,39 @@ a.nav__play-button  {
     display: flex;
     align-items: center;
     padding-left: 10px;
+    cursor: pointer;
+}
+.nav__svg-heart{
+    cursor: pointer;
 }
 /* shop icon */
 .nav__shop-icon {
     display: flex;
     align-items: center;
     gap: 2px;
+    cursor: pointer;
 }
 
 .nav__shop-icon p {
     display: flex;
     align-items: center;
-    font-size: 12px;
+    font-size: 12px; 
 }
 
+.nav__shop-icon p:hover{
+    text-decoration: underline;
+}
 /* icons navbar only for mobile view */
 .nav__icons-inside-navbar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav__svg-icon{
     display: none;
 }
+
+
 
 /* nav main area container */
 .nav__main-area-container{
@@ -662,7 +686,11 @@ a.nav__play-button  {
 
      .nav__shop-icon-svg{
       margin-top: 30px;
-     }
+    }
+
+    .nav__svg-icon{
+        display: block;
+    }
 
     
 
@@ -748,6 +776,8 @@ a.nav__play-button  {
         display: flex;
         align-items: center;
     }
+
+   
 
 
    
