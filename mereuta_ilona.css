@@ -289,6 +289,7 @@ a.nav__play-button  {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 /* nav main area video */
@@ -314,7 +315,9 @@ a.nav__play-button  {
 
 .nav__img-tablet-only{
     display: none;
-   }
+}
+
+
 
 
    
