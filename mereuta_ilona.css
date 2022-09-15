@@ -361,7 +361,7 @@ a.nav__play-button  {
     font-size: 1rem;
     color: black;
     background-color: white;
-    padding: 17px 10px;
+    padding: 14px 10px;
     margin: 5px;
 
   }
@@ -369,7 +369,15 @@ a.nav__play-button  {
   .nav__icon-call-to-action{
     height: 16px;
     margin-left: 5px;
-  }
+
+}
+
+.nav__call-to-action a:hover{
+    background-color: black;
+    color: white;
+
+}
+
 
 
 
