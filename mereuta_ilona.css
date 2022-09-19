@@ -364,7 +364,7 @@ a.nav__play-button  {
     padding: 14px 10px;
     margin: 5px;
 
-  }
+}
 
   .nav__icon-call-to-action{
     height: 16px;
@@ -471,7 +471,7 @@ a.nav__play-button  {
 /* da 0 a 902px */
 
 @media screen and (max-width: 902px){
-
+   
 
     .nav__utility-bar-container {
         display: flex;
@@ -611,9 +611,14 @@ a.nav__play-button  {
 
     .nav__img-logo{
         position: absolute;
-        margin-left: 70px;
         height: 50px;
         
+    }
+
+    .nav__img-logo{
+        width: 9.6%;
+        margin-left: 5rem;
+        cursor: pointer;
     }
 
     .nav__logo-links{
@@ -625,6 +630,9 @@ a.nav__play-button  {
     .nav__play-video-button{
         display: none;
     }
+    
+
+
     
 
     /* main area text */
@@ -715,6 +723,7 @@ a.nav__play-button  {
 
 /* from 0 to 602px */
 @media screen and (max-width: 602px){
+    
 
     /* show the image instead of the video*/
     .nav__img-mobile-only{
@@ -774,6 +783,13 @@ a.nav__play-button  {
         margin-left: 70px;
         height: 50px;
         
+    }
+
+
+    .nav__img-logo{
+        width: 9.6%;
+        margin-left: 5rem;
+        cursor: pointer;
     }
 
     .nav__img-mobile-only{
@@ -891,6 +907,10 @@ a.nav__play-button  {
 
 }
 
+
+
+
+
 @media screen and (max-width: 563px) {
     
 
@@ -909,6 +929,7 @@ a.nav__play-button  {
 
 
 @media screen and (max-width: 420px) {
+   
 
     
 
