@@ -154,6 +154,25 @@
         overflow-x: auto;
         scroll-behavior: smooth;
     }
+
+    .section2__box-images::-webkit-scrollbar {
+        height: 0.3125rem;
+        margin: 1.5625rem 0px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.15);
+        max-width: 56.25rem;
+        padding: 1.25rem;
+      }
+
+    .section2__box-images::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+      }
+    
+    .section2__box-images::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.65);
+        height: 0.3125rem;
+        max-width: 48px;
+      }
     
     .section2__second-img,
     .section2__third-img,
@@ -176,16 +195,3 @@
   
   }
 
-@media screen and (max-width: 500px) {
-    .section2__second-box {
-        display: none;
-    }
-
-    .section2__first-selection-clone,
-    .section2__first-selection {
-        width: 95%;
-        overflow-x: auto;
-    }
-
-    
-}
