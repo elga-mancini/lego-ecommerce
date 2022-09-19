@@ -286,6 +286,7 @@ a.nav__play-button  {
 
 /* nav main area container */
 .nav__main-area-container{
+    /* border: 2px solid coral; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -293,7 +294,7 @@ a.nav__play-button  {
 }
 
 /* nav main area video */
-.nav__main-area-video video {
+.nav__main-area-video{
     width: 100%;
     overflow: hidden;
     z-index: auto;
@@ -323,17 +324,17 @@ a.nav__play-button  {
    
    
 
-   .nav__main-area-text-overlay{
+.nav__main-area-text-overlay{
     overflow-wrap: break-word;
     display: flex;
     text-align: end;
     flex-wrap: wrap;
     position: absolute;
-    z-index: 3;
+    /* z-index: 3; */
     top: 10rem;
     left: 30rem;
     right: 6rem;
-   }
+}
 
   .nav__box-text{
     display: flex;
@@ -389,16 +390,19 @@ a.nav__play-button  {
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    /* background-color: aquamarine; */
     
 }
 
 .nav__quick-links-icons{
-    border-radius: 5px;
+    width: 100%;
+    /* border: 2px solid gold; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
-    gap: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
    
 }
 
@@ -410,7 +414,7 @@ a.nav__play-button  {
 
 /* images under the video */
 .nav__icons img{
-    width: 90%;
+    width: 60%;
 }
 
 
@@ -471,6 +475,7 @@ a.nav__play-button  {
 /* da 0 a 902px */
 
 @media screen and (max-width: 902px){
+   
    
 
     .nav__utility-bar-container {
@@ -711,7 +716,10 @@ a.nav__play-button  {
         display: block;
     }
 
-    
+    /* quick links */
+    .nav__icons img {
+        width: 60%;
+    }
 
 }
 
@@ -813,7 +821,7 @@ a.nav__play-button  {
     
    .nav__main-area-text-overlay{
     width: 100%;
-    height: 200px;
+    height: 100%;
     position: relative;
     overflow-wrap: break-word;
     display: flex;
@@ -821,9 +829,10 @@ a.nav__play-button  {
     flex-wrap: wrap;
     position: absolute;
     z-index: 3;
-    bottom: 4rem;
-    top: 38rem;
+    /* bottom: 4rem; */
+    top: 35vh;
     left: 0rem;
+    /* padding: 0 45px; */
    
    
    }
@@ -870,12 +879,15 @@ a.nav__play-button  {
   }
 
   .nav__quick-links-icons{
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    
     
   }
 
   .nav__icons img {
-    width: 50px;
+    width: 60px;
   }
     
 
@@ -929,6 +941,7 @@ a.nav__play-button  {
 
 
 @media screen and (max-width: 420px) {
+    
    
 
     
@@ -940,10 +953,11 @@ a.nav__play-button  {
         flex-wrap: wrap;
         text-align: center;
         background-color: rgba(16, 17, 16, 0.5);
-        z-index: 2;
+        /* z-index: 2; */
         top: 22rem;
+        align-items: flex-end;
        
-       }
+    }
 
 
   .nav__text-overlay-video-h2 {
