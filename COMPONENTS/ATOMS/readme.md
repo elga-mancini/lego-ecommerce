@@ -1,0 +1,2 @@
+Atoms are the smallest components of your application. Basically, they can be texts, buttons, form inputs and so on. 
+The golden rule is: if you can't split a component into smaller components then it must be an atom.
