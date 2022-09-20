@@ -153,6 +153,7 @@ a.nav__play-button  {
 /* navbar container*/
 .nav__navbar-container {
     display: flex;
+    justify-content: space-between;
     height: 70px;
     background-color: rgb(255, 207, 0);
 }
@@ -215,11 +216,20 @@ a.nav__play-button  {
     color: white; 
 
 }
+ 
+.nav__nav-icons-full-screen{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-right: 50px;
 
+}
 /* icons of navbar */
 .nav__nav-icons {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
     margin-right: 30px;
 }
