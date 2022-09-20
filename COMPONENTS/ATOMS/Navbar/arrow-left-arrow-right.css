@@ -1,0 +1,20 @@
+body{
+    background-color: antiquewhite;
+}
+
+.a-arrow-left-arrow-right{
+    display: flex;
+    gap: 40rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.a-arrow-left{
+    rotate: 180deg;
+    height: 18px;
+}
+
+.a-arrow-right{
+    height: 18px;
+}
