@@ -718,6 +718,68 @@ a.nav__play-button  {
         font-family: unset;
         font-size: 12px;
     }
+    .nav-item-christmas a{
+        color: rgb(191, 11, 11);
+        font-family: unset;
+        font-size: 0.78rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .nav-item a{
+        font-family: unset;
+        font-size: 0.78rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    li.nav-item, .nav-item-christmas{
+        margin: 0;
+        padding: 0;
+        padding-top: 0.9375rem;
+        padding-right: 1.25rem;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(224, 224, 224);
+    }
+   
+
+    /* Account side menu*/
+    .nav-item-account {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-item-account a {
+        font-weight: 600;
+        font-size: 0.75rem;
+        color: black;
+    }
+
+    .nav-item-account svg{
+        width: 17px;
+    }
+    
+    /* VIP side menu*/
+    .nav-item-vip {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+   
+    .nav-item-vip a {
+        font-weight: 600;
+        font-size: 0.75rem;
+        color: black;
+       
+        text-transform: uppercase;
+    }
+
+
 
     /* style the hamburger*/
 
