@@ -51,6 +51,7 @@
     max-width: 100%;
 }
 
+
 .section2__second-img,
 .section2__third-img,
 .section2__four-img {
@@ -88,9 +89,7 @@
     height: auto;
     width: auto;
     position: relative;
-    object-fit: cover;
-    width: auto;
-    height: auto; 
+    object-fit: cover; 
 }
 
 .section2__text-over-img {
@@ -103,20 +102,7 @@
     margin-top: 15px;
 }
 
-.section2__button-reg {
-    margin-top: 20px;
-    background-color: black;
-    color: white;
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
-    display: none;
-}
 
-.section2__button-reg:hover {
-    background-color: white;
-    color: black;
-}
 
 .section2__email {
     margin-top: 10px;
