@@ -1,4 +1,5 @@
-
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 /* First flex-container for the white area above the navbar */
 .nav__utility-bar-container {
     display: flex;
@@ -708,10 +709,53 @@ a.nav__play-button  {
          width: 3rem;
     }
     
-    
-
    
+    .navbar-toggler-icon{
+        max-width: 40px;
+    }
+
+    .nav-item-menu a {
+        font-family: unset;
+        font-size: 12px;
+    }
+
+    /* style the hamburger*/
+
+    /* side menu style inside */
+    .offcanvas-header{
+        width: 100%;
+        border-bottom: solid 3px rgb(247, 201, 18);
+        margin-bottom: 20px;
+    }
+    
+    /* style the button inside side menu */
+    .btn.btn-primary {
+        background-color: rgb(171, 217, 255);
+        border: 2px solid  rgb(171, 217, 255);
+        box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
+        color: black;
+        font-size: unset;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        border-radius: 5px;
+    }
+
+    .btn.btn-primary:hover{
+        background-color: white;
+        border: 2px solid  rgba(192, 192, 192, 0.4);
+        box-shadow: rgba(121, 122, 124, 0.44) 0px 1px 4px 0px;
+        border-bottom: grey 0.5px solid;
+       
+
+    }
+
+    .bi.bi-arrow-right{
+        color: black;
+        margin-right: 5px;
+    }
 }
+
+
 
 
 
