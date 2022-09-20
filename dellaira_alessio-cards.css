@@ -1,4 +1,6 @@
 .consigliati-per-te{
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -36,6 +38,14 @@
     display: flex;
     justify-content: left;
     margin-left: 20px;
+}
+.home-decor-flex>figure>a{
+    text-align:center;
+}
+.alessio_dellaira-figure>.alessio_dellaira-figcaption>figcaption{
+    font-size: bold;
+    color: red;
+    
 }
 .alessio_dellaira-a:hover{
     color: black;
@@ -78,19 +88,24 @@
     
 }
 .alessio_dellaira-figure{
-    margin: 30px;
-
-
-}
-
-.alessio_dellaira-figure>p{
-    
     text-align: center;
-    
+    margin: 20px;
+
+
 }
+
+
+
 .card-section-title{
     display: block;
-    margin-right: 10px;
+    margin: 0px 0px 20px 0px;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.3125rem;
+    
+  
+  
+    
     
 }
 .alessio_dellaira-card{
@@ -116,6 +131,8 @@
     cursor: pointer;
 }
 .home-decor-flex{
+    text-align: center;
+    
     width: 100%;
    
     display: flex;
@@ -129,19 +146,25 @@
    
 }
 .home-decor{
+    margin-top: 60px;
+    margin-left: 30px;
     display: block;
     justify-content: center;
-    margin-left: 50px;
+    
     
 }
+.home-decor>p{
+    text-align: center;
+}
+
 
 
 
 
 .alessio_dellaira-figcaption{
     margin-top: 20px;
-    font-weight: lighter;
-    color: black;
+    font-weight: bold;
+    color: rgb(63, 62, 62);
     text-align:center;
 }
 .buy, .alessio_dellaira-button{
