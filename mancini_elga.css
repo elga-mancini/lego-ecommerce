@@ -3,17 +3,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1280px;
+    width: 90%;
+    max-width: 100%;
+    height: auto;
     margin: auto;
-    margin-bottom: 20px;
+    overflow-x: auto;
 }
 
 .section2__costruction-text {
     margin-bottom: 15px;
+    
 }
 .section2__box-images {
     display: flex;
-    justify-content: space-between;
+    position: relative;
 }
 
 .section2__box-text {
@@ -23,11 +26,9 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 12px;
+    
 }
-.section2__text {
-    font-weight: bold;
-    font-size: 12px;
+.a-cardStyles__title-text {
     margin-bottom: 10px;
 }
 
@@ -43,31 +44,49 @@
 }
 
 .section2__firstimg {
-    height: 200px;
-    cursor: pointer;
+    max-width: 100%;
 }
 
-.section2__first-img,
 .section2__second-img,
 .section2__third-img,
 .section2__four-img {
-    margin-bottom: 15px;
+    max-width: 100%;
+    object-fit: cover;
+    width: auto;
+    height: auto; 
+}
+.section2__box-2,
+.section2__box-3,
+.section2__box-4,
+.section2__box-2-clone,
+.section2__box-3-clone,
+.section2__box-4-clone {
+    margin-left: 10px;
 }
 
 .section2__second-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1100px;
+    width: 70%;
+    max-width: 100%;
     margin: auto;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 .section2__label-form {
     width: 0;
 }
 
 .section2__img-in-call {
+    max-width: 100%;
     cursor: pointer;
+    height: auto;
+    width: auto;
+    position: relative;
+    object-fit: cover;
+    width: auto;
+    height: auto; 
 }
 
 .section2__text-over-img {
@@ -119,60 +138,59 @@
 }
 
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1000px) {
     .section2__second-box {
-        width: 650px;
-    }
-    .section2__text-over-img {
-        font-size: 0.50rem;
-    }
-
-    .section2__button-reg {
-    width: 100px;
-    height: 30px;
-    font-size: 0.7rem;
-    display: block;
-    }
-
-    .section2__email {
         display: none;
     }
+   
+}
 
-    .section2__images {
-        overflow-x: auto;
-        
-    }
-
-    .section2__first-selection-clone,
-    .section2__first-selection {
-        width: 566px;
-        overflow-x: auto;
+@media screen and (max-width: 900px) {
+    .section2__box-images {
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        overflow-x: auto;
+        scroll-behavior: smooth;
     }
 
-    .section2__first-selection::-webkit-scrollbar,
-    .section2__first-selection-clone::-webkit-scrollbar {
-        background: rgb(204, 201, 201);
-        border-radius: 100vh;
-    }
-    .section2__first-selection::-webkit-scrollbar-thumb,
-    .section2__first-selection-clone::-webkit-scrollbar-thumb {
-        background: rgb(156, 154, 154);
-        border-radius: 100vh;
-    }
-    .section2__first-selection::-webkit-scrollbar-thumb:hover,
-    .section2__first-selection-clone::-webkit-scrollbar:hover {
-        background: grey;
-    }
+    .section2__box-images::-webkit-scrollbar {
+        height: 0.3125rem;
+        margin: 1.5625rem 0px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.15);
+        max-width: 56.25rem;
+        padding: 1.25rem;
+      }
 
-    .section2__firstimg {
-        margin-left: 5px;
+    .section2__box-images::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+      }
+    
+    .section2__box-images::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.65);
+        height: 0.3125rem;
+        max-width: 48px;
+      }
+    
+    .section2__second-img,
+    .section2__third-img,
+    .section2__four-img {
+        min-width: 300px;
+        max-width: 100%;
+        overflow-x: hidden;
     }
+    
 }
 
-@media screen and (max-width: 480px) {
-    .section2__second-box {
-        display: none;
+@media screen and (max-width: 600px) {
+    .a-cardStyles__title-text {
+      text-transform: unset;
+      color: black;
+      font-weight: bold;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
     }
-}
+  
+  }
+
