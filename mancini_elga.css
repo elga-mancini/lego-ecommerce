@@ -7,16 +7,19 @@
     max-width: 100%;
     height: auto;
     margin: auto;
-    overflow-x: auto;
+    overflow-x: auto;  
 }
 
 .section2__costruction-text {
-    margin-bottom: 15px;
-    
+    margin-bottom: 25px;
+    margin-top: 20px;
 }
 .section2__box-images {
     display: flex;
     position: relative;
+}
+.section2__link-one {
+    font-weight: bold;
 }
 
 .section2__box-text {
@@ -46,6 +49,7 @@
 .section2__firstimg {
     max-width: 100%;
 }
+
 
 .section2__second-img,
 .section2__third-img,
@@ -84,9 +88,7 @@
     height: auto;
     width: auto;
     position: relative;
-    object-fit: cover;
-    width: auto;
-    height: auto; 
+    object-fit: cover; 
 }
 
 .section2__text-over-img {
@@ -99,20 +101,7 @@
     margin-top: 15px;
 }
 
-.section2__button-reg {
-    margin-top: 20px;
-    background-color: black;
-    color: white;
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
-    display: none;
-}
 
-.section2__button-reg:hover {
-    background-color: white;
-    color: black;
-}
 
 .section2__email {
     margin-top: 10px;
