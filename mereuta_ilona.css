@@ -688,6 +688,8 @@ a.nav__play-button  {
      /* side menu */
      .navbar.bg-light{
         display:flex;
+        align-content: center;
+        height: 60px;
     }
 
     /* this is my container of the side menu*/
@@ -708,10 +710,12 @@ a.nav__play-button  {
         align-self: center;
          width: 3rem;
     }
+
+    
     
    
     .navbar-toggler-icon{
-        max-width: 40px;
+        max-width: 26px;
     }
 
     .nav-item-menu a {
@@ -795,7 +799,7 @@ a.nav__play-button  {
 
 
 
-    /* style the hamburger*/
+    /* style the hamburger???*/
 
     /* side menu style inside */
     .offcanvas-header{
