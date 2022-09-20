@@ -12,7 +12,7 @@
 
 .o-carusel__container-carusel::-webkit-scrollbar {
         background: rgb(204, 201, 201);
-        height: 10px;
+        height: 5px;
     }
     .o-carusel__container-carusel::-webkit-scrollbar-thumb {
         background: rgb(156, 154, 154);
@@ -122,12 +122,12 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 0.31rem;
+    
 }
 
 .m-card__stars {
     display: flex;
-    margin-bottom: 15px;
+    
 }
 
 .m-card__star {
