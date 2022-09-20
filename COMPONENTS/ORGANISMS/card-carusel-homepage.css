@@ -3,22 +3,25 @@
     overflow-x: scroll;
     margin: auto;
     width: 1280px;
-    height: 570px;
+    height: 590px;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .o-carusel__container-cards {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .o-carusel__container-carusel::-webkit-scrollbar {
         background: rgb(204, 201, 201);
         height: 5px;
-        transform: translateX(-50%)
-    }
+}
 .o-carusel__container-carusel::-webkit-scrollbar-thumb {
         background: rgb(156, 154, 154);
+        
     }
 .o-carusel__container-carusel::-webkit-scrollbar-thumb:hover {
         background: grey;
@@ -177,6 +180,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
 
 .m-card__button-orange {
