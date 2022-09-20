@@ -734,6 +734,17 @@ a.nav__play-button  {
         color: black;
     }
 
+    #list-nav{
+        text-transform: none;
+    }
+    #card-nav{
+        text-transform: none;
+    }
+    #region{
+        display: flex;
+        gap: 20px;
+    }
+
     li.nav-item, .nav-item-christmas{
         margin: 0;
         padding: 0;
