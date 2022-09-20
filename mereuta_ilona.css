@@ -1,26 +1,31 @@
 /* bootstrap icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 /* First flex-container for the white area above the navbar */
+
+
+.nav__header-ilona{
+    display: flex;
+    flex-direction: column;
+}
+
+
 .nav__utility-bar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 15px;
     height: 60px; 
     padding-left: 30px;
-    /* border: 2px solid pink; */
+    padding-right: 30px;
 }
 
 /* play button container */
 .nav__play-button-container {
-    /* border: 2px solid blanchedalmond; */
     position: relative;
 }
 
 /* the arrow inside the play button */ 
 .nav__arrow-play-button{
-    z-index: 0;
     width: 20px;
     rotate: 180deg;
     position: absolute;
@@ -37,11 +42,9 @@
     font-weight: 500;
     color: black;
     background-color: rgb(171, 217, 255);
-    /* padding: 5px 20px 5px 20px; */
     padding-top: 5px;
     padding-right: 0.925rem;
     padding-left: 2rem;
-    
     padding-bottom: 5px;
     line-height:1.5625rem;
     text-align: end;
@@ -53,6 +56,10 @@ a.nav__play-button  {
    text-decoration: none;
 }
 
+.nav__play-button:hover{
+    background-color: white;
+    color: black;
+}
 /* banner with text in te center above the navbar */
 .nav__banner-above-nav {
     display: flex;
@@ -62,8 +69,6 @@ a.nav__play-button  {
     line-height: 1.1875rem;
     font-weight: 400;
 }
-
-
 
 .nav__space-between-text {
    padding-left: 8px;
@@ -76,7 +81,6 @@ a.nav__play-button  {
 }
 
 /* left arrow */
-
 .nav__left-arrow{
     rotate: 180deg;
      height: 18px;
@@ -89,12 +93,12 @@ a.nav__play-button  {
 .nav__manu-icon-x{
     height: 14px;
 }
+
 /* icons above the navbar, on the right side */
 .nav__icons-container {
     display: flex;
     gap: 20px;
     margin-left: 5px;
-    /* border: 2px solid greenyellow; */
 }
 
 /* account icon */
@@ -141,7 +145,7 @@ a.nav__play-button  {
     font-size: 0.85rem;
 }
 
-/* side menu */
+/* SIDE MENU */
 .navbar.bg-light{
     display: none;
 }
@@ -180,6 +184,7 @@ a.nav__play-button  {
 .nav__img-logo{
     width: 3.5rem;
     margin-left: 30px;
+    cursor: pointer;
 }
 
 
