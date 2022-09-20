@@ -7,13 +7,14 @@
     margin: auto;
     overflow-x: auto;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .a-text__costruction{
     margin: auto;
     width: 90%;
     max-width: 100%;
+    margin-top: 30px;
 }
 
 .m-mini-card__box {
@@ -63,6 +64,46 @@
 .m-mini-card__link-one:hover {
     text-decoration: underline;
 }
+
+.m-banner__second-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.m-banner__text-over-img {
+position: absolute;
+    margin: 0 80px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.a-button__button-buy {
+    border-radius: 3px;
+    height: 40px;
+    width: 150px;
+    margin-top: 15px;
+    background-color: white;
+    font-size: 15px;
+}
+
+.a-button__button-buy:hover {
+    background-color: black;
+    color: white;
+    
+}
+
+@media screen and (max-width: 1130px){
+ .m-banner__second-box {
+    display: none;
+
+ }
+}
+
 
 @media screen and (max-width: 900px) {
     .o-mini-card__container {
