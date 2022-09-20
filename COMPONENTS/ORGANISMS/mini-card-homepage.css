@@ -1,6 +1,19 @@
 .o-mini-card__container {
     display: flex;
-    width: 1215px;
+    justify-content: center;
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.a-text__costruction{
+    margin: auto;
+    width: 90%;
+    max-width: 100%;
 }
 
 .m-mini-card__box {
@@ -9,7 +22,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .m-mini-card_box-last{
@@ -19,11 +32,10 @@
 .m-mini-card__box-text {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 12px;
 }
+
 .m-mini-card__text {
     font-weight: bold;
-    font-size: 12px;
     margin-bottom: 10px;
     text-decoration: none;
     color: black;
@@ -46,12 +58,41 @@
 
 .m-mini-card__link-one {
     color: black;
+    font-weight: bold;
 }
 .m-mini-card__link-one:hover {
     text-decoration: underline;
 }
 
-.section2__firstimg {
-    height: 200px;
-    cursor: pointer;
+@media screen and (max-width: 900px) {
+    .o-mini-card__container {
+        width: 90%;
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        justify-content: flex-start;
+    }
+    .o-mini-card__container::-webkit-scrollbar {
+        height: 0.3125rem;
+        margin: 1.5625rem 0px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.15);
+        max-width: 56.25rem;
+        padding: 1.25rem;
+      }
+      .o-mini-card__container::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+      }
+    
+      .o-mini-card__container::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.65);
+        height: 0.3125rem;
+        max-width: 48px;
+      }
+
+      .m-mini-card__first-img {
+        min-width: 300px;
+        max-width: 100%;
+        overflow-x: hidden;
+      }
 }
