@@ -745,7 +745,10 @@ a.nav__play-button  {
         gap: 20px;
     }
 
-    li.nav-item, .nav-item-christmas{
+    li.nav-item, 
+        .nav-item-christmas,
+        .nav-item-account,
+        .nav-item-vip, #region, #help-nav{
         margin: 0;
         padding: 0;
         padding-top: 0.9375rem;
@@ -817,9 +820,6 @@ a.nav__play-button  {
         background-color: white;
         border: 2px solid  rgba(192, 192, 192, 0.4);
         box-shadow: rgba(121, 122, 124, 0.44) 0px 1px 4px 0px;
-        border-bottom: grey 0.5px solid;
-       
-
     }
 
     .bi.bi-arrow-right{
