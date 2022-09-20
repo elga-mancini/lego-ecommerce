@@ -1,28 +1,32 @@
 .o-carusel__container-carusel {
     display: flex;
     overflow-x: scroll;
+    margin: auto;
+    width: 1280px;
+    height: 570px;
 }
 
 .o-carusel__container-cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .o-carusel__container-carusel::-webkit-scrollbar {
         background: rgb(204, 201, 201);
         height: 5px;
+        transform: translateX(-50%)
     }
-    .o-carusel__container-carusel::-webkit-scrollbar-thumb {
+.o-carusel__container-carusel::-webkit-scrollbar-thumb {
         background: rgb(156, 154, 154);
     }
-    .o-carusel__container-carusel::-webkit-scrollbar-thumb:hover {
+.o-carusel__container-carusel::-webkit-scrollbar-thumb:hover {
         background: grey;
     }
 
 .m-card__container-cards {
-    width: 320px;
+    width: 289px;
+    height: 289px;
     margin-right: 30px;
     margin-bottom: 20px;
 }
@@ -42,12 +46,12 @@
 
 .m-card__only-img {
     transform: scale(0.9);
-    transition: 0.4s;
+    transition: 0.8s;
 }
 
 .m-card__only-img:hover {
     transform: scale(1);
-    transition: 0.4s;
+    transition: 0.8s;
 }
 
 .m-card__first-img {
@@ -95,6 +99,8 @@
 .m-card__add-to-wish-list {
     position: absolute;
     cursor: pointer;
+    padding: 12px;
+    
 }
 
 .m-card__container-wish-list {
@@ -105,12 +111,17 @@
     padding-right: .31rem;
 }
 
+.m-card__text-add-to-wisht-list {
+    font-weight: bold;
+}
+
 .m-card__heart-wish-list {
     border: 0;
     padding: 0;
     background: transparent;
     box-shadow: none;
     cursor: pointer;
+    margin-right: 15px;
 }
 
 .m-card__heart {
@@ -133,6 +144,17 @@
 .m-card__star {
     width: 15px;
     cursor: pointer;
+}
+
+.m-card__text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.m-card__title-text {
+    text-decoration: none;
 }
 
 .m-card__title-text:hover {

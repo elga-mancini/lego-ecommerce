@@ -19,6 +19,9 @@
     display: flex;
     position: relative;
 }
+.section2__link-one {
+    font-weight: bold;
+}
 
 .section2__box-text {
     display: flex;
