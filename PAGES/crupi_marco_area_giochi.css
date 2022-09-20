@@ -1,3 +1,53 @@
-
+.area__giochi__nav {
+  height: 104px;
+  background-color: rgb(255, 207, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.area__giochi__nav .area__giochi__logo_buttons {
+  display: flex;
+  align-items: center;
+}
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__logo {
+  height: 49.33px;
+  width: 49.32px;
+}
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons {
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .area__giochi__circleBlueButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  width: 46px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #006aad 0%, #007bc0 100%);
+  color: white;
+}
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .area__giochi__circleRedButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  width: 46px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #b6264d 0%, #e32648 100%);
+  color: white;
+}
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .area__giochi__circleGreenButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  width: 46px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #00744b 0%, #008746 100%);
+  color: white;
+}
 
 /*# sourceMappingURL=crupi_marco_area_giochi.css.map */
