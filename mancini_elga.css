@@ -8,11 +8,12 @@
     height: auto;
     margin: auto;
     overflow-x: auto;
+    
 }
 
 .section2__costruction-text {
-    margin-bottom: 15px;
-    
+    margin-bottom: 25px;
+    margin-top: 20px;
 }
 .section2__box-images {
     display: flex;
