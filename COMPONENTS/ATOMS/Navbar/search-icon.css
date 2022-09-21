@@ -1,0 +1,29 @@
+
+body {
+    background-color: antiquewhite;
+}
+
+.a-search-icon{
+    display: flex;
+    cursor: pointer;
+   align-content: center;
+    text-align: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: white;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+
+    /* optional*/
+    margin-left: 5px;
+
+}
+
+.a-search-svg{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
