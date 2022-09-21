@@ -19,7 +19,17 @@
   align-items: center;
   gap: 16px;
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .area__giochi__circleBlueButton {
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  height: 46px;
+  width: 46px;
+  background: linear-gradient(180deg, #006aad 0%, #00639c 100%);
+}
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton .area__giochi__circleBlueButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,8 +38,29 @@
   border-radius: 30px;
   background: linear-gradient(180deg, #006aad 0%, #007bc0 100%);
   color: white;
+  position: relative;
+  top: -4px;
+  border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+  transition: 0.13s ease-in-out;
+  cursor: pointer;
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .area__giochi__circleRedButton {
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton .area__giochi__circleBlueButton:hover {
+  transform: translate3d(0px, -2px, 0px);
+}
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton .area__giochi__circleBlueButton:active {
+  transform: translate3d(0px, 0px, 0px);
+}
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  height: 46px;
+  width: 46px;
+  background: linear-gradient(180deg, #b6264d 0%, #a3102b 100%);
+}
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton .area__giochi__circleRedButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,8 +69,29 @@
   border-radius: 30px;
   background: linear-gradient(180deg, #b6264d 0%, #e32648 100%);
   color: white;
+  position: relative;
+  top: -4px;
+  border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+  transition: 0.13s ease-in-out;
+  cursor: pointer;
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .area__giochi__circleGreenButton {
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton .area__giochi__circleRedButton:hover {
+  transform: translate3d(0px, -2px, 0px);
+}
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton .area__giochi__circleRedButton:active {
+  transform: translate3d(0px, 0px, 0px);
+}
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  height: 46px;
+  width: 46px;
+  background: linear-gradient(180deg, #00744b 0%, #016f3a 100%);
+}
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton .area__giochi__circleGreenButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,6 +100,17 @@
   border-radius: 30px;
   background: linear-gradient(180deg, #00744b 0%, #008746 100%);
   color: white;
+  position: relative;
+  top: -4px;
+  border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+  transition: 0.13s ease-in-out;
+  cursor: pointer;
+}
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton .area__giochi__circleGreenButton:hover {
+  transform: translate3d(0px, -2px, 0px);
+}
+.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton .area__giochi__circleGreenButton:active {
+  transform: translate3d(0px, 0px, 0px);
 }
 
 /*# sourceMappingURL=crupi_marco_area_giochi.css.map */
