@@ -376,21 +376,28 @@ a.nav__play-button  {
     margin-top: 2rem;
     margin-bottom: 2rem;
     
+    
 }
 
 .nav__quick-links-icons{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     align-content: center;
     text-align: center;
     gap: 30px;
+   
+   
 }
 .nav__quick-links-icons a{ 
     text-decoration: none;
     align-items: center;
     align-content: center;
+
 }
+
+
+
 
 
 
@@ -674,7 +681,9 @@ a.nav__play-button  {
 
   .nav__quick-links{
     display: flex;
-    padding-top: 50px;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
   }
 
     /*navbar icons */
