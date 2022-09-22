@@ -1,20 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  outline: none;
-  border: none;
-}
-
-body {
-  width: 100%;
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-  color: #2c2c2c;
-  background: #fff;
-}
-
 .o-christmas__megacontainer {
   margin-bottom: 5rem;
 }
@@ -56,7 +39,7 @@ body {
   max-width: 100rem;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
   background-image: url(https://www.lego.com/cdn/cs/set/assets/blt5eb4e078c4172c19/Holiday2022-Landing-202208-Inpage-Nav-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=90&dpr=1);
   height: 8rem;
   max-height: 15rem;
@@ -87,5 +70,48 @@ body {
   font-weight: bold;
 }
 .o-christmas__megacontainer .m-christmas__funny-holiday .a-christmas__found-more-button:hover {
+  text-decoration: underline;
+}
+.o-christmas__megacontainer .m-christmas__banner-container {
+  margin: 0 auto;
+  max-width: 100rem;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .m-christmas__hero-banner {
+  position: relative;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .m-christmas__hero-banner .m-christmas__hero-banner-full-content {
+  position: absolute;
+  z-index: 1;
+  max-width: 35%;
+  left: 6.875rem;
+  transform: translateY(-50%);
+  top: 50%;
+  text-align: left;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .a-christmas__hero-banner-h2-text {
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .a-christmas__hero-banner-article {
+  margin-top: 1rem;
+}
+.o-christmas__megacontainer .m-christmas__banner-container svg {
+  width: 15px;
+  height: 15px;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .a-christmas__hero-banner-buy-now {
+  margin-top: 1.5rem;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .a-christmas__hero-banner-buy-now .a-christmas__hero-banner-button-style {
+  text-decoration: none;
+  color: white;
+  background: black;
+  height: 3rem;
+  text-align: center;
+  padding: 0.7rem 0.9rem;
+  width: 7.8rem;
+  border-radius: 0.5rem;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .a-christmas__hero-banner-buy-now .a-christmas__hero-banner-button-style:hover {
   text-decoration: underline;
 }/*# sourceMappingURL=natale.css.map */
