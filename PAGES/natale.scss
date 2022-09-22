@@ -8,7 +8,7 @@ $color-white: white;
 }
 
 @mixin svg {
-    width: 0.938rem;
+    width: .938rem;
     height: .938em;
 }
 
@@ -119,6 +119,7 @@ $color-white: white;
         padding: .7rem .9rem;
         width: 7.8rem;
         border-radius: .5rem;
+        font-weight: bold;
     }
     .a-christmas__hero-banner-button-style:hover {
         text-decoration: underline;

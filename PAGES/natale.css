@@ -111,6 +111,7 @@
   padding: 0.7rem 0.9rem;
   width: 7.8rem;
   border-radius: 0.5rem;
+  font-weight: bold;
 }
 .o-christmas__megacontainer .m-christmas__banner-container .a-christmas__hero-banner-buy-now .a-christmas__hero-banner-button-style:hover {
   text-decoration: underline;
