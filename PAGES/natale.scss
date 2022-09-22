@@ -1,7 +1,15 @@
+$color-black: black;
+$color-white: white; 
+
 @mixin static {
     display: flex;
     margin: 0 auto;
     width: 100%;
+}
+
+@mixin svg {
+    width: 0.938rem;
+    height: .938em;
 }
 
 .o-christmas__megacontainer{
@@ -15,8 +23,7 @@
         @include static;
         margin-top: .8rem;
         svg {
-            width: 15px;
-            height: 15px;
+            @include svg;
         }
         li {
             list-style: none;
@@ -50,16 +57,16 @@
     .buttonstyle {
         font-size: 1rem;
         text-decoration: none;
-        border: 1px solid black;
+        border: 1px solid $color-black;
         height: 3rem;
         text-align: center;
-        padding: 0.7rem .9rem;
+        padding: .7rem .9rem;
         width: 7.8rem;
         border-radius: 2rem;
     }
 
     .a-christmas__products-button {
-        color: black;
+        color: $color-black;
         font-weight: bold;
     }
     .a-christmas__products-button:hover {
@@ -67,8 +74,8 @@
     }
 
     .a-christmas__found-more-button {
-        background: black;
-        color: white;
+        background: $color-black;
+        color: $color-white;
         font-weight: bold;
     }
     .a-christmas__found-more-button:hover {
@@ -99,18 +106,17 @@
         margin-top: 1rem;
     }
     svg {
-        width: 15px;
-        height: 15px;
+        @include svg;
     }
 .a-christmas__hero-banner-buy-now {
     margin-top: 1.5rem;
     .a-christmas__hero-banner-button-style {
         text-decoration: none;
-        color: white;
-        background: black;
+        color: $color-white;
+        background: $color-black;
         height: 3rem;
         text-align: center;
-        padding: 0.7rem .9rem;
+        padding: .7rem .9rem;
         width: 7.8rem;
         border-radius: .5rem;
     }
@@ -119,5 +125,4 @@
     }
 }
 }
-
 }  
