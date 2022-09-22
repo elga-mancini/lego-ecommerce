@@ -33,9 +33,9 @@
   margin-top: 3rem;
 }
 .o-christmas__megacontainer .m-christmas__funny-holiday {
+  display: flex;
   margin: 0 auto;
   width: 100%;
-  display: flex;
   max-width: 100rem;
   justify-content: center;
   align-items: center;

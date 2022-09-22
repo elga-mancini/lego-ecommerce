@@ -1,16 +1,18 @@
-.o-christmas__megacontainer{
-    margin-bottom: 5rem;
-.m-christmas__head-container {
+@mixin static {
     display: flex;
     margin: 0 auto;
     width: 100%;
+}
+
+.o-christmas__megacontainer{
+    margin-bottom: 5rem;
+.m-christmas__head-container {
+    @include static;
     max-width: 100rem;
     flex-direction: column;
 
     .o-christmas__list-container {
-        display: flex;
-        margin: 0 auto;
-        width: 100%;
+        @include static;
         margin-top: .8rem;
         svg {
             width: 15px;
@@ -34,9 +36,7 @@
 }
 
 .m-christmas__funny-holiday {
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
+    @include static;
     max-width: 100rem;
     justify-content: center;
     align-items: center;
