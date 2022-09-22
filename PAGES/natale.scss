@@ -14,31 +14,84 @@
       color: #2c2c2c;
       background: #fff;
   }
-  
-  body, html {
-      min-height: 100%;
-      height: 100%;
-      font-family: Cera Pro,sans-serif;
-  }
-
-  .o-christmas__list-container {
+.o-christmas__megacontainer{
+    margin-bottom: 5rem;
+.m-christmas__head-container {
     display: flex;
     margin: 0 auto;
     width: 100%;
     max-width: 100rem;
-    svg {
-        width: 15px;
-        height: 15px;
+    flex-direction: column;
+
+    .o-christmas__list-container {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        margin-top: .8rem;
+        svg {
+            width: 15px;
+            height: 15px;
+        }
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .a-christmas__link-home {
+            text-decoration: none;
+        }
+        .a-christmas__link-home:hover {
+            text-decoration: underline;
+        }
+        
+      }
+
+      .a-christmas__h1-presents {
+        margin-top: 3rem;
+      }
+}
+
+.m-christmas__funny-holiday {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    max-width: 100rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-image: url(https://www.lego.com/cdn/cs/set/assets/blt5eb4e078c4172c19/Holiday2022-Landing-202208-Inpage-Nav-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=90&dpr=1);
+    height: 8rem;
+    max-height: 15rem;
+    .a-christmas__only-text {
+        font-size: 2rem;
     }
-    li {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .a-christmas__link-home {
+    .buttonstyle {
+        font-size: 1rem;
         text-decoration: none;
+        border: 1px solid black;
+        height: 3rem;
+        text-align: center;
+        padding: 0.7rem .9rem;
+        width: 7.8rem;
+        border-radius: 20px;
     }
-    .a-christmas__link-home:hover {
+
+    .a-christmas__products-button {
+        color: black;
+        font-weight: bold;
+    }
+    .a-christmas__products-button:hover {
         text-decoration: underline;
     }
-  }
+
+    .a-christmas__found-more-button {
+        background: black;
+        color: white;
+        font-weight: bold;
+    }
+    .a-christmas__found-more-button:hover {
+        text-decoration: underline;
+    }
+}
+
+}  

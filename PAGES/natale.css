@@ -15,30 +15,77 @@ body {
   background: #fff;
 }
 
-body, html {
-  min-height: 100%;
-  height: 100%;
-  font-family: Cera Pro, sans-serif;
+.o-christmas__megacontainer {
+  margin-bottom: 5rem;
 }
-
-.o-christmas__list-container {
+.o-christmas__megacontainer .m-christmas__head-container {
   display: flex;
   margin: 0 auto;
   width: 100%;
   max-width: 100rem;
+  flex-direction: column;
 }
-.o-christmas__list-container svg {
+.o-christmas__megacontainer .m-christmas__head-container .o-christmas__list-container {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 0.8rem;
+}
+.o-christmas__megacontainer .m-christmas__head-container .o-christmas__list-container svg {
   width: 15px;
   height: 15px;
 }
-.o-christmas__list-container li {
+.o-christmas__megacontainer .m-christmas__head-container .o-christmas__list-container li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.o-christmas__list-container .a-christmas__link-home {
+.o-christmas__megacontainer .m-christmas__head-container .o-christmas__list-container .a-christmas__link-home {
   text-decoration: none;
 }
-.o-christmas__list-container .a-christmas__link-home:hover {
+.o-christmas__megacontainer .m-christmas__head-container .o-christmas__list-container .a-christmas__link-home:hover {
+  text-decoration: underline;
+}
+.o-christmas__megacontainer .m-christmas__head-container .a-christmas__h1-presents {
+  margin-top: 3rem;
+}
+.o-christmas__megacontainer .m-christmas__funny-holiday {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  max-width: 100rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background-image: url(https://www.lego.com/cdn/cs/set/assets/blt5eb4e078c4172c19/Holiday2022-Landing-202208-Inpage-Nav-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=90&dpr=1);
+  height: 8rem;
+  max-height: 15rem;
+}
+.o-christmas__megacontainer .m-christmas__funny-holiday .a-christmas__only-text {
+  font-size: 2rem;
+}
+.o-christmas__megacontainer .m-christmas__funny-holiday .buttonstyle {
+  font-size: 1rem;
+  text-decoration: none;
+  border: 1px solid black;
+  height: 3rem;
+  text-align: center;
+  padding: 0.7rem 0.9rem;
+  width: 7.8rem;
+  border-radius: 20px;
+}
+.o-christmas__megacontainer .m-christmas__funny-holiday .a-christmas__products-button {
+  color: black;
+  font-weight: bold;
+}
+.o-christmas__megacontainer .m-christmas__funny-holiday .a-christmas__products-button:hover {
+  text-decoration: underline;
+}
+.o-christmas__megacontainer .m-christmas__funny-holiday .a-christmas__found-more-button {
+  background: black;
+  color: white;
+  font-weight: bold;
+}
+.o-christmas__megacontainer .m-christmas__funny-holiday .a-christmas__found-more-button:hover {
   text-decoration: underline;
 }/*# sourceMappingURL=natale.css.map */
