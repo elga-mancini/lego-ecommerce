@@ -123,5 +123,15 @@
         }
       }
     }
+
+    .area__giochi__buttons_hamburger {
+      .area__giochi__leftButton {
+        cursor: pointer;
+        .blueElementSVG {
+          position: relative;
+          right: -42px;
+        }
+      }
+    }
   }
 }

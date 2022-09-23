@@ -150,4 +150,11 @@
   color: #394754;
   font-size: 14px;
   margin-bottom: 0.5rem;
+}
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__buttons_hamburger .area__giochi__leftButton {
+  cursor: pointer;
+}
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__buttons_hamburger .area__giochi__leftButton .blueElementSVG {
+  position: relative;
+  right: -42px;
 }/*# sourceMappingURL=crupi_marco_area_giochi.css.map */
