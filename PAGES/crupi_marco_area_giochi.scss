@@ -50,7 +50,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 1200px;
 
     .area__giochi__logo_buttons {
       display: flex;
@@ -125,11 +125,102 @@
     }
 
     .area__giochi__buttons_hamburger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .area__giochi__leftButton {
         cursor: pointer;
         .blueElementSVG {
           position: relative;
           right: -42px;
+        }
+      }
+      .area__giochi__shadowLoginButton {
+        margin-top: 0.3rem;
+        margin-left: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+        border-radius: 8px;
+        height: 40px;
+        width: 96.5px;
+        background: #dfe2e4;
+        .area__giochi__loginButton {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 40px;
+          width: 96.5px;
+          border-radius: 8px;
+          background: white;
+          position: relative;
+          top: -4px;
+          // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
+          border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+          transition: 0.13s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
+            transform: translate3d(0px, -2px, 0px);
+          }
+          &:active {
+            // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
+            transform: translate3d(0px, 2px, 0px);
+          }
+          .area__giochi__loginButtonText {
+            color: #394754;
+            font-size: 14px;
+            margin-left: 0.5rem;
+          }
+          .area__giochi__loginButtonIco {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(
+              135.88deg,
+              #fdbb7d -1.59%,
+              #d56075 100%
+            );
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+      .area__giochi__shadowHamburgerButton {
+        margin-top: 0.3rem;
+        margin-left: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+        border-radius: 8px;
+        height: 40px;
+        width: 40px;
+        background: #dfe2e4;
+        .area__giochi__hamburgerButton {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+          width: 40px;
+          border-radius: 8px;
+          background: white;
+          position: relative;
+          top: -4px;
+          // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
+          border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+          transition: 0.13s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
+            transform: translate3d(0px, -2px, 0px);
+          }
+          &:active {
+            // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
+            transform: translate3d(0px, 2px, 0px);
+          }
         }
       }
     }
