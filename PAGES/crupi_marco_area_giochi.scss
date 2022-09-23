@@ -39,6 +39,16 @@
   background: linear-gradient(180deg, $firstColor 0%, $secondColor 100%);
 }
 
+@mixin shadowButtonText {
+  margin-top: 0.3rem;
+  color: #293744;
+  font-family: "cerapro", arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 900;
+  text-align: center;
+}
+
 .area__giochi__nav {
   height: 104px;
   background-color: rgb(255, 207, 0);
@@ -66,29 +76,44 @@
         display: flex;
         align-items: center;
         gap: 16px;
+        .shadowBlueButtonContainer {
+          .shadowBlueButton {
+            @include shadowButton(#006aad, #00639c);
+            .area__giochi__circleBlueButton {
+              @include coloredButtonNav(
+                linear-gradient(180deg, #006aad 0%, #007bc0 100%)
+              );
+            }
+          }
+          .shadowBlueButtonText {
+            @include shadowButtonText();
+          }
+        }
+        .shadowRedButtonContainer {
+          .shadowRedButton {
+            @include shadowButton(#b6264d, #a3102b);
+            .area__giochi__circleRedButton {
+              @include coloredButtonNav(
+                linear-gradient(180deg, #b6264d 0%, #e32648 100%)
+              );
+            }
+          }
+          .shadowRedButtonText {
+            @include shadowButtonText();
+          }
+        }
 
-        .shadowBlueButton {
-          @include shadowButton(#006aad, #00639c);
-          .area__giochi__circleBlueButton {
-            @include coloredButtonNav(
-              linear-gradient(180deg, #006aad 0%, #007bc0 100%)
-            );
+        .shadowGreenButtonContainer {
+          .shadowGreenButton {
+            @include shadowButton(#00744b, #016f3a);
+            .area__giochi__circleGreenButton {
+              @include coloredButtonNav(
+                linear-gradient(180deg, #00744b 0%, #008746 100%)
+              );
+            }
           }
-        }
-        .shadowRedButton {
-          @include shadowButton(#b6264d, #a3102b);
-          .area__giochi__circleRedButton {
-            @include coloredButtonNav(
-              linear-gradient(180deg, #b6264d 0%, #e32648 100%)
-            );
-          }
-        }
-        .shadowGreenButton {
-          @include shadowButton(#00744b, #016f3a);
-          .area__giochi__circleGreenButton {
-            @include coloredButtonNav(
-              linear-gradient(180deg, #00744b 0%, #008746 100%)
-            );
+          .shadowGreenButtonText {
+            @include shadowButtonText();
           }
         }
       }
@@ -100,7 +125,7 @@
       align-items: center;
       background-color: white;
       height: 50px;
-      width: 648px;
+      width: 600px;
       border-radius: 8px;
       box-shadow: 0 4px 0 0 #dfe2e4, 0px 4px 8px rgb(90 0 0 / 20%);
       cursor: pointer;
@@ -131,6 +156,7 @@
       .area__giochi__leftButton {
         cursor: pointer;
         .blueElementSVG {
+          margin-left: -35px;
           position: relative;
           right: -42px;
         }

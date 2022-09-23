@@ -29,7 +29,7 @@
   align-items: center;
   gap: 16px;
 }
-.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButtonContainer .shadowBlueButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@
   width: 46px;
   background: linear-gradient(180deg, #006aad 0%, #00639c 100%);
 }
-.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton .area__giochi__circleBlueButton {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButtonContainer .shadowBlueButton .area__giochi__circleBlueButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,13 +54,22 @@
   transition: 0.13s ease-in-out;
   cursor: pointer;
 }
-.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton .area__giochi__circleBlueButton:hover {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButtonContainer .shadowBlueButton .area__giochi__circleBlueButton:hover {
   transform: translate3d(0px, -2px, 0px);
 }
-.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton .area__giochi__circleBlueButton:active {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButtonContainer .shadowBlueButton .area__giochi__circleBlueButton:active {
   transform: translate3d(0px, 0px, 0px);
 }
-.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButtonContainer .shadowBlueButtonText {
+  margin-top: 0.3rem;
+  color: #293744;
+  font-family: "cerapro", arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 900;
+  text-align: center;
+}
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButtonContainer .shadowRedButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +79,7 @@
   width: 46px;
   background: linear-gradient(180deg, #b6264d 0%, #a3102b 100%);
 }
-.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton .area__giochi__circleRedButton {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButtonContainer .shadowRedButton .area__giochi__circleRedButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,13 +94,22 @@
   transition: 0.13s ease-in-out;
   cursor: pointer;
 }
-.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton .area__giochi__circleRedButton:hover {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButtonContainer .shadowRedButton .area__giochi__circleRedButton:hover {
   transform: translate3d(0px, -2px, 0px);
 }
-.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton .area__giochi__circleRedButton:active {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButtonContainer .shadowRedButton .area__giochi__circleRedButton:active {
   transform: translate3d(0px, 0px, 0px);
 }
-.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButtonContainer .shadowRedButtonText {
+  margin-top: 0.3rem;
+  color: #293744;
+  font-family: "cerapro", arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 900;
+  text-align: center;
+}
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButtonContainer .shadowGreenButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +119,7 @@
   width: 46px;
   background: linear-gradient(180deg, #00744b 0%, #016f3a 100%);
 }
-.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton .area__giochi__circleGreenButton {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButtonContainer .shadowGreenButton .area__giochi__circleGreenButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,11 +134,20 @@
   transition: 0.13s ease-in-out;
   cursor: pointer;
 }
-.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton .area__giochi__circleGreenButton:hover {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButtonContainer .shadowGreenButton .area__giochi__circleGreenButton:hover {
   transform: translate3d(0px, -2px, 0px);
 }
-.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton .area__giochi__circleGreenButton:active {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButtonContainer .shadowGreenButton .area__giochi__circleGreenButton:active {
   transform: translate3d(0px, 0px, 0px);
+}
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButtonContainer .shadowGreenButtonText {
+  margin-top: 0.3rem;
+  color: #293744;
+  font-family: "cerapro", arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 900;
+  text-align: center;
 }
 .area__giochi__nav .area__giochi__buttons_input_container .area__giochi__searchBar {
   display: flex;
@@ -128,7 +155,7 @@
   align-items: center;
   background-color: white;
   height: 50px;
-  width: 648px;
+  width: 600px;
   border-radius: 8px;
   box-shadow: 0 4px 0 0 #dfe2e4, 0px 4px 8px rgba(90, 0, 0, 0.2);
   cursor: pointer;
@@ -160,6 +187,7 @@
   cursor: pointer;
 }
 .area__giochi__nav .area__giochi__buttons_input_container .area__giochi__buttons_hamburger .area__giochi__leftButton .blueElementSVG {
+  margin-left: -35px;
   position: relative;
   right: -42px;
 }
