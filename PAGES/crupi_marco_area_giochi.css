@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "cerapro";
+  src: url(https://assets.lego.com/fonts/v2/cera-pro/CeraPro-Regular.woff2);
+}
 .area__giochi__nav {
   height: 104px;
   background-color: rgb(255, 207, 0);
@@ -5,21 +9,27 @@
   align-items: center;
   justify-content: center;
 }
-.area__giochi__nav .area__giochi__logo_buttons {
+.area__giochi__nav .area__giochi__buttons_input_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons {
   display: flex;
   align-items: center;
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__logo {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__logo {
   height: 49.33px;
   width: 49.32px;
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons {
   margin-left: 32px;
   display: flex;
   align-items: center;
   gap: 16px;
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +39,7 @@
   width: 46px;
   background: linear-gradient(180deg, #006aad 0%, #00639c 100%);
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton .area__giochi__circleBlueButton {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton .area__giochi__circleBlueButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,13 +54,13 @@
   transition: 0.13s ease-in-out;
   cursor: pointer;
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton .area__giochi__circleBlueButton:hover {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton .area__giochi__circleBlueButton:hover {
   transform: translate3d(0px, -2px, 0px);
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton .area__giochi__circleBlueButton:active {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowBlueButton .area__giochi__circleBlueButton:active {
   transform: translate3d(0px, 0px, 0px);
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +70,7 @@
   width: 46px;
   background: linear-gradient(180deg, #b6264d 0%, #a3102b 100%);
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton .area__giochi__circleRedButton {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton .area__giochi__circleRedButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,13 +85,13 @@
   transition: 0.13s ease-in-out;
   cursor: pointer;
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton .area__giochi__circleRedButton:hover {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton .area__giochi__circleRedButton:hover {
   transform: translate3d(0px, -2px, 0px);
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton .area__giochi__circleRedButton:active {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowRedButton .area__giochi__circleRedButton:active {
   transform: translate3d(0px, 0px, 0px);
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,7 +101,7 @@
   width: 46px;
   background: linear-gradient(180deg, #00744b 0%, #016f3a 100%);
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton .area__giochi__circleGreenButton {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton .area__giochi__circleGreenButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,11 +116,38 @@
   transition: 0.13s ease-in-out;
   cursor: pointer;
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton .area__giochi__circleGreenButton:hover {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton .area__giochi__circleGreenButton:hover {
   transform: translate3d(0px, -2px, 0px);
 }
-.area__giochi__nav .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton .area__giochi__circleGreenButton:active {
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__logo_buttons .area__giochi__buttons .shadowGreenButton .area__giochi__circleGreenButton:active {
   transform: translate3d(0px, 0px, 0px);
 }
-
-/*# sourceMappingURL=crupi_marco_area_giochi.css.map */
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__searchBar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  height: 50px;
+  width: 648px;
+  border-radius: 8px;
+  box-shadow: 0 4px 0 0 #dfe2e4, 0px 4px 8px rgba(90, 0, 0, 0.2);
+  cursor: pointer;
+}
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__searchBar .area__giochi__searchBarElement {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__searchBar .area__giochi__searchBarElement .area__giochi__searchBar_icon {
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__searchBar .area__giochi__searchBarElement .area__giochi__searchBar_icon ion-icon {
+  font-size: 22px;
+}
+.area__giochi__nav .area__giochi__buttons_input_container .area__giochi__searchBar .area__giochi__searchBarElement .area__giochi__searchBar_bar {
+  font-family: "cerapro", arial, sans-serif;
+  color: #394754;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}/*# sourceMappingURL=crupi_marco_area_giochi.css.map */

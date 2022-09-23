@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "cerapro";
+  src: url(https://assets.lego.com/fonts/v2/cera-pro/CeraPro-Regular.woff2);
+}
+
 @mixin coloredButtonNav($background) {
   display: flex;
   justify-content: center;
@@ -41,43 +46,80 @@
   align-items: center;
   justify-content: center;
 
-  .area__giochi__logo_buttons {
+  .area__giochi__buttons_input_container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 
-    .area__giochi__logo {
-      height: 49.33px;
-      width: 49.32px;
-    }
-
-    .area__giochi__buttons {
-      margin-left: 32px;
+    .area__giochi__logo_buttons {
       display: flex;
       align-items: center;
-      gap: 16px;
 
-      .shadowBlueButton {
-        @include shadowButton(#006aad, #00639c);
-        .area__giochi__circleBlueButton {
-          @include coloredButtonNav(
-            linear-gradient(180deg, #006aad 0%, #007bc0 100%)
-          );
+      .area__giochi__logo {
+        height: 49.33px;
+        width: 49.32px;
+      }
+
+      .area__giochi__buttons {
+        margin-left: 32px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .shadowBlueButton {
+          @include shadowButton(#006aad, #00639c);
+          .area__giochi__circleBlueButton {
+            @include coloredButtonNav(
+              linear-gradient(180deg, #006aad 0%, #007bc0 100%)
+            );
+          }
+        }
+        .shadowRedButton {
+          @include shadowButton(#b6264d, #a3102b);
+          .area__giochi__circleRedButton {
+            @include coloredButtonNav(
+              linear-gradient(180deg, #b6264d 0%, #e32648 100%)
+            );
+          }
+        }
+        .shadowGreenButton {
+          @include shadowButton(#00744b, #016f3a);
+          .area__giochi__circleGreenButton {
+            @include coloredButtonNav(
+              linear-gradient(180deg, #00744b 0%, #008746 100%)
+            );
+          }
         }
       }
-      .shadowRedButton {
-        @include shadowButton(#b6264d, #a3102b);
-        .area__giochi__circleRedButton {
-          @include coloredButtonNav(
-            linear-gradient(180deg, #b6264d 0%, #e32648 100%)
-          );
+    }
+
+    .area__giochi__searchBar {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: white;
+      height: 50px;
+      width: 648px;
+      border-radius: 8px;
+      box-shadow: 0 4px 0 0 #dfe2e4, 0px 4px 8px rgb(90 0 0 / 20%);
+      cursor: pointer;
+      .area__giochi__searchBarElement {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        .area__giochi__searchBar_icon {
+          margin-left: 1rem;
+          margin-right: 0.5rem;
+          ion-icon {
+            font-size: 22px;
+          }
         }
-      }
-      .shadowGreenButton {
-        @include shadowButton(#00744b, #016f3a);
-        .area__giochi__circleGreenButton {
-          @include coloredButtonNav(
-            linear-gradient(180deg, #00744b 0%, #008746 100%)
-          );
+        .area__giochi__searchBar_bar {
+          font-family: "cerapro", arial, sans-serif;
+          color: #394754;
+          font-size: 14px;
+          margin-bottom: 0.5rem;
         }
       }
     }
