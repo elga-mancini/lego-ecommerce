@@ -3,11 +3,6 @@
 /* First flex-container for the white area above the navbar */
 
 
-.nav__header-ilona{
-    display: flex;
-    flex-direction: column;
-}
-
 
 .nav__utility-bar-container {
     display: flex;
@@ -136,15 +131,111 @@ a.nav__play-button  {
     margin-right: 10px;
 }
 
-
-     
-
-
 .nav__vip-icon span {
     text-transform: uppercase;
     font-size: 0.85rem;
 }
 
+/* da 0 a 902px */
+
+@media screen and (max-width: 902px){
+
+
+    .nav__utility-bar-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(248, 245, 245);
+        height: 60px;
+    }
+
+    .nav__icons-container{
+       display: none;
+    }
+    
+    .nav__play-button-container{
+       display: none;
+    }
+
+    .nav__banner-above-nav{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+        align-content: center;
+        justify-content: center;
+        font-size: 0.7rem;
+    }
+
+    .nav__span-text{
+        font-size: 0.7rem;
+        padding-left: 4px;
+    }
+
+
+    .nav__banner-above-nav {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    .nav__banner-above-nav p{
+        margin-bottom: 0px;
+
+    }
+
+
+    .nav__close-menu-icon {
+        display: none;
+
+    }
+    .nav__separator{
+        width: 0.7px;
+        height: 23px;
+        background-color: black;
+    }
+
+   
+    .nav__close-menu-icon{
+        display: inline-block;
+       
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vip icon */
+.nav__vip-icon{
+    display: flex;
+
+}
+
+/* Vip icon */
+.nav__image {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    padding: 0px;
+    margin-top: 2px;
+    margin-right: 10px;
+} 
 /* SIDE MENU */
 .navbar.bg-light{
     display: none;
@@ -157,7 +248,9 @@ a.nav__play-button  {
     height: 70px;
     background-color: rgb(255, 207, 0);
 }
+
 /* navbar full screen */
+
 .nav__border-under-nav{
     width: 100%;
     height: 2.4px;
@@ -279,138 +372,6 @@ a.nav__play-button  {
     display: none;
 }
 
-/*HERE starts another section undel the yellow navbar */
-/* nav main area container */
-.nav__main-area-container{
-    width: 100vw; 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-/* nav main area video */
-.nav__main-area-video {
-    width: 100vw;  
-    overflow: hidden; 
-}
-
-
-.nav__play-video-button{
-    z-index: 3;
-    color: blue;
-    position: absolute;
-    right: 20px;
-    top: 170px;
-}
-
-
-.nav__img-mobile-only{
-    display: none;
-
-}
-
-.nav__img-tablet-only{
-    display: none;
-   }
-
-
-   .nav__main-area-text-overlay{
-    overflow-wrap: break-word;
-    display: flex;
-    text-align: end;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 10rem;
-    left: 30rem;
-    right: 6rem;
-   }
-
-  .nav__box-text{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: white;
-    gap: 16px;
-
-  }
-
-  .nav__text-overlay-video-h2 {
-   
-    font-size: 1.7rem;
-
-  }
-
-  .nav__text-overlay-video-h3{
-    font-size: 1rem;
-
-  }
-
-  .nav__call-to-action a {
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    color: black;
-    background-color: white;
-    padding: 17px 10px;
-    margin: 5px;
-
-  }
-
-  .nav__icon-call-to-action{
-    height: 16px;
-    margin-left: 5px;
-  }
-
-
-  .nav__call-to-action a:hover{
-    background-color: black;
-    color: white;
-  }
-
-
-/* nav quick links */
-.nav__quick-links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    
-    
-}
-
-.nav__quick-links-icons{
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    align-content: center;
-    text-align: center;
-    gap: 30px;
-   
-   
-}
-.nav__quick-links-icons a{ 
-    text-decoration: none;
-    align-items: center;
-    align-content: center;
-
-}
-
-
-
-
-
-
-/* images under the video */
-.nav__icons img{
-    width: 90%;
-}
-
-.nav__quick-links-icons li {
-    list-style-type: none;
-}
-
-
 
 /* side menu */
 .nav__container-side-menu{
@@ -439,84 +400,9 @@ a.nav__play-button  {
 }
 
 
-
-/* Media query*/
-
-@media screen and (min-width: 1920px){
-    .nav__main-area-container{
-        display: flex;
-        background-color: black;
-        justify-items: center;
-        justify-content: center;
-    }
-
-    .nav__main-area-text-overlay{
-        justify-content: flex-end;
-    }
-    
-}
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1300px) {
-    
-
-    .nav__main-area-text-overlay{
-        top: 15rem;
-        left: 35rem;
-        right: 6rem;
-    }
-
-    .nav__text-overlay-video-h2 {
-        font-size: 1.9rem;
-    
-    }
-    
-      .nav__text-overlay-video-h3{
-        font-size: 1.4rem;
-    
-    } 
-    
-}
-
-@media screen and (min-width: 1640px) {
-    
-
-    .nav__main-area-text-overlay{
-        top: 15rem;
-        left: 50rem;
-        right: 8rem;
-    }
-
-    .nav__text-overlay-video-h2 {
-        font-size: 2rem;
-    
-    }
-    
-      .nav__text-overlay-video-h3{
-        font-size: 1.6rem;
-    
-    }
-
-    
-}
-
 /* da 0 a 902px */
 
 @media screen and (max-width: 902px){
-
-
-    .nav__utility-bar-container {
-        display: flex;
-        justify-content: space-around;
-        background-color: rgb(248, 245, 245);
-        height: 60px;
-    }
 
     .nav__icons-container{
        display: none;
@@ -526,35 +412,7 @@ a.nav__play-button  {
        display: none;
     }
 
-    .nav__banner-above-nav{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2px;
-        align-content: center;
-        justify-content: center;
-        font-size: 0.7rem;
-    }
-
-    .nav__span-text{
-        font-size: 0.7rem;
-        padding-left: 4px;
-    }
-
-
-    .nav__banner-above-nav {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-       
-    }
-
-    .nav__banner-above-nav p{
-        margin-bottom: 0px;
-
-    }
-
     
-
      /* hide link test of navbar */
      .nav__li{
         display: none;
@@ -563,61 +421,8 @@ a.nav__play-button  {
      /* hide icons from navbar*/
      .nav__nav-icons{
          display: none;
-     }
-
-     
-
-
-    .nav__text-overlay-video{
-        font-size: 2.2rem;  
-
     }
 
-    .nav__text-overlay-video-h4{
-          color: white;
-         font-size: 1.2rem;
-        text-align: end;
-        line-height: 1.4;
-  
-    }
-
-    .nav__main-area-text-overlay{
-         gap: 10px;
-            
-    }
-
-    .nav__break-line-2{
-      display: block;
-    }
-
-    .nav__line-break{
-        display: block;
-    }
-
-    .nav__close-menu-icon {
-        display: none;
-
-    }
-    .nav__separator{
-        width: 0.7px;
-        height: 23px;
-        background-color: black;
-    }
-
-    /* show the image instead of the video*/
-   .nav__img-tablet-only{
-    display: block;
-   }
-
-    /* hide the video */
-    .nav__animation{
-        display: none;
-    }
-
-    .nav__close-menu-icon{
-        display: inline-block;
-       
-    }
 
     .nav__navbar-container{
         display: none;
@@ -631,60 +436,7 @@ a.nav__play-button  {
         
     }
 
-    .nav__play-video-button{
-        display: none;
-    }
     
-
-    /* main area text */
-   .nav__main-area-text-overlay{
-    top: 14rem;
-    left: 20rem;
-    right: 3rem;
-   
-   
-   }
-
-  .nav__box-text{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: white;
-    gap: 16px;
-
-  }
-
-  .nav__text-overlay-video-h2 {
-    font-size: 1rem;
-
-  }
-
-  .nav__text-overlay-video-h3{
-    font-size: 0.8rem;
-
-  }
-
-  .nav__call-to-action a {
-    border-radius: 5px;
-    font-size: 0.6rem;
-    color: black;
-    background-color: white;
-    padding: 12px 10px;
-    margin: 3px;
-
-  }
-
-  .nav__icon-call-to-action{
-    height: 16px;
-    margin-left: 5px;
-  }
-
-  .nav__quick-links{
-    display: flex;
-    padding-top: 10px;
-    text-align: center;
-    justify-content: center;
-  }
 
     /*navbar icons */
     .nav__navbar-container{
@@ -859,30 +611,13 @@ a.nav__play-button  {
 }
 
 
-
-
-
-
 /* Media query */
 
 
 /* from 0 to 602px */
 @media screen and (max-width: 602px){
 
-    /* show the image instead of the video*/
-    .nav__img-mobile-only{
-        display:flex;
-    }
-
-    /* hide the video */
-    .nav__animation{
-        display: none;
-    }
-
-    .nav__img-tablet-only{
-        display: none;
-       }
-
+    
 
     /* navbar */
     .nav__navbar-container{
@@ -901,152 +636,4 @@ a.nav__play-button  {
     }
 
 
-  .nav__quick-links{
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 50px;
-  }
-
-  .nav__quick-links-icons{
-    flex-wrap: wrap;
-    
-  }
-
-  .nav__icons img {
-    width: 50px;
-  }
-    .nav__main-area-text-overlay{
-       display: none;
-    }
-
-
-    /* Banner mobile only*/
-    .nav__banner-text-mobile-only{
-        width: 100vw;
-        height: 180px;
-        background-color: rgb(3, 3, 3);
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        text-align: center;
-    }
-
-    
-
-    
-
-    .nav__h2-mobile-banner, 
-    .nav__h3-mobile-banner, 
-    .nav__call-to-action-mobile{
-        font-size: 0.8rem;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    
-    .nav__call-to-action-mobile a{
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 0.8rem;
-        color: black;
-        background-color: white;
-        padding: 17px 10px;
-        margin: 5px;
-    }
-
-    .nav__call-to-action-mobile a:hover{
-        background-color: black;
-        color: white;
-      }
-    
-
-
 }
-
-
-
-/* @media screen and (max-width: 601px) {
-   
-    .nav__main-area-text-overlay{
-        display: flex;
-        flex-wrap: wrap;
-        top: 39rem;
-        margin-left: 5px;
-        margin-right: 5px;
-        text-align: center;
-       
-    }
-
-    .nav__text-overlay-video-h2 {
-        font-size: 1.3rem;
-    
-      }
-    
-      .nav__text-overlay-video-h3{
-        font-size: 1rem;
-    
-      }
-
-} */
-
-/* @media screen and (max-width: 563px) {
-    
-
-
-    .nav__main-area-text-overlay{
-        top: 110vh;
-        display: flex;
-        flex-wrap: wrap;
-       
-    }
-
-
-
-
-} */
-
-
-/* @media screen and (max-width: 420px) {
-
-    
-
-    .nav__main-area-text-overlay{
-        display: flex;
-        position: absolute;
-        overflow-wrap: break-word;
-        flex-wrap: wrap;
-        text-align: center;
-        top: 86vh;
-       
-       }
-
-
-  .nav__text-overlay-video-h2 {
-    font-size: 1rem;
-
-  }
-
-  .nav__text-overlay-video-h3{
-    font-size: 0.9rem;
-
-  }
-
-  .nav__call-to-action a {
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 0.6rem;
-    color: black;
-    background-color: white;
-    padding: 10px 8px;
-    margin: 2px;
-
-  }
-    
-} */
-
-
-
-

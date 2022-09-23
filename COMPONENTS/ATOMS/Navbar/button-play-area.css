@@ -1,0 +1,41 @@
+/* play button container */
+.nav__play-button-container {
+    position: relative;
+}
+
+/* the arrow inside the play button */ 
+.nav__arrow-play-button{
+    width: 20px;
+    rotate: 180deg;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    padding: 2px;
+}
+
+
+/* the play button */
+.nav__play-button  {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: black;
+    background-color: rgb(171, 217, 255);
+    padding-top: 5px;
+    padding-right: 0.925rem;
+    padding-left: 2rem;
+    padding-bottom: 5px;
+    line-height:1.5625rem;
+    text-align: end;
+    border-radius: 5px;
+    box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
+}
+
+a.nav__play-button  {
+   text-decoration: none;
+}
+
+.nav__play-button:hover{
+    background-color: white;
+    color: black;
+}
