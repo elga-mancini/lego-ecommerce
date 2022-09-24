@@ -193,7 +193,8 @@ $color-white: white;
 .m-christmas__mini-cards {
 @include static;
 flex-direction: column;
-    .a-christmas__box-text {
+
+    .m-christmas__box-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -256,5 +257,7 @@ flex-direction: column;
     .m-christmas__box-4-clone {
         margin-left: 10px;
     }
+
+    
 }
 }  
