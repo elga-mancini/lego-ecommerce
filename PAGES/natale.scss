@@ -192,5 +192,12 @@ $color-white: white;
 }
 .m-christmas__mini-cards {
 @include static;
+flex-direction: column;
+    .a-christmas__box-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 }  
