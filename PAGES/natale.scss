@@ -19,7 +19,7 @@ $color-white: white;
     max-width: 100rem;
     flex-direction: column;
 
-    .o-christmas__list-container {
+    .m-christmas__list-container {
         @include static;
         margin-top: .8rem;
         svg {
@@ -55,7 +55,7 @@ $color-white: white;
         font-size: 2rem;
     }
     .buttonstyle {
-        font-size: .6rem;
+        font-size: .9rem;
         text-decoration: none;
         border: 1px solid $color-black;
         height: 3rem;
@@ -98,6 +98,11 @@ $color-white: white;
             text-align: left;
         }
     }
+    .a-christmas__img-hp {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
     .a-christmas__hero-banner-h2-text {
         font-size: 2.5rem;
         line-height: 3.125rem;
@@ -128,23 +133,60 @@ $color-white: white;
 }
 
 .m-christmas__icons-container {
-    max-width: 90rem;
-    margin-top: 0px;
-    margin-right: auto;
+    max-width: 100rem;
+    margin: 0 auto;
+    background: rgb(52, 161, 156);
+    margin-top: -5px;
     .m-christmas__container {
-        max-width: 82.5rem;
-        margin-top: 0px;
-        margin-right: auto;
-        .m-christmas__icons {
+        padding: 2.5rem 1.5rem;
+        
+    }
+    .m-christmas__icons {
             display: flex;
             justify-content: center;
-            .a-christmas__link-news {
+            gap: 2rem;
+        .a-christmas__link-news {
                 display: flex;
                 flex-direction: column;
                 text-decoration: none;
                 color: $color-black;
             }
+            .a-christmas__link-news:hover {
+                text-decoration: underline;
+                color: blue;
+            }
+            li {
+                list-style-type: none;
+                text-align: center;
+            }
+            .a-christmas__text-news {
+                margin-top: 1rem;
+            }
+            .a-christmas__text-star-wars {
+                font-style: oblique;
+                margin-top: 1rem;
+            }
+        .a-christmas__img-set {
+            position: static;
+            max-width: 100%;
+            width: auto;
         }
+    }
+}
+
+.m-christmas__carousel-container {
+    max-width: 100rem;
+    margin: 0 auto;
+    background: rgb(52, 161, 156);
+    .m-christmas__container {
+        max-width: 82.5rem;
+        margin: 0 auto;
+    }
+    .a-christmas__text-ideas-presents {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
     }
 }
 }  
