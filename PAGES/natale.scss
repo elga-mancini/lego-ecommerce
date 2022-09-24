@@ -5,6 +5,7 @@ $color-white: white;
     display: flex;
     margin: 0 auto;
     width: 100%;
+    max-width: 100rem;
 }
 
 @mixin svg {
@@ -188,5 +189,8 @@ $color-white: white;
         align-items: center;
         margin-bottom: 2rem;
     }
+}
+.m-christmas__mini-cards {
+@include static;
 }
 }  
