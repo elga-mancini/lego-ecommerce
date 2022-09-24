@@ -55,7 +55,7 @@ $color-white: white;
         font-size: 2rem;
     }
     .buttonstyle {
-        font-size: 1rem;
+        font-size: .6rem;
         text-decoration: none;
         border: 1px solid $color-black;
         height: 3rem;
@@ -128,7 +128,7 @@ $color-white: white;
 }
 
 .m-christmas__icons-container {
-    max-width: 100rem;
+    max-width: 90rem;
     margin-top: 0px;
     margin-right: auto;
     .m-christmas__container {
@@ -142,12 +142,9 @@ $color-white: white;
                 display: flex;
                 flex-direction: column;
                 text-decoration: none;
-                color: black;
+                color: $color-black;
             }
         }
     }
-    
-    
-    
 }
 }  
