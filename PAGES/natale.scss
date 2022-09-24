@@ -126,4 +126,28 @@ $color-white: white;
     }
 }
 }
+
+.m-christmas__icons-container {
+    max-width: 100rem;
+    margin-top: 0px;
+    margin-right: auto;
+    .m-christmas__container {
+        max-width: 82.5rem;
+        margin-top: 0px;
+        margin-right: auto;
+        .m-christmas__icons {
+            display: flex;
+            justify-content: center;
+            .a-christmas__link-news {
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    
+    
+    
+}
 }  
