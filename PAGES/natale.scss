@@ -5,6 +5,7 @@ $color-white: white;
     display: flex;
     margin: 0 auto;
     width: 100%;
+    max-width: 100rem;
 }
 
 @mixin svg {
@@ -19,7 +20,7 @@ $color-white: white;
     max-width: 100rem;
     flex-direction: column;
 
-    .o-christmas__list-container {
+    .m-christmas__list-container {
         @include static;
         margin-top: .8rem;
         svg {
@@ -55,7 +56,7 @@ $color-white: white;
         font-size: 2rem;
     }
     .buttonstyle {
-        font-size: 1rem;
+        font-size: .9rem;
         text-decoration: none;
         border: 1px solid $color-black;
         height: 3rem;
@@ -98,6 +99,11 @@ $color-white: white;
             text-align: left;
         }
     }
+    .a-christmas__img-hp {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
     .a-christmas__hero-banner-h2-text {
         font-size: 2.5rem;
         line-height: 3.125rem;
@@ -125,5 +131,133 @@ $color-white: white;
         text-decoration: underline;
     }
 }
+}
+
+.m-christmas__icons-container {
+    max-width: 100rem;
+    margin: 0 auto;
+    background: rgb(52, 161, 156);
+    margin-top: -5px;
+    .m-christmas__container {
+        padding: 2.5rem 1.5rem;
+        
+    }
+    .m-christmas__icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        .a-christmas__link-news {
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: $color-black;
+            }
+            .a-christmas__link-news:hover {
+                text-decoration: underline;
+                color: blue;
+            }
+            li {
+                list-style-type: none;
+                text-align: center;
+            }
+            .a-christmas__text-news {
+                margin-top: 1rem;
+            }
+            .a-christmas__text-star-wars {
+                font-style: oblique;
+                margin-top: 1rem;
+            }
+        .a-christmas__img-set {
+            position: static;
+            max-width: 100%;
+            width: auto;
+        }
+    }
+}
+
+.m-christmas__carousel-container {
+    max-width: 100rem;
+    margin: 0 auto;
+    background: rgb(52, 161, 156);
+    .m-christmas__container {
+        max-width: 82.5rem;
+        margin: 0 auto;
+    }
+    .a-christmas__text-ideas-presents {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+}
+.m-christmas__mini-cards {
+@include static;
+flex-direction: column;
+
+    .m-christmas__box-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .m-christmas__costruction-text {
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+    .m-christmas__box-images {
+        display: flex;
+        position: relative;
+    }
+    .m-christmas__link-one {
+        font-weight: bold;
+    }
+    
+    .m-christmas__box-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .a-cardStyles__title-text {
+        margin-bottom: 10px;
+    }
+    
+    .m-christmas__img-text-link {
+        text-decoration: none;
+        color: black;
+    }
+    .m-christmas__img-text-link:hover {
+        color: black;
+    }
+    .m-christmas__link-one:hover {
+        text-decoration: underline;
+    }
+    
+    .m-christmas__firstimg {
+        max-width: 100%;
+    }
+    
+    
+    .m-christmas__second-img,
+    .m-christmas__third-img,
+    .m-christmas__four-img {
+        max-width: 100%;
+        object-fit: cover;
+        width: auto;
+        height: auto; 
+    }
+    .m-christmas__box-2,
+    .m-christmas__box-3,
+    .m-christmas__box-4,
+    .m-christmas__box-2-clone,
+    .m-christmas__box-3-clone,
+    .m-christmas__box-4-clone {
+        margin-left: 10px;
+    }
+
+    
 }
 }  
