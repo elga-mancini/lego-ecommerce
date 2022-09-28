@@ -50,6 +50,8 @@
 }
 
 #area__giochi__activeSearchBar {
+  position: relative;
+  z-index: 101;
   height: 530px;
   background-color: white;
   display: none;
@@ -299,3 +301,16 @@
     }
   }
 }
+
+ #area__giochi__blackScreen {
+  visibility: hidden;
+  opacity: 1;
+  transition: opacity 200ms ease 0s;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+} 

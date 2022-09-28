@@ -3,6 +3,8 @@
   src: url(https://assets.lego.com/fonts/v2/cera-pro/CeraPro-Regular.woff2);
 }
 #area__giochi__activeSearchBar {
+  position: relative;
+  z-index: 101;
   height: 530px;
   background-color: white;
   display: none;
@@ -315,4 +317,17 @@
 }
 .area__giochi__nav .area__giochi__buttons_input_container .area__giochi__buttons_hamburger .area__giochi__shadowHamburgerButton .area__giochi__hamburgerButton:active {
   transform: translate3d(0px, 2px, 0px);
+}
+
+#area__giochi__blackScreen {
+  visibility: hidden;
+  opacity: 1;
+  transition: opacity 200ms ease 0s;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
 }/*# sourceMappingURL=crupi_marco_area_giochi.css.map */

@@ -1,3 +1,5 @@
+// OPEN SEARCH NAVBAR
+
 const searchBarNavButton = document.getElementById(
   "area__giochi__searchBarButton"
 );
@@ -19,8 +21,21 @@ const searchButtonClosed = () => {
 
 searchBarNavButton.addEventListener("click", () => {
   searchButtonOpen();
+  openBlack();
 });
 
 closeSearchBarButton.addEventListener("click", () => {
   searchButtonClosed();
+  closeBlack();
 });
+
+// BLACK SCREEN
+const blackScreen = document.getElementById("area__giochi__blackScreen");
+
+const openBlack = () => {
+  blackScreen.style.visibility = "visible";
+};
+
+const closeBlack = () => {
+  blackScreen.style.visibility = "hidden";
+};
