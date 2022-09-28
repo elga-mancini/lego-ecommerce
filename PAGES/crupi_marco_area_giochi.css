@@ -44,6 +44,10 @@
   font-size: 22px;
   margin-left: 1rem;
 }
+#area__giochi__activeSearchBar .area__giochi__navSearch div.area__giochi__inputSearchBar:focus-within {
+  height: 55px;
+  border: 2px solid black;
+}
 
 .area__giochi__nav {
   height: 104px;
