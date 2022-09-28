@@ -2,6 +2,49 @@
   font-family: "cerapro";
   src: url(https://assets.lego.com/fonts/v2/cera-pro/CeraPro-Regular.woff2);
 }
+#area__giochi__activeSearchBar {
+  height: 530px;
+  background-color: white;
+  display: none;
+}
+#area__giochi__activeSearchBar .area__giochi__navSearch {
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 104px;
+  background-color: white;
+}
+#area__giochi__activeSearchBar .area__giochi__navSearch .area__giochi__logo {
+  height: 49.33px;
+  width: 49.32px;
+  cursor: pointer;
+}
+#area__giochi__activeSearchBar .area__giochi__navSearch #area__giochi__close_activeSearchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  background-color: rgb(223, 226, 228);
+  cursor: pointer;
+}
+#area__giochi__activeSearchBar .area__giochi__navSearch .area__giochi__inputSearchBar {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  width: 1150px;
+  height: 50px;
+  background-color: rgb(234, 237, 239);
+  border: none;
+  border-radius: 8px;
+}
+#area__giochi__activeSearchBar .area__giochi__navSearch .area__giochi__inputSearchBar ion-icon {
+  font-size: 22px;
+  margin-left: 1rem;
+}
+
 .area__giochi__nav {
   height: 104px;
   background-color: rgb(255, 207, 0);
