@@ -1,4 +1,4 @@
-// OPEN SEARCH NAVBAR
+// SEARCH NAVBAR - OPEN / CLOSED FEATURE
 
 const searchBarNavButton = document.getElementById(
   "area__giochi__searchBarButton"
@@ -11,12 +11,21 @@ const closeSearchBarButton = document.getElementById(
 
 const searchButtonOpen = () => {
   navbar.style.display = "none";
+
   searchBarBig.style.display = "block";
+  window.setTimeout(function () {
+    searchBarBig.style.opacity = 1;
+    // searchBarBig.style.transform = "scale(1)";
+  }, 0);
 };
 
 const searchButtonClosed = () => {
   navbar.style.display = "flex";
   searchBarBig.style.display = "none";
+  window.setTimeout(function () {
+    searchBarBig.style.opacity = 0;
+    // searchBarBig.style.transform = "scale(0)";
+  }, 0);
 };
 
 searchBarNavButton.addEventListener("click", () => {
@@ -29,7 +38,7 @@ closeSearchBarButton.addEventListener("click", () => {
   closeBlack();
 });
 
-// BLACK SCREEN
+// SEARCH NAVBAR - BLACK SCREEN FEATURE
 const blackScreen = document.getElementById("area__giochi__blackScreen");
 
 const openBlack = () => {
