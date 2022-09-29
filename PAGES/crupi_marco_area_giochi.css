@@ -52,6 +52,81 @@
   height: 55px;
   border: 2px solid black;
 }
+#area__giochi__activeSearchBar .area__giochi__navSection {
+  display: flex;
+  justify-content: center;
+}
+#area__giochi__activeSearchBar .area__giochi__navSection .area__giochi__navSectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+#area__giochi__activeSearchBar .area__giochi__navSection .area__giochi__navSectionContainer .area__giochi__navSectionContainerTitle {
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+#area__giochi__activeSearchBar .area__giochi__navSection .area__giochi__navSectionContainer .area__giochi__navElImg {
+  max-width: 100%;
+  max-height: 50px;
+  margin-top: 4px;
+}
+#area__giochi__activeSearchBar .area__giochi__navSection .area__giochi__navSectionContainer .area__giochi__navElText {
+  margin-top: 0.6rem;
+  line-height: 1.5;
+  color: rgb(234, 237, 239);
+  font-weight: 900;
+  font-size: 12px;
+}
+#area__giochi__activeSearchBar .area__giochi__navSection .area__giochi__navSectionContainer .area__giochi__navSectionContainerOne .area__giochi__navSectionContainerOneLayout {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+#area__giochi__activeSearchBar .area__giochi__navSection .area__giochi__navSectionContainer .area__giochi__navSectionContainerOne .area__giochi__navSectionContainerOneLayout .area__giochi__navElVertical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px;
+  width: 173.329px;
+  height: 325.75px;
+  background: linear-gradient(0deg, rgba(0, 58, 123, 0.8) 0%, rgb(44, 131, 195) 100%), url(https://www.lego.com/kids/static/images/search-links/lego-life-app-bg.png) 0px 100%/cover no-repeat transparent;
+  border: none;
+  cursor: pointer;
+}
+#area__giochi__activeSearchBar .area__giochi__navSection .area__giochi__navSectionContainer .area__giochi__navSectionContainerOne .area__giochi__navSectionContainerOneLayout .area__giochi__navElsSquare {
+  display: flex;
+  gap: 4px;
+}
+#area__giochi__activeSearchBar .area__giochi__navSection .area__giochi__navSectionContainer .area__giochi__navSectionContainerOne .area__giochi__navSectionContainerOneLayout .area__giochi__navElsSquare .area__giochi__navElSquareGreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px;
+  width: 189.33px;
+  height: 160.88px;
+  padding: 0 8px;
+  background: linear-gradient(0deg, rgba(25, 178, 114, 0.8), rgb(0, 148, 112) 100%), url(https://www.lego.com/kids/static/images/search-links/building-instructions-bg.png) 0px 100%/cover no-repeat transparent;
+  border: none;
+  cursor: pointer;
+}
+#area__giochi__activeSearchBar .area__giochi__navSection .area__giochi__navSectionContainer .area__giochi__navSectionContainerOne .area__giochi__navSectionContainerOneLayout .area__giochi__navElsSquare .area__giochi__navElSquareBlue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px;
+  width: 189.33px;
+  height: 160.88px;
+  padding: 0 8px;
+  background: linear-gradient(0deg, rgba(0, 87, 167, 0.5) 0%, rgb(44, 154, 255) 100%), url(https://www.lego.com/kids/static/images/search-links/digital-safety-bg.png) center center repeat transparent;
+  border: none;
+  cursor: pointer;
+}
 
 .area__giochi__nav {
   height: 104px;
