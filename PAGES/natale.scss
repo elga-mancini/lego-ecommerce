@@ -194,8 +194,6 @@ $color-white: white;
 .m-christmas__mini-cards {
 @include static;
 flex-direction: column;
-background:rgb(52, 161, 156); 
-
     .m-christmas__box-text {
         display: flex;
         flex-direction: column;
@@ -262,5 +260,16 @@ background:rgb(52, 161, 156);
 
     
 }
-
+.m-christmas__container-why-buy{
+    @include static;
+    background: rgb(204, 231, 230);
+    flex-direction: column;
+.m-christmas__head-container-clone {
+    max-width: 100rem;
+    padding: 2rem;
+    .a-christmas__h1-presents-clone {
+        margin-bottom: 2rem;
+    }   
+}
+}
 }  
