@@ -258,4 +258,18 @@
 }
 .o-christmas__megacontainer .m-christmas__container-why-buy .m-christmas__head-container-clone .a-christmas__h1-presents-clone {
   margin-bottom: 2rem;
+}
+.o-christmas__megacontainer .m-christmas__container-prepare-to-christmas {
+  background: rgb(52, 161, 156);
+  max-width: 100rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+.o-christmas__megacontainer .m-christmas__container-prepare-to-christmas .a-christmas__text-prepare-to-christmas {
+  text-align: center;
+}
+.o-christmas__megacontainer .m-christmas__container-prepare-to-christmas .a-christmas__text-prepare-to-christmas .a-christmas__text-christmas {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=natale.css.map */

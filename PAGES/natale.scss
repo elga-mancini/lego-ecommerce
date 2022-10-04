@@ -272,4 +272,19 @@ flex-direction: column;
     }   
 }
 }
+.m-christmas__container-prepare-to-christmas {
+    background: rgb(52, 161, 156);
+    max-width: 100rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+    
+    .a-christmas__text-prepare-to-christmas {
+        text-align: center;
+        .a-christmas__text-christmas {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+    }
+}
 }  
