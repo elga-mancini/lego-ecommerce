@@ -19,7 +19,6 @@ $color-white: white;
     @include static;
     max-width: 100rem;
     flex-direction: column;
-
     .m-christmas__list-container {
         @include static;
         margin-top: .8rem;
@@ -190,9 +189,12 @@ $color-white: white;
         margin-bottom: 2rem;
     }
 }
+
+
 .m-christmas__mini-cards {
 @include static;
 flex-direction: column;
+background:rgb(52, 161, 156); 
 
     .m-christmas__box-text {
         display: flex;
@@ -260,4 +262,5 @@ flex-direction: column;
 
     
 }
+
 }  
