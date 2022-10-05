@@ -157,6 +157,22 @@
   border: none;
   cursor: pointer;
 }
+#area__giochi__activeSearchBar .area__giochi__navSection .area__giochi__navSectionContainer .area__giochi__navSectionContainerTwo {
+  width: 576px;
+}
+#area__giochi__activeSearchBar .area__giochi__navSection .area__giochi__navSectionContainer .area__giochi__navSectionContainerTwo .area__giochi__navSectionContainerTwoLayout {
+  display: flex;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+#area__giochi__activeSearchBar .area__giochi__navSection .area__giochi__navSectionContainer .area__giochi__navSectionContainerTwo .area__giochi__navSectionContainerTwoLayout .area__giochi__navElRectangle img {
+  width: 286px;
+  height: 160.88px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
 
 .area__giochi__nav {
   height: 104px;
