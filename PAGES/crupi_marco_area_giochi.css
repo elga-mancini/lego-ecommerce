@@ -175,6 +175,8 @@
 }
 
 .area__giochi__nav {
+  position: relative;
+  z-index: 10;
   height: 104px;
   background-color: rgb(255, 207, 0);
   display: flex;
@@ -444,8 +446,7 @@
 
 #area__giochi__activeHamburgerM {
   position: relative;
-  z-index: -1;
-  display: none;
+  z-index: 1;
   transition: 0.3s ease;
   transform: translateY(-80px);
 }
@@ -456,7 +457,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(0px);
 }
 .area__giochi__activeHamburgerMenu .area__giochi__exit_container {
   display: flex;

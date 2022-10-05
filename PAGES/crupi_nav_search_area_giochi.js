@@ -58,7 +58,7 @@ const hamburgerButton = document.getElementById("area__giochi__hamburgerB");
 
 const openHamburgher = (toggle) => {
   if (toggle) {
-    hamburgherMenu.style.display = "flex";
+    // hamburgherMenu.style.display = "flex";
     window.setTimeout(function () {
       // hamburgherMenu.style.opacity = 1;
       hamburgherMenu.style.transform = "translate(0px,0px)"; 
