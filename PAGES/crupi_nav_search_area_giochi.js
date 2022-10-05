@@ -11,6 +11,7 @@ const closeSearchBarButton = document.getElementById(
 
 const searchButtonOpen = () => {
   navbar.style.display = "none";
+  closeHamburgherMenu();
 
   searchBarBig.style.display = "block";
   window.setTimeout(function () {
@@ -58,18 +59,12 @@ const hamburgerButton = document.getElementById("area__giochi__hamburgerB");
 
 const openHamburgher = (toggle) => {
   if (toggle) {
-    // hamburgherMenu.style.display = "flex";
     window.setTimeout(function () {
-      // hamburgherMenu.style.opacity = 1;
       hamburgherMenu.style.transform = "translate(0px,0px)";
-      // searchBarBig.style.transform = "scale(1)";
     }, 0);
   } else {
-    // hamburgherMenu.style.display = "none";
     window.setTimeout(function () {
-      // hamburgherMenu.style.opacity = 0;
       hamburgherMenu.style.transform = "translate(0px,-80px)";
-      // searchBarBig.style.transform = "scale(1)";
     }, 0);
   }
 };
@@ -77,16 +72,13 @@ const openHamburgher = (toggle) => {
 let toggle = false;
 hamburgerButton.addEventListener("click", () => {
   toggle = !toggle;
-  console.log(toggle);
   openHamburgher(toggle);
 });
 
 const closeHamburgherMenu = () => {
   toggle = false;
   window.setTimeout(function () {
-    // hamburgherMenu.style.opacity = 0;
     hamburgherMenu.style.transform = "translate(0px,-80px)";
-    // searchBarBig.style.transform = "scale(1)";
   }, 0);
 };
 
@@ -100,14 +92,41 @@ const myFunction = (e) => {
       containsActiveClass = true;
       break;
     }
-
     reviewNode = reviewNode.parentNode;
   }
 
   if (containsActiveClass === false) {
     console.log("close");
     closeHamburgherMenu();
+    popupButtonClosed();
+    searchButtonClosed();
+    closeBlack();
   }
 };
 
 document.body.addEventListener("click", myFunction, false);
+
+// POPUP - OPEN/CLOSED
+
+const popUp = document.getElementById("area__giochi__popUpA");
+const buttonLogIn = document.getElementById("area__giochi__shadowLb");
+
+const popupButtonOpen = () => {
+  openBlack();
+  popUp.style.display = "flex";
+  console.log("test");
+  window.setTimeout(function () {
+    popUp.style.opacity = 1;
+  }, 0);
+};
+
+const popupButtonClosed = () => {
+  popUp.style.display = "none";
+  window.setTimeout(function () {
+    popUp.style.opacity = 0;
+  }, 0);
+};
+
+buttonLogIn.addEventListener("click", () => {
+  popupButtonOpen();
+});

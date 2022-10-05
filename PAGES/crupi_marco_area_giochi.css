@@ -527,6 +527,7 @@
 }
 
 #area__giochi__popUpA {
+  z-index: 101;
   padding: 32px;
   max-width: 700px;
   position: relative;
@@ -537,6 +538,12 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 12px 15px 0px;
   -webkit-animation: 0.5s ease 0s 1 normal none running fadeIn;
           animation: 0.5s ease 0s 1 normal none running fadeIn;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.6s ease opacity;
 }
 #area__giochi__popUpA .area__giochi__popUp_Title {
   padding-top: 32px;
@@ -549,4 +556,79 @@
 }
 #area__giochi__popUpA .area__giochi__popUp_Title span {
   font-family: tobipro, arial, sans-serif;
+}
+#area__giochi__popUpA .area__giochi__popUp_cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px auto;
+  padding: 0px 32px;
+  gap: 32px;
+}
+#area__giochi__popUpA .area__giochi__popUp_cardContainer .area__giochi__popUp_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 158.67px;
+}
+#area__giochi__popUpA .area__giochi__popUp_cardContainer .area__giochi__popUp_card .area__giochi__popUp_img {
+  margin-bottom: 48px;
+}
+#area__giochi__popUpA .area__giochi__popUp_cardContainer .area__giochi__popUp_card .area__giochi__popUp_text {
+  margin-top: 32px;
+}
+#area__giochi__popUpA .area__giochi__popUpButtonContainer {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#area__giochi__popUpA .area__giochi__popUpButtonContainer .area__giochi__shadowPopUpButton {
+  margin-top: 0.3rem;
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  height: 40px;
+  width: 192px;
+  background: #dfe2e4;
+}
+#area__giochi__popUpA .area__giochi__popUpButtonContainer .area__giochi__shadowPopUpButton .area__giochi__PopUpButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 192px;
+  border-radius: 8px;
+  background: white;
+  position: relative;
+  top: -4px;
+  border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+  transition: 0.13s ease-in-out;
+  cursor: pointer;
+}
+#area__giochi__popUpA .area__giochi__popUpButtonContainer .area__giochi__shadowPopUpButton .area__giochi__PopUpButton:hover {
+  transform: translate3d(0px, -2px, 0px);
+}
+#area__giochi__popUpA .area__giochi__popUpButtonContainer .area__giochi__shadowPopUpButton .area__giochi__PopUpButton:active {
+  transform: translate3d(0px, 2px, 0px);
+}
+#area__giochi__popUpA .area__giochi__popUpButtonContainer .area__giochi__shadowPopUpButton .area__giochi__PopUpButton .area__giochi__PopUpButtonText {
+  color: #394754;
+  font-size: 14px;
+  margin-left: 0.5rem;
+}
+#area__giochi__popUpA .area__giochi__popUpButtonContainer .area__giochi__shadowPopUpButton .area__giochi__PopUpButton .area__giochi__PopUpButtonIco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(221, 221, 221);
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
 }/*# sourceMappingURL=crupi_marco_area_giochi.css.map */
