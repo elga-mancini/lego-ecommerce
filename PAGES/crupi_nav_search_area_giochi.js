@@ -61,14 +61,14 @@ const openHamburgher = (toggle) => {
     // hamburgherMenu.style.display = "flex";
     window.setTimeout(function () {
       // hamburgherMenu.style.opacity = 1;
-      hamburgherMenu.style.transform = "translate(0px,0px)"; 
+      hamburgherMenu.style.transform = "translate(0px,0px)";
       // searchBarBig.style.transform = "scale(1)";
     }, 0);
   } else {
     // hamburgherMenu.style.display = "none";
     window.setTimeout(function () {
       // hamburgherMenu.style.opacity = 0;
-      hamburgherMenu.style.transform = "translate(0px,-80px)"; 
+      hamburgherMenu.style.transform = "translate(0px,-80px)";
       // searchBarBig.style.transform = "scale(1)";
     }, 0);
   }
@@ -77,5 +77,37 @@ const openHamburgher = (toggle) => {
 let toggle = false;
 hamburgerButton.addEventListener("click", () => {
   toggle = !toggle;
+  console.log(toggle);
   openHamburgher(toggle);
 });
+
+const closeMenu = () => {
+  toggle = false;
+  window.setTimeout(function () {
+    // hamburgherMenu.style.opacity = 0;
+    hamburgherMenu.style.transform = "translate(0px,-80px)";
+    // searchBarBig.style.transform = "scale(1)";
+  }, 0);
+};
+
+// This function selects the entire body except for one particular element
+const myFunction = (e) => {
+  let containsActiveClass = false;
+  let reviewNode = e.target;
+
+  while (reviewNode.nodeName !== "BODY") {
+    if (reviewNode.classList.contains("active")) {
+      containsActiveClass = true;
+      break;
+    }
+
+    reviewNode = reviewNode.parentNode;
+  }
+
+  if (containsActiveClass === false) {
+    console.log("close");
+    closeMenu();
+  }
+};
+
+document.body.addEventListener("click", myFunction, false);
