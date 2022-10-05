@@ -2,6 +2,11 @@
   font-family: "cerapro";
   src: url(https://assets.lego.com/fonts/v2/cera-pro/CeraPro-Regular.woff2);
 }
+@font-face {
+  font-family: "tobipro";
+  src: url(./tobipro-medium-webfont.woff2);
+}
+
 
 @mixin coloredButtonNav($background) {
   display: flex;
@@ -541,4 +546,28 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 100;
+}
+
+#area__giochi__popUpA {
+  padding: 32px;
+  max-width: 700px;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(rgb(255, 255, 255) 0%, rgb(223, 226, 228) 100%);
+  border-radius: 16px;
+  box-shadow: rgb(0 0 0 / 25%) 0px 12px 15px 0px;
+  animation: 0.5s ease 0s 1 normal none running fadeIn;
+  .area__giochi__popUp_Title {
+    padding-top: 32px;
+    padding-right: 0px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: rgb(41, 55, 68);
+    span {
+      font-family: tobipro, arial, sans-serif;
+    }
+  }
 }

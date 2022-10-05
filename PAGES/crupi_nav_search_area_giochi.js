@@ -81,7 +81,7 @@ hamburgerButton.addEventListener("click", () => {
   openHamburgher(toggle);
 });
 
-const closeMenu = () => {
+const closeHamburgherMenu = () => {
   toggle = false;
   window.setTimeout(function () {
     // hamburgherMenu.style.opacity = 0;
@@ -106,7 +106,7 @@ const myFunction = (e) => {
 
   if (containsActiveClass === false) {
     console.log("close");
-    closeMenu();
+    closeHamburgherMenu();
   }
 };
 
