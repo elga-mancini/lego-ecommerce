@@ -459,7 +459,11 @@
 }
 
 #area__giochi__activeHamburgerM {
+  position: relative;
+  z-index: -1;
   display: none;
+  transition: 0.3s ease;
+  transform: translateY(-80px);
 }
 
 .area__giochi__activeHamburgerMenu {

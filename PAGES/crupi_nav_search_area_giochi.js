@@ -59,13 +59,23 @@ const hamburgerButton = document.getElementById("area__giochi__hamburgerB");
 const openHamburgher = (toggle) => {
   if (toggle) {
     hamburgherMenu.style.display = "flex";
+    window.setTimeout(function () {
+      // hamburgherMenu.style.opacity = 1;
+      hamburgherMenu.style.transform = "translate(0px,0px)"; 
+      // searchBarBig.style.transform = "scale(1)";
+    }, 0);
   } else {
-    hamburgherMenu.style.display = "none";
+    // hamburgherMenu.style.display = "none";
+    window.setTimeout(function () {
+      // hamburgherMenu.style.opacity = 0;
+      hamburgherMenu.style.transform = "translate(0px,-80px)"; 
+      // searchBarBig.style.transform = "scale(1)";
+    }, 0);
   }
 };
+
 let toggle = false;
 hamburgerButton.addEventListener("click", () => {
   toggle = !toggle;
-  console.log(toggle);
   openHamburgher(toggle);
 });
