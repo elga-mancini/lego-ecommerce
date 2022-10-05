@@ -48,3 +48,24 @@ const openBlack = () => {
 const closeBlack = () => {
   blackScreen.style.visibility = "hidden";
 };
+
+// HAMBURGHER MENU - OPEN/CLOSED FEATURE
+
+const hamburgherMenu = document.getElementById(
+  "area__giochi__activeHamburgerM"
+);
+const hamburgerButton = document.getElementById("area__giochi__hamburgerB");
+
+const openHamburgher = (toggle) => {
+  if (toggle) {
+    hamburgherMenu.style.display = "flex";
+  } else {
+    hamburgherMenu.style.display = "none";
+  }
+};
+let toggle = false;
+hamburgerButton.addEventListener("click", () => {
+  toggle = !toggle;
+  console.log(toggle);
+  openHamburgher(toggle);
+});

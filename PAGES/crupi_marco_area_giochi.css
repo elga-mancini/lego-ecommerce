@@ -442,6 +442,10 @@
   transform: translate3d(0px, 2px, 0px);
 }
 
+#area__giochi__activeHamburgerM {
+  display: none;
+}
+
 .area__giochi__activeHamburgerMenu {
   height: 71px;
   background-color: rgb(226, 166, 0);
