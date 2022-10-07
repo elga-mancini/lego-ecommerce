@@ -711,6 +711,28 @@
         list-style: none;
         overflow: hidden;
 
+        .area__giochi__bigSliderText {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          position: absolute;
+          z-index: 3;
+          height: 120px;
+          width: fit-content;
+          background-color: white;
+          bottom: 70px;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          span {
+            color: black;
+            font-size: 22px;
+            font-family: tobipro, arial, sans-serif;
+            font-weight: bold;
+            margin-left: 25px;
+            margin-right: 50px;
+          }
+        }
+
         &:target {
           z-index: 3;
           -webkit-animation: slide 1s 1;
