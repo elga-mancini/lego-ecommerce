@@ -644,4 +644,95 @@
   height: 689.547px;
   position: relative;
   top: -72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area__giochi__sectionOne .area__giochi__bigSliderImgContainer {
+  display: flex;
+  justify-content: center;
+  height: 561.55px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgThumbnails {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+}
+.area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgThumbnails li {
+  flex: auto;
+  list-style: none;
+}
+.area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgThumbnails li a {
+  display: block;
+}
+.area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgThumbnails img {
+  width: 199.67px;
+  height: 112.31px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgSlides {
+  overflow: hidden;
+  width: 998.33px;
+  height: 561.55px;
+}
+.area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgSlides li {
+  width: 998.33px;
+  height: 561.55px;
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+  overflow: hidden;
+}
+.area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgSlides li:target {
+  z-index: 3;
+  -webkit-animation: slide 1s 1;
+}
+@-webkit-keyframes slide {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes hidden {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: 2;
+  }
+}
+@keyframes hidden {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: 2;
+  }
+}
+.area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgSlides img {
+  position: absolute;
+  overflow: hidden;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 998.33px;
+  height: 561.55px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100%;
+     object-position: 100%;
 }/*# sourceMappingURL=crupi_marco_area_giochi.css.map */

@@ -660,13 +660,96 @@
 }
 
 .area__giochi__sectionOne {
-      box-sizing: border-box;
-    min-width: 0;
-    background-image: url(https://www.lego.com/kids/static/images/seasonal-backgrounds/halloween-candy-bg.jpg);
-    padding-top: 2px;
-    padding-bottom: 2px;
-    height: 689.547px;
-    position: relative;
-    top: -72px;
+  box-sizing: border-box;
+  min-width: 0;
+  background-image: url(https://www.lego.com/kids/static/images/seasonal-backgrounds/halloween-candy-bg.jpg);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  height: 689.547px;
+  position: relative;
+  top: -72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  .area__giochi__bigSliderImgContainer {
+    display: flex;
+    justify-content: center;
+    height: 561.55px;
+    border-radius: 50px;
+    overflow: hidden;
+
+    .area__giochi__bigSliderImgThumbnails {
+      display: flex;
+      flex-direction: column;
+      line-height: 0;
+      li {
+        flex: auto;
+        list-style: none;
+        a {
+          display: block;
+        }
+      }
+      img {
+        width: 199.67px;
+        height: 112.31px;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+
+    .area__giochi__bigSliderImgSlides {
+      overflow: hidden;
+      width: 998.33px;
+      height: 561.55px;
+
+      li {
+        width: 998.33px;
+        height: 561.55px;
+        position: absolute;
+        z-index: 1;
+        list-style: none;
+        overflow: hidden;
+
+        &:target {
+          z-index: 3;
+          -webkit-animation: slide 1s 1;
+        }
+        @keyframes slide {
+          0% {
+            transform: translateY(-100%);
+          }
+          100% {
+            transform: translateY(0%);
+          }
+        }
+        @keyframes hidden {
+          0% {
+            z-index: 2;
+          }
+          100% {
+            z-index: 2;
+          }
+        }
+      }
+      img {
+        position: absolute;
+        overflow: hidden;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        width: 998.33px;
+        height: 561.55px;
+
+        // Center image inside container
+        // top: 0px;
+        // bottom: 0px;
+        // left: 0px;
+        // right: 0px;
+        // margin: auto;
+
+        object-fit: cover;
+        object-position: 100%;
+      }
+    }
+  }
 }

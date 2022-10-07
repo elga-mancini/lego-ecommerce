@@ -131,3 +131,4 @@ buttonLogIn.addEventListener("click", () => {
   popupButtonOpen();
 });
 
+// GALLERY
