@@ -548,7 +548,9 @@
   z-index: 101;
   padding: 32px;
   max-width: 700px;
-  position: relative;
+  position: absolute;
+  right: 50px;
+  left: 50px;
   width: 100%;
   margin: auto;
   background: linear-gradient(rgb(255, 255, 255) 0%, rgb(223, 226, 228) 100%);
@@ -657,42 +659,14 @@
   }
 }
 
-// SLIDER NAV STYLE
+.area__giochi__sectionOne {
+      box-sizing: border-box;
+    min-width: 0;
+    background-image: url(https://www.lego.com/kids/static/images/seasonal-backgrounds/halloween-candy-bg.jpg);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 689.547px;
+    position: relative;
+    top: -72px;
 
-.swiper {
-  
-  width: 100%;
-  height: 270px;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: rgb(178, 51, 51);
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-@media (max-width: 760px) {
-  .swiper-button-next {
-    right: 20px;
-    transform: rotate(90deg);
-  }
-
-  .swiper-button-prev {
-    left: 20px;
-    transform: rotate(90deg);
-  }
 }
