@@ -713,23 +713,7 @@
 }
 .area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgSlides li:target {
   z-index: 3;
-  -webkit-animation: slide 1s 1;
-}
-@-webkit-keyframes slide {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-@keyframes slide {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
+  -webkit-animation: hidden 1s 1;
 }
 @-webkit-keyframes hidden {
   0% {
