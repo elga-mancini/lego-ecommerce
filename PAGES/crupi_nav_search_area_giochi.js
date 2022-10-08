@@ -137,6 +137,7 @@ var navUl = document.getElementById("area__giochi__bigSliderImgThumb");
 navUl.addEventListener("click", checkA);
 
 function checkA(event) {
+  
   // Just for testing... remove the following line:
   // console.log("clicked on", event.target.tagName);
   // Only apply our actions if we really clicked on the link.

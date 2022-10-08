@@ -734,4 +734,21 @@
      object-fit: cover;
   -o-object-position: 100%;
      object-position: 100%;
+}
+
+.area__giochi__sectionTwo {
+  position: relative;
+  top: -73px;
+  height: 597.19px;
+  background-color: #eaedef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area__giochi__sectionTwo .area__giochi__exploreNewsTitle span {
+  color: #293744;
+  font-size: 48px;
+  font-family: tobipro, arial, sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
 }/*# sourceMappingURL=crupi_marco_area_giochi.css.map */

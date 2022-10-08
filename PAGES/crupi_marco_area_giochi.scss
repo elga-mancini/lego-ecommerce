@@ -685,7 +685,6 @@
         flex: auto;
         list-style: none;
         background-color: white;
-        
 
         a {
           display: block;
@@ -694,7 +693,6 @@
             transition-duration: 0.5s;
             opacity: 1;
           }
-          
         }
 
         .thumbActive {
@@ -787,3 +785,26 @@
     }
   }
 }
+
+.area__giochi__sectionTwo {
+  position: relative;
+  top: -73px;
+  height: 597.19px;
+  background-color: #eaedef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+    .area__giochi__exploreNewsTitle {
+      span {
+        color: #293744;
+            font-size: 48px;
+            font-family: tobipro, arial, sans-serif;
+            font-weight: 900;
+    line-height: 1.2;
+      }
+    }
+
+  
+}
+
