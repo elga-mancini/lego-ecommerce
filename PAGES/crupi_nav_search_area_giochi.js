@@ -133,9 +133,8 @@ buttonLogIn.addEventListener("click", () => {
 
 // GALLERY THUMB "FOCUS" EFFECT IN JAVASCRIPT
 
-var navUl = document.getElementById("area__giochi__bigSliderImgThumb");
+let navUl = document.getElementById("area__giochi__bigSliderImgThumb");
 navUl.addEventListener("click", checkA);
-
 
 function checkA(event) {
   // Disable anchor "jump" (necessary for the first click on the thumbnails)
