@@ -136,12 +136,25 @@ buttonLogIn.addEventListener("click", () => {
 var navUl = document.getElementById("area__giochi__bigSliderImgThumb");
 navUl.addEventListener("click", checkA);
 
+
 function checkA(event) {
-  
+  // Disable anchor "jump" (necessary for the first click on the thumbnails)
+  setTimeout(function () {
+    window.scrollTo(0, 0);
+  }, 1);
+
   // Just for testing... remove the following line:
   // console.log("clicked on", event.target.tagName);
   // Only apply our actions if we really clicked on the link.
   if (event.target.tagName === "IMG") {
+    // Disable anchor "jump" (necessary for subsequent clicks on the thumbnails)
+    if (location.hash) {
+      setTimeout(function () {
+        window.scrollTo(0, 0);
+      }, 1);
+    }
+
+    // Adds / removes the class to one element at a time
     navUl
       .querySelectorAll("a")
       .forEach((el) => el.classList.remove("thumbActive"));

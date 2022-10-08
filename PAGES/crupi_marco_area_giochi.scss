@@ -696,7 +696,7 @@
         }
 
         .thumbActive {
-          opacity: 1;
+           opacity: 1;
         }
       }
       img {
@@ -794,17 +794,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
-    .area__giochi__exploreNewsTitle {
-      span {
-        color: #293744;
-            font-size: 48px;
-            font-family: tobipro, arial, sans-serif;
-            font-weight: 900;
-    line-height: 1.2;
-      }
+
+  .area__giochi__exploreNewsTitle {
+    span {
+      color: #293744;
+      font-size: 48px;
+      font-family: tobipro, arial, sans-serif;
+      font-weight: 900;
+      line-height: 1.2;
     }
-
-  
+  }
 }
-
