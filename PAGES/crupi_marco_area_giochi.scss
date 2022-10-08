@@ -815,14 +815,89 @@
       min-width: 288px;
       margin: -30.5px 0px;
       .area__giochi__FakeSliderTop {
-        overflow: hidden;
-        border-radius: 32px 32px 0px 0px;
-        box-shadow: rgb(0 0 0 / 15%) 0px 16px 32px;
-        // transition: transform 175ms cubic-bezier(0.17, 0.67, 0.39, 0.66) 0s;
-        // transform: translateY(30.5px);
-        // &:hover {
-        //   transform: translateY(0px);
-        // }
+        .area__giochi__FakeSliderVideo {
+          position: relative;
+          opacity: 1;
+          z-index: 2;
+          overflow: hidden;
+          border-radius: 32px 32px 0px 0px;
+          box-shadow: rgb(0 0 0 / 15%) 0px 36px 32px;
+          // transition: transform 175ms cubic-bezier(0.17, 0.67, 0.39, 0.66) 0s;
+          // transform: translateY(30.5px);
+          // &:hover {
+          //   transform: translateY(0px);
+          // }
+        }
+      }
+      .area__giochi__FakeSliderIcoContainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 24px;
+
+        .area__giochi__FakeSliderIcoLeftStar {
+          position: relative;
+          z-index: 2;
+          top: -20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 32px;
+          height: 32px;
+          background-color: #ffffff;
+          border-radius: 50%;
+          box-shadow: 0px 4px 8px rgb(0 0 0 / 35%);
+
+          svg {
+            height: 18px;
+          }
+        }
+        .area__giochi__FakeSliderIcoRightGroup {
+          display: flex;
+          align-items: center;
+
+          .area__giochi__FakeSliderIco {
+            margin-left: -5px;
+            position: relative;
+            z-index: 2;
+            top: -30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgb(0 0 0 / 35%);
+            svg {
+              height: 18px;
+            }
+          }
+          .area__giochi__FakeSliderBigIco {
+            margin-left: -5px;
+            position: relative;
+            z-index: 2;
+            top: -30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgb(0 0 0 / 35%);
+            svg {
+              height: 22.5px;
+            }
+          }
+        }
+      }
+      .area__giochi__FakeSliderBottom {
+        position: relative;
+        z-index: 1;
+        transform: translateY(-55px);
+        background-color: rgb(255, 255, 255);
+        border-radius: 0px 0px 32px 32px;
+        padding: 24px 32px;
       }
     }
   }
