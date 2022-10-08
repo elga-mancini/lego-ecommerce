@@ -669,6 +669,10 @@
   display: block;
   opacity: 0.4;
 }
+.area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgThumbnails li a:hover {
+  transition-duration: 0.5s;
+  opacity: 1;
+}
 .area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgThumbnails li .thumbActive {
   opacity: 1;
 }

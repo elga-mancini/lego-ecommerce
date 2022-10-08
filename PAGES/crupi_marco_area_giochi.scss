@@ -685,11 +685,18 @@
         flex: auto;
         list-style: none;
         background-color: white;
+        
 
         a {
           display: block;
           opacity: 0.4;
+          &:hover {
+            transition-duration: 0.5s;
+            opacity: 1;
+          }
+          
         }
+
         .thumbActive {
           opacity: 1;
         }
