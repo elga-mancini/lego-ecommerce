@@ -134,9 +134,9 @@ buttonLogIn.addEventListener("click", () => {
 // GALLERY THUMB "FOCUS" EFFECT IN JAVASCRIPT
 
 var navUl = document.getElementById("area__giochi__bigSliderImgThumb");
-navUl.addEventListener("click", checkLi);
+navUl.addEventListener("click", checkA);
 
-function checkLi(event) {
+function checkA(event) {
   // Just for testing... remove the following line:
   // console.log("clicked on", event.target.tagName);
   // Only apply our actions if we really clicked on the link.
