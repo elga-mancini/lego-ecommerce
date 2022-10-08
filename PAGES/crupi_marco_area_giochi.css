@@ -663,9 +663,14 @@
 .area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgThumbnails li {
   flex: auto;
   list-style: none;
+  background-color: white;
 }
 .area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgThumbnails li a {
   display: block;
+  opacity: 0.4;
+}
+.area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgThumbnails li .thumbActive {
+  opacity: 1;
 }
 .area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgThumbnails img {
   width: 199.67px;
@@ -713,23 +718,6 @@
 }
 .area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgSlides li:target {
   z-index: 3;
-  -webkit-animation: hidden 1s 1;
-}
-@-webkit-keyframes hidden {
-  0% {
-    z-index: 2;
-  }
-  100% {
-    z-index: 2;
-  }
-}
-@keyframes hidden {
-  0% {
-    z-index: 2;
-  }
-  100% {
-    z-index: 2;
-  }
 }
 .area__giochi__sectionOne .area__giochi__bigSliderImgContainer .area__giochi__bigSliderImgSlides img {
   position: absolute;

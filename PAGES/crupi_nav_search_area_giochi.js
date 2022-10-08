@@ -96,7 +96,7 @@ const myFunction = (e) => {
   }
 
   if (containsActiveClass === false) {
-    console.log("close");
+    // console.log("close");
     closeHamburgherMenu();
     popupButtonClosed();
     searchButtonClosed();
@@ -131,4 +131,19 @@ buttonLogIn.addEventListener("click", () => {
   popupButtonOpen();
 });
 
-// GALLERY
+// GALLERY THUMB "FOCUS" EFFECT IN JAVASCRIPT
+
+var navUl = document.getElementById("area__giochi__bigSliderImgThumb");
+navUl.addEventListener("click", checkLi);
+
+function checkLi(event) {
+  // Just for testing... remove the following line:
+  // console.log("clicked on", event.target.tagName);
+  // Only apply our actions if we really clicked on the link.
+  if (event.target.tagName === "IMG") {
+    navUl
+      .querySelectorAll("a")
+      .forEach((el) => el.classList.remove("thumbActive"));
+    event.target.parentNode.classList.add("thumbActive");
+  }
+}

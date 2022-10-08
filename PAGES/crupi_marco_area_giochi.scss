@@ -591,8 +591,6 @@
 
       .area__giochi__popUp_img {
         margin-bottom: 48px;
-        .area__giochi__popUp_imgCenter {
-        }
       }
       .area__giochi__popUp_text {
         margin-top: 32px;
@@ -686,8 +684,14 @@
       li {
         flex: auto;
         list-style: none;
+        background-color: white;
+
         a {
           display: block;
+          opacity: 0.4;
+        }
+        .thumbActive {
+          opacity: 1;
         }
       }
       img {
@@ -735,7 +739,7 @@
 
         &:target {
           z-index: 3;
-          
+
           // -webkit-animation: slide 1s 1;
         }
         // @keyframes slide {
@@ -753,7 +757,7 @@
         //   100% {
         //     z-index: 2;
         //   }
-        }
+        // }
       }
       img {
         position: absolute;
