@@ -925,28 +925,27 @@
             padding-top: 16px;
           }
         }
-        .area__giochi__FakeSliderBottomButton {
+
           .area__giochi__shadowFakeSliderButton {
-            margin-top: 0.3rem;
-            margin-left: 1.5rem;
+            margin-top: 24px;
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
-            border-radius: 8px;
-            height: 40px;
-            width: 192px;
-            background: #dfe2e4;
+            border-radius: 32px;
+            height: 54px;
+            width: 224px;
+            background: #b41a43;
             .area__giochi__FakeSliderButton {
               display: flex;
-              justify-content: space-between;
+              justify-content: space-around;
               align-items: center;
-              height: 40px;
-              width: 192px;
-              border-radius: 8px;
-              background: white;
+              height: 54px;
+              width: 224px;
+              border-radius: 32px;
+              background: linear-gradient(180deg, #B6264D 0%, #E32648 100%);;
               position: relative;
-              top: -4px;
+              top: -6px;
               // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
               border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
               transition: 0.13s ease-in-out;
@@ -960,7 +959,7 @@
                 transform: translate3d(0px, 2px, 0px);
               }
               .area__giochi__FakeSliderButtonText {
-                color: #394754;
+                color: #ffffff;
                 font-size: 14px;
                 margin-left: 0.5rem;
               }
@@ -968,15 +967,17 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: rgb(221, 221, 221);
                 border-radius: 5px;
-                width: 20px;
-                height: 20px;
+                width: 30px;
+                height: 30px;
                 margin-right: 0.5rem;
+                svg {
+                  color: white;
+                }
               }
             }
           }
-        }
+        
       }
       &:hover .area__giochi__FakeSliderDescription {
         display: block;
