@@ -746,6 +746,9 @@
   justify-content: center;
   align-items: center;
 }
+.area__giochi__sectionTwo .area__giochi__exploreNewsTitle {
+  margin-top: 64px;
+}
 .area__giochi__sectionTwo .area__giochi__exploreNewsTitle span {
   color: #293744;
   font-size: 48px;
@@ -882,7 +885,7 @@
   height: 54px;
   width: 224px;
   border-radius: 32px;
-  background: linear-gradient(180deg, #B6264D 0%, #E32648 100%);
+  background: linear-gradient(180deg, #b6264d 0%, #e32648 100%);
   position: relative;
   top: -6px;
   border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
@@ -911,6 +914,39 @@
 }
 .area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .area__giochi__shadowFakeSliderButton .area__giochi__FakeSliderButton .area__giochi__FakeSliderButtonIco svg {
   color: white;
+}
+@-webkit-keyframes hideshow {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  15% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes hideshow {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  15% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .area__giochi__shadowFakeSliderButton:hover svg {
+  -webkit-animation: hideshow 0.8s ease;
+          animation: hideshow 0.8s ease;
+  opacity: 0;
 }
 .area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer:hover .area__giochi__FakeSliderDescription {
   display: block;

@@ -797,6 +797,7 @@
   align-items: center;
 
   .area__giochi__exploreNewsTitle {
+    margin-top: 64px;
     span {
       color: #293744;
       font-size: 48px;
@@ -926,58 +927,75 @@
           }
         }
 
-          .area__giochi__shadowFakeSliderButton {
-            margin-top: 24px;
+        .area__giochi__shadowFakeSliderButton {
+          margin-top: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+          border-radius: 32px;
+          height: 54px;
+          width: 224px;
+          background: #b41a43;
+          .area__giochi__FakeSliderButton {
             display: flex;
+            justify-content: space-around;
             align-items: center;
-            justify-content: center;
-            box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
-            border-radius: 32px;
             height: 54px;
             width: 224px;
-            background: #b41a43;
-            .area__giochi__FakeSliderButton {
+            border-radius: 32px;
+            background: linear-gradient(180deg, #b6264d 0%, #e32648 100%);
+            position: relative;
+            top: -6px;
+            // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
+            border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+            transition: 0.13s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
+              transform: translate3d(0px, -2px, 0px);
+            }
+            &:active {
+              // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
+              transform: translate3d(0px, 2px, 0px);
+            }
+            .area__giochi__FakeSliderButtonText {
+              color: #ffffff;
+              font-size: 14px;
+              margin-left: 0.5rem;
+            }
+            .area__giochi__FakeSliderButtonIco {
               display: flex;
-              justify-content: space-around;
               align-items: center;
-              height: 54px;
-              width: 224px;
-              border-radius: 32px;
-              background: linear-gradient(180deg, #B6264D 0%, #E32648 100%);;
-              position: relative;
-              top: -6px;
-              // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
-              border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
-              transition: 0.13s ease-in-out;
-              cursor: pointer;
-              &:hover {
-                // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
-                transform: translate3d(0px, -2px, 0px);
-              }
-              &:active {
-                // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
-                transform: translate3d(0px, 2px, 0px);
-              }
-              .area__giochi__FakeSliderButtonText {
-                color: #ffffff;
-                font-size: 14px;
-                margin-left: 0.5rem;
-              }
-              .area__giochi__FakeSliderButtonIco {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 5px;
-                width: 30px;
-                height: 30px;
-                margin-right: 0.5rem;
-                svg {
-                  color: white;
-                }
+              justify-content: center;
+              border-radius: 5px;
+              width: 30px;
+              height: 30px;
+              margin-right: 0.5rem;
+              svg {
+                color: white;
               }
             }
           }
-        
+          @keyframes hideshow {
+            0% {
+              opacity: 1;
+            }
+            10% {
+              opacity: 0.6;
+            }
+            15% {
+              opacity: 0.4;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+          &:hover svg {
+            animation: hideshow 0.8s ease;
+            opacity: 0;
+          }
+        }
       }
       &:hover .area__giochi__FakeSliderDescription {
         display: block;
