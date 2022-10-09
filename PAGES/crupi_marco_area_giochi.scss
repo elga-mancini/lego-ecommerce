@@ -898,6 +898,36 @@
         background-color: rgb(255, 255, 255);
         border-radius: 0px 0px 32px 32px;
         padding: 24px 32px;
+        .area__giochi__FakeSliderMiniTitle {
+          margin: 0 0 0;
+          color: #293744;
+          font-family: "cerapro", arial, sans-serif;
+          font-size: 12px;
+          line-height: 1.5;
+          font-weight: 400;
+        }
+        .area__giochi__FakeSliderTitle {
+          font-family: "tobipro", arial, sans-serif;
+
+          color: #293744;
+          h2 {
+            font-size: 16px;
+            font-weight: 900;
+          }
+        }
+        .area__giochi__FakeSliderDescription {
+          display: none;
+          p {
+            font-family: "cerapro", arial, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #293744;
+            padding-top: 16px;
+          }
+        }
+      }
+      &:hover .area__giochi__FakeSliderDescription {
+        display: block;
       }
     }
   }
