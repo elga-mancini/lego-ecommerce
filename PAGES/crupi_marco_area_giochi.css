@@ -915,6 +915,9 @@
 .area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .area__giochi__shadowFakeSliderButton .area__giochi__FakeSliderButton .area__giochi__FakeSliderButtonIco svg {
   color: white;
 }
+.area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .area__giochi__shadowFakeSliderButton .area__giochi__FakeSliderButton .area__giochi__FakeSliderButtonIcoThin {
+  display: none;
+}
 @-webkit-keyframes hideshow {
   0% {
     opacity: 1;
