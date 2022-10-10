@@ -685,7 +685,6 @@
         flex: auto;
         list-style: none;
         background-color: white;
-        
 
         a {
           display: block;
@@ -694,7 +693,6 @@
             transition-duration: 0.5s;
             opacity: 1;
           }
-         
         }
 
         .thumbActive {
@@ -935,7 +933,9 @@
           }
         }
         .area__giochi__FakeSliderDescription {
-          display: none;
+          visibility: hidden;
+          margin-top: -30%;
+          transition: all 1s;
           p {
             font-family: "cerapro", arial, sans-serif;
             font-size: 12px;
@@ -1073,7 +1073,7 @@
           transform: translateY(-40px);
         }
         10% {
-          opacity: 0.4;
+          opacity: 0;
           transform: translateY(-30px);
         }
         15% {
@@ -1086,8 +1086,10 @@
         }
       }
       &:hover .area__giochi__FakeSliderDescription {
-        animation: topShow 1s ease;
-        display: block;
+        animation: topShow 2s ease;
+        visibility: visible;
+
+        margin-top: 0;
       }
     }
   }

@@ -873,7 +873,9 @@
   font-weight: 900;
 }
 .area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .area__giochi__FakeSliderDescription {
-  display: none;
+  visibility: hidden;
+  margin-top: -30%;
+  transition: all 1s;
 }
 .area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .area__giochi__FakeSliderDescription p {
   font-family: "cerapro", arial, sans-serif;
@@ -1042,7 +1044,7 @@
     transform: translateY(-40px);
   }
   10% {
-    opacity: 0.4;
+    opacity: 0;
     transform: translateY(-30px);
   }
   15% {
@@ -1060,7 +1062,7 @@
     transform: translateY(-40px);
   }
   10% {
-    opacity: 0.4;
+    opacity: 0;
     transform: translateY(-30px);
   }
   15% {
@@ -1073,7 +1075,8 @@
   }
 }
 .area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer:hover .area__giochi__FakeSliderDescription {
-  -webkit-animation: topShow 1s ease;
-          animation: topShow 1s ease;
-  display: block;
+  -webkit-animation: topShow 2s ease;
+          animation: topShow 2s ease;
+  visibility: visible;
+  margin-top: 0;
 }/*# sourceMappingURL=crupi_marco_area_giochi.css.map */
