@@ -944,6 +944,9 @@
 .area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .area__giochi__shadowFakeSliderButton .area__giochi__FakeSliderButton .area__giochi__FakeSliderButtonIcoThin svg {
   color: rgb(255, 255, 255);
 }
+.area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .area__giochi__shadowFakeSliderButton .variantBackgroundButton {
+  background: linear-gradient(180deg, #24323f 0%, #394754 100%);
+}
 @-webkit-keyframes hideshow {
   0% {
     opacity: 1;
@@ -1029,6 +1032,9 @@
           animation: show 0.8s ease;
   display: flex;
   transform: translateX(-10px);
+}
+.area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .variantShadowButton {
+  background: linear-gradient(180deg, #19232c 0%, #29323b 100%);
 }
 @-webkit-keyframes topShow {
   0% {

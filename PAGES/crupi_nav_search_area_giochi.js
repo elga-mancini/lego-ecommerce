@@ -135,6 +135,11 @@ buttonLogIn.addEventListener("click", () => {
 
 let navUl = document.getElementById("area__giochi__bigSliderImgThumb");
 navUl.addEventListener("click", checkA);
+const firstThumb = document.getElementById("firstThumb");
+
+window.onload = function () {
+  firstThumb.classList.add("thumbActive");
+};
 
 function checkA(event) {
   // Disable anchor "jump" (necessary for the first click on the thumbnails)

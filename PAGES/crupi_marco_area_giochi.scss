@@ -685,6 +685,7 @@
         flex: auto;
         list-style: none;
         background-color: white;
+        
 
         a {
           display: block;
@@ -693,6 +694,7 @@
             transition-duration: 0.5s;
             opacity: 1;
           }
+         
         }
 
         .thumbActive {
@@ -1008,6 +1010,9 @@
               }
             }
           }
+          .variantBackgroundButton {
+            background: linear-gradient(180deg, #24323f 0%, #394754 100%);
+          }
           @keyframes hideshow {
             0% {
               opacity: 1;
@@ -1057,6 +1062,9 @@
             display: flex;
             transform: translateX(-10px);
           }
+        }
+        .variantShadowButton {
+          background: linear-gradient(180deg, #19232c 0%, #29323b 100%);
         }
       }
       @keyframes topShow {
