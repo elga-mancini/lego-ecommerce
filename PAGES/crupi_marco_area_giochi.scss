@@ -935,7 +935,7 @@
         .area__giochi__FakeSliderDescription {
           visibility: hidden;
           margin-top: -30%;
-          transition: all 1s;
+          transition: all 0.5s;
           p {
             font-family: "cerapro", arial, sans-serif;
             font-size: 12px;
@@ -1088,7 +1088,6 @@
       &:hover .area__giochi__FakeSliderDescription {
         animation: topShow 2s ease;
         visibility: visible;
-
         margin-top: 0;
       }
     }

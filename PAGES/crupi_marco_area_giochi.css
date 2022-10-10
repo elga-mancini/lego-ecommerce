@@ -875,7 +875,7 @@
 .area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .area__giochi__FakeSliderDescription {
   visibility: hidden;
   margin-top: -30%;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .area__giochi__FakeSliderDescription p {
   font-family: "cerapro", arial, sans-serif;
