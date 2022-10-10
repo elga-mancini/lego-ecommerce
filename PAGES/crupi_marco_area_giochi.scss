@@ -796,7 +796,18 @@
   justify-content: center;
   align-items: center;
 
+  .area__giochi__exploreNewsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .area__giochi__exploreNewsTitle {
+    position: absolute;
+    top: -20px;
+    padding: 0 64px;
+    align-self: start;
     margin-top: 64px;
     span {
       color: #293744;
@@ -807,6 +818,11 @@
     }
   }
   .area__giochi__exploreNewsFakeSliderGroup {
+    position: relative;
+    top: 70px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
     padding: 64px;
     .area__giochi__exploreNewsFirstFakeSliderContainer {
       position: relative;
@@ -1043,7 +1059,26 @@
           }
         }
       }
+      @keyframes topShow {
+        0% {
+          opacity: 0;
+          transform: translateY(-40px);
+        }
+        10% {
+          opacity: 0.4;
+          transform: translateY(-30px);
+        }
+        15% {
+          opacity: 0.6;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(-0px);
+        }
+      }
       &:hover .area__giochi__FakeSliderDescription {
+        animation: topShow 1s ease;
         display: block;
       }
     }
