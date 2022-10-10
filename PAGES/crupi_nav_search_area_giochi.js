@@ -140,7 +140,7 @@ const firstThumb = document.getElementById("firstThumb");
 window.onload = function () {
   firstThumb.classList.add("thumbActive");
 
-  // Without it, the gallery selects the first thumb but 
+  // Without it, the gallery selects the first thumb but
   // remains on the previously selected image
   window.location.hash = "";
 };
