@@ -972,31 +972,74 @@
               width: 30px;
               height: 30px;
               margin-right: 0.5rem;
+              position: relative;
               svg {
                 color: white;
               }
             }
             .area__giochi__FakeSliderButtonIcoThin {
               display: none;
+              align-items: center;
+              justify-content: center;
+              border-radius: 5px;
+              width: 30px;
+              height: 30px;
+              margin-right: 0.5rem;
+              position: relative;
+              // transform: translateX(-40px);
+              svg {
+                color: rgb(255, 255, 255);
+              }
             }
           }
           @keyframes hideshow {
             0% {
               opacity: 1;
+              transform: translateX(50px);
             }
             10% {
               opacity: 0.6;
+              transform: translateX(55px);
             }
             15% {
               opacity: 0.4;
+              transform: translateX(60px);
             }
             100% {
               opacity: 0;
+              transform: translateX(65px);
             }
           }
-          &:hover svg {
+
+          @keyframes show {
+            0% {
+              opacity: 0;
+              transform: translateX(-40px);
+            }
+            10% {
+              opacity: 0.4;
+              transform: translateX(-30px);
+            }
+            15% {
+              opacity: 0.6;
+              transform: translateX(-20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(-10px);
+            }
+          }
+          &:hover .area__giochi__FakeSliderButtonText {
+            transform: translateX(13px);
+          }
+          &:hover .area__giochi__FakeSliderButtonIco svg {
             animation: hideshow 0.8s ease;
             opacity: 0;
+          }
+          &:hover .area__giochi__FakeSliderButtonIcoThin {
+            animation: show 0.8s ease;
+            display: flex;
+            transform: translateX(-10px);
           }
         }
       }
