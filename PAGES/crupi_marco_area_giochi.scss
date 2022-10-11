@@ -1097,29 +1097,87 @@
   align-items: center;
   padding: 64px 0;
   .area__giochi__dreamContainer {
+    position: relative;
     overflow: hidden;
     border-radius: 32px;
     .area__giochi__dreamWindow {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       position: absolute;
       z-index: 3;
       height: 420px;
       width: 600px;
       background-color: white;
-      bottom: -900px;
+      top: 130px;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
+      padding: 64px;
+      .area__giochi__dreamWindowMiniTitle {
+        span {
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
       .area__giochi__dreamWindowTitle {
+        width: 80%;
         span {
           color: black;
-          font-size: 22px;
+          font-size: 32px;
           font-family: tobipro, arial, sans-serif;
           font-weight: bold;
-          margin-left: 25px;
-          margin-right: 50px;
+        }
+      }
+      .area__giochi__dreamWindowDescription {
+        width: 80%;
+        margin: 16px 0;
+        line-height: 1.3;
+        span {
+          color: #293744;
+          font-family: "cerapro", arial, sans-serif;
+          font-size: 12px;
+          font-weight: 400;
+          
+        }
+      }
+      .area__giochi__dreamWindowIconGroup {
+        display: flex;
+        align-items: center;
+        .area__giochi__dreamWindowBigIcon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          padding: 0;
+          background: #eaedef;
+          border: 2px solid #ffffff;
+          border-radius: 50%;
+          position: relative;
+          z-index: 4;
+        }
+        .area__giochi__dreamWindowIcon {
+          display: flex;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+          width: 35px;
+          height: 35px;
+          padding: 0;
+          background: #eaedef;
+          border: 2px solid #ffffff;
+          border-radius: 50%;
+          margin-left: -5px;
+        }
+        .dIcoOne {
+          z-index: 3;
+        }
+        .dIcoTwo {
+          z-index: 2;
+        }
+        .dIcoThree {
+          z-index: 1;
         }
       }
     }
