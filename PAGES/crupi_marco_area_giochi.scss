@@ -925,8 +925,8 @@
         }
         .area__giochi__FakeSliderTitle {
           font-family: "tobipro", arial, sans-serif;
-
           color: #293744;
+          
           h2 {
             font-size: 16px;
             font-weight: 900;
@@ -936,6 +936,7 @@
           visibility: hidden;
           margin-top: -30%;
           transition: all 0.5s;
+          opacity: 0;
           p {
             font-family: "cerapro", arial, sans-serif;
             font-size: 12px;
@@ -1086,9 +1087,11 @@
         }
       }
       &:hover .area__giochi__FakeSliderDescription {
-        animation: topShow 2s ease;
+        animation: topShow 1s ease;
         visibility: visible;
         margin-top: 0;
+        opacity: 1;
+        
       }
     }
   }
