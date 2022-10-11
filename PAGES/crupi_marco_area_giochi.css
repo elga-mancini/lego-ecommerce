@@ -452,7 +452,7 @@
   position: relative;
   z-index: 8;
   transition: 0.3s ease;
-  transform: translateY(-80px);
+  margin-top: -80px;
 }
 
 .area__giochi__activeHamburgerMenu {
@@ -636,14 +636,11 @@
 }
 
 .area__giochi__sectionOne {
-  box-sizing: border-box;
   min-width: 0;
   background-image: url(https://www.lego.com/kids/static/images/seasonal-backgrounds/halloween-candy-bg.jpg);
   padding-top: 2px;
   padding-bottom: 2px;
   height: 689.547px;
-  position: relative;
-  top: -72px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -738,7 +735,6 @@
 
 .area__giochi__sectionTwo {
   position: relative;
-  top: -73px;
   height: 597.19px;
   background-color: #eaedef;
   display: flex;

@@ -60,11 +60,13 @@ const hamburgerButton = document.getElementById("area__giochi__hamburgerB");
 const openHamburgher = (toggle) => {
   if (toggle) {
     window.setTimeout(function () {
-      hamburgherMenu.style.transform = "translate(0px,0px)";
+      hamburgherMenu.style.marginTop = "0px";
+      // hamburgherMenu.style.marginBottom = "71px";
     }, 0);
   } else {
     window.setTimeout(function () {
-      hamburgherMenu.style.transform = "translate(0px,-80px)";
+      hamburgherMenu.style.marginTop = "-80px";
+      // hamburgherMenu.style.marginBottom = "0px";
     }, 0);
   }
 };
@@ -78,7 +80,8 @@ hamburgerButton.addEventListener("click", () => {
 const closeHamburgherMenu = () => {
   toggle = false;
   window.setTimeout(function () {
-    hamburgherMenu.style.transform = "translate(0px,-80px)";
+    hamburgherMenu.style.marginTop = "-80px";
+    // hamburgherMenu.style.marginBottom = "0px";
   }, 0);
 };
 
