@@ -1138,7 +1138,6 @@
           font-family: "cerapro", arial, sans-serif;
           font-size: 12px;
           font-weight: 400;
-          
         }
       }
       .area__giochi__dreamWindowIconGroup {
@@ -1178,6 +1177,123 @@
         }
         .dIcoThree {
           z-index: 1;
+        }
+      }
+
+      .area__giochi__shadowDreamButton {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+        border-radius: 32px;
+        height: 54px;
+        width: 224px;
+        background: #b41a43;
+        .area__giochi__DreamButton {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 54px;
+          width: 224px;
+          border-radius: 32px;
+          background: linear-gradient(180deg, #b6264d 0%, #e32648 100%);
+          position: relative;
+          top: -6px;
+          // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
+          border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+          transition: 0.13s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
+            transform: translate3d(0px, -2px, 0px);
+          }
+          &:active {
+            // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
+            transform: translate3d(0px, 2px, 0px);
+          }
+          .area__giochi__DreamButtonText {
+            color: #ffffff;
+            font-size: 14px;
+            margin-left: 0.5rem;
+          }
+          .area__giochi__DreamButtonIco {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+            margin-right: 0.5rem;
+            position: relative;
+            svg {
+              color: white;
+            }
+          }
+          .area__giochi__DreamButtonIcoThin {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+            margin-right: 0.5rem;
+            position: relative;
+            // transform: translateX(-40px);
+            svg {
+              color: rgb(255, 255, 255);
+            }
+          }
+        }
+
+        @keyframes hideshow {
+          0% {
+            opacity: 1;
+            transform: translateX(50px);
+          }
+          10% {
+            opacity: 0.6;
+            transform: translateX(55px);
+          }
+          15% {
+            opacity: 0.4;
+            transform: translateX(60px);
+          }
+          100% {
+            opacity: 0;
+            transform: translateX(65px);
+          }
+        }
+
+        @keyframes show {
+          0% {
+            opacity: 0;
+            transform: translateX(-40px);
+          }
+          10% {
+            opacity: 0.4;
+            transform: translateX(-30px);
+          }
+          15% {
+            opacity: 0.6;
+            transform: translateX(-20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(-10px);
+          }
+        }
+        &:hover .area__giochi__DreamButtonText {
+          transform: translateX(13px);
+        }
+        &:hover .area__giochi__DreamButtonIco svg {
+          animation: hideshow 0.8s ease;
+          opacity: 0;
+        }
+        &:hover .area__giochi__DreamButtonIcoThin {
+          animation: show 0.8s ease;
+          display: flex;
+          transform: translateX(-10px);
         }
       }
     }

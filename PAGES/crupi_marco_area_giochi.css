@@ -1166,4 +1166,116 @@
 }
 .area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow .area__giochi__dreamWindowIconGroup .dIcoThree {
   z-index: 1;
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow .area__giochi__shadowDreamButton {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 32px;
+  height: 54px;
+  width: 224px;
+  background: #b41a43;
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow .area__giochi__shadowDreamButton .area__giochi__DreamButton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 54px;
+  width: 224px;
+  border-radius: 32px;
+  background: linear-gradient(180deg, #b6264d 0%, #e32648 100%);
+  position: relative;
+  top: -6px;
+  border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+  transition: 0.13s ease-in-out;
+  cursor: pointer;
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow .area__giochi__shadowDreamButton .area__giochi__DreamButton:hover {
+  transform: translate3d(0px, -2px, 0px);
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow .area__giochi__shadowDreamButton .area__giochi__DreamButton:active {
+  transform: translate3d(0px, 2px, 0px);
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow .area__giochi__shadowDreamButton .area__giochi__DreamButton .area__giochi__DreamButtonText {
+  color: #ffffff;
+  font-size: 14px;
+  margin-left: 0.5rem;
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow .area__giochi__shadowDreamButton .area__giochi__DreamButton .area__giochi__DreamButtonIco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  position: relative;
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow .area__giochi__shadowDreamButton .area__giochi__DreamButton .area__giochi__DreamButtonIco svg {
+  color: white;
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow .area__giochi__shadowDreamButton .area__giochi__DreamButton .area__giochi__DreamButtonIcoThin {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  position: relative;
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow .area__giochi__shadowDreamButton .area__giochi__DreamButton .area__giochi__DreamButtonIcoThin svg {
+  color: rgb(255, 255, 255);
+}
+@keyframes hideshow {
+  0% {
+    opacity: 1;
+    transform: translateX(50px);
+  }
+  10% {
+    opacity: 0.6;
+    transform: translateX(55px);
+  }
+  15% {
+    opacity: 0.4;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(65px);
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  10% {
+    opacity: 0.4;
+    transform: translateX(-30px);
+  }
+  15% {
+    opacity: 0.6;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow .area__giochi__shadowDreamButton:hover .area__giochi__DreamButtonText {
+  transform: translateX(13px);
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow .area__giochi__shadowDreamButton:hover .area__giochi__DreamButtonIco svg {
+  -webkit-animation: hideshow 0.8s ease;
+          animation: hideshow 0.8s ease;
+  opacity: 0;
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow .area__giochi__shadowDreamButton:hover .area__giochi__DreamButtonIcoThin {
+  -webkit-animation: show 0.8s ease;
+          animation: show 0.8s ease;
+  display: flex;
+  transform: translateX(-10px);
 }/*# sourceMappingURL=crupi_marco_area_giochi.css.map */
