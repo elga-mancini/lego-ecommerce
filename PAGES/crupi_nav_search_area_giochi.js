@@ -61,12 +61,10 @@ const openHamburgher = (toggle) => {
   if (toggle) {
     window.setTimeout(function () {
       hamburgherMenu.style.marginTop = "0px";
-      // hamburgherMenu.style.marginBottom = "71px";
     }, 0);
   } else {
     window.setTimeout(function () {
       hamburgherMenu.style.marginTop = "-80px";
-      // hamburgherMenu.style.marginBottom = "0px";
     }, 0);
   }
 };
@@ -81,7 +79,6 @@ const closeHamburgherMenu = () => {
   toggle = false;
   window.setTimeout(function () {
     hamburgherMenu.style.marginTop = "-80px";
-    // hamburgherMenu.style.marginBottom = "0px";
   }, 0);
 };
 

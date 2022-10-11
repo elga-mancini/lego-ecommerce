@@ -636,7 +636,6 @@
 }
 
 .area__giochi__sectionOne {
-  min-width: 0;
   background-image: url(https://www.lego.com/kids/static/images/seasonal-backgrounds/halloween-candy-bg.jpg);
   padding-top: 2px;
   padding-bottom: 2px;
@@ -1077,4 +1076,37 @@
   visibility: visible;
   margin-top: 0;
   opacity: 1;
+}
+
+.area__giochi__sectionThree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer {
+  overflow: hidden;
+  border-radius: 32px;
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+  height: 420px;
+  width: 600px;
+  background-color: white;
+  bottom: -900px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.area__giochi__sectionThree .area__giochi__dreamContainer .area__giochi__dreamWindow .area__giochi__dreamWindowTitle span {
+  color: black;
+  font-size: 22px;
+  font-family: tobipro, arial, sans-serif;
+  font-weight: bold;
+  margin-left: 25px;
+  margin-right: 50px;
 }/*# sourceMappingURL=crupi_marco_area_giochi.css.map */
