@@ -871,6 +871,8 @@
           .area__giochi__FakeSliderIcoHoverContainer {
             display: none;
             position: absolute;
+            justify-content: center;
+            align-items: center;
             gap: 15px;
             top: 195px;
             right: 5px;
@@ -887,6 +889,12 @@
             .area__giochi__FakeSliderIcoHover {
               p {
                 margin-bottom: 0;
+                text-align: center;
+                margin: 0px;
+                font-size: 12px;
+                font-family: cerapro, arial, sans-serif;
+                line-height: 12px;
+                margin-top: 5px;
               }
             }
           }

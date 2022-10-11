@@ -812,6 +812,8 @@
 .area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderIcoContainer .area__giochi__FakeSliderIcoRightGroup .area__giochi__FakeSliderIcoHoverContainer {
   display: none;
   position: absolute;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
   top: 195px;
   right: 5px;
@@ -828,6 +830,12 @@
 }
 .area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderIcoContainer .area__giochi__FakeSliderIcoRightGroup .area__giochi__FakeSliderIcoHoverContainer .area__giochi__FakeSliderIcoHover p {
   margin-bottom: 0;
+  text-align: center;
+  margin: 0px;
+  font-size: 12px;
+  font-family: cerapro, arial, sans-serif;
+  line-height: 12px;
+  margin-top: 5px;
 }
 .area__giochi__sectionTwo .area__giochi__exploreNewsFakeSliderGroup .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderIcoContainer .area__giochi__FakeSliderIcoRightGroup:hover .area__giochi__FakeSliderIcoHoverContainer {
   -webkit-animation: topShow 0.5s ease;
