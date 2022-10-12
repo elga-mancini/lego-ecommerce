@@ -168,6 +168,7 @@
   max-width: 100rem;
   margin: 0 auto;
   background: rgb(52, 161, 156);
+  padding-top: 2rem;
 }
 .o-christmas__megacontainer .m-christmas__carousel-container .m-christmas__container {
   max-width: 82.5rem;
@@ -175,7 +176,7 @@
 }
 .o-christmas__megacontainer .m-christmas__carousel-container .a-christmas__text-ideas-presents {
   display: flex;
-  justify-content: space-between;
+  gap: 1rem;
   align-items: center;
   margin-bottom: 2rem;
 }
@@ -272,4 +273,18 @@
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1rem;
+}
+.o-christmas__megacontainer .a-christmas__link-view-all {
+  color: rgba(0, 0, 0, 0.5);
+}
+.o-christmas__megacontainer .a-christmas__link-view-all:hover {
+  color: black;
+}
+.o-christmas__megacontainer .m-christmas__container-why-buy-clone {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100rem;
+  background: rgb(52, 161, 156);
+  flex-direction: column;
 }/*# sourceMappingURL=natale.css.map */
