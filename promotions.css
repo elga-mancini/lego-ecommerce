@@ -276,6 +276,18 @@ h2{
        display: none;
     }
 
+    .two-banners-insiede{
+        flex-direction: column;
+    }
+
+    .halloween-banner{
+        order: 1;
+    }
+
+    .starwars-banner{
+        order: 1;
+    }
+
     
 }
 
