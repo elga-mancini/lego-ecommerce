@@ -1346,6 +1346,10 @@
   justify-content: center;
   align-items: center;
 }
+.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetTitle {
+  padding: 0 64px;
+  align-self: start;
+}
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetTitle span {
   color: #293744;
   font-size: 48px;
@@ -1358,7 +1362,7 @@
   display: flex;
   flex-direction: column;
   width: 288px;
-  min-width: 288px;
+  max-width: 288px;
 }
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderTop .area__giochi__FakeSliderVideo {
   position: relative;
@@ -1476,7 +1480,7 @@
   position: relative;
   z-index: 1;
   transform: translateY(-55px);
-  background-color: #EAEDEF;
+  background-color: #eaedef;
   border-radius: 0px 0px 32px 32px;
   padding: 24px 32px;
 }
@@ -1499,6 +1503,9 @@
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .area__giochi__FakeSliderDescription {
   height: 80px;
 }
+.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .oneLineTitleHeightCompensation {
+  height: 96px;
+}
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .area__giochi__shadowFakeSliderButton {
   margin-top: 24px;
   display: flex;
@@ -1517,7 +1524,7 @@
   height: 54px;
   width: 224px;
   border-radius: 32px;
-  background: linear-gradient(180deg, #00744B 0%, #008746 100%);
+  background: linear-gradient(180deg, #00744b 0%, #008746 100%);
   position: relative;
   top: -6px;
   border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
@@ -1651,137 +1658,15 @@
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slide-content {
   margin: 0 40px;
   display: flex;
-  /* border-radius: 25px; */
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .card {
-  border: none;
-  /* border-radius: 25px; */
-  background-color: #fff;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .image-content,
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* padding: 10px 14px; */
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .image-content {
-  padding: 10px 14px;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .card-content {
-  width: 289.75px;
-  padding: 10px 0px;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .image-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 289.75px;
-  height: 289.75px;
-  position: relative;
-  border: 1px solid rgb(224, 224, 224);
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slider__image {
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: auto;
-  height: auto;
   overflow: hidden;
-  position: relative;
-  z-index: 0;
-  margin-bottom: 1rem;
-  cursor: pointer;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slider__image:hover {
-  transform: scale(1.08);
-  transition: 0.8s;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slider__desire__List {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  width: 100%;
-  z-index: 1000;
-  cursor: pointer;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slider__heart {
-  background-color: #f3f3f3;
-  padding: 4px;
-  color: #1745c2;
-  border-radius: 50px;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slider__desire_text {
-  font-size: 0.75rem;
-  margin-left: 10px;
-  font-weight: 700;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slider__button__image {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  margin-left: 0.625rem;
-  margin-bottom: 0.625rem;
-  background-color: #f4cb11;
-  font-size: 0.7rem;
-  padding: 0.3rem 0.5rem;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slider__name {
-  font-size: 1rem;
-  color: black;
-  font-weight: bold;
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  margin: 0px;
-  cursor: pointer;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slider__stars {
-  display: flex;
-  width: 100%;
-  justify-content: flex-start;
-  margin-bottom: 10px;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slider__star {
-  width: 0.9375rem;
-  height: 0.9375rem;
-  margin-right: 0.0625rem;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slider__price {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slider__button {
-  /* display: block; */
-  width: 100%;
-  padding: 0.9375rem;
-  border-style: solid;
-  border-radius: 4px;
-  border-collapse: collapse;
-  text-align: center;
-  background-color: rgb(253, 128, 36);
-  border-color: rgb(253, 128, 36);
-  color: rgb(0, 0, 0);
-  position: relative;
-  border-width: 2px;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slider__button:hover {
-  background: #ffffff;
+  /* border-radius: 25px; */
 }
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .swiper-navBtn {
   color: #000000;
   padding: 20px;
   border: 1px solid rgb(204, 204, 204);
   border-radius: 170px;
-  transition: color 0.3s ease;
+  transition: opacity 175ms ease-in-out 0s, box-shadow 175ms ease-in-out 0s;
 }
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .swiper-navBtn:hover {
   border-radius: 30px;

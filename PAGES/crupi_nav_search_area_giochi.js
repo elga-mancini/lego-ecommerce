@@ -191,7 +191,7 @@ var swiper = new Swiper(".slide-content", {
   breakpoints: {
     0: {
       slidesPerView: 2,
-      spaceBetween: 290,
+      spaceBetween: 90,
     },
     580: {
       slidesPerView: 2,
@@ -203,7 +203,7 @@ var swiper = new Swiper(".slide-content", {
     },
     1280: {
       slidesPerView: 4,
-      spaceBetween: 90,
+      spaceBetween: 40,
     },
   },
 });
