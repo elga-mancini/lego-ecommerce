@@ -1349,6 +1349,7 @@
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetTitle {
   padding: 0 64px;
   align-self: start;
+  margin-bottom: 64px;
 }
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetTitle span {
   color: #293744;
@@ -1363,6 +1364,7 @@
   flex-direction: column;
   width: 288px;
   max-width: 288px;
+  height: 439.38px;
 }
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderTop .area__giochi__FakeSliderVideo {
   position: relative;
@@ -1516,6 +1518,7 @@
   height: 54px;
   width: 224px;
   background: #005f3e;
+  cursor: pointer;
 }
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .area__giochi__shadowFakeSliderButton .area__giochi__FakeSliderButton {
   display: flex;
@@ -1652,8 +1655,7 @@
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slide-container {
   max-width: 1380px;
   width: 100%;
-  padding: 40px 20px;
-  margin-bottom: 4rem;
+  padding: 0px 20px;
 }
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slide-content {
   margin: 0 40px;
@@ -1681,17 +1683,4 @@
 }
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .swiper-button-prev {
   left: 0;
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .swiper-scrollbar {
-  background-color: rgb(180, 180, 180);
-}
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .swiper-horizontal > .swiper-scrollbar,
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .swiper-scrollbar.swiper-scrollbar-horizontal {
-  border-radius: 0px;
-  height: 5px;
-  width: 900px;
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 4rem;
 }/*# sourceMappingURL=crupi_marco_area_giochi.css.map */

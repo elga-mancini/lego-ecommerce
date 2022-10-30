@@ -1363,7 +1363,7 @@
     .area__giochi__finalSetTitle {
       padding: 0 64px;
       align-self: start;
-      // margin-top: 64px;
+      margin-bottom: 64px;
       span {
         color: #293744;
         font-size: 48px;
@@ -1379,6 +1379,7 @@
         flex-direction: column;
         width: 288px;
         max-width: 288px;
+        height: 439.38px;
         // margin: -30.5px 0px;
         .area__giochi__FakeSliderTop {
           .area__giochi__FakeSliderVideo {
@@ -1549,6 +1550,7 @@
             height: 54px;
             width: 224px;
             background: #005f3e;
+            cursor: pointer;
             .area__giochi__FakeSliderButton {
               display: flex;
               justify-content: space-around;
@@ -1690,8 +1692,7 @@
       .slide-container {
         max-width: 1380px;
         width: 100%;
-        padding: 40px 20px;
-        margin-bottom: 4rem;
+        padding: 0px 20px;
       }
       .slide-content {
         margin: 0 40px;
@@ -1722,20 +1723,20 @@
       .swiper-button-prev {
         left: 0;
       }
-      .swiper-scrollbar {
-        background-color: rgb(180, 180, 180);
-      }
+      // .swiper-scrollbar {
+      //   background-color: rgb(180, 180, 180);
+      // }
 
-      .swiper-horizontal > .swiper-scrollbar,
-      .swiper-scrollbar.swiper-scrollbar-horizontal {
-        border-radius: 0px;
-        height: 5px;
-        width: 900px;
-        bottom: -50px;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-bottom: 4rem;
-      }
+      // .swiper-horizontal > .swiper-scrollbar,
+      // .swiper-scrollbar.swiper-scrollbar-horizontal {
+      //   border-radius: 0px;
+      //   height: 5px;
+      //   width: 900px;
+      //   bottom: -50px;
+      //   left: 50%;
+      //   transform: translateX(-50%);
+      //   margin-bottom: 4rem;
+      // }
     }
   }
 }
