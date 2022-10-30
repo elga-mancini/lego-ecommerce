@@ -1683,4 +1683,12 @@
 }
 .area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .swiper-button-prev {
   left: 0;
+}
+
+.area__giochi__sectionFourFiveTransition {
+  height: 50px;
+  width: 100%;
+  background: #cd264b;
+  -webkit-mask-image: url(/PAGES/diagonal-ltr.svg);
+  mask-image: url(/PAGES/diagonal-ltr.svg);
 }/*# sourceMappingURL=crupi_marco_area_giochi.css.map */

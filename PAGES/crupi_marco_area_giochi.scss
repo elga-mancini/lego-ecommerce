@@ -1740,3 +1740,11 @@
     }
   }
 }
+
+.area__giochi__sectionFourFiveTransition {
+  height: 50px;
+  width: 100%;
+  background: #cd264b;
+  -webkit-mask-image: url(/PAGES/diagonal-ltr.svg);
+  mask-image: url(/PAGES/diagonal-ltr.svg);
+}
