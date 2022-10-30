@@ -1403,6 +1403,7 @@
           margin: 0 24px;
 
           .area__giochi__FakeSliderIcoLeftStar {
+            cursor: pointer;
             position: relative;
             z-index: 2;
             top: -20px;
@@ -1422,6 +1423,7 @@
           .area__giochi__FakeSliderIcoRightGroup {
             display: flex;
             align-items: center;
+            cursor: pointer;
 
             .area__giochi__FakeSliderIcoHoverContainer {
               display: none;
