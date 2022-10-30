@@ -1691,4 +1691,212 @@
   background: #cd264b;
   -webkit-mask-image: url(/PAGES/diagonal-ltr.svg);
   mask-image: url(/PAGES/diagonal-ltr.svg);
+}
+
+.area__giochi__sectionFive {
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: #cd264b;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer {
+  display: flex;
+  margin: 100px auto;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 32px;
+  box-shadow: 0px 32px 64px rgba(0, 0, 0, 0.15);
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup {
+  padding: 32px 48px;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__trickOrTreatMiniTitle {
+  font-size: 12px;
+  font-weight: 400;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__trickOrTreatTitle span {
+  color: black;
+  font-size: 32px;
+  font-family: tobipro, arial, sans-serif;
+  font-weight: bold;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__trickOrTreatDescription {
+  margin: 16px 0;
+  line-height: 1.3;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__trickOrTreatDescription span {
+  color: #293744;
+  font-family: "cerapro", arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__trickOrTreatIconGroup {
+  display: flex;
+  align-items: center;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__trickOrTreatIconGroup .area__giochi__trickOrTreatBigIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background: #eaedef;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 4;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__trickOrTreatIconGroup .area__giochi__trickOrTreatIcon {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  background: #eaedef;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  margin-left: -5px;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__trickOrTreatIconGroup .dIcoOne {
+  z-index: 3;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__trickOrTreatIconGroup .dIcoTwo {
+  z-index: 2;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__trickOrTreatIconGroup .dIcoThree {
+  z-index: 1;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__shadowTrickButton {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 32px;
+  height: 54px;
+  width: 224px;
+  background: #b41a43;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__shadowTrickButton .area__giochi__TrickButton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 54px;
+  width: 224px;
+  border-radius: 32px;
+  background: linear-gradient(180deg, #b6264d 0%, #e32648 100%);
+  position: relative;
+  top: -6px;
+  border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+  transition: 0.13s ease-in-out;
+  cursor: pointer;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__shadowTrickButton .area__giochi__TrickButton:hover {
+  transform: translate3d(0px, -2px, 0px);
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__shadowTrickButton .area__giochi__TrickButton:active {
+  transform: translate3d(0px, 2px, 0px);
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__shadowTrickButton .area__giochi__TrickButton .area__giochi__TrickButtonText {
+  color: #ffffff;
+  font-size: 14px;
+  margin-left: 0.5rem;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__shadowTrickButton .area__giochi__TrickButton .area__giochi__TrickButtonIco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  position: relative;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__shadowTrickButton .area__giochi__TrickButton .area__giochi__TrickButtonIco svg {
+  color: white;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__shadowTrickButton .area__giochi__TrickButton .area__giochi__TrickButtonIcoThin {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  position: relative;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__shadowTrickButton .area__giochi__TrickButton .area__giochi__TrickButtonIcoThin svg {
+  color: rgb(255, 255, 255);
+}
+@keyframes hideshow {
+  0% {
+    opacity: 1;
+    transform: translateX(50px);
+  }
+  10% {
+    opacity: 0.6;
+    transform: translateX(55px);
+  }
+  15% {
+    opacity: 0.4;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(65px);
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  10% {
+    opacity: 0.4;
+    transform: translateX(-30px);
+  }
+  15% {
+    opacity: 0.6;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__shadowTrickButton:hover .area__giochi__TrickButtonText {
+  transform: translateX(13px);
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__shadowTrickButton:hover .area__giochi__TrickButtonIco svg {
+  -webkit-animation: hideshow 0.8s ease;
+          animation: hideshow 0.8s ease;
+  opacity: 0;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatLeft .area__giochi__trickOrTreatLeftGroup .area__giochi__shadowTrickButton:hover .area__giochi__TrickButtonIcoThin {
+  -webkit-animation: show 0.8s ease;
+          animation: show 0.8s ease;
+  display: flex;
+  transform: translateX(-10px);
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatRight {
+  width: 50%;
+  overflow: hidden;
+}
+.area__giochi__sectionFive .area__giochi__trickOrTreatContainer .area__giochi__trickOrTreatRight picture img {
+  width: 600px;
+  height: 352.39px;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
 }/*# sourceMappingURL=crupi_marco_area_giochi.css.map */
