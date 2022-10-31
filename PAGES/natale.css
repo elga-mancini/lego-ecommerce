@@ -287,4 +287,11 @@
   max-width: 100rem;
   background: rgb(52, 161, 156);
   flex-direction: column;
+}
+
+.m-christmas__hero-banner-full-content-clone {
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  left: 60%;
 }/*# sourceMappingURL=natale.css.map */
