@@ -294,4 +294,19 @@
   position: absolute;
   top: 50%;
   left: 60%;
+}
+
+.o-christmas__banner-info {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100rem;
+  margin-top: 5rem;
+  background: rgb(230, 243, 255);
+  border-radius: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 0.3rem;
 }/*# sourceMappingURL=natale.css.map */

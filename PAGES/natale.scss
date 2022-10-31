@@ -311,3 +311,14 @@ flex-direction: column;
    top: 50%;
    left: 60%;
 }
+.o-christmas__banner-info {
+    @include static;
+    margin-top: 5rem;
+    background: rgb(230, 243, 255);
+    border-radius:3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding: 0.3rem;
+}
