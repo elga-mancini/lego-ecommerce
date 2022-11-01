@@ -1923,7 +1923,7 @@
   justify-content: center;
 }
 .area__giochi__sectionSix .swiper {
-  width: 80%;
+  width: 1400px;
   height: 90%;
 }
 .area__giochi__sectionSix .swiper .swiper-horizontal > .swiper-pagination-bullets,
@@ -1952,14 +1952,12 @@
 }
 .area__giochi__sectionSix .swiper .swiper-button-next,
 .area__giochi__sectionSix .swiper .swiper-button-prev {
+  margin: 0 auto;
   color: #000000;
   padding: 20px;
   border: 1px solid rgb(204, 204, 204);
   border-radius: 170px;
   transition: opacity 175ms ease-in-out 0s, box-shadow 175ms ease-in-out 0s;
-}
-.area__giochi__sectionSix .swiper .swiper-button-next,
-.area__giochi__sectionSix .swiper .swiper-button-prev {
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
 }
@@ -1968,8 +1966,6 @@
   font-size: 20px;
 }
 .area__giochi__sectionSix .swiper-slide {
-  text-align: center;
-  font-size: 18px;
   /* Center slide text vertically */
   display: flex;
   flex-direction: column;
@@ -1978,10 +1974,10 @@
 }
 .area__giochi__sectionSix .swiper-slide div {
   align-self: flex-start;
+  margin-left: 100px;
 }
 .area__giochi__sectionSix .swiper-slide div h1 {
   margin-top: 30px;
-  margin-left: 160px;
   color: white;
   font-size: 48px;
   font-family: "tobipro", arial, sans-serif;
