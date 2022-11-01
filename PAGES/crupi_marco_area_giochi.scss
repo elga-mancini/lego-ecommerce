@@ -1971,3 +1971,37 @@
     }
   }
 }
+
+.area__giochi__sectionFiveSixBackground {
+  height: 38px;
+  background-color: #cd264b;
+.area__giochi__sectionFiveSixTransition {
+  height: 38px;
+  width: 100%;
+  background: #293744;
+  -webkit-mask-image: url(/PAGES/vibration-range.svg);
+  mask-image: url(/PAGES/vibration-range.svg);
+}
+}
+
+.area__giochi__sectionSix {
+  height: 585px;
+  background: #293744;
+}
+
+.area__giochi__sectionSixSevenBackground {
+  height: 38px;
+  background-color: #293744;
+.area__giochi__sectionSixSevenTransition {
+  height: 38px;
+  width: 100%;
+  background: #0073B7;
+  -webkit-mask-image: url(/PAGES/hills.svg);
+  mask-image: url(/PAGES/hills.svg);
+}
+}
+
+.area__giochi__sectionSeven {
+  height: 585px;
+  background: #0073B7;
+}
