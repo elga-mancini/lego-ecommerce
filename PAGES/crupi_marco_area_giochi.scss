@@ -1994,6 +1994,43 @@
   .swiper {
     width: 80%;
     height: 90%;
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      bottom: 180px;
+      left: 500px;
+      width: 100%;
+
+      .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: transparent;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: white;
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #000000;
+      padding: 20px;
+      border: 1px solid rgb(204, 204, 204);
+      border-radius: 170px;
+      transition: opacity 175ms ease-in-out 0s, box-shadow 175ms ease-in-out 0s;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      border-radius: 30px;
+      background-color: rgb(255, 255, 255);
+    }
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      font-size: 20px;
+    }
   }
 
   .swiper-slide {
