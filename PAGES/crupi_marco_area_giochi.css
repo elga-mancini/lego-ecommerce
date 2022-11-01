@@ -1659,7 +1659,7 @@
   width: 100%;
   padding: 0px 20px;
 }
-.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slide-content {
+.area__giochi__sectionFour .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .slide-contentFinaleSet {
   margin: 0 40px;
   display: flex;
   overflow: hidden;
@@ -1916,8 +1916,43 @@
 }
 
 .area__giochi__sectionSix {
-  height: 585px;
+  height: 1000px;
   background: #293744;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.area__giochi__sectionSix .swiper {
+  width: 80%;
+  height: 90%;
+}
+.area__giochi__sectionSix .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.area__giochi__sectionSix .swiper-slide div {
+  align-self: flex-start;
+}
+.area__giochi__sectionSix .swiper-slide div h1 {
+  margin-top: 30px;
+  margin-left: 160px;
+  color: white;
+  font-size: 48px;
+  font-family: "tobipro", arial, sans-serif;
+  font-weight: 900;
+}
+.area__giochi__sectionSix .swiper-slide img {
+  display: block;
+  width: 1200px;
+  height: 675px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 32px 32px 32px 0px;
 }
 
 .area__giochi__sectionSixSevenBackground {
@@ -1927,12 +1962,12 @@
 .area__giochi__sectionSixSevenBackground .area__giochi__sectionSixSevenTransition {
   height: 38px;
   width: 100%;
-  background: #0073B7;
+  background: #0073b7;
   -webkit-mask-image: url(/PAGES/hills.svg);
   mask-image: url(/PAGES/hills.svg);
 }
 
 .area__giochi__sectionSeven {
   height: 585px;
-  background: #0073B7;
+  background: #0073b7;
 }/*# sourceMappingURL=crupi_marco_area_giochi.css.map */

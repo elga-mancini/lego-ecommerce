@@ -172,10 +172,10 @@ function checkA(event) {
 
 // SLIDER FINAL SET
 
-var swiper = new Swiper(".slide-content", {
+var swiper = new Swiper(".slide-contentFinaleSet", {
   slidesPerView: 4,
   spaceBetween: 55,
-  loop: false,
+  loop: true,
   centerSlide: "true",
   fade: "true",
   grabCursor: "true",
@@ -208,3 +208,18 @@ var swiper = new Swiper(".slide-content", {
   },
 });
 
+// SLIDER SECTION SIX
+
+var swiper = new Swiper(".mySwiper", {
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
+});
