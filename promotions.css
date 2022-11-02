@@ -1,8 +1,4 @@
 
-
-
-
-
 .banner-section-container{
     display: flex;
     flex-direction: column;
@@ -30,6 +26,8 @@
     max-width: 100%;
 }
 
+
+
 .red-banner-fit {
    display: inline-block;
    vertical-align: middle;
@@ -48,6 +46,7 @@
 .banner-img{
     max-width: 100%;
     height: auto;
+    border: 2px solid rebeccapurple;
   
 }
 
@@ -201,7 +200,7 @@ h2{
 
 
 
-.two-banners-insiede{
+.o-two-banners-insiede{
     display: flex;
 }
 
@@ -225,6 +224,8 @@ h2{
     
 
 }
+
+/* START molecule buttons buy and find more*/
 
 .a-button__button-shop-now{
     display: flex;
@@ -259,13 +260,11 @@ h2{
     cursor: pointer;
 }
 
-
-
-
 .m-buttons-buy-find{
     display: flex;
 }
 
+/* END molecule buttons buy and find more*/
 
 
 
@@ -282,13 +281,36 @@ h2{
 }
 
 
+
+
 @media screen and (max-width: 1600px) {
     .banner-section-container{
         width: 100%;
         max-width: 100%;
     }
+
+    /* STAR img and logo inside the banner*/
+    .img-banner{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .img-banner img{
+       max-width: 100%;
+       margin: 0;
+    }
+
+    .logo-under-img{
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+   /* END img and logo inside the banner*/
 } 
 
+/* Mq for buttons buy and find more */
 @media screen and (max-width: 1220px) {
     .m-buttons-buy-find{
         flex-direction: column;
@@ -302,6 +324,27 @@ h2{
         top: -6rem;
         bottom: 10rem; /* change for media query*/
     }
+
+    /* STAR img and logo inside the banner*/
+    .img-banner{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .img-banner img{
+       max-width: 100%;
+       margin: 0;
+    }
+
+    .logo-under-img{
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+   /* END img and logo inside the banner*/
+    
     
 }
 
@@ -328,7 +371,7 @@ h2{
        display: none;
     }
 
-    .two-banners-insiede{
+    .o-two-banners-insiede{
         flex-direction: column;
     }
 
@@ -340,6 +383,7 @@ h2{
         order: 1;
     }
 
+   
     
 }
 
