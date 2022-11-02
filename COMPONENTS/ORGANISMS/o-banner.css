@@ -25,6 +25,9 @@ body{
    background-color: black;
 }
 
+.m-buttons-buy-find{
+    display: flex;
+}
 
 
 @media screen and (max-width: 1600px) {
