@@ -130,6 +130,7 @@ h1{
     text-decoration: underline;
 }
 
+/* red banner */
 .a-banner-header{
     background-color:rgb(157, 22, 3);
     /* modifica il colore del bg se serve */
