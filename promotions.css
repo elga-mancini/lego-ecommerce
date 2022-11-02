@@ -11,9 +11,12 @@
     color: white;
     background-color: white;
 }
+
 .dark-banner{
     padding-bottom: 6rem;
     background-color: black;
+    color: white;
+
 }
 
 .container{
