@@ -338,6 +338,17 @@
   box-shadow: 0 4px 0 0 #dfe2e4, 0px 4px 8px rgba(90, 0, 0, 0.2);
   cursor: pointer;
 }
+@media screen and (max-width: 1200px) {
+  .area__giochi__nav .area__giochi__buttons_input_container .area__giochi__searchBar {
+    width: 50%;
+    margin: 2rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  .area__giochi__nav .area__giochi__buttons_input_container .area__giochi__searchBar {
+    display: none;
+  }
+}
 .area__giochi__nav .area__giochi__buttons_input_container .area__giochi__searchBar .area__giochi__searchBarElement {
   margin-top: 8px;
   display: flex;
@@ -2211,7 +2222,7 @@
   border-radius: 32px;
   height: 54px;
   width: 224px;
-  background: #006AAD;
+  background: #006aad;
 }
 .area__giochi__sectionSeven .area__giochi__finalSetContainer .area__giochi__finalSetSliderContainer .area__giochi__exploreNewsFirstFakeSliderContainer .area__giochi__FakeSliderBottom .area__giochi__shadowFakeSliderButton .area__giochi__FakeSliderButton {
   display: flex;
@@ -2220,7 +2231,7 @@
   height: 54px;
   width: 224px;
   border-radius: 32px;
-  background: linear-gradient(180deg, #006AAD 0%, #007BC0 100%);
+  background: linear-gradient(180deg, #006aad 0%, #007bc0 100%);
   position: relative;
   top: -6px;
   border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
