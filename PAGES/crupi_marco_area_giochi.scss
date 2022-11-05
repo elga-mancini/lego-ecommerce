@@ -270,6 +270,9 @@
     align-items: center;
     justify-content: space-between;
     width: 1200px;
+    @media screen and (max-width: 1250px) {
+      width: 90%;
+    }
 
     .area__giochi__logo_buttons {
       display: flex;
@@ -341,7 +344,7 @@
         width: 50%;
         margin: 2rem;
       }
-      @media screen and (max-width: 770px) {
+      @media screen and (max-width: 850px) {
         display: none;
       }
       cursor: pointer;
@@ -774,6 +777,12 @@
         border-bottom-left-radius: 50px;
         width: 998.33px;
         height: 561.55px;
+        @media screen and (max-width: 1200px) {
+          width: 90%;
+          // height: 90%;
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+        }
 
         // Center image inside container
         // top: 0px;
