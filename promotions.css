@@ -12,24 +12,40 @@
     background-color: white;
 }
 
+.o-two-banners-insiede{
+    display: flex;
+}
+
 .dark-banner{
+    display: flex;
     padding-bottom: 6rem;
+    padding-top: 6rem;
     background-color: black;
     color: white;
+    width: 100%;
 
+}
+
+.green-banner{
+    background-color: rgb(5, 170, 165);
+    color: black;
 }
 
 .container{
     padding-left: 6rem;
 }
 
-.img-banner{
-    background-color: black; 
-    object-fit: cover;
-    max-width: 100%;
+/* IMG of the banner */
+
+.halloween-banner{
+    width: 50%;
 }
-
-
+.starwars-banner{
+    width: 50%;
+}
+.remix-banner{
+    width: 50%;
+}
 
 .red-banner-fit {
    display: inline-block;
@@ -40,11 +56,64 @@
    height: 100%;
 }
 
-.logo-under-img{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+.bg-img-halloween{
+    position: relative;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    display: block;
+    width: 50%;
+    background-image: url("https://www.lego.com/cdn/cs/set/assets/blt22eef81b95a716c9/40562-MysticWitch-202211-Offers-Sidekick-Standard.jpg?fit=crop&format=jpg&quality=80&width=800&height=426&dpr=1");
 }
+
+.bg-img-starwars{
+    position: relative;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    display: block;
+    width: 50%;
+    background-image: url("https://www.lego.com/cdn/cs/set/assets/blta287ad503819facb/BFCM-2021-LIVE-Sidekick-Standard-1.jpg?fit=crop&format=jpg&quality=80&width=800&height=426&dpr=1");
+}
+
+
+.bg-img-remix{
+    position: relative;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    display: block;
+    width: 50%;
+    background-image: url("https://www.lego.com/cdn/cs/set/assets/blt31f2bf0fe6409db5/40512-VIP-Remix-Fun-Funky-Offers-202211-Sidekick-Standard.jpg?fit=crop&format=jpg&quality=80&width=800&height=426&dpr=1");
+}
+
+.logo-under-img-starwars{
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    width: auto;
+} 
+
+.logo-under-img-halloween{
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+
+}
+
+.logo-under-img-remix{
+    position: absolute;
+   bottom: 0rem;
+    left: 0rem;
+}
+ 
+   
+.show-bg-img-small-screen{
+    display: none;
+
+}
+
+ 
 
 .banner-img{
     max-width: 100%;
@@ -270,10 +339,21 @@ h2{
 
 /* END molecule buttons buy and find more*/
 
+.vip-button{
+    background-color: black;
+    color: white;
+}
 
 
-
-
+@media screen and (min-width: 2500px){
+    .logo-under-img-starwars{
+        position: absolute;
+        top: 9rem;
+        right: 0rem;
+        width: auto;
+    } 
+    
+}
 
 
 @media screen  and (min-width: 1900px){
@@ -294,22 +374,16 @@ h2{
     }
 
     /* STAR img and logo inside the banner*/
-    .img-banner{
+    /* .img-banner{
         display: flex;
-        /* flex-direction: column; */
         flex-wrap: wrap;
         justify-content: flex-end;
-    }
+    } */
 
-    .img-banner img{
-       max-width: 100%;
-       margin: 0;
-    }
-
-    .logo-under-img{
+    /* .logo-under-img{
         align-items: flex-start;
-        justify-content: flex-end;
-    }
+        justify-content: flex-start;
+    } */
 
    /* END img and logo inside the banner*/
 } 
@@ -319,8 +393,31 @@ h2{
     .m-buttons-buy-find{
         flex-direction: column;
     }
+
+    .logo-under-img-starwars{
+        position: absolute;
+        bottom: 0rem;
+        right: 0rem;
+        width: auto;
+    } 
+    
+    .logo-under-img-halloween{
+        position: absolute;
+        bottom: 0rem;
+        right: 0rem;
+        width: auto;
+    
+    }
+    
+    .logo-under-img-remix{
+        position: absolute;
+       bottom: 0rem;
+        left: 0rem;
+    }
     
 }
+
+
 
 
 @media screen and (max-width: 910px){
@@ -329,28 +426,148 @@ h2{
         bottom: 10rem; /* change for media query*/
     }
 
-    /* STAR img and logo inside the banner*/
+   
+    h1{
+        font-size: 1.2rem;
+    }
+
+    .menu-ul{
+        font-size: 0.9rem;
+    }
+
+    h2{
+        font-size: 1.1rem;
+    }
+
+    .o-two-banners-insiede{
+        width: 100%;
+    }
+
+    .display-4{
+        font-size: 1rem;
+    }
+    .lead{
+        font-size: 0.8rem;
+    }
+
+    .container{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+
     .img-banner{
-        display: flex;
-        /* flex-direction: column; */
-        flex-wrap: wrap;
-        justify-content: flex-end;
+        width: 100%;
     }
 
-    .img-banner img{
-       max-width: 100%;
-       margin: 0;
-    }
+   .dark-banner{
+    width: 100%;
+   }
 
-    .logo-under-img{
-        align-items: flex-start;
-        justify-content: flex-end;
-    }
 
-   /* END img and logo inside the banner*/
-    
+   
+
+
     
 }
+
+
+@media screen and (max-width: 854px){
+   
+
+    .img-banner{
+        width: 100%;
+    }
+
+    .dark-banner{
+        width: 100%;
+       }
+
+  
+    
+}
+
+
+
+
+
+@media screen and (max-width: 700px){
+
+    .logo-under-img-remix{
+        position: absolute;
+    }
+
+    
+    .logo-under-img-starwars img {
+        position: relative;
+        top: 0rem;
+        right: 2rem;
+        width: 80px;
+        height: auto;
+    } 
+    
+    .logo-under-img-halloween img{
+        position: relative;
+        top: 0rem;
+        right: 0rem;
+        width: 70px;
+        height: auto;
+    
+    }
+    
+    .logo-under-img-remix img{
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+        height: auto;
+        width: 70px;
+    }
+
+    h1{
+        font-size: 1.2rem;
+    }
+
+    .menu-ul{
+        font-size: 0.9rem;
+    }
+
+    h2{
+        font-size: 1.1rem;
+    }
+
+    .o-two-banners-insiede{
+        width: 100%;
+    }
+
+    .display-4{
+        font-size: 1rem;
+    }
+    .lead{
+        font-size: 0.7rem;
+    }
+
+    .container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .img-banner{
+        width: 100%;
+    }
+
+   .dark-banner{
+    width: 100%;
+    padding: 0;
+   }
+    
+
+
+
+   
+    
+}
+
+
 
 @media screen  and (max-width: 601px){
     .red-banner{
@@ -375,20 +592,86 @@ h2{
        display: none;
     }
 
-    .o-two-banners-insiede{
+    /* .o-two-banners-insiede{
         flex-direction: column;
-    }
+    } */
 
-    .halloween-banner{
-        order: 1;
-    }
-
-    .starwars-banner{
-        order: 1;
-    }
+    
 
    
+
+    .logo-under-img-starwars img {
+        position: relative;
+        top: 0rem;
+        right: 2rem;
+        width: 70px;
+        height: auto;
+    } 
     
+    .logo-under-img-halloween img{
+        position: relative;
+        top: 0rem;
+        right: 0rem;
+        width: 70px;
+        height: auto;
+    
+    }
+    
+    .logo-under-img-remix img{
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+        height: auto;
+        width: 70px;
+    }
+    
+
+   .o-two-banners-insiede{
+    display: flex;
+    
+   }
+
+   .img-banner{
+    width: 100%;
+   }
+
+   .bg-img-halloween{
+     width: 50%;
+   }
+
+  .bg-img-starwars{
+    width: 50%;
+  }
+
+  .bg-img-remix{
+    width: 50%;
+  }
+
+
+  .halloween-banner{
+        width: 50%;
+        padding: 0;
+    }
+
+  .starwars-banner{
+        width: 50%;
+        padding: 0;
+    }
+
+    .remix-banner{
+        width: 50%;
+        padding: 0;
+    }
+
+    .dark-banner{
+        width: 100%;
+        padding: 0;
+    }
+
+
+
+   
+
 }
 
 
