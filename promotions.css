@@ -125,7 +125,6 @@
 .due-sezioni{
     display: flex;
     color: black;
-    background-color: rgb(243, 243, 152);
 }
 
 .banner-coupon{
@@ -343,6 +342,83 @@ h2{
     background-color: black;
     color: white;
 }
+
+
+/* COMPONENTE di ELga*/
+.o-mini-card__container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    border: 2px solid red;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.m-mini-card__box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.m-mini-card_box-last{
+    margin-right: 0;
+}
+
+.m-mini-card__box-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+.m-mini-card__text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.m-mini-card__img-text-link {
+    text-decoration: none;
+    text-align: center;
+}
+
+.m-mini-card__text-link {
+    text-decoration: none;
+    color: black;
+}
+.m-mini-card__text-link:hover {
+    color: black;
+}
+.m-mini-card__text-link:hover {
+    text-decoration: none;
+}
+
+.m-mini-card__link-one {
+    color: black;
+    font-size: 1.1rem;
+}
+.m-mini-card__link-one:hover {
+    text-decoration: underline;
+}
+
+.section2__firstimg {
+    /* height: 200px; */
+    cursor: pointer;
+}
+
+/* fine componente di ELga*/
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 2500px){
