@@ -587,4 +587,13 @@ html {
   .o_container_themes .o_container_themeCard .m_links_themeCard .a_moreInfo_themeCard > a:hover svg {
     text-decoration: none;
   }
+}
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
 }/*# sourceMappingURL=gaziano_cristopher - temi.css.map */

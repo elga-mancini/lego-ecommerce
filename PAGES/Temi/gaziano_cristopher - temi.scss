@@ -611,3 +611,12 @@ html {
     }
   }
 
+
+// AUTOHIDE NAVBAR
+
+  .scrolled-down{
+    transform:translateY(-100%); transition: all 0.5s ease-in-out;
+  }
+  .scrolled-up{
+    transform:translateY(0); transition: all 0.5s ease-in-out;
+  }
