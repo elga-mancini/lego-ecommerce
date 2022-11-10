@@ -47,6 +47,10 @@
     width: 50%;
 }
 
+.img-banner{
+    width: 100%;
+}
+
 .red-banner-fit {
    display: inline-block;
    vertical-align: middle;
@@ -55,6 +59,8 @@
    width: 100%;
    height: 100%;
 }
+
+
 
 .bg-img-halloween{
     position: relative;
@@ -86,6 +92,35 @@
     width: 50%;
     background-image: url("https://www.lego.com/cdn/cs/set/assets/blt31f2bf0fe6409db5/40512-VIP-Remix-Fun-Funky-Offers-202211-Sidekick-Standard.jpg?fit=crop&format=jpg&quality=80&width=800&height=426&dpr=1");
 }
+
+.bg-img-keep-in-touch{
+    position: relative;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: cover;
+    display: block;
+    width: 50%;
+    background-image: url("https://www.lego.com/cdn/cs/set/assets/blt8c7ec696474ed641/Grey-Email-Signup-Hero-Standard-1.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=1");
+}
+
+.keep-in-touch-mobile{
+    display: none;
+}
+
+
+.grey-keep-in-touch{
+    background-color: rgb(244, 244, 244);
+}
+.section2__email {
+    margin-bottom: 2rem;
+}
+
+.section2__email input{
+    padding-left: 20px;
+}
+
+
+
 
 .logo-under-img-starwars{
     position: absolute;
@@ -288,7 +323,6 @@ h2{
 }
 
 
-
 .six-banner{
     color: black;
     max-width: 100%;
@@ -296,6 +330,11 @@ h2{
     
 
 }
+
+
+
+
+
 
 /* START molecule buttons buy and find more*/
 
@@ -350,7 +389,7 @@ h2{
     justify-content: center;
     gap: 2rem;
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
@@ -414,7 +453,99 @@ h2{
 
 
 
+/* componente restiamo in contatto*/
+/* .section2__second-img,
+.section2__third-img,
+.section2__four-img {
+    max-width: 100%;
+    object-fit: cover;
+    width: auto;
+    height: auto; 
+} */
+/* .section2__box-2,
+.section2__box-3,
+.section2__box-4,
+.section2__box-2-clone,
+.section2__box-3-clone,
+.section2__box-4-clone {
+    margin-left: 10px;
+} */
 
+.section2__second-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    /* margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px; */
+}
+.section2__label-form {
+    width: 0;
+}
+
+.section2__img-in-call {
+    max-width: 100%;
+    cursor: pointer;
+    height: auto;
+    width: auto;
+    position: relative;
+    object-fit: cover;
+    width: auto;
+    height: auto; 
+}
+
+.section2__text-over-img {
+    position: absolute;
+    margin: 0 80px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.section2__article-over-img {
+    margin-top: 15px;
+}
+
+.section2__button-reg {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    display: none;
+}
+
+.section2__button-reg:hover {
+    background-color: white;
+    color: black;
+}
+
+.section2__email {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.section2__email-box {
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.section2__submit {
+    height: 40px;
+    width: 55px;
+    background: rgb(253, 128, 36);
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.section2__arrow-for-button {
+    height: 30px;
+}
+
+/* fine componente restiamo in contatto*/
 
 
 
@@ -428,6 +559,10 @@ h2{
         right: 0rem;
         width: auto;
     } 
+
+    .img-banner{
+        width: 100%;
+    }
     
 }
 
@@ -672,9 +807,42 @@ h2{
         flex-direction: column;
     } */
 
-    
 
-   
+    .keep-in-touch-mobile{
+        display: block;
+    }
+
+    .grey-banner{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        color: black;
+        text-align: center;
+        background-color: rgb(236, 237, 239);
+    }
+
+    .section2__email{
+        text-align: center;
+    }
+    .section2__email input{
+        padding-left: 20px;
+    }
+
+   .grey-img-banner img{
+     width: 100%;
+   }
+
+
+   .grey-keep-in-touch{
+    display: none;
+   }
+   .mobile-hide-grey-img{
+    display: none;
+   }
+ 
+
+
+
 
     .logo-under-img-starwars img {
         position: relative;
@@ -744,6 +912,7 @@ h2{
         padding: 0;
     }
 
+    
 
 
    
