@@ -207,20 +207,22 @@ html {
   }
   .o_container_themes .o_container_themeCard .m_image_themeCard .a_logo_themeCard {
     display: flex;
-    max-width: 304px;
+    max-width: 22.45vw;
     min-width: 270px;
+    min-height: 30px;
+    max-height: 45px;
     padding: 0 auto;
     background: rgb(255, 255, 255);
     opacity: 80%;
     z-index: 2;
     padding: 5px 0;
-    align-self: flex-start;
+    align-self: center;
     position: absolute;
     top: -35px;
   }
   .o_container_themes .o_container_themeCard .m_image_themeCard .a_logo_themeCard img {
-    width: 170px;
-    height: 35px;
+    max-height: 35px;
+    max-width: 212px;
     margin: auto;
   }
   .o_container_themes .o_container_themeCard .m_image_themeCard .a_picture_themeCard {
@@ -330,18 +332,19 @@ html {
     display: flex;
     max-width: 563.5px;
     min-width: 43.9267886855vw;
+    min-height: 30px;
+    max-height: 45px;
     padding: 0 auto;
     background: rgb(255, 255, 255);
     opacity: 80%;
     z-index: 2;
     padding: 5px 0;
-    align-self: flex-start;
-    position: absolute;
+    align-self: center;
     top: -35px;
   }
   .o_container_themes .o_container_themeCard .m_image_themeCard .a_logo_themeCard img {
-    width: 170px;
-    height: 35px;
+    max-height: 35px;
+    max-width: 212px;
     margin: auto;
   }
   .o_container_themes .o_container_themeCard .m_image_themeCard .a_picture_themeCard {
@@ -496,18 +499,20 @@ html {
     display: flex;
     max-width: 543px;
     min-width: 88.6vw;
+    min-height: 30px;
+    max-height: 45px;
     padding: 0 auto;
     background: rgb(255, 255, 255);
     opacity: 80%;
     z-index: 2;
     padding: 5px 0;
-    align-self: flex-start;
+    align-self: center;
     position: absolute;
     top: -35px;
   }
   .o_container_themes .o_container_themeCard .m_image_themeCard .a_logo_themeCard img {
-    width: 170px;
-    height: 35px;
+    max-height: 35px;
+    max-width: 212px;
     margin: auto;
   }
   .o_container_themes .o_container_themeCard .m_image_themeCard .a_picture_themeCard {
