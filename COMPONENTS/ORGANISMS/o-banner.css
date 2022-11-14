@@ -1,0 +1,135 @@
+
+
+body{
+    background-color: rgb(185, 243, 128);
+}
+
+
+.o-banner-section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 4rem;
+}
+
+
+.o-two-banners-insiede{
+   display: flex;
+   background-color: black;
+   width: 100%;
+   max-width: 100%;
+   padding: 4rem;
+   color: white;
+   background-color: black;
+}
+
+.m-buttons-buy-find{
+    display: flex;
+}
+
+
+@media screen and (max-width: 1600px) {
+    .banner-section-container{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* STAR img and logo inside the banner*/
+    .img-banner{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .img-banner img{
+       max-width: 100%;
+       margin: 0;
+    }
+
+    .logo-under-img{
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+   /* END img and logo inside the banner*/
+} 
+
+/* Mq for buttons buy and find more */
+@media screen and (max-width: 1220px) {
+    .m-buttons-buy-find{
+        flex-direction: column;
+    }
+    
+}
+
+
+@media screen and (max-width: 910px){
+    .text-button-red{
+        top: -6rem;
+        bottom: 10rem; /* change for media query*/
+    }
+
+    /* STAR img and logo inside the banner*/
+    .img-banner{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .img-banner img{
+       max-width: 100%;
+       margin: 0;
+    }
+
+    .logo-under-img{
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+   /* END img and logo inside the banner*/
+    
+    
+}
+
+@media screen  and (max-width: 601px){
+    .red-banner{
+        display: block;
+        max-width: 100%;
+        background-color:rgba(79, 18, 19);
+    }
+
+    .text-button-red-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        position: relative;
+        bottom: 0.5rem;
+        padding: 20px;
+
+    }
+
+    .text-button-red{
+       display: none;
+    }
+
+    .o-two-banners-insiede{
+        flex-direction: column;
+    }
+
+    .halloween-banner{
+        order: 1;
+    }
+
+    .starwars-banner{
+        order: 1;
+    }
+
+   
+    
+}

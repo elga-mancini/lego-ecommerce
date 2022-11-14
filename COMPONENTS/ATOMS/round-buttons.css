@@ -1,0 +1,45 @@
+
+
+body{
+    background-color: rgb(200, 245, 63);
+}
+.atom-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.a-badge-info{
+    color: black;
+    background-color: white;
+    font-size: 1rem;
+    border-top-left-radius: 1.875rem;
+    border-top-right-radius: 1.875rem;
+    border-bottom-left-radius: 1.875rem;
+    border-bottom-right-radius: 1.875rem;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    padding: 12px 17px 12px 17px;
+    
+}
+
+.no-bg{
+    border: 2px solid white;
+    color: white;
+    background-color:rgb(157, 22, 3);
+}
+
+
+.a-badge-info:hover{
+    text-decoration: underline;
+    color: black;
+    
+}
+
+.no-bg:hover{
+    text-decoration: underline;
+    color: white;
+}
