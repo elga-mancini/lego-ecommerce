@@ -211,6 +211,13 @@ a.nav__play-button  {
 
 }
 
+#btn-natale:hover{
+    text-decoration: none;
+    background-color: black;
+     color: white; 
+ 
+ }
+
 .nav__link-button:hover{
     background-color: black;
     color: white; 
