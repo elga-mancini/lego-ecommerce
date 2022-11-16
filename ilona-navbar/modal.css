@@ -1,0 +1,268 @@
+:root {
+  --blue: rgb(68, 243, 109);
+  --white: white;
+  --black: rgba(0, 0, 0, 0.8);
+  --bounceEasing: cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: inherit;
+}
+/*   
+
+ */
+.btn-group {
+  text-align: center;
+}
+
+
+
+.open-modal:hover{
+ text-decoration: underline;
+ color: black;
+}
+
+
+/* MODAL
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.o-modal-container{
+  position: fixed;
+  width: 100vw;
+  height: auto;
+  /* border: 2px solid red; */
+  top: 0rem;
+  left: 0rem;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.o-modal {
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+  width: 60%;
+  height: 100vh;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  /* border: 2px solid rgb(229, 236, 41); */
+}
+
+
+
+.o-modal.is-visible {
+  /* position: relative; */
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+/* DONE */
+.o-modal-dialog {
+  position: fixed;
+  width: 66%;
+  height: 100vh;
+  left: 0rem;
+  background: var(--white);
+  overflow: auto;
+  cursor: default;
+}
+
+
+
+
+.close-modal{
+  position: relative;
+  top: 2rem;
+  align-self: flex-start;
+  left: 10rem;
+  width: 20%;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+}
+
+
+
+
+.o-modal-body{
+   display: flex;
+   gap: 1rem;
+   font-size: 0.9rem;
+   position: relative;
+   top: 9rem;
+   left: 10rem; 
+  
+}
+
+.o-modal-body-1{
+  width: 40%;
+  height: 80vh;
+  display: flex;
+  flex-direction:column;
+  padding-top: 0;
+  margin: 0;
+}
+
+.o-modal-body-2{
+display: flex;
+flex-direction: row;
+gap: 1rem;
+width: 60%;
+height: 100%;
+padding-top: 0;
+margin: 0;
+}
+/* for js */
+#box-1{
+display: none;
+}
+
+#box-2{
+display: none;
+}
+
+.column-1{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+text-align: start;
+}
+.column-2{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+text-align: start;
+}
+
+.line{
+  width: 0.8px;
+  height: 80vh;
+  background-color: grey;;
+
+}
+.o-modal-content{
+  border-style: none;
+  /* border: 2px solid rgb(4, 248, 20); */
+
+}
+
+
+
+#img-logo-modal{
+  align-self: flex-start;
+  padding-right: 20px;
+  position: relative;
+  left: 0rem;
+  top: 0rem;
+  z-index: 1; /* THIS will show the logo img*/
+  right: inherit;
+  width: 14%;
+}
+
+.nav-item{
+  list-style: none;
+}
+.nav-link:hover{ 
+  text-decoration: underline;
+}
+
+.icon__arrow-module{
+  width: 10%;
+  height: 25%;
+}
+
+.btn-inside-module{
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+ position: relative;
+}
+
+
+
+
+
+/* HIDDEN div 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.clik-show-div{
+display: none;
+position: absolute;
+left:20rem;
+}
+
+/* show on Modal
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.open-modal{
+z-index: 1;
+}
+
+.show-on-modal{
+z-index: 1;
+}
+
+.close-modal{
+z-index: 1;
+}
+
+
+
+
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+[data-animation] .modal-dialog {
+  opacity: 0;
+  transition: all 0.4s var(--bounceEasing);
+}
+
+[data-animation].is-visible .modal-dialog {
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+
+
+
+[data-animation="slideInOutLeft"] .modal-dialog {
+  transform: translateX(-120%);
+}
+
+
+
+[data-animation="slideInOutDown"].is-visible .modal-dialog,
+[data-animation="slideInOutTop"].is-visible .modal-dialog,
+[data-animation="slideInOutLeft"].is-visible .modal-dialog,
+[data-animation="slideInOutRight"].is-visible .modal-dialog,
+[data-animation="zoomInOut"].is-visible .modal-dialog,
+[data-animation="rotateInOutDown"].is-visible .modal-dialog {
+  transform: none;
+}
+
+
+
+
