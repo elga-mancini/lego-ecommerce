@@ -1,0 +1,393 @@
+$color-black: black;
+$color-white: white; 
+
+@mixin static {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100rem;
+}
+
+@mixin svg {
+    width: .938rem;
+    height: .938em;
+}
+
+.o-christmas__megacontainer{
+    margin-bottom: 5rem;
+.m-christmas__head-container {
+    @include static;
+    max-width: 100rem;
+    flex-direction: column;
+    .m-christmas__list-container {
+        @include static;
+        margin-top: .8rem;
+        svg {
+            @include svg;
+        }
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .a-christmas__link-home {
+            text-decoration: none;
+        }
+        .a-christmas__link-home:hover {
+            text-decoration: underline;
+        }
+      }
+      .a-christmas__h1-presents {
+        margin-top: 3rem;
+      }
+}
+
+.m-christmas__funny-holiday {
+    @include static;
+    max-width: 100rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-image: url(https://www.lego.com/cdn/cs/set/assets/blt5eb4e078c4172c19/Holiday2022-Landing-202208-Inpage-Nav-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=90&dpr=1);
+    height: 8rem;
+    max-height: 15rem;
+    .a-christmas__only-text {
+        font-size: 2rem;
+    }
+    .buttonstyle {
+        font-size: .9rem;
+        text-decoration: none;
+        border: 1px solid $color-black;
+        height: 3rem;
+        text-align: center;
+        padding: .7rem .9rem;
+        width: 7.8rem;
+        border-radius: 2rem;
+    }
+
+    .a-christmas__products-button {
+        color: $color-black;
+        font-weight: bold;
+    }
+    .a-christmas__products-button:hover {
+        text-decoration: underline;
+    }
+
+    .a-christmas__found-more-button {
+        background: $color-black;
+        color: $color-white;
+        font-weight: bold;
+    }
+    .a-christmas__found-more-button:hover {
+        text-decoration: underline;
+    }
+}
+
+.m-christmas__banner-container {
+    margin: 0 auto;
+    max-width: 100rem;
+    .m-christmas__hero-banner {
+        position: relative;
+        .m-christmas__hero-banner-full-content {
+            position: absolute;
+            z-index: 1;
+            max-width: 35%;
+            left: 6.875rem;
+            transform: translateY(-50%);
+            top: 50%;
+            text-align: left;
+        }
+    }
+    .a-christmas__img-hp {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    .a-christmas__hero-banner-h2-text {
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+    }
+    .a-christmas__hero-banner-article {
+        margin-top: 1rem;
+    }
+    svg {
+        @include svg;
+    }
+.a-christmas__hero-banner-buy-now {
+    margin-top: 1.5rem;
+    .a-christmas__hero-banner-button-style {
+        text-decoration: none;
+        color: $color-white;
+        background: $color-black;
+        height: 3rem;
+        text-align: center;
+        padding: .7rem .9rem;
+        width: 7.8rem;
+        border-radius: .5rem;
+        font-weight: bold;
+    }
+    .a-christmas__hero-banner-button-style:hover {
+        text-decoration: underline;
+    }
+}
+}
+
+.m-christmas__icons-container {
+    max-width: 100rem;
+    margin: 0 auto;
+    background: rgb(52, 161, 156);
+    margin-top: -5px;
+    .m-christmas__container {
+        padding: 2.5rem 1.5rem;
+        
+    }
+    .m-christmas__icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        .a-christmas__link-news {
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: $color-black;
+            }
+            .a-christmas__link-news:hover {
+                text-decoration: underline;
+                color: blue;
+            }
+            li {
+                list-style-type: none;
+                text-align: center;
+            }
+            .a-christmas__text-news {
+                margin-top: 1rem;
+            }
+            .a-christmas__text-star-wars {
+                font-style: oblique;
+                margin-top: 1rem;
+            }
+        .a-christmas__img-set {
+            position: static;
+            max-width: 100%;
+            width: auto;
+        }
+    }
+}
+
+.m-christmas__carousel-container {
+    max-width: 100rem;
+    margin: 0 auto;
+    background: rgb(52, 161, 156);
+    padding-top: 2rem;
+    
+    
+    .m-christmas__container {
+        max-width: 82.5rem;
+        margin: 0 auto;
+    }
+    .a-christmas__text-ideas-presents {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 2rem;
+        
+    }
+}
+
+
+.m-christmas__mini-cards {
+@include static;
+flex-direction: column;
+    .m-christmas__box-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .m-christmas__costruction-text {
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+    .m-christmas__box-images {
+        display: flex;
+        position: relative;
+    }
+    .m-christmas__link-one {
+        font-weight: bold;
+    }
+    
+    .m-christmas__box-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .a-cardStyles__title-text {
+        margin-bottom: 10px;
+    }
+    
+    .m-christmas__img-text-link {
+        text-decoration: none;
+        color: black;
+    }
+    .m-christmas__img-text-link:hover {
+        color: black;
+    }
+    .m-christmas__link-one:hover {
+        text-decoration: underline;
+    }
+    
+    .m-christmas__firstimg {
+        max-width: 100%;
+    }
+    
+    
+    .m-christmas__second-img,
+    .m-christmas__third-img,
+    .m-christmas__four-img {
+        max-width: 100%;
+        object-fit: cover;
+        width: auto;
+        height: auto; 
+    }
+    .m-christmas__box-2,
+    .m-christmas__box-3,
+    .m-christmas__box-4,
+    .m-christmas__box-2-clone,
+    .m-christmas__box-3-clone,
+    .m-christmas__box-4-clone {
+        margin-left: 10px;
+    }
+
+    
+}
+.m-christmas__container-why-buy{
+    @include static;
+    background: rgb(204, 231, 230);
+    flex-direction: column;
+.m-christmas__head-container-clone {
+    max-width: 100rem;
+    padding: 2rem;
+    .a-christmas__h1-presents-clone {
+        margin-bottom: 2rem;
+    }   
+}
+}
+.m-christmas__container-prepare-to-christmas {
+    background: rgb(52, 161, 156);
+    max-width: 100rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+    
+    
+    .a-christmas__text-prepare-to-christmas {
+        text-align: center;
+        .a-christmas__text-christmas {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+    }
+}
+.a-christmas__link-view-all {
+    color: rgb(0,0,0,0.5);
+}
+.a-christmas__link-view-all:hover {
+    color: $color-black;
+}
+.m-christmas__container-why-buy-clone {
+    @include static;
+    background: rgb(52, 161, 156);
+    flex-direction: column;
+}
+}
+
+.m-christmas__hero-banner-full-content-clone {
+   text-align: right;
+   position: absolute;
+   top: 50%;
+   left: 60%;
+}
+.o-christmas__banner-info {
+    @include static;
+    margin-top: 5rem;
+    background: rgb(230, 243, 255);
+    border-radius:3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding: 0.3rem;
+    margin-bottom: 5rem;
+}
+.o-christmas__find-ispiration {
+    padding: 2rem;
+    @include static;
+    background: rgb(204, 231, 230);
+}
+
+.m-christmas__faq {
+    padding: 3rem;
+    color: black;
+    @include static;
+}
+
+.m-christmas__questions {
+    max-width: 100rem;
+    margin: 0 auto;
+    .a-christmas__question {
+        position: relative;
+    }
+    .header {
+        padding: 1.25rem 1.8rem;
+    border-bottom: 0.1rem solid rgb(187, 187, 187);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: black;
+    display: block;
+    }
+
+    svg {
+    height: 15px;
+    width: 15px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    transform: rotate(270deg);
+    margin-top: 5px;
+    margin-right: 5px;
+    }
+    .content {
+        padding: 0 1.8rem;
+        font-size: 1rem;
+        color: black;
+        max-height: 0;
+        transition: 0.2s;
+        overflow: hidden;
+        margin-bottom: 0.2rem;
+    }
+    input[type="checkbox"]:checked ~ .header svg {
+        transform: rotate(270deg);
+        transition: 0.4s;
+    }
+    input[type="checkbox"] ~ .header svg {
+        transform: rotate(90deg);
+        transition: 0.4s;
+    }
+    input[type="checkbox"]:checked ~ div.content {
+        padding: 30px 30px;
+        max-height: 600px;
+        transition: all 0.5s ease;
+    }
+    input[type="checkbox"] {
+        position: absolute;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+    }
+}

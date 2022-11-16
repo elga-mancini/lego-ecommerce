@@ -1,0 +1,2538 @@
+@font-face {
+  font-family: "cerapro";
+  src: url(https://assets.lego.com/fonts/v2/cera-pro/CeraPro-Regular.woff2);
+}
+@font-face {
+  font-family: "tobipro";
+  src: url(./tobipro-medium-webfont.woff2);
+}
+
+@mixin coloredButtonNav($background) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  width: 46px;
+  border-radius: 30px;
+  background: $background;
+  color: white;
+  position: relative;
+  top: -4px;
+  // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
+  border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+  transition: 0.13s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
+    transform: translate3d(0px, -2px, 0px);
+  }
+  &:active {
+    // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+@mixin shadowButton($firstColor, $secondColor) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+  border-radius: 30px;
+  height: 46px;
+  width: 46px;
+  background: linear-gradient(180deg, $firstColor 0%, $secondColor 100%);
+}
+
+@mixin shadowButtonText {
+  margin-top: 0.3rem;
+  color: #293744;
+  font-family: "cerapro", arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 900;
+  text-align: center;
+}
+
+#area__giochi__activeSearchBar {
+  position: relative;
+  z-index: 101;
+  height: 530px;
+  background-color: white;
+  display: none;
+  opacity: 0;
+  transition: 0.6s ease opacity;
+  .area__giochi__navSearch {
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 104px;
+    background-color: white;
+    .area__giochi__logo {
+      height: 49.33px;
+      width: 49.32px;
+      cursor: pointer;
+    }
+    #area__giochi__close_activeSearchBar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      width: 50px;
+      border-radius: 30px;
+      background-color: rgb(223, 226, 228);
+      cursor: pointer;
+    }
+    .area__giochi__inputSearchBar {
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+      width: 1150px;
+      height: 50px;
+      background-color: rgb(234, 237, 239);
+      border: none;
+      border-radius: 8px;
+      ion-icon {
+        font-size: 22px;
+        margin-left: 1rem;
+      }
+    }
+    div.area__giochi__inputSearchBar:focus-within {
+      height: 55px;
+      border: 2px solid black;
+    }
+  }
+  .area__giochi__navSection {
+    display: flex;
+    justify-content: center;
+    .area__giochi__navSectionContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      .area__giochi__navSectionContainerTitle {
+        margin-bottom: 16px;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+      .area__giochi__navElImg {
+        max-width: 100%;
+        max-height: 50px;
+        margin-top: 4px;
+      }
+      .area__giochi__navElText {
+        margin-top: 0.6rem;
+        line-height: 1.5;
+        color: rgb(234, 237, 239);
+        font-weight: 900;
+        font-size: 12px;
+      }
+      .area__giochi__navSectionContainerOne {
+        width: 576px;
+        .area__giochi__navSectionContainerOneLayout {
+          display: flex;
+          justify-content: center;
+          gap: 4px;
+          .area__giochi__navElVertical {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0px;
+            min-width: 173.329px;
+            height: 325.75px;
+            background: linear-gradient(
+                0deg,
+                rgba(0, 58, 123, 0.8) 0%,
+                rgb(44, 131, 195) 100%
+              ),
+              url(https://www.lego.com/kids/static/images/search-links/lego-life-app-bg.png)
+                0px 100% / cover no-repeat transparent;
+            border: none;
+            cursor: pointer;
+          }
+          .area__giochi__navElsSquare {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+            .area__giochi__navElSquareGreen {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              margin: 0px;
+              width: 189.33px;
+              height: 160.88px;
+              padding: 0 8px;
+              background: linear-gradient(
+                  0deg,
+                  rgba(25, 178, 114, 0.8),
+                  rgb(0, 148, 112) 100%
+                ),
+                url(https://www.lego.com/kids/static/images/search-links/building-instructions-bg.png)
+                  0px 100% / cover no-repeat transparent;
+              border: none;
+              cursor: pointer;
+            }
+            .area__giochi__navElSquareBlue {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              margin: 0px;
+              width: 189.33px;
+              height: 160.88px;
+              padding: 0 8px;
+              background: linear-gradient(
+                  0deg,
+                  rgba(0, 87, 167, 0.5) 0%,
+                  rgb(44, 154, 255) 100%
+                ),
+                url(https://www.lego.com/kids/static/images/search-links/digital-safety-bg.png)
+                  center center repeat transparent;
+              border: none;
+              cursor: pointer;
+            }
+            .area__giochi__navElSquareRed {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              margin: 0px;
+              width: 189.33px;
+              height: 160.88px;
+              padding: 0 8px;
+              background: linear-gradient(
+                  0deg,
+                  rgba(208, 51, 51, 0.8) 0%,
+                  rgb(241, 90, 90) 100%
+                ),
+                url(https://www.lego.com/kids/static/images/search-links/lego-apps-bg.png)
+                  0px 100% / cover no-repeat transparent;
+              border: none;
+              cursor: pointer;
+            }
+            .area__giochi__navElSquareYellow {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              margin: 0px;
+              width: 189.33px;
+              height: 160.88px;
+              padding: 0 8px;
+              background: linear-gradient(
+                  0deg,
+                  rgba(226, 166, 0, 0.8) 0%,
+                  rgb(241, 187, 0) 100%
+                ),
+                url(https://www.lego.com/kids/static/images/search-links/characters-bg.png)
+                  0px 100% / cover no-repeat transparent;
+              border: none;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .area__giochi__navSectionContainerTwo {
+        width: 576px;
+        .area__giochi__navSectionContainerTwoLayout {
+          display: flex;
+          display: flex;
+          gap: 4px;
+          flex-wrap: wrap;
+          .area__giochi__navElRectangle {
+            img {
+              width: 286px;
+              height: 160.88px;
+              object-fit: cover;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.area__giochi__nav {
+  position: relative;
+  z-index: 10;
+  height: 104px;
+  background-color: rgb(255, 207, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .area__giochi__buttons_input_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    @media screen and (max-width: 1250px) {
+      width: 90%;
+    }
+
+    .area__giochi__logo_buttons {
+      display: flex;
+      align-items: center;
+
+      .area__giochi__logo {
+        height: 49.33px;
+        width: 49.32px;
+      }
+
+      .area__giochi__buttons {
+        margin-left: 32px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        .shadowBlueButtonContainer {
+          .shadowBlueButton {
+            @include shadowButton(#006aad, #00639c);
+            .area__giochi__circleBlueButton {
+              @include coloredButtonNav(
+                linear-gradient(180deg, #006aad 0%, #007bc0 100%)
+              );
+            }
+          }
+          .shadowBlueButtonText {
+            @include shadowButtonText();
+          }
+        }
+        .shadowRedButtonContainer {
+          .shadowRedButton {
+            @include shadowButton(#b6264d, #a3102b);
+            .area__giochi__circleRedButton {
+              @include coloredButtonNav(
+                linear-gradient(180deg, #b6264d 0%, #e32648 100%)
+              );
+            }
+          }
+          .shadowRedButtonText {
+            @include shadowButtonText();
+          }
+        }
+
+        .shadowGreenButtonContainer {
+          .shadowGreenButton {
+            @include shadowButton(#00744b, #016f3a);
+            .area__giochi__circleGreenButton {
+              @include coloredButtonNav(
+                linear-gradient(180deg, #00744b 0%, #008746 100%)
+              );
+            }
+          }
+          .shadowGreenButtonText {
+            @include shadowButtonText();
+          }
+        }
+      }
+    }
+
+    .area__giochi__searchBar {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: white;
+      height: 50px;
+      width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 4px 0 0 #dfe2e4, 0px 4px 8px rgb(90 0 0 / 20%);
+      @media screen and (max-width: 1200px) {
+        width: 50%;
+        margin: 2rem;
+      }
+      @media screen and (max-width: 850px) {
+        display: none;
+      }
+      cursor: pointer;
+      .area__giochi__searchBarElement {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        .area__giochi__searchBar_icon {
+          margin-left: 1rem;
+          margin-right: 0.5rem;
+          ion-icon {
+            font-size: 22px;
+          }
+        }
+        .area__giochi__searchBar_bar {
+          font-family: "cerapro", arial, sans-serif;
+          color: #394754;
+          font-size: 14px;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    .area__giochi__buttons_hamburger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .area__giochi__leftButton {
+        cursor: pointer;
+        .blueElementSVG {
+          margin-left: -35px;
+          position: relative;
+          right: -42px;
+        }
+      }
+      .area__giochi__shadowLoginButton {
+        margin-top: 0.3rem;
+        margin-left: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+        border-radius: 8px;
+        height: 40px;
+        width: 96.5px;
+        background: #dfe2e4;
+        .area__giochi__loginButton {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 40px;
+          width: 96.5px;
+          border-radius: 8px;
+          background: white;
+          position: relative;
+          top: -4px;
+          // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
+          border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+          transition: 0.13s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
+            transform: translate3d(0px, -2px, 0px);
+          }
+          &:active {
+            // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
+            transform: translate3d(0px, 2px, 0px);
+          }
+          .area__giochi__loginButtonText {
+            color: #394754;
+            font-size: 14px;
+            margin-left: 0.5rem;
+          }
+          .area__giochi__loginButtonIco {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(
+              135.88deg,
+              #fdbb7d -1.59%,
+              #d56075 100%
+            );
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+      .area__giochi__shadowHamburgerButton {
+        margin-top: 0.3rem;
+        margin-left: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+        border-radius: 8px;
+        height: 40px;
+        width: 40px;
+        background: #dfe2e4;
+        .area__giochi__hamburgerButton {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+          width: 40px;
+          border-radius: 8px;
+          background: white;
+          position: relative;
+          top: -4px;
+          // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
+          border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+          transition: 0.13s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
+            transform: translate3d(0px, -2px, 0px);
+          }
+          &:active {
+            // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
+            transform: translate3d(0px, 2px, 0px);
+          }
+        }
+      }
+    }
+  }
+}
+
+#area__giochi__activeHamburgerM {
+  position: relative;
+  z-index: 8;
+  transition: 0.3s ease;
+  margin-top: -80px;
+}
+
+.area__giochi__activeHamburgerMenu {
+  height: 71px;
+  background-color: rgb(226, 166, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .area__giochi__exit_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 1200px;
+    .area__giochi__shadowExitButton {
+      margin-top: 0.3rem;
+      margin-left: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+      border-radius: 8px;
+      height: 40px;
+      width: 134.83px;
+      background: #dfe2e4;
+      .area__giochi__exitButton {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        width: 134.83px;
+        border-radius: 8px;
+        background: white;
+        position: relative;
+        top: -4px;
+        // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
+        border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+        transition: 0.13s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
+          transform: translate3d(0px, -2px, 0px);
+        }
+        &:active {
+          // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
+          transform: translate3d(0px, 2px, 0px);
+        }
+        .area__giochi__exitButtonText {
+          color: #394754;
+          font-size: 14px;
+          margin-left: 0.5rem;
+        }
+        .area__giochi__exitButtonIco {
+          display: flex;
+          align-items: center;
+          width: 20px;
+          height: 20px;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+#area__giochi__blackScreen {
+  visibility: hidden;
+  opacity: 1;
+  transition: opacity 200ms ease 0s;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+#area__giochi__popUpA {
+  z-index: 101;
+  padding: 32px;
+  max-width: 700px;
+  position: absolute;
+  right: 50px;
+  left: 50px;
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(rgb(255, 255, 255) 0%, rgb(223, 226, 228) 100%);
+  border-radius: 16px;
+  box-shadow: rgb(0 0 0 / 25%) 0px 12px 15px 0px;
+  animation: 0.5s ease 0s 1 normal none running fadeIn;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.6s ease opacity;
+  .area__giochi__popUp_Title {
+    padding-top: 32px;
+    padding-right: 0px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: rgb(41, 55, 68);
+    span {
+      font-family: tobipro, arial, sans-serif;
+    }
+  }
+  .area__giochi__popUp_cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px auto;
+    padding: 0px 32px;
+    gap: 32px;
+
+    .area__giochi__popUp_card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 158.67px;
+
+      .area__giochi__popUp_img {
+        margin-bottom: 48px;
+      }
+      .area__giochi__popUp_text {
+        margin-top: 32px;
+      }
+    }
+  }
+  .area__giochi__popUpButtonContainer {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    .area__giochi__shadowPopUpButton {
+      margin-top: 0.3rem;
+      margin-left: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+      border-radius: 8px;
+      height: 40px;
+      width: 192px;
+      background: #dfe2e4;
+      .area__giochi__PopUpButton {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        width: 192px;
+        border-radius: 8px;
+        background: white;
+        position: relative;
+        top: -4px;
+        // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
+        border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+        transition: 0.13s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
+          transform: translate3d(0px, -2px, 0px);
+        }
+        &:active {
+          // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
+          transform: translate3d(0px, 2px, 0px);
+        }
+        .area__giochi__PopUpButtonText {
+          color: #394754;
+          font-size: 14px;
+          margin-left: 0.5rem;
+        }
+        .area__giochi__PopUpButtonIco {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgb(221, 221, 221);
+          border-radius: 5px;
+          width: 20px;
+          height: 20px;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.area__giochi__sectionOne {
+  background-image: url(https://www.lego.com/kids/static/images/seasonal-backgrounds/halloween-candy-bg.jpg);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  height: 689.547px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1300px) {
+    height: 900px;
+  }
+
+  .area__giochi__bigSliderImgContainer {
+    display: flex;
+    justify-content: center;
+    height: 561.55px;
+    border-radius: 50px;
+    overflow: hidden;
+    @media screen and (max-width: 1300px) {
+      flex-direction: column;
+      height: 800px;
+    }
+
+    .area__giochi__bigSliderImgThumbnails {
+      display: flex;
+      flex-direction: column;
+      line-height: 0;
+      @media screen and (max-width: 1300px) {
+        flex-direction: row;
+        width: 90%;
+      }
+      li {
+        flex: auto;
+        list-style: none;
+        background-color: white;
+
+        a {
+          display: block;
+          opacity: 0.4;
+          &:hover {
+            transition-duration: 0.5s;
+            opacity: 1;
+          }
+        }
+
+        .thumbActive {
+          opacity: 1;
+        }
+      }
+      img {
+        width: 199.67px;
+        height: 112.31px;
+        object-fit: cover;
+        object-position: top;
+        @media screen and (max-width: 1300px) {
+          width: 90%;
+          height: auto;
+          // height: 90%;
+        }
+      }
+    }
+
+    .area__giochi__bigSliderImgSlides {
+      overflow: hidden;
+      width: 998.33px;
+      height: 561.55px;
+    
+      li {
+        width: 998.33px;
+        height: 561.55px;
+        position: absolute;
+        z-index: 1;
+        list-style: none;
+        overflow: hidden;
+
+        .area__giochi__bigSliderText {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          position: absolute;
+          z-index: 3;
+          height: 120px;
+          width: fit-content;
+          background-color: white;
+          bottom: 70px;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          span {
+            color: black;
+            font-size: 22px;
+            font-family: tobipro, arial, sans-serif;
+            font-weight: bold;
+            margin-left: 25px;
+            margin-right: 50px;
+          }
+        }
+
+        &:target {
+          z-index: 3;
+
+          // -webkit-animation: slide 1s 1;
+        }
+        // @keyframes slide {
+        //   0% {
+        //     transform: translateY(-100%);
+        //   }
+        //   100% {
+        //     transform: translateY(0%);
+        //   }
+        // }
+        // @keyframes hidden {
+        //   0% {
+        //     z-index: 2;
+        //   }
+        //   100% {
+        //     z-index: 2;
+        //   }
+        // }
+      }
+      img {
+        position: absolute;
+        overflow: hidden;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        width: 998.33px;
+        height: 561.55px;
+        @media screen and (max-width: 1300px) {
+          width: 100%;
+          // height: 90%;
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+        }
+
+        // Center image inside container
+        // top: 0px;
+        // bottom: 0px;
+        // left: 0px;
+        // right: 0px;
+        // margin: auto;
+
+        object-fit: cover;
+        object-position: 100%;
+      }
+    }
+  }
+}
+
+.area__giochi__sectionTwo {
+  position: relative;
+  height: 597.19px;
+  background-color: #eaedef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .area__giochi__exploreNewsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .area__giochi__exploreNewsTitle {
+    position: absolute;
+    top: -20px;
+    padding: 0 64px;
+    align-self: start;
+    margin-top: 64px;
+    span {
+      color: #293744;
+      font-size: 48px;
+      font-family: tobipro, arial, sans-serif;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+  }
+  .area__giochi__exploreNewsFakeSliderGroup {
+    position: relative;
+    top: 70px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 64px;
+    .area__giochi__exploreNewsFirstFakeSliderContainer {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 288px;
+      min-width: 288px;
+      margin: -30.5px 0px;
+      .area__giochi__FakeSliderTop {
+        .area__giochi__FakeSliderVideo {
+          position: relative;
+          opacity: 1;
+          z-index: 2;
+          overflow: hidden;
+          border-radius: 32px 32px 0px 0px;
+          // box-shadow: rgb(0 0 0 / 15%) 0px 36px 32px;
+          // transition: transform 175ms cubic-bezier(0.17, 0.67, 0.39, 0.66) 0s;
+          // transform: translateY(30.5px);
+          // &:hover {
+          //   transform: translateY(0px);
+          // }
+        }
+      }
+
+      .area__giochi__FakeSliderIcoContainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 24px;
+
+        .area__giochi__FakeSliderIcoLeftStar {
+          position: relative;
+          z-index: 2;
+          top: -20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 32px;
+          height: 32px;
+          background-color: #ffffff;
+          border-radius: 50%;
+          box-shadow: 0px 4px 8px rgb(0 0 0 / 35%);
+
+          svg {
+            height: 18px;
+          }
+        }
+        .area__giochi__FakeSliderIcoRightGroup {
+          display: flex;
+          align-items: center;
+
+          .area__giochi__FakeSliderIcoHoverContainer {
+            display: none;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            top: 195px;
+            right: 5px;
+            z-index: 1000;
+            width: auto;
+            max-width: 100vw;
+            padding: 16px;
+            background: rgb(255, 255, 255);
+            border-radius: 8px;
+            box-shadow: rgb(0 0 0 / 15%) 0px 4px 8px;
+            transition: all 175ms ease-in-out 0s;
+            transform: translateY(0%);
+            opacity: 0;
+            .area__giochi__FakeSliderIcoHover {
+              p {
+                margin-bottom: 0;
+                text-align: center;
+                margin: 0px;
+                font-size: 12px;
+                font-family: cerapro, arial, sans-serif;
+                line-height: 12px;
+                margin-top: 5px;
+              }
+            }
+          }
+
+          &:hover .area__giochi__FakeSliderIcoHoverContainer {
+            animation: topShow 0.5s ease;
+            opacity: 1;
+            display: flex;
+            @keyframes pulse {
+              25% {
+                transform: scale(0.9);
+              }
+              75% {
+                transform: scale(1.1);
+              }
+            }
+            .area__giochi__FakeSliderIcoHover {
+              animation: pulse 0.5s linear 1;
+            }
+          }
+
+          .area__giochi__FakeSliderIco {
+            margin-left: -5px;
+            position: relative;
+            z-index: 2;
+            top: -30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgb(0 0 0 / 35%);
+            svg {
+              height: 18px;
+            }
+          }
+          .area__giochi__FakeSliderBigIco {
+            margin-left: -5px;
+            position: relative;
+            z-index: 2;
+            top: -30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgb(0 0 0 / 35%);
+            svg {
+              height: 22.5px;
+            }
+          }
+        }
+      }
+      .area__giochi__FakeSliderBottom {
+        position: relative;
+        z-index: 1;
+        transform: translateY(-55px);
+        background-color: rgb(255, 255, 255);
+        border-radius: 0px 0px 32px 32px;
+        padding: 24px 32px;
+        .area__giochi__FakeSliderMiniTitle {
+          margin: 0 0 0;
+          color: #293744;
+          font-family: "cerapro", arial, sans-serif;
+          font-size: 12px;
+          line-height: 1.5;
+          font-weight: 400;
+        }
+        .area__giochi__FakeSliderTitle {
+          font-family: "tobipro", arial, sans-serif;
+          color: #293744;
+
+          h2 {
+            font-size: 16px;
+            font-weight: 900;
+          }
+        }
+        .area__giochi__FakeSliderDescription {
+          visibility: hidden;
+          margin-top: -30%;
+          transition: all 0.5s;
+          opacity: 0;
+          p {
+            font-family: "cerapro", arial, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #293744;
+            padding-top: 16px;
+          }
+        }
+
+        .area__giochi__shadowFakeSliderButton {
+          margin-top: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+          border-radius: 32px;
+          height: 54px;
+          width: 224px;
+          background: #b41a43;
+          .area__giochi__FakeSliderButton {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 54px;
+            width: 224px;
+            border-radius: 32px;
+            background: linear-gradient(180deg, #b6264d 0%, #e32648 100%);
+            position: relative;
+            top: -6px;
+            // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
+            border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+            transition: 0.13s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
+              transform: translate3d(0px, -2px, 0px);
+            }
+            &:active {
+              // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
+              transform: translate3d(0px, 2px, 0px);
+            }
+            .area__giochi__FakeSliderButtonText {
+              color: #ffffff;
+              font-size: 14px;
+              margin-left: 0.5rem;
+            }
+            .area__giochi__FakeSliderButtonIco {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 5px;
+              width: 30px;
+              height: 30px;
+              margin-right: 0.5rem;
+              position: relative;
+              svg {
+                color: white;
+              }
+            }
+            .area__giochi__FakeSliderButtonIcoThin {
+              display: none;
+              align-items: center;
+              justify-content: center;
+              border-radius: 5px;
+              width: 30px;
+              height: 30px;
+              margin-right: 0.5rem;
+              position: relative;
+              // transform: translateX(-40px);
+              svg {
+                color: rgb(255, 255, 255);
+              }
+            }
+          }
+          .variantBackgroundButton {
+            background: linear-gradient(180deg, #24323f 0%, #394754 100%);
+          }
+          @keyframes hideshow {
+            0% {
+              opacity: 1;
+              transform: translateX(50px);
+            }
+            10% {
+              opacity: 0.6;
+              transform: translateX(55px);
+            }
+            15% {
+              opacity: 0.4;
+              transform: translateX(60px);
+            }
+            100% {
+              opacity: 0;
+              transform: translateX(65px);
+            }
+          }
+
+          @keyframes show {
+            0% {
+              opacity: 0;
+              transform: translateX(-40px);
+            }
+            10% {
+              opacity: 0.4;
+              transform: translateX(-30px);
+            }
+            15% {
+              opacity: 0.6;
+              transform: translateX(-20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(-10px);
+            }
+          }
+          &:hover .area__giochi__FakeSliderButtonText {
+            transform: translateX(13px);
+          }
+          &:hover .area__giochi__FakeSliderButtonIco svg {
+            animation: hideshow 0.8s ease;
+            opacity: 0;
+          }
+          &:hover .area__giochi__FakeSliderButtonIcoThin {
+            animation: show 0.8s ease;
+            display: flex;
+            transform: translateX(-10px);
+          }
+        }
+        .variantShadowButton {
+          background: linear-gradient(180deg, #19232c 0%, #29323b 100%);
+        }
+      }
+      @keyframes topShow {
+        0% {
+          opacity: 0;
+          transform: translateY(-40px);
+        }
+        10% {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        15% {
+          opacity: 0.6;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(-0px);
+        }
+      }
+      &:hover .area__giochi__FakeSliderDescription {
+        animation: topShow 1s ease;
+        visibility: visible;
+        margin-top: 0;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.area__giochi__sectionThree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+  .area__giochi__dreamContainer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 32px;
+    .area__giochi__dreamWindow {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      z-index: 3;
+      height: 420px;
+      width: 600px;
+      background-color: white;
+      top: 130px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding: 64px;
+      .area__giochi__dreamWindowMiniTitle {
+        span {
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+      .area__giochi__dreamWindowTitle {
+        width: 80%;
+        span {
+          color: black;
+          font-size: 32px;
+          font-family: tobipro, arial, sans-serif;
+          font-weight: bold;
+        }
+      }
+      .area__giochi__dreamWindowDescription {
+        width: 80%;
+        margin: 16px 0;
+        line-height: 1.3;
+        span {
+          color: #293744;
+          font-family: "cerapro", arial, sans-serif;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+      .area__giochi__dreamWindowIconGroup {
+        display: flex;
+        align-items: center;
+        .area__giochi__dreamWindowBigIcon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          padding: 0;
+          background: #eaedef;
+          border: 2px solid #ffffff;
+          border-radius: 50%;
+          position: relative;
+          z-index: 4;
+        }
+        .area__giochi__dreamWindowIcon {
+          display: flex;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+          width: 35px;
+          height: 35px;
+          padding: 0;
+          background: #eaedef;
+          border: 2px solid #ffffff;
+          border-radius: 50%;
+          margin-left: -5px;
+        }
+        .dIcoOne {
+          z-index: 3;
+        }
+        .dIcoTwo {
+          z-index: 2;
+        }
+        .dIcoThree {
+          z-index: 1;
+        }
+      }
+
+      .area__giochi__shadowDreamButton {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+        border-radius: 32px;
+        height: 54px;
+        width: 224px;
+        background: #b41a43;
+        .area__giochi__DreamButton {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 54px;
+          width: 224px;
+          border-radius: 32px;
+          background: linear-gradient(180deg, #b6264d 0%, #e32648 100%);
+          position: relative;
+          top: -6px;
+          // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
+          border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+          transition: 0.13s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
+            transform: translate3d(0px, -2px, 0px);
+          }
+          &:active {
+            // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
+            transform: translate3d(0px, 2px, 0px);
+          }
+          .area__giochi__DreamButtonText {
+            color: #ffffff;
+            font-size: 14px;
+            margin-left: 0.5rem;
+          }
+          .area__giochi__DreamButtonIco {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+            margin-right: 0.5rem;
+            position: relative;
+            svg {
+              color: white;
+            }
+          }
+          .area__giochi__DreamButtonIcoThin {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+            margin-right: 0.5rem;
+            position: relative;
+            // transform: translateX(-40px);
+            svg {
+              color: rgb(255, 255, 255);
+            }
+          }
+        }
+
+        @keyframes hideshow {
+          0% {
+            opacity: 1;
+            transform: translateX(50px);
+          }
+          10% {
+            opacity: 0.6;
+            transform: translateX(55px);
+          }
+          15% {
+            opacity: 0.4;
+            transform: translateX(60px);
+          }
+          100% {
+            opacity: 0;
+            transform: translateX(65px);
+          }
+        }
+
+        @keyframes show {
+          0% {
+            opacity: 0;
+            transform: translateX(-40px);
+          }
+          10% {
+            opacity: 0.4;
+            transform: translateX(-30px);
+          }
+          15% {
+            opacity: 0.6;
+            transform: translateX(-20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(-10px);
+          }
+        }
+        &:hover .area__giochi__DreamButtonText {
+          transform: translateX(13px);
+        }
+        &:hover .area__giochi__DreamButtonIco svg {
+          animation: hideshow 0.8s ease;
+          opacity: 0;
+        }
+        &:hover .area__giochi__DreamButtonIcoThin {
+          animation: show 0.8s ease;
+          display: flex;
+          transform: translateX(-10px);
+        }
+      }
+    }
+  }
+}
+
+.area__giochi__sectionFour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+  .area__giochi__finalSetContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .area__giochi__finalSetTitle {
+      padding: 0 64px;
+      align-self: start;
+      margin-bottom: 64px;
+      span {
+        color: #293744;
+        font-size: 48px;
+        font-family: tobipro, arial, sans-serif;
+        font-weight: 900;
+        line-height: 1.2;
+      }
+    }
+    .area__giochi__finalSetSliderContainer {
+      .area__giochi__exploreNewsFirstFakeSliderContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 288px;
+        max-width: 288px;
+        height: 439.38px;
+        // margin: -30.5px 0px;
+        .area__giochi__FakeSliderTop {
+          .area__giochi__FakeSliderVideo {
+            position: relative;
+            opacity: 1;
+            z-index: 2;
+            overflow: hidden;
+            border-radius: 32px 32px 0px 0px;
+            // box-shadow: rgb(0 0 0 / 15%) 0px 36px 32px;
+            // transition: transform 175ms cubic-bezier(0.17, 0.67, 0.39, 0.66) 0s;
+            // transform: translateY(30.5px);
+            // &:hover {
+            //   transform: translateY(0px);
+            // }
+          }
+        }
+
+        .area__giochi__FakeSliderIcoContainer {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 24px;
+
+          .area__giochi__FakeSliderIcoLeftStar {
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+            top: -20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgb(0 0 0 / 35%);
+
+            svg {
+              height: 18px;
+            }
+          }
+          .area__giochi__FakeSliderIcoRightGroup {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            .area__giochi__FakeSliderIcoHoverContainer {
+              display: none;
+              position: absolute;
+              justify-content: center;
+              align-items: center;
+              gap: 15px;
+              top: 195px;
+              right: 5px;
+              z-index: 1000;
+              width: auto;
+              max-width: 100vw;
+              padding: 16px;
+              background: rgb(255, 255, 255);
+              border-radius: 8px;
+              box-shadow: rgb(0 0 0 / 15%) 0px 4px 8px;
+              transition: all 175ms ease-in-out 0s;
+              transform: translateY(0%);
+              opacity: 0;
+              .area__giochi__FakeSliderIcoHover {
+                p {
+                  margin-bottom: 0;
+                  text-align: center;
+                  margin: 0px;
+                  font-size: 12px;
+                  font-family: cerapro, arial, sans-serif;
+                  line-height: 12px;
+                  margin-top: 5px;
+                }
+              }
+            }
+
+            &:hover .area__giochi__FakeSliderIcoHoverContainer {
+              animation: topShow 0.5s ease;
+              opacity: 1;
+              display: flex;
+              @keyframes pulse {
+                25% {
+                  transform: scale(0.9);
+                }
+                75% {
+                  transform: scale(1.1);
+                }
+              }
+              .area__giochi__FakeSliderIcoHover {
+                animation: pulse 0.5s linear 1;
+              }
+            }
+
+            .area__giochi__FakeSliderIco {
+              margin-left: -5px;
+              position: relative;
+              z-index: 2;
+              top: -30px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 32px;
+              height: 32px;
+              background-color: #ffffff;
+              border-radius: 50%;
+              box-shadow: 0px 4px 8px rgb(0 0 0 / 35%);
+              svg {
+                height: 18px;
+              }
+            }
+            .area__giochi__FakeSliderBigIco {
+              margin-left: -5px;
+              position: relative;
+              z-index: 2;
+              top: -30px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 50px;
+              height: 50px;
+              background-color: #ffffff;
+              border-radius: 50%;
+              box-shadow: 0px 4px 8px rgb(0 0 0 / 35%);
+              svg {
+                height: 22.5px;
+              }
+            }
+          }
+        }
+        .area__giochi__FakeSliderBottom {
+          position: relative;
+          z-index: 1;
+          transform: translateY(-55px);
+          background-color: #eaedef;
+          border-radius: 0px 0px 32px 32px;
+          padding: 24px 32px;
+          .area__giochi__FakeSliderMiniTitle {
+            margin: 0 0 0;
+            color: #293744;
+            font-family: "cerapro", arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            font-weight: 400;
+          }
+          .area__giochi__FakeSliderTitle {
+            font-family: "tobipro", arial, sans-serif;
+            color: #293744;
+
+            h2 {
+              font-size: 16px;
+              font-weight: 900;
+            }
+          }
+
+          .area__giochi__FakeSliderDescription {
+            height: 80px;
+          }
+
+          .oneLineTitleHeightCompensation {
+            height: 96px;
+          }
+
+          .area__giochi__shadowFakeSliderButton {
+            margin-top: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+            border-radius: 32px;
+            height: 54px;
+            width: 224px;
+            background: #005f3e;
+            cursor: pointer;
+            .area__giochi__FakeSliderButton {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              height: 54px;
+              width: 224px;
+              border-radius: 32px;
+              background: linear-gradient(180deg, #00744b 0%, #008746 100%);
+              position: relative;
+              top: -6px;
+              // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
+              border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+              transition: 0.13s ease-in-out;
+              cursor: pointer;
+              &:hover {
+                // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
+                transform: translate3d(0px, -2px, 0px);
+              }
+              &:active {
+                // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
+                transform: translate3d(0px, 2px, 0px);
+              }
+              .area__giochi__FakeSliderButtonText {
+                color: #ffffff;
+                font-size: 14px;
+                margin-left: 0.5rem;
+              }
+              .area__giochi__FakeSliderButtonIco {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                width: 30px;
+                height: 30px;
+                margin-right: 0.5rem;
+                position: relative;
+                svg {
+                  color: white;
+                }
+              }
+              .area__giochi__FakeSliderButtonIcoThin {
+                display: none;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                width: 30px;
+                height: 30px;
+                margin-right: 0.5rem;
+                position: relative;
+                // transform: translateX(-40px);
+                svg {
+                  color: rgb(255, 255, 255);
+                }
+              }
+            }
+            .variantBackgroundButton {
+              background: linear-gradient(180deg, #24323f 0%, #394754 100%);
+            }
+            @keyframes hideshow {
+              0% {
+                opacity: 1;
+                transform: translateX(50px);
+              }
+              10% {
+                opacity: 0.6;
+                transform: translateX(55px);
+              }
+              15% {
+                opacity: 0.4;
+                transform: translateX(60px);
+              }
+              100% {
+                opacity: 0;
+                transform: translateX(65px);
+              }
+            }
+
+            @keyframes show {
+              0% {
+                opacity: 0;
+                transform: translateX(-40px);
+              }
+              10% {
+                opacity: 0.4;
+                transform: translateX(-30px);
+              }
+              15% {
+                opacity: 0.6;
+                transform: translateX(-20px);
+              }
+              100% {
+                opacity: 1;
+                transform: translateX(-10px);
+              }
+            }
+            &:hover .area__giochi__FakeSliderButtonText {
+              transform: translateX(13px);
+            }
+            &:hover .area__giochi__FakeSliderButtonIco svg {
+              animation: hideshow 0.8s ease;
+              opacity: 0;
+            }
+            &:hover .area__giochi__FakeSliderButtonIcoThin {
+              animation: show 0.8s ease;
+              display: flex;
+              transform: translateX(-10px);
+            }
+          }
+          .variantShadowButton {
+            background: linear-gradient(180deg, #19232c 0%, #29323b 100%);
+          }
+        }
+        @keyframes topShow {
+          0% {
+            opacity: 0;
+            transform: translateY(-40px);
+          }
+          10% {
+            opacity: 0;
+            transform: translateY(-30px);
+          }
+          15% {
+            opacity: 0.6;
+            transform: translateY(-20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(-0px);
+          }
+        }
+        &:hover .area__giochi__FakeSliderDescription {
+          animation: topShow 1s ease;
+          visibility: visible;
+          margin-top: 0;
+          opacity: 1;
+        }
+      }
+
+      .slide-container {
+        max-width: 1380px;
+        width: 100%;
+        padding: 0px 20px;
+      }
+      .slide-contentFinaleSet {
+        margin: 0 40px;
+        display: flex;
+        overflow: hidden;
+        /* border-radius: 25px; */
+      }
+
+      .swiper-navBtn {
+        color: #000000;
+        padding: 20px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 170px;
+        transition: opacity 175ms ease-in-out 0s,
+          box-shadow 175ms ease-in-out 0s;
+      }
+      .swiper-navBtn:hover {
+        border-radius: 30px;
+        background-color: rgb(234, 234, 234);
+      }
+      .swiper-navBtn::before,
+      .swiper-navBtn::after {
+        font-size: 25px;
+      }
+      .swiper-button-next {
+        right: 0;
+      }
+      .swiper-button-prev {
+        left: 0;
+      }
+      // .swiper-scrollbar {
+      //   background-color: rgb(180, 180, 180);
+      // }
+
+      // .swiper-horizontal > .swiper-scrollbar,
+      // .swiper-scrollbar.swiper-scrollbar-horizontal {
+      //   border-radius: 0px;
+      //   height: 5px;
+      //   width: 900px;
+      //   bottom: -50px;
+      //   left: 50%;
+      //   transform: translateX(-50%);
+      //   margin-bottom: 4rem;
+      // }
+    }
+  }
+}
+
+.area__giochi__sectionFourFiveTransition {
+  height: 50px;
+  width: 100%;
+  background: #cd264b;
+  -webkit-mask-image: url(/PAGES/diagonal-ltr.svg);
+  mask-image: url(/PAGES/diagonal-ltr.svg);
+}
+
+.area__giochi__sectionFive {
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: #cd264b;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .area__giochi__trickOrTreatContainer {
+    display: flex;
+    margin: 100px auto;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0px 32px 64px rgb(0 0 0 / 15%);
+    .area__giochi__trickOrTreatLeft {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .area__giochi__trickOrTreatLeftGroup {
+        padding: 32px 48px;
+        .area__giochi__trickOrTreatMiniTitle {
+          font-size: 12px;
+          font-weight: 400;
+        }
+
+        .area__giochi__trickOrTreatTitle {
+          span {
+            color: black;
+            font-size: 32px;
+            font-family: tobipro, arial, sans-serif;
+            font-weight: bold;
+          }
+        }
+
+        .area__giochi__trickOrTreatDescription {
+          margin: 16px 0;
+          line-height: 1.3;
+          span {
+            color: #293744;
+            font-family: "cerapro", arial, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+          }
+        }
+
+        .area__giochi__trickOrTreatIconGroup {
+          display: flex;
+          align-items: center;
+          .area__giochi__trickOrTreatBigIcon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            background: #eaedef;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            position: relative;
+            z-index: 4;
+          }
+          .area__giochi__trickOrTreatIcon {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            padding: 0;
+            background: #eaedef;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            margin-left: -5px;
+          }
+          .dIcoOne {
+            z-index: 3;
+          }
+          .dIcoTwo {
+            z-index: 2;
+          }
+          .dIcoThree {
+            z-index: 1;
+          }
+        }
+
+        .area__giochi__shadowTrickButton {
+          margin-top: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+          border-radius: 32px;
+          height: 54px;
+          width: 224px;
+          background: #b41a43;
+          .area__giochi__TrickButton {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 54px;
+            width: 224px;
+            border-radius: 32px;
+            background: linear-gradient(180deg, #b6264d 0%, #e32648 100%);
+            position: relative;
+            top: -6px;
+            // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
+            border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+            transition: 0.13s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
+              transform: translate3d(0px, -2px, 0px);
+            }
+            &:active {
+              // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
+              transform: translate3d(0px, 2px, 0px);
+            }
+            .area__giochi__TrickButtonText {
+              color: #ffffff;
+              font-size: 14px;
+              margin-left: 0.5rem;
+            }
+            .area__giochi__TrickButtonIco {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 5px;
+              width: 30px;
+              height: 30px;
+              margin-right: 0.5rem;
+              position: relative;
+              svg {
+                color: white;
+              }
+            }
+            .area__giochi__TrickButtonIcoThin {
+              display: none;
+              align-items: center;
+              justify-content: center;
+              border-radius: 5px;
+              width: 30px;
+              height: 30px;
+              margin-right: 0.5rem;
+              position: relative;
+              // transform: translateX(-40px);
+              svg {
+                color: rgb(255, 255, 255);
+              }
+            }
+          }
+
+          @keyframes hideshow {
+            0% {
+              opacity: 1;
+              transform: translateX(50px);
+            }
+            10% {
+              opacity: 0.6;
+              transform: translateX(55px);
+            }
+            15% {
+              opacity: 0.4;
+              transform: translateX(60px);
+            }
+            100% {
+              opacity: 0;
+              transform: translateX(65px);
+            }
+          }
+
+          @keyframes show {
+            0% {
+              opacity: 0;
+              transform: translateX(-40px);
+            }
+            10% {
+              opacity: 0.4;
+              transform: translateX(-30px);
+            }
+            15% {
+              opacity: 0.6;
+              transform: translateX(-20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(-10px);
+            }
+          }
+          &:hover .area__giochi__TrickButtonText {
+            transform: translateX(13px);
+          }
+          &:hover .area__giochi__TrickButtonIco svg {
+            animation: hideshow 0.8s ease;
+            opacity: 0;
+          }
+          &:hover .area__giochi__TrickButtonIcoThin {
+            animation: show 0.8s ease;
+            display: flex;
+            transform: translateX(-10px);
+          }
+        }
+      }
+    }
+    .area__giochi__trickOrTreatRight {
+      width: 50%;
+      overflow: hidden;
+
+      picture {
+        img {
+          width: 600px;
+          height: 352.39px;
+          border-top-right-radius: 32px;
+          border-bottom-right-radius: 32px;
+        }
+      }
+    }
+  }
+}
+
+.area__giochi__sectionFiveSixBackground {
+  height: 38px;
+  background-color: #cd264b;
+  .area__giochi__sectionFiveSixTransition {
+    height: 38px;
+    width: 100%;
+    background: #293744;
+    -webkit-mask-image: url(/PAGES/vibration-range.svg);
+    mask-image: url(/PAGES/vibration-range.svg);
+  }
+}
+
+.area__giochi__sectionSix {
+  height: 1000px;
+  background: #293744;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .swiper {
+    width: 1400px;
+    height: 90%;
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      bottom: 180px;
+      left: 500px;
+      width: 100%;
+
+      .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: transparent;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: white;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      margin: 0 auto;
+      color: #000000;
+      padding: 20px;
+      border: 1px solid rgb(204, 204, 204);
+      border-radius: 170px;
+      transition: opacity 175ms ease-in-out 0s, box-shadow 175ms ease-in-out 0s;
+      border-radius: 30px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      font-size: 20px;
+    }
+  }
+
+  .swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    div {
+      align-self: flex-start;
+      margin-left: 100px;
+
+      h1 {
+        margin-top: 30px;
+        color: white;
+        font-size: 48px;
+        font-family: "tobipro", arial, sans-serif;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 1200px;
+    height: 675px;
+    object-fit: cover;
+    border-radius: 32px 32px 32px 0px;
+  }
+}
+
+.area__giochi__sectionSixSevenBackground {
+  height: 38px;
+  background-color: #293744;
+  .area__giochi__sectionSixSevenTransition {
+    height: 38px;
+    width: 100%;
+    background: #0073b7;
+    -webkit-mask-image: url(/PAGES/hills.svg);
+    mask-image: url(/PAGES/hills.svg);
+  }
+}
+
+.area__giochi__sectionSeven {
+  height: 800px;
+  background: #0073b7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+
+  .swiper {
+    // width: 1400px;
+    // height: 90%;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 40%;
+      margin: 0 auto;
+      color: #000000;
+      padding: 20px;
+      border: 1px solid rgb(204, 204, 204);
+      border-radius: 170px;
+      transition: opacity 175ms ease-in-out 0s, box-shadow 175ms ease-in-out 0s;
+      border-radius: 30px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      font-size: 20px;
+    }
+  }
+
+  .area__giochi__finalSetContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .area__giochi__finalSetTitle {
+      padding: 0 64px;
+      align-self: start;
+      margin-bottom: 64px;
+      span {
+        color: #ffffff;
+        font-size: 48px;
+        font-family: tobipro, arial, sans-serif;
+        font-weight: 900;
+        line-height: 1.2;
+      }
+    }
+    .area__giochi__finalSetSliderContainer {
+      .area__giochi__exploreNewsFirstFakeSliderContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 288px;
+        min-width: 288px;
+        // margin: -30.5px 0px;
+        .area__giochi__FakeSliderTop {
+          .area__giochi__FakeSliderVideo {
+            position: relative;
+            opacity: 1;
+            z-index: 2;
+            overflow: hidden;
+            border-radius: 32px 32px 0px 0px;
+            // box-shadow: rgb(0 0 0 / 15%) 0px 36px 32px;
+            // transition: transform 175ms cubic-bezier(0.17, 0.67, 0.39, 0.66) 0s;
+            // transform: translateY(30.5px);
+            // &:hover {
+            //   transform: translateY(0px);
+            // }
+          }
+        }
+
+        .area__giochi__FakeSliderIcoContainer {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 24px;
+
+          .area__giochi__FakeSliderIcoLeftStar {
+            position: relative;
+            z-index: 2;
+            top: -20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgb(0 0 0 / 35%);
+
+            svg {
+              height: 18px;
+            }
+          }
+          .area__giochi__FakeSliderIcoRightGroup {
+            display: flex;
+            align-items: center;
+
+            .area__giochi__FakeSliderIcoHoverContainer {
+              display: none;
+              position: absolute;
+              justify-content: center;
+              align-items: center;
+              gap: 15px;
+              top: 195px;
+              right: 5px;
+              z-index: 1000;
+              width: auto;
+              max-width: 100vw;
+              padding: 16px;
+              background: rgb(255, 255, 255);
+              border-radius: 8px;
+              box-shadow: rgb(0 0 0 / 15%) 0px 4px 8px;
+              transition: all 175ms ease-in-out 0s;
+              transform: translateY(0%);
+              opacity: 0;
+              .area__giochi__FakeSliderIcoHover {
+                p {
+                  margin-bottom: 0;
+                  text-align: center;
+                  margin: 0px;
+                  font-size: 12px;
+                  font-family: cerapro, arial, sans-serif;
+                  line-height: 12px;
+                  margin-top: 5px;
+                }
+              }
+            }
+
+            &:hover .area__giochi__FakeSliderIcoHoverContainer {
+              animation: topShow 0.5s ease;
+              opacity: 1;
+              display: flex;
+              @keyframes pulse {
+                25% {
+                  transform: scale(0.9);
+                }
+                75% {
+                  transform: scale(1.1);
+                }
+              }
+              .area__giochi__FakeSliderIcoHover {
+                animation: pulse 0.5s linear 1;
+              }
+            }
+
+            .area__giochi__FakeSliderIco {
+              margin-left: -5px;
+              position: relative;
+              z-index: 2;
+              top: -30px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 32px;
+              height: 32px;
+              background-color: #ffffff;
+              border-radius: 50%;
+              box-shadow: 0px 4px 8px rgb(0 0 0 / 35%);
+              svg {
+                height: 18px;
+              }
+            }
+            .area__giochi__FakeSliderBigIco {
+              margin-left: -5px;
+              position: relative;
+              z-index: 2;
+              top: -30px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 50px;
+              height: 50px;
+              background-color: #ffffff;
+              border-radius: 50%;
+              box-shadow: 0px 4px 8px rgb(0 0 0 / 35%);
+              svg {
+                height: 22.5px;
+              }
+            }
+          }
+        }
+        .area__giochi__FakeSliderBottom {
+          position: relative;
+          z-index: 1;
+          transform: translateY(-55px);
+          background-color: rgb(255, 255, 255);
+          border-radius: 0px 0px 32px 32px;
+          padding: 24px 32px;
+          .area__giochi__FakeSliderMiniTitle {
+            margin: 0 0 0;
+            color: #293744;
+            font-family: "cerapro", arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            font-weight: 400;
+          }
+          .area__giochi__FakeSliderTitle {
+            font-family: "tobipro", arial, sans-serif;
+            color: #293744;
+
+            h2 {
+              font-size: 16px;
+              font-weight: 900;
+            }
+          }
+          .area__giochi__FakeSliderDescription {
+            visibility: hidden;
+            margin-top: -30%;
+            transition: all 0.5s;
+            opacity: 0;
+            p {
+              font-family: "cerapro", arial, sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              color: #293744;
+              padding-top: 16px;
+            }
+          }
+
+          .area__giochi__shadowFakeSliderButton {
+            margin-top: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 4px 8px rgb(0 0 0 / 40%);
+            border-radius: 32px;
+            height: 54px;
+            width: 224px;
+            background: #006aad;
+            .area__giochi__FakeSliderButton {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              height: 54px;
+              width: 224px;
+              border-radius: 32px;
+              background: linear-gradient(180deg, #006aad 0%, #007bc0 100%);
+              position: relative;
+              top: -6px;
+              // box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.281);
+              border-bottom: 1.2px solid rgba(255, 255, 255, 0.25);
+              transition: 0.13s ease-in-out;
+              cursor: pointer;
+              &:hover {
+                // box-shadow: inset 0px -4px 0px rgb(0 0 0 / 40%);
+                transform: translate3d(0px, -2px, 0px);
+              }
+              &:active {
+                // box-shadow: inset 0px -2px 0px rgb(0 0 0 / 40%);
+                transform: translate3d(0px, 2px, 0px);
+              }
+              .area__giochi__FakeSliderButtonText {
+                color: #ffffff;
+                font-size: 14px;
+                margin-left: 0.5rem;
+              }
+              .area__giochi__FakeSliderButtonIco {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                width: 30px;
+                height: 30px;
+                margin-right: 0.5rem;
+                position: relative;
+                svg {
+                  color: white;
+                }
+              }
+              .area__giochi__FakeSliderButtonIcoThin {
+                display: none;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                width: 30px;
+                height: 30px;
+                margin-right: 0.5rem;
+                position: relative;
+                // transform: translateX(-40px);
+                svg {
+                  color: rgb(255, 255, 255);
+                }
+              }
+            }
+            .variantBackgroundButton {
+              background: linear-gradient(180deg, #24323f 0%, #394754 100%);
+            }
+            @keyframes hideshow {
+              0% {
+                opacity: 1;
+                transform: translateX(50px);
+              }
+              10% {
+                opacity: 0.6;
+                transform: translateX(55px);
+              }
+              15% {
+                opacity: 0.4;
+                transform: translateX(60px);
+              }
+              100% {
+                opacity: 0;
+                transform: translateX(65px);
+              }
+            }
+
+            @keyframes show {
+              0% {
+                opacity: 0;
+                transform: translateX(-40px);
+              }
+              10% {
+                opacity: 0.4;
+                transform: translateX(-30px);
+              }
+              15% {
+                opacity: 0.6;
+                transform: translateX(-20px);
+              }
+              100% {
+                opacity: 1;
+                transform: translateX(-10px);
+              }
+            }
+            &:hover .area__giochi__FakeSliderButtonText {
+              transform: translateX(13px);
+            }
+            &:hover .area__giochi__FakeSliderButtonIco svg {
+              animation: hideshow 0.8s ease;
+              opacity: 0;
+            }
+            &:hover .area__giochi__FakeSliderButtonIcoThin {
+              animation: show 0.8s ease;
+              display: flex;
+              transform: translateX(-10px);
+            }
+          }
+          .variantShadowButton {
+            background: linear-gradient(180deg, #19232c 0%, #29323b 100%);
+          }
+        }
+        @keyframes topShow {
+          0% {
+            opacity: 0;
+            transform: translateY(-40px);
+          }
+          10% {
+            opacity: 0;
+            transform: translateY(-30px);
+          }
+          15% {
+            opacity: 0.6;
+            transform: translateY(-20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(-0px);
+          }
+        }
+        &:hover .area__giochi__FakeSliderDescription {
+          animation: topShow 1s ease;
+          visibility: visible;
+          margin-top: 0;
+          opacity: 1;
+        }
+      }
+
+      .slide-container {
+        max-width: 1380px;
+        width: 100%;
+        padding: 0px 20px;
+      }
+      .slide-contentFinaleSet {
+        margin: 0 40px;
+        display: flex;
+        overflow: hidden;
+        /* border-radius: 25px; */
+      }
+
+      .swiper-navBtn {
+        color: #000000;
+        padding: 20px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 170px;
+        transition: opacity 175ms ease-in-out 0s,
+          box-shadow 175ms ease-in-out 0s;
+      }
+      .swiper-navBtn:hover {
+        border-radius: 30px;
+        background-color: rgb(234, 234, 234);
+      }
+      .swiper-navBtn::before,
+      .swiper-navBtn::after {
+        font-size: 25px;
+      }
+      .swiper-button-next {
+        right: 0;
+      }
+      .swiper-button-prev {
+        left: 0;
+      }
+      // .swiper-scrollbar {
+      //   background-color: rgb(180, 180, 180);
+      // }
+
+      // .swiper-horizontal > .swiper-scrollbar,
+      // .swiper-scrollbar.swiper-scrollbar-horizontal {
+      //   border-radius: 0px;
+      //   height: 5px;
+      //   width: 900px;
+      //   bottom: -50px;
+      //   left: 50%;
+      //   transform: translateX(-50%);
+      //   margin-bottom: 4rem;
+      // }
+    }
+  }
+}

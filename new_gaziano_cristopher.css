@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cera-Pro, sans-serif;
+}
+
+.section3__generalContainer {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 1.5;
+  color: #2c2c2c;
+  max-width: 100vw;
+}
+.section3__generalContainer .section3__saldiContainer {
+  width: 80vw;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiTitle {
+  width: 100%;
+  display: block;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 40px;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer {
+  width: 100%;
+  position: relative;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section3__saldiCardImageContainer {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  border: 1px solid rgb(224, 224, 224);
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section3__saldiCardImageContainer .section3__saldiCardImagePreferitiContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px 5px 0 0;
+  height: 40px;
+  position: absolute;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section3__saldiCardImageContainer .section3__saldiCardImagePreferitiContainer .section3__saldiCardImageIconaPreferiti {
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section3__saldiCardImageContainer .section3__saldiCardImagePreferitiContainer .section3__saldiCardImageTextPreferiti {
+  padding: 0 0 0 5px;
+  font-size: 0.75rem;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section3__saldiCardImageContainer .section3__saldiCardImagePreferitiContainer .section3__saldiCardImageTextPreferiti a {
+  color: black;
+  text-decoration: none;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section3__saldiCardImageContainer .section3__saldiCardImagePicture img {
+  width: 275px;
+  height: 275px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: transform 600ms cubic-bezier(0, 0, 0.2, 1) 0s;
+  transform: scale(0.8) translateZ(0px);
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section3__saldiCardImageContainer .section3__saldiCardImagePicture img:hover {
+  transition: transform 600ms cubic-bezier(0, 0, 0.2, 1) 0s;
+  transform: scale(1) translateZ(0px);
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section3__saldiCardImageContainer .section3__saldiCardImageLabelContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: baseline;
+  align-items: center;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  gap: 5px;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section3__saldiCardImageContainer .section3__saldiCardImageLabelContainer .section3__saldiCardImageLabelDifficileDaTrovare {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: rgb(255, 207, 0);
+  color: rgb(0, 0, 0);
+  font-size: 0.75rem;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section3__saldiCardImageContainer .section3__saldiCardImageLabelContainer .section3__saldiCardImageLabelSconto {
+  display: inline-block;
+  padding: 0.18rem 0.58rem;
+  background: rgb(241, 12, 0);
+  color: rgb(255, 255, 255);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section2__saldiInfoContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section2__saldiInfoContainer .section3__saldiCardProductName {
+  padding-top: 10px;
+  width: 100%;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section2__saldiInfoContainer .section3__saldiCardProductName a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section2__saldiInfoContainer .section3__saldiCardProductName a:hover {
+  text-decoration: underline;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section2__saldiInfoContainer .section3__saldiCardRowStars {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section2__saldiInfoContainer .section3__saldiCardRowStars .section3__saldiCardRowStarsIcon {
+  width: 0.9375rem;
+  height: 0.9375rem;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section2__saldiInfoContainer .section3__saldiCardRowPrice {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 100%;
+  padding: 5px 0 0 0;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section2__saldiInfoContainer .section3__saldiCardRowPrice .section2__saldiCardRowPriceOld {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: inherit;
+  text-decoration: line-through;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section2__saldiInfoContainer .section3__saldiCardRowPrice .section2__saldiCardRowPriceNew {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0 5px;
+  color: rgb(219, 15, 4);
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section2__saldiInfoContainer .section3__saldiCardAddToCartButtonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  margin-bottom: 20px;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section2__saldiInfoContainer .section3__saldiCardAddToCartButtonContainer .section3__saldiCardAddToCartButton {
+  width: 100%;
+  padding: 0.95rem;
+  border-style: solid;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  background-color: rgb(253, 128, 36);
+  border-color: rgb(253, 128, 36);
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer .section3__saldiCardContainer .section2__saldiInfoContainer .section3__saldiCardAddToCartButtonContainer .section3__saldiCardAddToCartButton:hover {
+  background-color: white;
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer::-webkit-scrollbar {
+  height: 0.3rem;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+}
+.section3__generalContainer .section3__saldiContainer .section3__saldiCarouselContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 0.3rem;
+}
+.section3__generalContainer .section3__tendenzaContainer {
+  width: 80vw;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+}
+.section3__generalContainer .section3__tendenzaContainer .section3__tendenzaTitle {
+  width: 100%;
+  display: block;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.section3__generalContainer .section3__tendenzaContainer .section3__tendenzaCardSectionContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section3__generalContainer .section3__tendenzaContainer .section3__tendenzaCardSectionContainer .section3__tendenzaCard {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section3__generalContainer .section3__tendenzaContainer .section3__tendenzaCardSectionContainer .section3__tendenzaCard .section3__tendenzaCardPicture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-height: 300px;
+}
+.section3__generalContainer .section3__tendenzaContainer .section3__tendenzaCardSectionContainer .section3__tendenzaCard .section3__tendenzaCardProductName {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.section3__generalContainer .section3__tendenzaContainer .section3__tendenzaCardSectionContainer .section3__tendenzaCard .section3__tendenzaCardProductInfo {
+  text-align: center;
+  width: 100%;
+  font-size: 0.85rem;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.section3__generalContainer .section3__tendenzaContainer .section3__tendenzaCardSectionContainer .section3__tendenzaCard .section3__tendenzaCardbuyNowContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.section3__generalContainer .section3__tendenzaContainer .section3__tendenzaCardSectionContainer .section3__tendenzaCard .section3__tendenzaCardbuyNowContainer a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.section3__generalContainer .section3__tendenzaContainer .section3__tendenzaCardSectionContainer .section3__tendenzaCard .section3__tendenzaCardbuyNowContainer a .section3__tendenzaCardBuyNowText {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 600;
+}
+.section3__generalContainer .section3__tendenzaContainer .section3__tendenzaCardSectionContainer .section3__tendenzaCard .section3__tendenzaCardbuyNowContainer a .section3__tendenzaCardBuyNowIcon {
+  margin-left: 10px;
+  line-height: 0;
+  height: 12px;
+  width: 12px;
+}
+.section3__generalContainer .section3__tendenzaContainer .section3__tendenzaCardSectionContainer .section3__tendenzaCard .section3__tendenzaCardbuyNowContainer a:hover {
+  text-decoration: underline;
+}
+.section3__generalContainer .section3__bannerContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: center;
+  position: relative;
+  padding: 20px 0 20px 0;
+}
+.section3__generalContainer .section3__bannerContainer .section3__bannerImage {
+  width: 100%;
+}
+.section3__generalContainer .section3__bannerContainer .section3__bannerImage img {
+  width: 100%;
+}
+.section3__generalContainer .section3__bannerContainer .section3__bannerText {
+  width: 30%;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: right;
+  color: white;
+  position: absolute;
+  bottom: 110px;
+  right: 110px;
+}
+.section3__generalContainer .section3__bannerContainer .section3__bannerButton {
+  margin-top: 1.25rem;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  border: solid 1px white;
+  text-align: center;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 50px;
+  right: 110px;
+}
+.section3__generalContainer .section3__bannerContainer .section3__bannerButton a {
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.section3__generalContainer .section3__bannerContainer .section3__bannerButton .classe3__bannerButtonIcon {
+  margin-left: 0.25rem;
+  transition: transform 0.1s linear 0s;
+  height: 16px;
+  width: 16px;
+}
+.section3__generalContainer .section3__bannerContainer .section3__bannerButton:hover {
+  margin-top: 1.25rem;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  border: solid 1px black;
+  text-align: center;
+  border-radius: 4px;
+  background: black;
+  position: absolute;
+  bottom: 50px;
+  right: 110px;
+}
+.section3__generalContainer .section3__bannerContainer .section3__bannerButton:hover a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.section3__generalContainer .section3__bannerContainer .section3__bannerButton:hover .classe3__bannerButtonIcon {
+  margin-left: 0.25rem;
+  transition: transform 0.1s linear 0s;
+  height: 16px;
+  width: 16px;
+}/*# sourceMappingURL=new_gaziano_cristopher.css.map */

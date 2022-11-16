@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="xMidYMid meet"  xmlns="http://www.w3.org/2000/svg">
+  <pattern id="p1" width="375" height="50" patternUnits="userSpaceOnUse"  >
+    <path d="M375 0.000246529C358.742 -0.0375555 342.477 4.60715 327.938 13.9344C298.978 32.5136 263.17 32.5136 234.209 13.9344C205.249 -4.6448 169.44 -4.6448 140.48 13.9344C111.52 32.5136 75.711 32.5136 46.7507 13.9344C32.3045 4.66658 16.1543 0.0217301 0 1.90735e-06V50H375V0.000246529Z" fill="currentColor"/>
+  </pattern>
+
+    <rect width="100%" height="100%" fill="url(#p1)" />
+</svg>
+
