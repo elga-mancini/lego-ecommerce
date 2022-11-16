@@ -1,139 +1,69 @@
-.o-mini-card__container {
+.section2__first-selection,
+.section2__first-selection-clone {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 90%;
     max-width: 100%;
     height: auto;
     margin: auto;
-    overflow-x: auto;
-    margin-bottom: 20px;
+    overflow-x: auto;  
+}
+
+.m-christmas__costruction-text {
+    margin-bottom: 25px;
     margin-top: 20px;
 }
-
-.a-text__costruction{
-    margin: auto;
-    width: 90%;
-    max-width: 100%;
-    margin-top: 30px;
-}
-
-.m-mini-card__box {
+.m-christmas__box-images {
     display: flex;
-    justify-content: center;
+    position: relative;
+}
+.m-christmas__link-one {
+    font-weight: bold;
+}
+
+.m-christmas__box-text {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-right: 10px;
-}
-
-.m-mini-card_box-last{
-    margin-right: 0;
-}
-
-.m-mini-card__box-text {
     margin-top: 20px;
     margin-bottom: 20px;
+    
 }
-
-.m-mini-card__text {
-    font-weight: bold;
+.a-cardStyles__title-text {
     margin-bottom: 10px;
-    text-decoration: none;
-    color: black;
 }
 
-.m-mini-card__img-text-link {
-    text-decoration: none;
-}
-
-.m-mini-card__text-link {
+.m-christmas__img-text-link {
     text-decoration: none;
     color: black;
 }
-.m-mini-card__text-link:hover {
+.m-christmas__img-text-link:hover {
     color: black;
 }
-.m-mini-card__text-link:hover {
-    text-decoration: none;
-}
-
-.m-mini-card__link-one {
-    color: black;
-    font-weight: bold;
-}
-.m-mini-card__link-one:hover {
+.m-christmas__link-one:hover {
     text-decoration: underline;
 }
 
-.m-banner__second-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 70%;
+.m-christmas__firstimg {
     max-width: 100%;
-    margin: auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-.m-banner__text-over-img {
-position: absolute;
-    margin: 0 80px;
-    margin-bottom: 15px;
-    color: white;
-}
-
-.a-button__button-buy {
-    border-radius: 3px;
-    height: 40px;
-    width: 150px;
-    margin-top: 15px;
-    background-color: white;
-    font-size: 15px;
-}
-
-.a-button__button-buy:hover {
-    background-color: black;
-    color: white;
-    
-}
-
-@media screen and (max-width: 1130px){
- .m-banner__second-box {
-    display: none;
-
- }
 }
 
 
-@media screen and (max-width: 900px) {
-    .o-mini-card__container {
-        width: 90%;
-        display: flex;
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        justify-content: flex-start;
-    }
-    .o-mini-card__container::-webkit-scrollbar {
-        height: 0.3125rem;
-        margin: 1.5625rem 0px;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.15);
-        max-width: 56.25rem;
-        padding: 1.25rem;
-      }
-      .o-mini-card__container::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
-      }
-    
-      .o-mini-card__container::-webkit-scrollbar-thumb {
-        background-color: rgba(0, 0, 0, 0.65);
-        height: 0.3125rem;
-        max-width: 48px;
-      }
-
-      .m-mini-card__first-img {
-        min-width: 300px;
-        max-width: 100%;
-        overflow-x: hidden;
-      }
+.m-christmas__second-img,
+.m-christmas__third-img,
+.m-christmas__four-img {
+    max-width: 100%;
+    object-fit: cover;
+    width: auto;
+    height: auto; 
+}
+.m-christmas__box-2,
+.m-christmas__box-3,
+.m-christmas__box-4,
+.m-christmas__box-2-clone,
+.m-christmas__box-3-clone,
+.m-christmas__box-4-clone {
+    margin-left: 10px;
 }

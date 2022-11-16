@@ -1,11 +1,9 @@
 .o-carusel__container-carusel {
     display: flex;
     overflow-x: scroll;
-    margin: auto;
-    width: 70%;
-    max-width: 100%;
+    margin: 0 auto;
+    max-width: 100rem;
     height: 590px;
-    margin-bottom: 30px;
     max-height: auto;
     
 }
@@ -15,6 +13,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    
 }
 
 .o-carusel__container-carusel::-webkit-scrollbar {
@@ -34,6 +33,7 @@
     height: 289px;
     margin-right: 80px;
     margin-bottom: 20px;
+    background: white;
 }
 
 .m-card__first-img-carusel {
@@ -54,7 +54,7 @@
     display: flex;
     align-items: stretch;
     width: 100%;
-    
+    background: white;
 }
 
 .m-card__only-img {
