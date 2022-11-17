@@ -316,11 +316,11 @@ z-index: 1;
   }
    
   .sign-in, .delivery, .vip{
-    border-bottom: 0.8px solid grey; 
+    border-bottom: 0.5px solid grey; 
   }
   .delivery, .vip{
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   }
 
 
