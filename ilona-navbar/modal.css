@@ -271,3 +271,89 @@ z-index: 1;
 
 
 
+   /* Account modal*/
+   #exampleModalLabel{
+    font-size: 19px;
+    font-weight: 500;
+   }
+    .disply-flex{
+      display: flex;
+      gap: 20px;
+
+    }
+
+    .login{
+      margin-bottom: 10px;
+    }
+
+    .img-account{
+      margin-left: 0;
+    }
+
+    .sign-in{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      display: flex;
+      gap: 20px;
+    }
+    .sign-in-btn{
+      color: #006db7;
+
+    }
+    .sign-in-btn:hover{
+      text-decoration: underline;
+    }
+
+    .box.delivery, .box.vip{
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      /* padding-top: 20px; */
+    }
+
+  .account-modal{
+    max-width: 400px;
+  }
+   
+  .sign-in, .delivery, .vip{
+    border-bottom: 0.8px solid grey; 
+  }
+  .delivery, .vip{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+
+
+  /* Heart MODAL */
+  .box-1{
+    display: flex;
+  }
+  .disply-flex-box-2{
+    display: flex;
+    flex-direction: column;
+  }
+  .box-2{
+    display: flex;
+    gap: 20px;
+  }
+
+  .accedi, .registrati{
+    border-bottom: none;
+    font-size: 13px;
+  }
+
+  .modal-header{
+    border-bottom-style: none;
+  }
+
+  .heart-modal{
+    max-width: 500px;
+  }
+  
+
+
+/* fix the underline for account button*/
+  .account-text-btn:hover{
+    text-decoration: none;
+
+  }
