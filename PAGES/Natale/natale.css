@@ -1,0 +1,387 @@
+.o-christmas__megacontainer {
+  margin-bottom: 5rem;
+}
+.o-christmas__megacontainer .m-christmas__head-container {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100rem;
+  max-width: 100rem;
+  flex-direction: column;
+}
+.o-christmas__megacontainer .m-christmas__head-container .m-christmas__list-container {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100rem;
+  margin-top: 0.8rem;
+}
+.o-christmas__megacontainer .m-christmas__head-container .m-christmas__list-container svg {
+  width: 0.938rem;
+  height: 0.938em;
+}
+.o-christmas__megacontainer .m-christmas__head-container .m-christmas__list-container li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.o-christmas__megacontainer .m-christmas__head-container .m-christmas__list-container .a-christmas__link-home {
+  text-decoration: none;
+}
+.o-christmas__megacontainer .m-christmas__head-container .m-christmas__list-container .a-christmas__link-home:hover {
+  text-decoration: underline;
+}
+.o-christmas__megacontainer .m-christmas__head-container .a-christmas__h1-presents {
+  margin-top: 3rem;
+}
+.o-christmas__megacontainer .m-christmas__funny-holiday {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100rem;
+  max-width: 100rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-image: url(https://www.lego.com/cdn/cs/set/assets/blt5eb4e078c4172c19/Holiday2022-Landing-202208-Inpage-Nav-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=90&dpr=1);
+  height: 8rem;
+  max-height: 15rem;
+}
+.o-christmas__megacontainer .m-christmas__funny-holiday .a-christmas__only-text {
+  font-size: 2rem;
+}
+.o-christmas__megacontainer .m-christmas__funny-holiday .buttonstyle {
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 1px solid black;
+  height: 3rem;
+  text-align: center;
+  padding: 0.7rem 0.9rem;
+  width: 7.8rem;
+  border-radius: 2rem;
+}
+.o-christmas__megacontainer .m-christmas__funny-holiday .a-christmas__products-button {
+  color: black;
+  font-weight: bold;
+}
+.o-christmas__megacontainer .m-christmas__funny-holiday .a-christmas__products-button:hover {
+  text-decoration: underline;
+}
+.o-christmas__megacontainer .m-christmas__funny-holiday .a-christmas__found-more-button {
+  background: black;
+  color: white;
+  font-weight: bold;
+}
+.o-christmas__megacontainer .m-christmas__funny-holiday .a-christmas__found-more-button:hover {
+  text-decoration: underline;
+}
+.o-christmas__megacontainer .m-christmas__banner-container {
+  margin: 0 auto;
+  max-width: 100rem;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .m-christmas__hero-banner {
+  position: relative;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .m-christmas__hero-banner .m-christmas__hero-banner-full-content {
+  position: absolute;
+  z-index: 1;
+  max-width: 35%;
+  left: 6.875rem;
+  transform: translateY(-50%);
+  top: 50%;
+  text-align: left;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .a-christmas__img-hp {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .a-christmas__hero-banner-h2-text {
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .a-christmas__hero-banner-article {
+  margin-top: 1rem;
+}
+.o-christmas__megacontainer .m-christmas__banner-container svg {
+  width: 0.938rem;
+  height: 0.938em;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .a-christmas__hero-banner-buy-now {
+  margin-top: 1.5rem;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .a-christmas__hero-banner-buy-now .a-christmas__hero-banner-button-style {
+  text-decoration: none;
+  color: white;
+  background: black;
+  height: 3rem;
+  text-align: center;
+  padding: 0.7rem 0.9rem;
+  width: 7.8rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+.o-christmas__megacontainer .m-christmas__banner-container .a-christmas__hero-banner-buy-now .a-christmas__hero-banner-button-style:hover {
+  text-decoration: underline;
+}
+.o-christmas__megacontainer .m-christmas__icons-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  background: rgb(52, 161, 156);
+  margin-top: -5px;
+}
+.o-christmas__megacontainer .m-christmas__icons-container .m-christmas__container {
+  padding: 2.5rem 1.5rem;
+}
+.o-christmas__megacontainer .m-christmas__icons-container .m-christmas__icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.o-christmas__megacontainer .m-christmas__icons-container .m-christmas__icons .a-christmas__link-news {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+}
+.o-christmas__megacontainer .m-christmas__icons-container .m-christmas__icons .a-christmas__link-news:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.o-christmas__megacontainer .m-christmas__icons-container .m-christmas__icons li {
+  list-style-type: none;
+  text-align: center;
+}
+.o-christmas__megacontainer .m-christmas__icons-container .m-christmas__icons .a-christmas__text-news {
+  margin-top: 1rem;
+}
+.o-christmas__megacontainer .m-christmas__icons-container .m-christmas__icons .a-christmas__text-star-wars {
+  font-style: oblique;
+  margin-top: 1rem;
+}
+.o-christmas__megacontainer .m-christmas__icons-container .m-christmas__icons .a-christmas__img-set {
+  position: static;
+  max-width: 100%;
+  width: auto;
+}
+.o-christmas__megacontainer .m-christmas__carousel-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  background: rgb(52, 161, 156);
+  padding-top: 2rem;
+}
+.o-christmas__megacontainer .m-christmas__carousel-container .m-christmas__container {
+  max-width: 82.5rem;
+  margin: 0 auto;
+}
+.o-christmas__megacontainer .m-christmas__carousel-container .a-christmas__text-ideas-presents {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.o-christmas__megacontainer .m-christmas__mini-cards {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100rem;
+  flex-direction: column;
+}
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__costruction-text {
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__box-images {
+  display: flex;
+  position: relative;
+}
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__link-one {
+  font-weight: bold;
+}
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.o-christmas__megacontainer .m-christmas__mini-cards .a-cardStyles__title-text {
+  margin-bottom: 10px;
+}
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__img-text-link {
+  text-decoration: none;
+  color: black;
+}
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__img-text-link:hover {
+  color: black;
+}
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__link-one:hover {
+  text-decoration: underline;
+}
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__firstimg {
+  max-width: 100%;
+}
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__second-img,
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__third-img,
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__four-img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  height: auto;
+}
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__box-2,
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__box-3,
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__box-4,
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__box-2-clone,
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__box-3-clone,
+.o-christmas__megacontainer .m-christmas__mini-cards .m-christmas__box-4-clone {
+  margin-left: 10px;
+}
+.o-christmas__megacontainer .m-christmas__container-why-buy {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100rem;
+  background: rgb(204, 231, 230);
+  flex-direction: column;
+}
+.o-christmas__megacontainer .m-christmas__container-why-buy .m-christmas__head-container-clone {
+  max-width: 100rem;
+  padding: 2rem;
+}
+.o-christmas__megacontainer .m-christmas__container-why-buy .m-christmas__head-container-clone .a-christmas__h1-presents-clone {
+  margin-bottom: 2rem;
+}
+.o-christmas__megacontainer .m-christmas__container-prepare-to-christmas {
+  background: rgb(52, 161, 156);
+  max-width: 100rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+.o-christmas__megacontainer .m-christmas__container-prepare-to-christmas .a-christmas__text-prepare-to-christmas {
+  text-align: center;
+}
+.o-christmas__megacontainer .m-christmas__container-prepare-to-christmas .a-christmas__text-prepare-to-christmas .a-christmas__text-christmas {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.o-christmas__megacontainer .a-christmas__link-view-all {
+  color: rgba(0, 0, 0, 0.5);
+}
+.o-christmas__megacontainer .a-christmas__link-view-all:hover {
+  color: black;
+}
+.o-christmas__megacontainer .m-christmas__container-why-buy-clone {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100rem;
+  background: rgb(52, 161, 156);
+  flex-direction: column;
+}
+
+.m-christmas__hero-banner-full-content-clone {
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+}
+
+.o-christmas__banner-info {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100rem;
+  margin-top: 5rem;
+  background: rgb(230, 243, 255);
+  border-radius: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 0.3rem;
+  margin-bottom: 5rem;
+}
+
+.o-christmas__find-ispiration {
+  padding: 2rem;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100rem;
+  background: rgb(204, 231, 230);
+}
+
+.m-christmas__faq {
+  padding: 3rem;
+  color: black;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100rem;
+}
+
+.m-christmas__questions {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.m-christmas__questions .a-christmas__question {
+  position: relative;
+}
+.m-christmas__questions .header {
+  padding: 1.25rem 1.8rem;
+  border-bottom: 0.1rem solid rgb(187, 187, 187);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: black;
+  display: block;
+}
+.m-christmas__questions svg {
+  height: 15px;
+  width: 15px;
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  transform: rotate(270deg);
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.m-christmas__questions .content {
+  padding: 0 1.8rem;
+  font-size: 1rem;
+  color: black;
+  max-height: 0;
+  transition: 0.2s;
+  overflow: hidden;
+  margin-bottom: 0.2rem;
+}
+.m-christmas__questions input[type=checkbox]:checked ~ .header svg {
+  transform: rotate(270deg);
+  transition: 0.4s;
+}
+.m-christmas__questions input[type=checkbox] ~ .header svg {
+  transform: rotate(90deg);
+  transition: 0.4s;
+}
+.m-christmas__questions input[type=checkbox]:checked ~ div.content {
+  padding: 30px 30px;
+  max-height: 600px;
+  transition: all 0.5s ease;
+}
+.m-christmas__questions input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}/*# sourceMappingURL=natale.css.map */
