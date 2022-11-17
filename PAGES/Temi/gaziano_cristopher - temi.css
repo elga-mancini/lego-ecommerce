@@ -85,6 +85,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
+  align-items: flex-start;
   max-width: 22.45vw;
   min-width: 304px;
   margin-top: 30px;
@@ -132,7 +133,9 @@ html {
 .o_container_themes .o_container_themeCard .m_description_themeCard {
   display: block;
   flex-wrap: wrap;
+  flex-direction: column;
   margin-top: 135px;
+  justify-content: space-between;
 }
 .o_container_themes .o_container_themeCard .m_description_themeCard .a_title_themeCard {
   width: 100%;
@@ -193,404 +196,91 @@ html {
 }
 @media only screen and (max-width: 1350px) and (min-width: 1201px) {
   .o_container_themes .o_container_themeCard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
     max-width: 304px;
     min-width: 270px;
     margin-top: 30px;
   }
-  .o_container_themes .o_container_themeCard .m_image_themeCard {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-  }
   .o_container_themes .o_container_themeCard .m_image_themeCard .a_logo_themeCard {
-    display: flex;
-    max-width: 22.45vw;
     min-width: 270px;
-    min-height: 30px;
-    max-height: 45px;
-    padding: 0 auto;
-    background: rgb(255, 255, 255);
-    opacity: 80%;
-    z-index: 2;
-    padding: 5px 0;
-    align-self: center;
-    position: absolute;
-    top: -35px;
-  }
-  .o_container_themes .o_container_themeCard .m_image_themeCard .a_logo_themeCard img {
-    max-height: 35px;
-    max-width: 212px;
-    margin: auto;
   }
   .o_container_themes .o_container_themeCard .m_image_themeCard .a_picture_themeCard {
-    display: flex;
     max-width: 304px;
     min-width: 270px;
-    padding: 0 auto;
-    background: rgba(255, 255, 255, 0.8);
-    position: absolute;
-    top: -35px;
-    z-index: 1;
-  }
-  .o_container_themes .o_container_themeCard .m_image_themeCard .a_picture_themeCard img {
-    width: 100%;
-    height: auto;
-    margin: auto;
   }
   .o_container_themes .o_container_themeCard .m_description_themeCard {
-    display: block;
-    flex-wrap: wrap;
     margin-top: 125px;
   }
   .o_container_themes .o_container_themeCard .m_description_themeCard .a_title_themeCard {
-    width: 100%;
-    margin-bottom: 0.3125rem;
-    font-weight: 700;
-    text-align: left;
     max-width: 304px;
   }
   .o_container_themes .o_container_themeCard .m_description_themeCard .a_info_themeCard {
-    width: 100%;
-    display: block;
-    padding: 0.3125rem 0;
-    font-size: 0.875rem;
-    line-height: 1.1875rem;
-    color: rgb(44, 44, 44);
-    font-weight: 400;
     max-width: 304px;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard {
-    margin-top: 1.25rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_buy_themeCard > a {
-    margin-right: 2.5rem;
-    font-size: 0.875rem;
-    line-height: 1.1875rem;
-    color: black;
-    align-items: center;
-    text-decoration: none;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_buy_themeCard > a svg {
-    width: 11px;
-    height: 11px;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_buy_themeCard > a:hover {
-    text-decoration: underline;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_moreInfo_themeCard > a {
-    margin-right: 2.5rem;
-    font-size: 0.875rem;
-    line-height: 1.1875rem;
-    color: black;
-    align-items: center;
-    text-decoration: none;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_moreInfo_themeCard > a svg {
-    width: 11px;
-    height: 11px;
-    margin: 0px 0.25rem;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_moreInfo_themeCard > a:hover {
-    text-decoration: underline;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_moreInfo_themeCard > a:hover svg {
-    text-decoration: none;
   }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 601px) {
   .o_container_themes {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
-    justify-content: center;
-    padding: 40px 20px;
-    margin: 0 auto;
-    gap: 15px;
+    gap: 20px;
   }
   .o_container_themes .o_container_themeCard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
     max-width: 563.5px;
     min-width: 43.9267886855vw;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
   }
   .o_container_themes .o_container_themeCard .m_image_themeCard {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
     margin-bottom: 13vh;
   }
   .o_container_themes .o_container_themeCard .m_image_themeCard .a_logo_themeCard {
-    display: flex;
     max-width: 563.5px;
     min-width: 43.9267886855vw;
-    min-height: 30px;
-    max-height: 45px;
-    padding: 0 auto;
-    background: rgb(255, 255, 255);
-    opacity: 80%;
-    z-index: 2;
-    padding: 5px 0;
-    align-self: center;
-    top: -35px;
-  }
-  .o_container_themes .o_container_themeCard .m_image_themeCard .a_logo_themeCard img {
-    max-height: 35px;
-    max-width: 212px;
-    margin: auto;
   }
   .o_container_themes .o_container_themeCard .m_image_themeCard .a_picture_themeCard {
-    display: flex;
     max-width: 563.5px;
     min-width: 43.9267886855vw;
-    padding: 0 auto;
-    background: rgba(255, 255, 255, 0.8);
-    position: absolute;
-    top: -35px;
-    z-index: 1;
-  }
-  .o_container_themes .o_container_themeCard .m_image_themeCard .a_picture_themeCard img {
-    width: 100%;
-    height: auto;
-    margin: auto;
   }
   .o_container_themes .o_container_themeCard .m_description_themeCard {
     display: block;
     flex-wrap: wrap;
   }
   .o_container_themes .o_container_themeCard .m_description_themeCard .a_title_themeCard {
-    width: 100%;
-    margin-bottom: 0.3125rem;
-    font-weight: 700;
-    text-align: left;
     max-width: 563.5px;
   }
   .o_container_themes .o_container_themeCard .m_description_themeCard .a_info_themeCard {
-    width: 100%;
-    display: block;
-    padding: 0.3125rem 0;
-    font-size: 0.875rem;
-    line-height: 1.1875rem;
-    color: rgb(44, 44, 44);
-    font-weight: 400;
     max-width: 563.5px;
   }
   .o_container_themes .o_container_themeCard .m_links_themeCard {
-    margin-top: 1.25rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
     margin-bottom: 5px;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_buy_themeCard > a {
-    margin-right: 2.5rem;
-    font-size: 0.875rem;
-    line-height: 1.1875rem;
-    color: black;
-    align-items: center;
-    text-decoration: none;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_buy_themeCard > a svg {
-    width: 11px;
-    height: 11px;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_buy_themeCard > a:hover {
-    text-decoration: underline;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_moreInfo_themeCard > a {
-    margin-right: 2.5rem;
-    font-size: 0.875rem;
-    line-height: 1.1875rem;
-    color: black;
-    align-items: center;
-    text-decoration: none;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_moreInfo_themeCard > a svg {
-    width: 11px;
-    height: 11px;
-    margin: 0px 0.25rem;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_moreInfo_themeCard > a:hover {
-    text-decoration: underline;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_moreInfo_themeCard > a:hover svg {
-    text-decoration: none;
   }
 }
 @media only screen and (max-width: 600px) {
-  .o_container_mapLinksAndTitle {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 1600px;
-  }
-  .o_container_mapLinksAndTitle .m_ul_mapLinks {
-    display: flex;
-    flex-wrap: nowrap;
-    line-height: 1.1875rem;
-    font-weight: 400;
-    width: 100%;
-    font-size: 0.875rem;
-    text-decoration: none;
-    list-style: none;
-    padding: 0.75rem 1.875rem;
-    margin: 0;
-  }
-  .o_container_mapLinksAndTitle .m_ul_mapLinks .a_li_mapLink > span > a {
-    color: #006db7;
-    text-decoration: none;
-  }
-  .o_container_mapLinksAndTitle .m_ul_mapLinks .a_li_mapLink > svg {
-    width: 7.78px;
-    height: 7.78px;
-    margin: 0px 0.625rem;
-  }
-  .o_container_mapLinksAndTitle .m_container_Title {
-    display: flex;
-    padding: 0.9375rem 0px;
-    justify-content: center;
-    background-color: rgb(0, 109, 183);
-    max-height: 12.5rem;
-    height: 5.625rem;
-    background-position: center center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .o_container_mapLinksAndTitle .m_container_Title .a_text_title {
-    font-size: 1.25rem;
-    color: white;
-    font-weight: 400px;
-    margin: 0.625rem;
-  }
   .o_container_themes {
-    display: grid;
     grid-template-columns: 1fr;
-    width: 100%;
-    justify-content: center;
-    padding: 40px 20px;
-    margin: 0 auto;
   }
   .o_container_themes .o_container_themeCard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
     max-width: 543px;
     min-width: 88.6vw;
-    margin-top: 30px;
   }
   .o_container_themes .o_container_themeCard .m_image_themeCard {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
     margin-bottom: 13vh;
   }
   .o_container_themes .o_container_themeCard .m_image_themeCard .a_logo_themeCard {
-    display: flex;
     max-width: 543px;
     min-width: 88.6vw;
-    min-height: 30px;
-    max-height: 45px;
-    padding: 0 auto;
-    background: rgb(255, 255, 255);
-    opacity: 80%;
-    z-index: 2;
-    padding: 5px 0;
-    align-self: center;
-    position: absolute;
-    top: -35px;
-  }
-  .o_container_themes .o_container_themeCard .m_image_themeCard .a_logo_themeCard img {
-    max-height: 35px;
-    max-width: 212px;
-    margin: auto;
   }
   .o_container_themes .o_container_themeCard .m_image_themeCard .a_picture_themeCard {
-    display: flex;
     max-width: 543px;
     min-width: 88.6vw;
-    padding: 0 auto;
-    background: rgba(255, 255, 255, 0.8);
-    position: absolute;
-    top: -35px;
-    z-index: 1;
-  }
-  .o_container_themes .o_container_themeCard .m_image_themeCard .a_picture_themeCard img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-  }
-  .o_container_themes .o_container_themeCard .m_description_themeCard {
-    display: block;
-    flex-wrap: wrap;
   }
   .o_container_themes .o_container_themeCard .m_description_themeCard .a_title_themeCard {
-    width: 100%;
-    margin-bottom: 0.3125rem;
-    font-weight: 700;
-    text-align: left;
     max-width: 543px;
   }
   .o_container_themes .o_container_themeCard .m_description_themeCard .a_info_themeCard {
-    width: 100%;
-    display: block;
-    padding: 0.3125rem 0;
-    font-size: 0.875rem;
-    line-height: 1.1875rem;
-    color: rgb(44, 44, 44);
-    font-weight: 400;
     max-width: 543px;
   }
   .o_container_themes .o_container_themeCard .m_links_themeCard {
-    margin-top: 1.25rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
     margin-bottom: 5px;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_buy_themeCard > a {
-    margin-right: 2.5rem;
-    font-size: 0.875rem;
-    line-height: 1.1875rem;
-    color: black;
-    align-items: center;
-    text-decoration: none;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_buy_themeCard > a svg {
-    width: 11px;
-    height: 11px;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_buy_themeCard > a:hover {
-    text-decoration: underline;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_moreInfo_themeCard > a {
-    margin-right: 2.5rem;
-    font-size: 0.875rem;
-    line-height: 1.1875rem;
-    color: black;
-    align-items: center;
-    text-decoration: none;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_moreInfo_themeCard > a svg {
-    width: 11px;
-    height: 11px;
-    margin: 0px 0.25rem;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_moreInfo_themeCard > a:hover {
-    text-decoration: underline;
-  }
-  .o_container_themes .o_container_themeCard .m_links_themeCard .a_moreInfo_themeCard > a:hover svg {
-    text-decoration: none;
   }
 }
 .scrolled-down {
