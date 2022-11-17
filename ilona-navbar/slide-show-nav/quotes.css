@@ -4,7 +4,7 @@
 .a-slideshow-container{
     background-color: white;
     width: 60%;
-    height: 2rem;
+    height: 3rem;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -21,7 +21,8 @@
     display: none;
     padding: 10px;
     text-align: center;
-    font-size: 0.6rem;
+    justify-content: center;
+    font-size: 0.7rem;
     line-height: 2;
     position: absolute;
     top: 0vh;
