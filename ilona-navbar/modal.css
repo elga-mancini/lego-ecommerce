@@ -131,7 +131,7 @@ button {
 display: flex;
 flex-direction: row;
 gap: 1rem;
-width: 60%;
+width: 40%;
 height: 100%;
 padding-top: 0;
 margin: 0;
@@ -146,11 +146,13 @@ display: none;
 }
 
 .column-1{
+  
 display: flex;
 flex-direction: column;
-align-items: flex-start;
+align-items: left;
 justify-content: flex-start;
 text-align: start;
+
 }
 .column-2{
 display: flex;
@@ -158,6 +160,9 @@ flex-direction: column;
 align-items: flex-start;
 justify-content: flex-start;
 text-align: start;
+}
+.btn-inside-module{
+  text-align: left;
 }
 
 .line{
