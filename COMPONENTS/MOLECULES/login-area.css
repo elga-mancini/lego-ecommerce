@@ -1,0 +1,90 @@
+
+
+/* container */
+
+.m-login-area__login-area-container{
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    background-color: rgb(244, 239, 239);
+}
+
+/* account */
+
+
+.a-button__button-account{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    gap: 10px;
+    border-style: none;
+    height: 100%;
+    padding: 20px 20px;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+    color: black;
+    background-color: rgb(244, 239, 239);
+   
+}
+
+
+
+.a-button__button-account:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1199px ) {
+    .a-button-text__button-account{
+        display: none;
+    }
+    
+}
+
+
+/* separator line*/
+
+.m-separator-line{
+    width: 0.9px;
+    height: 20px;
+    background-color: black;
+    align-self: center;
+}
+
+/* vip */
+.a-button__button-vip{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    gap: 10px;
+    border-style: none;
+    height: 100%;
+    padding: 20px 20px;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+    color: black;
+    text-transform: uppercase;
+    background-color: rgb(244, 239, 239);
+}
+
+.a-button-image__button-vip{
+    width: 30%;
+}
+
+.a-button__button-vip:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1199px ) {
+    .a-button-text__button-vip{
+        display: none;
+    }
+
+    .a-button-image__button-vip{
+        width: 52%;
+    }
+    
+}

@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+  }
+  
+  body {
+    width: 100%;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    color: #2c2c2c;
+    background: #fff;
+    min-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  body,
+  html {
+    min-height: 100%;
+    height: 100%;
+    font-family: Cera Pro, sans-serif;
+  }
+
+  .o_container_mapLinksAndTitle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1600px;
+    .m_ul_mapLinks {
+      display: flex;
+      flex-wrap: nowrap;
+      line-height: 1.1875rem;
+      font-weight: 400;
+      width: 100%;
+      font-size: 0.875rem;
+      text-decoration: none;
+      list-style: none;
+      padding: 0.75rem 1.875rem;
+      margin: 0;
+  
+      .a_li_mapLink > span > a {
+        color: #006db7;
+        text-decoration: none;
+      }
+      .a_li_mapLink > svg {
+        width: 7.78px;
+        height: 7.78px;
+        margin: 0px 0.625rem;
+      }
+    }
+    .m_container_Title {
+      display: flex;
+      padding: 0.9375rem 0px;
+      -webkit-box-pack: center;
+      justify-content: center;
+      background-color: rgb(0, 109, 183);
+      max-height: 12.5rem;
+      height: 5.625rem;
+      background-position: center center;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+      .a_text_title {
+        font-size: 2rem;
+        color: white;
+        font-weight: 400px;
+        margin: 0.625rem;
+      }
+    }
+  }
+
+  .o_container_mainPageTheme {
+    display: flex;
+    flex-wrap: wrap;
+  }

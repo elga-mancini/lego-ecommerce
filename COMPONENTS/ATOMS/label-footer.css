@@ -1,0 +1,10 @@
+.a-label__input-email {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.a-label__text-email {
+    width: 201px;
+    height: 55px;
+}

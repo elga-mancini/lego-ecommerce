@@ -1,0 +1,33 @@
+
+
+.a-button__button-account{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    gap: 10px;
+    border-style: none;
+    height: 100%;
+    padding: 20px 20px;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+    color: black;
+
+    /* basic style so you can see the button */
+    background-color: rgb(244, 239, 239);
+    border-radius: 5px;
+}
+
+
+
+.a-button__button-account:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1199px ) {
+    .a-button-text__button-account{
+        display: none;
+    }
+    
+}
